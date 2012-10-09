@@ -14,7 +14,7 @@ GenericName=Razor Freedesktop Notifications Configuration
 
 
 # Translations
-GenericName[de_DE]=Anwendungsmenü
-Name[de_DE]=Razor Freedesktop Mitteilungen Konfiguration
-Icon[de_DE]=Einstellungen-Desktop-Theme
-Comment[de_DE]=Freedesktop Mitteilungen für Razor Desktop konfigurieren
+GenericName[eu]=Razor Freedesktop jakinarazpenen konfigurazioa
+Name[eu]=Razor Freedesktop jakinarazpenen konfigurazioa
+Icon[eu]=hobespenak-mahaigaina-gaia
+Comment[eu]=Konfiguratu Razor mahaigaineko Freedesktop jakinarazpenak
