@@ -28,7 +28,7 @@
 #ifndef ADVANCEDSETTINGS_H
 #define ADVANCEDSETTINGS_H
 
-#include <razorqt/razorsettings.h>
+#include <lxqt/lxqtsettings.h>
 #include <QtGui/QWidget>
 #include "ui_advancedsettings.h"
 
@@ -37,14 +37,14 @@ class AdvancedSettings : public QWidget, public Ui::AdvancedSettings
     Q_OBJECT
 
 public:
-    explicit AdvancedSettings(RazorSettings* settings, QWidget* parent = 0);
+    explicit AdvancedSettings(LxQt::Settings* settings, QWidget* parent = 0);
     ~AdvancedSettings();
 
 public slots:
     void restoreSettings();
 
 private:
-    RazorSettings* mSettings;
+    LxQt::Settings* mSettings;
 
 private slots:
     void save();

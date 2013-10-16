@@ -28,7 +28,7 @@
 #include <QtGui/QApplication>
 #include <QtDBus/QDBusConnection>
 
-#include <razorqt/razorapplication.h>
+#include <lxqt/lxqtapplication.h>
 
 #include "razortranslate.h"
 #include "notificationsadaptor.h"
@@ -66,7 +66,7 @@
  */
 int main(int argc, char** argv)
 {
-    RazorApplication a(argc, argv);
+    LxQt::Application a(argc, argv);
     TRANSLATE_APP;
 
     a.setQuitOnLastWindowClosed(false);

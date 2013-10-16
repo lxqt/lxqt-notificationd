@@ -25,10 +25,10 @@
  *
  * END_COMMON_COPYRIGHT_HEADER */
 
-#include <razorqt/razorapplication.h>
+#include <lxqt/lxqtapplication.h>
 
 #include <qtxdg/xdgicon.h>
-#include <razorqt/razorsettings.h>
+#include <lxqt/lxqtsettings.h>
 #include "razortranslate.h"
 
 #include "mainwindow.h"
@@ -37,7 +37,7 @@
 int main(int argc, char** argv)
 {
     // TODO/FIXME: maybe singleapp?
-    RazorApplication a(argc, argv);
+    LxQt::Application a(argc, argv);
     TRANSLATE_APP;
 
     MainWindow w;

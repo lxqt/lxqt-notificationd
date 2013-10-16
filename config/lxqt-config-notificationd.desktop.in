@@ -1,6 +1,6 @@
 [Desktop Entry]
 X-SuSE-translate=true
-OnlyShowIn=Razor;
+OnlyShowIn=Razor;LXDE;
 Type=Application
 Exec=razor-config-notificationd
 Terminal=false

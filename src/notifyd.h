@@ -35,9 +35,7 @@
 #include <QtCore/QStringList>
 
 #include "notificationarea.h"
-
-class RazorSettings;
-
+#include <lxqt/lxqtsettings.h>
 
 /*
  * Class for interface org.freedesktop.Notifications
@@ -131,7 +129,7 @@ private:
     NotificationArea *m_area;
     int m_serverTimeout;
 
-    RazorSettings *m_settings;
+    LxQt::Settings *m_settings;
 
 private slots:
     void reloadSettings();

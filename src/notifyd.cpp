@@ -26,7 +26,6 @@
  *
  * END_COMMON_COPYRIGHT_HEADER */
 
-#include <razorqt/razorsettings.h>
 #include "notifyd.h"
 
 #include <QtCore/QDebug>
@@ -41,7 +40,7 @@ Notifyd::Notifyd(QObject* parent)
       mId(0)
 {
     m_area = new NotificationArea();
-    m_settings = new RazorSettings("notifications");
+    m_settings = new LxQt::Settings("notifications");
     reloadSettings();
 
     connect(this, SIGNAL(notificationAdded(uint,QString,QString,QString,QString,int,QStringList,QVariantMap)),
@@ -92,7 +91,7 @@ QString Notifyd::GetServerInformation(QString& vendor,
                                       QString& spec_version)
 {
     spec_version = QString("1.2");
-    version = QString(RAZOR_VERSION);
+    version = QString(LXQT_VERSION);
     vendor = QString("razor-qt.org");
     return QString("razor-notificationd");
 }

@@ -38,7 +38,7 @@
 
 #include <QtDebug>
 // this *must* go last due Qt's moc
-#include <razorqt/xfitman.h>
+#include <lxqt/lxqtxfitman.h>
 
 
 #define ICONSIZE QSize(32, 32)
@@ -276,10 +276,10 @@ void Notification::mouseReleaseEvent(QMouseEvent * event)
         return;
     }
 
-    foreach (Window i, xfitMan().getClientList())
+    foreach (Window i, LxQt::xfitMan().getClientList())
     {
-        appName = xfitMan().getApplicationName(i);
-        windowTitle = xfitMan().getWindowTitle(i);
+        appName = LxQt::xfitMan().getApplicationName(i);
+        windowTitle = LxQt::xfitMan().getWindowTitle(i);
         //qDebug() << "    " << i << "APPNAME" << appName << "TITLE" << windowTitle;
         if (appName.isEmpty())
         {
@@ -289,7 +289,7 @@ void Notification::mouseReleaseEvent(QMouseEvent * event)
         if (appName == appLabel->text() || windowTitle == appLabel->text())
         {
 //            qDebug() << "         FOUND!";
-            xfitMan().raiseWindow(i);
+            LxQt::xfitMan().raiseWindow(i);
             closeButton_clicked();
             return;
         }

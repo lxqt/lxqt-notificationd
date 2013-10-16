@@ -29,7 +29,7 @@
 #include <QtGui/QMessageBox>
 #include <QtDBus/QDBusConnection>
 #include <QtDBus/QDBusMessage>
-#include <razorqt/razorconfigdialog.h>
+#include <lxqt/lxqtconfigdialog.h>
 
 #include "mainwindow.h"
 #include "basicsettings.h"
@@ -37,7 +37,7 @@
 
 
 MainWindow::MainWindow(QWidget *parent) :
-    RazorConfigDialog(tr("Razor Notifications Configuration"), new RazorSettings("notifications"), parent)
+    LxQt::ConfigDialog(tr("Razor Notifications Configuration"), new LxQt::Settings("notifications"), parent)
 {
     BasicSettings* basic = new BasicSettings(mSettings, this);
     addPage(basic, tr("Basic Settings"), "preferences-desktop-notification");

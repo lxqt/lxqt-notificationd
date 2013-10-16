@@ -28,10 +28,10 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
-#include <razorqt/razorconfigdialog.h>
+#include <lxqt/lxqtconfigdialog.h>
 
 
-class MainWindow : public RazorConfigDialog
+class MainWindow : public LxQt::ConfigDialog
 {
     Q_OBJECT
 

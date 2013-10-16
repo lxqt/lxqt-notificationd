@@ -28,7 +28,7 @@
 #ifndef BASICSETTINGS_H
 #define BASICSETTINGS_H
 
-#include <razorqt/razorsettings.h>
+#include <lxqt/lxqtsettings.h>
 #include <QtGui/QWidget>
 #include "ui_basicsettings.h"
 
@@ -37,7 +37,7 @@ class BasicSettings : public QWidget, public Ui::BasicSettings
 {
     Q_OBJECT
 public:
-    explicit BasicSettings(RazorSettings* settings, QWidget* parent = 0);
+    explicit BasicSettings(LxQt::Settings* settings, QWidget* parent = 0);
     ~BasicSettings();
 
 public slots:
@@ -48,7 +48,7 @@ private slots:
     void testNotification();
 
 private:
-    RazorSettings* mSettings;
+    LxQt::Settings* mSettings;
 };
 
 #endif // BASICSETTINGS_H

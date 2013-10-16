@@ -25,13 +25,13 @@
  *
  * END_COMMON_COPYRIGHT_HEADER */
 
-#include <razorqt/razornotification.h>
+#include <lxqt/lxqtnotification.h>
 
 #include "basicsettings.h"
 #include "mainwindow.h"
 
 
-BasicSettings::BasicSettings(RazorSettings* settings, QWidget *parent) :
+BasicSettings::BasicSettings(LxQt::Settings* settings, QWidget *parent) :
     QWidget(parent),
     mSettings(settings)
 {
@@ -46,7 +46,7 @@ BasicSettings::BasicSettings(RazorSettings* settings, QWidget *parent) :
 
     connect(testButton, SIGNAL(clicked()), this, SLOT(testNotification()));
 
-    RazorNotification serverTest;
+    LxQt::Notification serverTest;
     QString serverName = serverTest.serverInfo().name;
     if (serverName != "razor-notificationd")
     {
@@ -99,7 +99,7 @@ void BasicSettings::save()
 
 void BasicSettings::testNotification()
 {
-    RazorNotification::notify(//"razor-config-notificationd",
+    LxQt::Notification::notify(//"razor-config-notificationd",
                               tr("Notification Summary"),
                               tr("Notification Body") + "\n\nLorem ipsum dolor sit amet...",
                               "razor-logo.png");

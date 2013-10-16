@@ -28,7 +28,9 @@ set(NOTIFICATIONS_UI
 qt4_wrap_cpp(NOTIFICATIONS_MOC_CPP ${NOTIFICATIONS_MOC})
 qt4_wrap_ui(NOTIFICATIONS_UI_CPP ${NOTIFICATIONS_UI})
 qt4_add_dbus_adaptor(NOTIFICATIONS_SRC
-    ../../razorqt-resources/dbus/org.freedesktop.Notifications.xml
+    # FIXME: we copied the xml file from liblxqt package.
+    # For easier maintance, they should share the same file.
+    org.freedesktop.Notifications.xml
     notifyd.h Notifyd
 )
 
@@ -45,16 +47,17 @@ razor_translate_ts(NOTIFICATIONS_QM_FILES
 find_package(X11 REQUIRED)
 include_directories(${X11_INCLUDE_DIR})
 
-add_executable(razor-notificationd
+add_executable(lxqt-notificationd
     ${NOTIFICATIONS_SRC}
     ${NOTIFICATIONS_MOC_CPP}
     ${NOTIFICATIONS_UI_CPP}
     ${NOTIFICATIONS_QM_FILES}
 )
-add_dependencies(razor-notificationd razorqt)
-target_link_libraries(razor-notificationd ${QT_QTCORE_LIBRARY} ${QT_QTGUI_LIBRARY}
+
+target_link_libraries(lxqt-notificationd ${QT_QTCORE_LIBRARY} ${QT_QTGUI_LIBRARY}
                                  ${QT_QTDBUS_LIBRARY}
-                                 razorqt qtxdg
+                                 ${QTXDG_LIBRARIES}
+                                 ${LXQT_LIBRARIES}
                      )
 
-INSTALL(TARGETS razor-notificationd RUNTIME DESTINATION bin)
+INSTALL(TARGETS lxqt-notificationd RUNTIME DESTINATION bin)
