@@ -48,7 +48,7 @@ BasicSettings::BasicSettings(LxQt::Settings* settings, QWidget *parent) :
 
     LxQt::Notification serverTest;
     QString serverName = serverTest.serverInfo().name;
-    if (serverName != "razor-notificationd")
+    if (serverName != "lxqt-notificationd")
     {
         if (serverName.isEmpty())
         {

@@ -92,8 +92,8 @@ QString Notifyd::GetServerInformation(QString& vendor,
 {
     spec_version = QString("1.2");
     version = QString(LXQT_VERSION);
-    vendor = QString("razor-qt.org");
-    return QString("razor-notificationd");
+    vendor = QString("lxde.org");
+    return QString("lxqt-notificationd");
 }
 
 uint Notifyd::Notify(const QString& app_name,
