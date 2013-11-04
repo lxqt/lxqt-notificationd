@@ -1,7 +1,7 @@
 /* BEGIN_COMMON_COPYRIGHT_HEADER
  * (c)LGPL2+
  *
- * Razor - a lightweight, Qt based, desktop toolset
+ * LXDE-Qt - a lightweight, Qt based, desktop toolset
  * http://razor-qt.org
  *
  * Copyright (C) 2012  Alec Moskvin <alecm@gmx.com>
@@ -24,7 +24,7 @@
 
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-#include <razorqt/razornotification.h>
+#include <lxqt/lxqtnotification.h>
 #include <QDebug>
 
 MainWindow::MainWindow(QWidget *parent) :
@@ -33,14 +33,14 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
     connect(ui->pushButton, SIGNAL(clicked()), SLOT(createNotification()));
-    RazorNotification::notify("1");
-    RazorNotification::notify("2");
-    RazorNotification::notify("3");
+    LxQtNotification::notify("1");
+    LxQtNotification::notify("2");
+    LxQtNotification::notify("3");
 }
 
 void MainWindow::createNotification()
 {
-    RazorNotification* n = new RazorNotification("Notification!");
+    LxQtNotification* n = new LxQtNotification("Notification!");
     nlist.append(n);
     connect(n, SIGNAL(actionActivated(int)), this, SLOT(clickEvent(int)));
     n->setActions(QStringList() << "Hi" << "Bye" << "foo" << "bar" << "lorem" << "ipsum", 1);
@@ -50,7 +50,7 @@ void MainWindow::createNotification()
 
 void MainWindow::clickEvent(int button)
 {
-    RazorNotification* n = qobject_cast<RazorNotification*>(sender());
+    LxQtNotification* n = qobject_cast<LxQtNotification*>(sender());
     if (n)
     {
         if (button == 0)

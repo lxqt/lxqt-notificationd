@@ -92,7 +92,7 @@ These settings won&apos;t have an effect on it!</source>
 <context>
     <name>MainWindow</name>
     <message>
-        <source>Razor Notifications Configuration</source>
+        <source>LxQt Notifications Configuration</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

@@ -1,20 +1,20 @@
 [Desktop Entry]
 X-SuSE-translate=true
-OnlyShowIn=Razor;
+OnlyShowIn=LxQt;
 Type=Application
-Exec=razor-config-notificationd
+Exec=lxqt-config-notificationd
 Terminal=false
-Categories=Settings;DesktopSettings;Qt;Razor;
+Categories=Settings;DesktopSettings;Qt;LxQt;
 Icon=preferences-desktop-theme
-Name=Razor Freedesktop Notifications Configuration
-Comment=Configure freedesktop notifications in Razor desktop
-GenericName=Razor Freedesktop Notifications Configuration
+Name=LxQt Freedesktop Notifications Configuration
+Comment=Configure freedesktop notifications in LxQt desktop
+GenericName=LxQt Freedesktop Notifications Configuration
 
 #TRANSLATIONS_DIR=translations
 
 
 # Translations
-GenericName[pl_PL]=Konfiguracja wyglądu Razor
-Name[pl_PL]=Konfiguracja wyglądu Razor
+GenericName[pl_PL]=Konfiguracja wyglądu LxQt
+Name[pl_PL]=Konfiguracja wyglądu LxQt
 Icon[pl_PL]=ustawienia-motywu-pulpitu
-Comment[pl_PL]=Konfiguruj powiadomienia freedesktop w Razor
+Comment[pl_PL]=Konfiguruj powiadomienia freedesktop w LxQt

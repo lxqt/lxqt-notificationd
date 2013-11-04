@@ -17,4 +17,4 @@ HEADERS += mainwindow.h
 
 FORMS += mainwindow.ui
 
-LIBS += -lrazorqt
+LIBS += -llxqt

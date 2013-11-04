@@ -1,7 +1,7 @@
 /* BEGIN_COMMON_COPYRIGHT_HEADER
  * (c)LGPL2+
  *
- * Razor - a lightweight, Qt based, desktop toolset
+ * LXDE-Qt - a lightweight, Qt based, desktop toolset
  * http://razor-qt.org
  *
  * Copyright: 2012 Razor team
@@ -61,8 +61,8 @@ public slots:
     QStringList GetCapabilities();
 
     /*! Provide a server/deamon info about version etc.
-     * \param vendor outbound string. It's filled with razor-qt credits
-     * \param version outbound string. razor-qt DE version is used (from CMakeLists.txt)
+     * \param vendor outbound string. It's filled with lxqt-qt credits
+     * \param version outbound string. lxqt-qt DE version is used (from CMakeLists.txt)
      * \param spec_version outbound string. Currently used specification version.
      * \retval QString daemon binary name
      */

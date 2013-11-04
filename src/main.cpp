@@ -1,7 +1,7 @@
 /* BEGIN_COMMON_COPYRIGHT_HEADER
  * (c)LGPL2+
  *
- * Razor - a lightweight, Qt based, desktop toolset
+ * LXDE-Qt - a lightweight, Qt based, desktop toolset
  * http://razor-qt.org
  *
  * Copyright: 2012 Razor team
@@ -30,12 +30,12 @@
 
 #include <lxqt/lxqtapplication.h>
 
-#include "razortranslate.h"
+#include "lxqttranslate.h"
 #include "notificationsadaptor.h"
 #include "notifyd.h"
 
 
-/*! \mainpage Razor-qt notification daemon
+/*! \mainpage LxQt-qt notification daemon
  *
  * Running in user session; implementing standard as described in:
  *    docs/nodification-spec-latest.html

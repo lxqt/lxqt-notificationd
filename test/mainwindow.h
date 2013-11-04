@@ -1,7 +1,7 @@
 /* BEGIN_COMMON_COPYRIGHT_HEADER
  * (c)LGPL2+
  *
- * Razor - a lightweight, Qt based, desktop toolset
+ * LXDE-Qt - a lightweight, Qt based, desktop toolset
  * http://razor-qt.org
  *
  * Copyright (C) 2012  Alec Moskvin <alecm@gmx.com>
@@ -27,7 +27,7 @@
 
 #include <QMainWindow>
 
-class RazorNotification;
+class LxQtNotification;
 
 namespace Ui {
 class MainWindow;
@@ -47,7 +47,7 @@ public slots:
 
 private:
     Ui::MainWindow* ui;
-    QList<RazorNotification*> nlist;
+    QList<LxQtNotification*> nlist;
 };
 
 #endif // MAINWINDOW_H

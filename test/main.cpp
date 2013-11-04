@@ -1,7 +1,7 @@
 /* BEGIN_COMMON_COPYRIGHT_HEADER
  * (c)LGPL2+
  *
- * Razor - a lightweight, Qt based, desktop toolset
+ * LXDE-Qt - a lightweight, Qt based, desktop toolset
  * http://razor-qt.org
  *
  * Copyright (C) 2012  Alec Moskvin <alecm@gmx.com>
@@ -23,7 +23,7 @@
  * END_COMMON_COPYRIGHT_HEADER */
 
 #include <QApplication>
-#include <razorqt/razornotification.h>
+#include <lxqt/lxqtnotification.h>
 #include "mainwindow.h"
 
 int main(int argc, char *argv[])

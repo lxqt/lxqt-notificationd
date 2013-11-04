@@ -1,7 +1,7 @@
 /* BEGIN_COMMON_COPYRIGHT_HEADER
  * (c)LGPL2+
  *
- * Razor - a lightweight, Qt based, desktop toolset
+ * LXDE-Qt - a lightweight, Qt based, desktop toolset
  * http://razor-qt.org
  *
  * Copyright: 2010-2011 Razor team
@@ -37,7 +37,7 @@
 
 
 MainWindow::MainWindow(QWidget *parent) :
-    LxQt::ConfigDialog(tr("Razor Notifications Configuration"), new LxQt::Settings("notifications"), parent)
+    LxQt::ConfigDialog(tr("LxQt Notifications Configuration"), new LxQt::Settings("notifications"), parent)
 {
     BasicSettings* basic = new BasicSettings(mSettings, this);
     addPage(basic, tr("Basic Settings"), "preferences-desktop-notification");

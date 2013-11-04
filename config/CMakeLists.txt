@@ -26,15 +26,15 @@ set(NOTIFICATIONS_CONF_UI
 
 
 # Translations **********************************
-include(RazorTranslate)
-razor_translate_ts(NOTIFICATIONS_CONF_QM
+include(LxQtTranslate)
+lxqt_translate_ts(NOTIFICATIONS_CONF_QM
     SOURCES
         ${NOTIFICATIONS_CONF_MOC}
         ${NOTIFICATIONS_CONF_SRC}
         ${NOTIFICATIONS_CONF_UI}
 )
 
-razor_translate_desktop(DESKTOP_FILES
+lxqt_translate_desktop(DESKTOP_FILES
     SOURCES
         lxqt-config-notificationd.desktop.in
 )
