@@ -35,7 +35,7 @@
 #include "notifyd.h"
 
 
-/*! \mainpage LxQt-qt notification daemon
+/*! \mainpage LXDE-Qt notification daemon
  *
  * Running in user session; implementing standard as described in:
  *    docs/nodification-spec-latest.html

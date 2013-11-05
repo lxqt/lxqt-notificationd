@@ -61,8 +61,8 @@ public slots:
     QStringList GetCapabilities();
 
     /*! Provide a server/deamon info about version etc.
-     * \param vendor outbound string. It's filled with lxqt-qt credits
-     * \param version outbound string. lxqt-qt DE version is used (from CMakeLists.txt)
+     * \param vendor outbound string. It's filled with lxde-qt credits
+     * \param version outbound string. lxde-qt DE version is used (from CMakeLists.txt)
      * \param spec_version outbound string. Currently used specification version.
      * \retval QString daemon binary name
      */
