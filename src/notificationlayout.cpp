@@ -102,8 +102,17 @@ void NotificationLayout::addNotification(uint id, const QString &application,
         n->show();
     }
 
-    emit notificationAvailable();
     checkHeight();
+    emit notificationAvailable();
+
+    // NOTE by pcman:
+    // This dirty hack is used to workaround a weird and annoying repainting bug caused by Qt.
+    // See https://github.com/Razor-qt/razor-qt/issues/536
+    // razot-qt bug #536 - Notifications do not repaint under certain conditions
+    // When we create the first notification and are about to show the widget, force repaint() here.
+    // FIXME: there should be better ways to do this, or it should be fixed in Qt instead.
+    if(m_notifications.count() == 1)
+      repaint();
 }
 
 void NotificationLayout::removeNotificationTimeout()
