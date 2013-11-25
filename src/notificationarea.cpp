@@ -61,6 +61,13 @@ NotificationArea::NotificationArea(QWidget *parent)
 
 void NotificationArea::setHeight(int contentHeight)
 {
+    if (contentHeight == 0)
+    {
+        resize(width(), 0);
+        hide();
+        return;
+    }
+
     QDesktopWidget dw;
     int h = dw.availableGeometry(this).height();
     int w = dw.availableGeometry(this).width();

@@ -110,9 +110,6 @@
          <verstretch>0</verstretch>
         </sizepolicy>
        </property>
-       <property name="styleSheet">
-        <string notr="true">backround-color: rgb(0, 0, 255)</string>
-       </property>
        <property name="text">
         <string notr="true">TextLabel</string>
        </property>

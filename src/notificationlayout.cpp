@@ -112,7 +112,7 @@ void NotificationLayout::addNotification(uint id, const QString &application,
     // When we create the first notification and are about to show the widget, force repaint() here.
     // FIXME: there should be better ways to do this, or it should be fixed in Qt instead.
     if(m_notifications.count() == 1)
-      repaint();
+        repaint();
 }
 
 void NotificationLayout::removeNotificationTimeout()
