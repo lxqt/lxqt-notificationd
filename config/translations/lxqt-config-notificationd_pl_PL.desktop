@@ -1,6 +1,6 @@
 [Desktop Entry]
 X-SuSE-translate=true
-OnlyShowIn=LxQt;
+OnlyShowIn=LxQt;Razor;
 Type=Application
 Exec=lxqt-config-notificationd
 Terminal=false
@@ -16,5 +16,4 @@ GenericName=LxQt Freedesktop Notifications Configuration
 # Translations
 GenericName[pl_PL]=Konfiguracja wyglądu LxQt
 Name[pl_PL]=Konfiguracja wyglądu LxQt
-Icon[pl_PL]=ustawienia-motywu-pulpitu
 Comment[pl_PL]=Konfiguruj powiadomienia freedesktop w LxQt
