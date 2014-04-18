@@ -1,6 +1,6 @@
 [Desktop Entry]
 X-SuSE-translate=true
-OnlyShowIn=LxQt;
+OnlyShowIn=LxQt;Razor;
 Type=Application
 Exec=lxqt-config-notificationd
 Terminal=false
@@ -16,5 +16,4 @@ GenericName=LxQt Freedesktop Notifications Configuration
 # Translations
 GenericName[cs_CZ]=Nastavení oznamování v LxQtu
 Name[cs_CZ]=Nastavení oznamování v LxQtu
-Icon[cs_CZ]=Nastavení-plocha-motiv
 Comment[cs_CZ]=Nastavit oznamování na ploše LxQt

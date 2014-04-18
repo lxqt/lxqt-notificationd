@@ -1,6 +1,6 @@
 [Desktop Entry]
 X-SuSE-translate=true
-OnlyShowIn=LxQt;LXDE;
+OnlyShowIn=LxQt;LXDE;Razor;
 Type=Application
 Exec=lxqt-config-notificationd
 Terminal=false
