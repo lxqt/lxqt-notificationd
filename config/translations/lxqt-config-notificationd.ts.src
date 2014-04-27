@@ -92,7 +92,7 @@ These settings won&apos;t have an effect on it!</source>
 <context>
     <name>MainWindow</name>
     <message>
-        <source>LxQt Notifications Configuration</source>
+        <source>Desktop Notifications</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
