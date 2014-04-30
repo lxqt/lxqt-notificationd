@@ -1,20 +1,4 @@
-[Desktop Entry]
-X-SuSE-translate=true
-OnlyShowIn=LxQt;
-Type=Application
-Exec=lxqt-config-notificationd
-Terminal=false
-Categories=Settings;DesktopSettings;Qt;LxQt;
-Icon=preferences-desktop-theme
-Name=LxQt Freedesktop Notifications Configuration
-Comment=Configure freedesktop notifications in LxQt desktop
-GenericName=LxQt Freedesktop Notifications Configuration
-
-#TRANSLATIONS_DIR=translations
-
-
 # Translations
 GenericName[pt_BR]=Suspender Automaticamente
 Name[pt_BR]=Gerenciamento de energia
-Icon[pt_BR]=preferences-desktop-theme
 Comment[pt_BR]=Configurar as notificações do freedesktop na área de trabalho do LxQt

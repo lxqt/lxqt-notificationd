@@ -1,20 +1,4 @@
-[Desktop Entry]
-X-SuSE-translate=true
-OnlyShowIn=LxQt;
-Type=Application
-Exec=lxqt-config-notificationd
-Terminal=false
-Categories=Settings;DesktopSettings;Qt;LxQt;
-Icon=preferences-desktop-theme
-Name=LxQt Freedesktop Notifications Configuration
-Comment=Configure freedesktop notifications in LxQt desktop
-GenericName=LxQt Freedesktop Notifications Configuration
-
-#TRANSLATIONS_DIR=translations
-
-
 # Translations
 GenericName[pt]=Configuração das notificações do LxQt
 Name[pt]=Configuração das notificações do LxQt
-Icon[pt]=preferences-desktop-theme
 Comment[pt]=Configurar notificações do LxQt
