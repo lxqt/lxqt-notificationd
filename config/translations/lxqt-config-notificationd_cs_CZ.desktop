@@ -1,20 +1,4 @@
-[Desktop Entry]
-X-SuSE-translate=true
-OnlyShowIn=LxQt;
-Type=Application
-Exec=lxqt-config-notificationd
-Terminal=false
-Categories=Settings;DesktopSettings;Qt;LxQt;
-Icon=preferences-desktop-theme
-Name=LxQt Freedesktop Notifications Configuration
-Comment=Configure freedesktop notifications in LxQt desktop
-GenericName=LxQt Freedesktop Notifications Configuration
-
-#TRANSLATIONS_DIR=translations
-
-
 # Translations
 GenericName[cs_CZ]=Nastavení oznamování v LxQtu
 Name[cs_CZ]=Nastavení oznamování v LxQtu
-Icon[cs_CZ]=Nastavení-plocha-motiv
 Comment[cs_CZ]=Nastavit oznamování na ploše LxQt
