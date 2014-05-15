@@ -22,7 +22,7 @@
         <item>
          <widget class="QLabel" name="spacingLabel">
           <property name="text">
-           <string>Spacing:</string>
+           <string>Width:</string>
           </property>
          </widget>
         </item>
@@ -46,7 +46,7 @@
         <item>
          <widget class="QLabel" name="widthLabel">
           <property name="text">
-           <string>Width:</string>
+           <string>Spacing:</string>
           </property>
          </widget>
         </item>
