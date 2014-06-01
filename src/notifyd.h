@@ -35,7 +35,7 @@
 #include <QtCore/QStringList>
 
 #include "notificationarea.h"
-#include <lxqt/lxqtsettings.h>
+#include <LXQt/Settings>
 
 /*
  * Class for interface org.freedesktop.Notifications

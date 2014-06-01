@@ -25,7 +25,7 @@
  *
  * END_COMMON_COPYRIGHT_HEADER */
 
-#include <lxqt/lxqtnotification.h>
+#include <LXQt/Notification>
 
 #include "basicsettings.h"
 #include "mainwindow.h"

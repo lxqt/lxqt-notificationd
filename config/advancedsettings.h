@@ -28,7 +28,7 @@
 #ifndef ADVANCEDSETTINGS_H
 #define ADVANCEDSETTINGS_H
 
-#include <lxqt/lxqtsettings.h>
+#include <LXQt/Settings>
 #include <QtGui/QWidget>
 #include "ui_advancedsettings.h"
 

@@ -28,7 +28,7 @@
 #include <QtGui/QApplication>
 #include <QtDBus/QDBusConnection>
 
-#include <lxqt/lxqtapplication.h>
+#include <LXQt/Application>
 
 #include "lxqttranslate.h"
 #include "notificationsadaptor.h"

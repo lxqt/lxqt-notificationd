@@ -28,7 +28,7 @@
 #ifndef BASICSETTINGS_H
 #define BASICSETTINGS_H
 
-#include <lxqt/lxqtsettings.h>
+#include <LXQt/Settings>
 #include <QtGui/QWidget>
 #include "ui_basicsettings.h"
 

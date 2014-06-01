@@ -23,7 +23,7 @@
  * END_COMMON_COPYRIGHT_HEADER */
 
 #include <QApplication>
-#include <lxqt/lxqtnotification.h>
+#include <LXQt/Notification>
 #include "mainwindow.h"
 
 int main(int argc, char *argv[])

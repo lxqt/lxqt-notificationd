@@ -38,7 +38,7 @@
 
 #include <QtDebug>
 // this *must* go last due Qt's moc
-#include <lxqt/lxqtxfitman.h>
+#include <LXQt/XfitMan>
 
 
 #define ICONSIZE QSize(32, 32)

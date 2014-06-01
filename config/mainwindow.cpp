@@ -29,7 +29,7 @@
 #include <QtGui/QMessageBox>
 #include <QtDBus/QDBusConnection>
 #include <QtDBus/QDBusMessage>
-#include <lxqt/lxqtconfigdialog.h>
+#include <LXQt/ConfigDialog>
 
 #include "mainwindow.h"
 #include "basicsettings.h"

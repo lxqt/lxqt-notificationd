@@ -24,7 +24,7 @@
 
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-#include <lxqt/lxqtnotification.h>
+#include <LXQt/Notification>
 #include <QDebug>
 
 MainWindow::MainWindow(QWidget *parent) :
