@@ -1,5 +1,13 @@
 project(lxqt-config-notificationd)
 
+if(USE_QT5)
+    set(QTX_INCLUDE_DIRS ${Qt5Widgets_INCLUDE_DIR})
+    set(QTX_LIBRARIES ${Qt5Widgets_LIBRARY})
+else()
+    set(QTX_INCLUDE_DIRS ${QT_QTCORE_INCLUDE_DIR} ${QT_QTGUI_INCLUDE_DIR})
+    set(QTX_LIBRARIES ${QT_QTCORE_LIBRARY} ${QT_QTGUI_LIBRARY})
+endif()
+
 include_directories (
     ${CMAKE_CURRENT_BINARY_DIR}
     ${CMAKE_CURRENT_SOURCE_DIR}
@@ -39,8 +47,13 @@ lxqt_translate_desktop(DESKTOP_FILES
 )
 #************************************************
 
-qt4_wrap_cpp(NOTIFICATIONS_CONF_MOC_CPP ${NOTIFICATIONS_CONF_MOC})
-qt4_wrap_ui(NOTIFICATIONS_CONF_UI_CPP ${NOTIFICATIONS_CONF_UI})
+if(USE_QT5)
+    qt5_wrap_cpp(NOTIFICATIONS_CONF_MOC_CPP ${NOTIFICATIONS_CONF_MOC})
+    qt5_wrap_ui(NOTIFICATIONS_CONF_UI_CPP ${NOTIFICATIONS_CONF_UI})
+else()
+    qt4_wrap_cpp(NOTIFICATIONS_CONF_MOC_CPP ${NOTIFICATIONS_CONF_MOC})
+    qt4_wrap_ui(NOTIFICATIONS_CONF_UI_CPP ${NOTIFICATIONS_CONF_UI})
+endif()
 
 add_executable(${PROJECT_NAME} ${NOTIFICATIONS_CONF_SRC}
                                ${NOTIFICATIONS_CONF_MOC_CPP}

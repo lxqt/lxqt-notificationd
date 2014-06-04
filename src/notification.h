@@ -28,10 +28,10 @@
 #ifndef NOTIFICATION_H
 #define NOTIFICATION_H
 
-#include <QtCore/QObject>
-#include <QtCore/QTimer>
-#include <QtGui/QIcon>
-#include <QtCore/QDateTime>
+#include <QObject>
+#include <QTimer>
+#include <QIcon>
+#include <QDateTime>
 #include "ui_notification.h"
 
 

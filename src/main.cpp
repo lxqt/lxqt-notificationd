@@ -25,7 +25,7 @@
  *
  * END_COMMON_COPYRIGHT_HEADER */
 
-#include <QtGui/QApplication>
+#include <QApplication>
 #include <QtDBus/QDBusConnection>
 
 #include <LXQt/Application>

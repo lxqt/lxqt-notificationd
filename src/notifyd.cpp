@@ -28,7 +28,7 @@
 
 #include "notifyd.h"
 
-#include <QtCore/QDebug>
+#include <QDebug>
 
 
 /*

@@ -25,7 +25,7 @@
  *
  * END_COMMON_COPYRIGHT_HEADER */
 
-#include <QtGui/QDesktopWidget>
+#include <QDesktopWidget>
 #include <LXQt/Settings>
 #include "notificationarea.h"
 

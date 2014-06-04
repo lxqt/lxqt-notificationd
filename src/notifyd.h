@@ -29,10 +29,10 @@
 #ifndef NOTIFYD_H
 #define NOTIFYD_H
 
-#include <QtCore/QString>
-#include <QtCore/QObject>
-#include <QtCore/QVariantMap>
-#include <QtCore/QStringList>
+#include <QString>
+#include <QObject>
+#include <QVariantMap>
+#include <QStringList>
 
 #include "notificationarea.h"
 #include <LXQt/Settings>

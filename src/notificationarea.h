@@ -28,7 +28,7 @@
 #ifndef NOTIFICATIONAREA_H
 #define NOTIFICATIONAREA_H
 
-#include <QtGui/QScrollArea>
+#include <QScrollArea>
 #include "notificationlayout.h"
 
 

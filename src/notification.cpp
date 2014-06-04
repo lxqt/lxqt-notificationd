@@ -25,10 +25,10 @@
  *
  * END_COMMON_COPYRIGHT_HEADER */
 
-#include <QtGui/QPainter>
-#include <QtCore/QUrl>
-#include <QtCore/QFile>
-#include <QtCore/QDateTime>
+#include <QPainter>
+#include <QUrl>
+#include <QFile>
+#include <QDateTime>
 #include <QtDBus/QDBusArgument>
 
 #include <qtxdg/xdgicon.h>

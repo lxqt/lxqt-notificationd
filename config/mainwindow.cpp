@@ -26,7 +26,7 @@
  * END_COMMON_COPYRIGHT_HEADER */
 
 #include <QtCore/QProcess>
-#include <QtGui/QMessageBox>
+#include <QMessageBox>
 #include <QtDBus/QDBusConnection>
 #include <QtDBus/QDBusMessage>
 #include <LXQt/ConfigDialog>

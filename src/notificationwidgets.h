@@ -28,9 +28,9 @@
 #ifndef NOTIFICATIONWIDGETS_H
 #define NOTIFICATIONWIDGETS_H
 
-#include <QtCore/QHash>
-#include <QtGui/QWidget>
-#include <QtGui/QAbstractButton>
+#include <QHash>
+#include <QWidget>
+#include <QAbstractButton>
 
 class QComboBox;
 

@@ -29,7 +29,7 @@
 #define ADVANCEDSETTINGS_H
 
 #include <LXQt/Settings>
-#include <QtGui/QWidget>
+#include <QWidget>
 #include "ui_advancedsettings.h"
 
 class AdvancedSettings : public QWidget, public Ui::AdvancedSettings

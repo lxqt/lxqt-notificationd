@@ -1,3 +1,11 @@
+if(USE_QT5)
+    set(QTX_INCLUDE_DIRS ${Qt5Widgets_INCLUDE_DIR} ${Qt5DBus_INCLUDE_DIR})
+    set(QTX_LIBRARIES ${Qt5Widgets_LIBRARY} ${Qt5DBus_LIBRARY})
+else()
+    set(QTX_INCLUDE_DIRS ${QT_QTCORE_INCLUDE_DIR} ${QT_QTGUI_INCLUDE_DIR} ${QT_QTDBUS_DIR})
+    set(QTX_LIBRARIES ${QT_QTCORE_LIBRARY} ${QT_QTGUI_LIBRARY} ${QT_QTDBUS_LIBRARY})
+endif()
+
 include_directories(
     ${CMAKE_CURRENT_SOURCE_DIR}
     ${CMAKE_CURRENT_BINARY_DIR}
@@ -24,14 +32,21 @@ set(NOTIFICATIONS_UI
     notification.ui
 )
 
-qt4_wrap_cpp(NOTIFICATIONS_MOC_CPP ${NOTIFICATIONS_MOC})
-qt4_wrap_ui(NOTIFICATIONS_UI_CPP ${NOTIFICATIONS_UI})
-qt4_add_dbus_adaptor(NOTIFICATIONS_SRC
-    # FIXME: we copied the xml file from liblxqt package.
-    # For easier maintance, they should share the same file.
-    org.freedesktop.Notifications.xml
-    notifyd.h Notifyd
-)
+if(USE_QT5)
+    qt5_wrap_cpp(NOTIFICATIONS_MOC_CPP ${NOTIFICATIONS_MOC})
+    qt5_wrap_ui(NOTIFICATIONS_UI_CPP ${NOTIFICATIONS_UI})
+    qt5_add_dbus_adaptor(NOTIFICATIONS_SRC
+        org.freedesktop.Notifications.xml
+        notifyd.h Notifyd
+    )
+else()
+    qt4_wrap_cpp(NOTIFICATIONS_MOC_CPP ${NOTIFICATIONS_MOC})
+    qt4_wrap_ui(NOTIFICATIONS_UI_CPP ${NOTIFICATIONS_UI})
+    qt4_add_dbus_adaptor(NOTIFICATIONS_SRC
+        org.freedesktop.Notifications.xml
+        notifyd.h Notifyd
+    )
+endif()
 
 # Translations **********************************
 include(LxQtTranslate)
@@ -53,10 +68,8 @@ add_executable(lxqt-notificationd
     ${NOTIFICATIONS_QM_FILES}
 )
 
-target_link_libraries(lxqt-notificationd ${QT_QTCORE_LIBRARY} ${QT_QTGUI_LIBRARY}
-                                 ${QT_QTDBUS_LIBRARY}
+target_link_libraries(lxqt-notificationd ${QTX_LIBRARIES}
                                  ${QTXDG_LIBRARIES}
                                  ${LXQT_LIBRARIES}
                      )
-
-INSTALL(TARGETS lxqt-notificationd RUNTIME DESTINATION bin)
+install(TARGETS lxqt-notificationd RUNTIME DESTINATION bin)

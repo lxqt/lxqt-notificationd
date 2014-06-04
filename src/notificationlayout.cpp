@@ -27,7 +27,7 @@
 
 #include "notificationlayout.h"
 #include <QtDebug>
-#include <QtGui/QBrush>
+#include <QBrush>
 
 
 NotificationLayout::NotificationLayout(QWidget *parent)

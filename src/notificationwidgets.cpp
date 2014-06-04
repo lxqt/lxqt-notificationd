@@ -25,11 +25,11 @@
  *
  * END_COMMON_COPYRIGHT_HEADER */
 
-#include <QtGui/QComboBox>
-#include <QtGui/QHBoxLayout>
-#include <QtGui/QButtonGroup>
-#include <QtGui/QPushButton>
-#include <QtGui/QLabel>
+#include <QComboBox>
+#include <QHBoxLayout>
+#include <QButtonGroup>
+#include <QPushButton>
+#include <QLabel>
 
 #include "notificationwidgets.h"
 
