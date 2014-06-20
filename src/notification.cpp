@@ -31,7 +31,7 @@
 #include <QDateTime>
 #include <QtDBus/QDBusArgument>
 
-#include <qtxdg/xdgicon.h>
+#include <XdgIcon>
 
 #include "notification.h"
 #include "notificationwidgets.h"
