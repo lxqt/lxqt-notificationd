@@ -28,6 +28,7 @@
 #include <QDesktopWidget>
 #include <LXQt/Settings>
 #include "notificationarea.h"
+#include <LXQt/XfitMan>
 
 
 NotificationArea::NotificationArea(QWidget *parent)
@@ -68,9 +69,9 @@ void NotificationArea::setHeight(int contentHeight)
         return;
     }
 
-    QDesktopWidget dw;
-    int h = dw.availableGeometry(this).height();
-    int w = dw.availableGeometry(this).width();
+    QRect availableGeometry = LxQt::xfitMan().availableGeometry(this);
+    int h = availableGeometry.height();
+    int w = availableGeometry.width();
     int safeHeight = contentHeight > h ? h : contentHeight;
     int x, y;
 
@@ -81,19 +82,19 @@ void NotificationArea::setHeight(int contentHeight)
     }
     else if (m_placement == "bottom-left")
     {
-        x = dw.availableGeometry(this).x() + m_spacing;
+        x = availableGeometry.x() + m_spacing;
         y = h - safeHeight - m_spacing;
     }
     else if (m_placement == "top-right")
     {
         x = w - width() - m_spacing;
-        y = dw.availableGeometry(this).y() + m_spacing;
+        y = availableGeometry.y() + m_spacing;
     }
     else if (m_placement == "top-left")
     {
-        
-        x = dw.availableGeometry(this).x() + m_spacing;
-        y = dw.availableGeometry(this).y() + m_spacing;
+
+        x = availableGeometry.x() + m_spacing;
+        y = availableGeometry.y() + m_spacing;
     }
     else
     {
@@ -116,6 +117,6 @@ void NotificationArea::setSettings(const QString &placement, int width, int spac
 
     m_spacing = spacing;
     m_layout->setSizes(m_spacing, width);
-        
+
     this->setHeight(widget()->height());
 }
