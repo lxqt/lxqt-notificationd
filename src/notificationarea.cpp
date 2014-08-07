@@ -26,6 +26,7 @@
  * END_COMMON_COPYRIGHT_HEADER */
 
 #include <QDesktopWidget>
+#include <QApplication>
 #include <LXQt/Settings>
 #include "notificationarea.h"
 
@@ -68,37 +69,39 @@ void NotificationArea::setHeight(int contentHeight)
         return;
     }
 
-    QDesktopWidget dw;
-    int h = dw.availableGeometry(this).height();
-    int w = dw.availableGeometry(this).width();
+    // FIXME: Qt does not seem to update QDesktopWidget::primaryScreen().
+    // After we change the primary screen with xrandr, Qt still returns the same value.
+    // I think it's a bug of Qt.
+    QDesktopWidget* desktop = qApp->desktop();
+    QRect workArea = desktop->availableGeometry(desktop->primaryScreen());
+    int h = workArea.height();
     int safeHeight = contentHeight > h ? h : contentHeight;
     int x, y;
 
     if (m_placement == "bottom-right")
     {
-        x = w - width() - m_spacing;
-        y = h - safeHeight  - m_spacing;
+        x = workArea.right() - width() - m_spacing;
+        y = workArea.bottom() - safeHeight  - m_spacing;
     }
     else if (m_placement == "bottom-left")
     {
-        x = dw.availableGeometry(this).x() + m_spacing;
-        y = h - safeHeight - m_spacing;
+        x = workArea.x() + m_spacing;
+        y = workArea.bottom() - safeHeight - m_spacing;
     }
     else if (m_placement == "top-right")
     {
-        x = w - width() - m_spacing;
-        y = dw.availableGeometry(this).y() + m_spacing;
+        x = workArea.right() - width() - m_spacing;
+        y = workArea.y() + m_spacing;
     }
     else if (m_placement == "top-left")
     {
-        
-        x = dw.availableGeometry(this).x() + m_spacing;
-        y = dw.availableGeometry(this).y() + m_spacing;
+        x = workArea.x() + m_spacing;
+        y = workArea.y() + m_spacing;
     }
     else
     {
-        x = w - width() - m_spacing;
-        y = h - safeHeight;
+        x = workArea.right() - width() - m_spacing;
+        y = workArea.bottom() - safeHeight;
     }
 
     move(x, y);
