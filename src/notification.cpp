@@ -30,16 +30,12 @@
 #include <QFile>
 #include <QDateTime>
 #include <QtDBus/QDBusArgument>
-
+#include <QtDebug>
 #include <XdgIcon>
+#include <KF5/KWindowSystem/KWindowSystem>
 
 #include "notification.h"
 #include "notificationwidgets.h"
-
-#include <QtDebug>
-// this *must* go last due Qt's moc
-#include <LXQt/XfitMan>
-
 
 #define ICONSIZE QSize(32, 32)
 
@@ -56,7 +52,7 @@ Notification::Notification(const QString &application,
     setupUi(this);
     setObjectName("Notification");
     setMouseTracking(true);
-    
+
     setMaximumWidth(parent->width());
     setMinimumWidth(parent->width());
 
@@ -266,7 +262,7 @@ void Notification::leaveEvent(QEvent * event)
 
 void Notification::mouseReleaseEvent(QMouseEvent * event)
 {
-//    qDebug() << "CLICKED" << event;
+    // qDebug() << "CLICKED" << event;
     QString appName;
     QString windowTitle;
 
@@ -276,11 +272,11 @@ void Notification::mouseReleaseEvent(QMouseEvent * event)
         return;
     }
 
-    foreach (Window i, LxQt::xfitMan().getClientList())
+    foreach (WId wid, KWindowSystem::windows())
     {
-        appName = LxQt::xfitMan().getApplicationName(i);
-        windowTitle = LxQt::xfitMan().getWindowTitle(i);
-        //qDebug() << "    " << i << "APPNAME" << appName << "TITLE" << windowTitle;
+        appName = KWindowInfo(wid, NET::WMName).name();
+        windowTitle = KWindowInfo(wid, NET::WMVisibleName).visibleName();
+        // qDebug() << "    " << i << "APPNAME" << appName << "TITLE" << windowTitle;
         if (appName.isEmpty())
         {
             QWidget::mouseReleaseEvent(event);
@@ -288,8 +284,8 @@ void Notification::mouseReleaseEvent(QMouseEvent * event)
         }
         if (appName == appLabel->text() || windowTitle == appLabel->text())
         {
-//            qDebug() << "         FOUND!";
-            LxQt::xfitMan().raiseWindow(i);
+            // qDebug() << "         FOUND!";
+            KWindowSystem::activateWindow(wid);
             closeButton_clicked();
             return;
         }
@@ -315,15 +311,7 @@ void NotificationTimer::pause()
         return;
 
     stop();
-#if QT_VERSION >= 0x040700
     m_intervalMsec = m_startTime.msecsTo(QDateTime());
-#else
-    QDate currentDate = QDate::currentDate();
-    QTime currentTime = QTime::currentTime();
-    qint64 MSECS_PER_DAY = 86400000;
-    m_intervalMsec = static_cast<qint64>(m_startTime.date().daysTo(currentDate)) * MSECS_PER_DAY
-               + static_cast<qint64>(m_startTime.time().msecsTo(currentTime));
-#endif
 }
 
 void NotificationTimer::resume()

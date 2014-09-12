@@ -1,12 +1,7 @@
 project(lxqt-config-notificationd)
 
-if(USE_QT5)
-    set(QTX_INCLUDE_DIRS "")
-    set(QTX_LIBRARIES Qt5::Widgets)
-else()
-    set(QTX_INCLUDE_DIRS ${QT_QTCORE_INCLUDE_DIR} ${QT_QTGUI_INCLUDE_DIR})
-    set(QTX_LIBRARIES ${QT_QTCORE_LIBRARY} ${QT_QTGUI_LIBRARY})
-endif()
+set(QTX_INCLUDE_DIRS "")
+set(QTX_LIBRARIES Qt5::Widgets)
 
 add_definitions(-DPROJECT_NAME=\"${PROJECT_NAME}\")
 
@@ -46,11 +41,7 @@ lxqt_translate_desktop(DESKTOP_FILES
 )
 #************************************************
 
-if(USE_QT5)
-    qt5_wrap_ui(NOTIFICATIONS_CONF_UI_CPP ${NOTIFICATIONS_CONF_UI})
-else()
-    qt4_wrap_ui(NOTIFICATIONS_CONF_UI_CPP ${NOTIFICATIONS_CONF_UI})
-endif()
+qt5_wrap_ui(NOTIFICATIONS_CONF_UI_CPP ${NOTIFICATIONS_CONF_UI})
 
 add_executable(${PROJECT_NAME} ${NOTIFICATIONS_CONF_SRC}
                                ${NOTIFICATIONS_CONF_UI_CPP}

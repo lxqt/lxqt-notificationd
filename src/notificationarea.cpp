@@ -30,6 +30,7 @@
 #include <LXQt/Settings>
 #include "notificationarea.h"
 
+#include <KF5/KWindowSystem/KWindowSystem>
 
 NotificationArea::NotificationArea(QWidget *parent)
     : QScrollArea(parent),
@@ -69,11 +70,7 @@ void NotificationArea::setHeight(int contentHeight)
         return;
     }
 
-    // FIXME: Qt does not seem to update QDesktopWidget::primaryScreen().
-    // After we change the primary screen with xrandr, Qt still returns the same value.
-    // I think it's a bug of Qt.
-    QDesktopWidget* desktop = qApp->desktop();
-    QRect workArea = desktop->availableGeometry(desktop->primaryScreen());
+    QRect workArea = KWindowSystem::workArea(KWindowSystem::currentDesktop());
     int h = workArea.height();
     int safeHeight = contentHeight > h ? h : contentHeight;
     int x, y;
@@ -119,6 +116,6 @@ void NotificationArea::setSettings(const QString &placement, int width, int spac
 
     m_spacing = spacing;
     m_layout->setSizes(m_spacing, width);
-        
+
     this->setHeight(widget()->height());
 }

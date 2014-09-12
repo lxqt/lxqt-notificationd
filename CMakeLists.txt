@@ -5,29 +5,17 @@ set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
 set(PROJECT lxqt-notificationd)
 project(${PROJECT})
 
-# Support different versions of Qt
-option(USE_QT5 "Build with Qt5." $ENV{USE_QT5})
-
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 set(CMAKE_AUTOMOC ON)
-if(USE_QT5)
-    cmake_minimum_required(VERSION 2.8.11)
-    find_package(Qt5Widgets REQUIRED QUIET)
-    find_package(Qt5DBus REQUIRED QUIET)
-    find_package(Qt5LinguistTools REQUIRED QUIET)
 
-    find_package(lxqt-qt5 REQUIRED QUIET)
-    find_package(qt5xdg REQUIRED)
-else()
-    set(QT_USE_QTDBUS 1)
-
-    find_package(Qt4 REQUIRED)
-    include(${QT_USE_FILE})
-
-    find_package(LXQT REQUIRED)
-    find_package(QTXDG REQUIRED)
-endif()
+cmake_minimum_required(VERSION 2.8.11)
+find_package(KF5WindowSystem REQUIRED)
+find_package(Qt5Widgets REQUIRED QUIET)
+find_package(Qt5DBus REQUIRED QUIET)
+find_package(Qt5LinguistTools REQUIRED QUIET)
+find_package(lxqt-qt5 REQUIRED QUIET)
+find_package(qt5xdg REQUIRED)
 
 include(${LXQT_USE_FILE})
 include(${QTXDG_USE_FILE})

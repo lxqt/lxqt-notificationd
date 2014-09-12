@@ -86,10 +86,10 @@ protected:
             - if there is one action or at least one default action, this
                default action is triggered on click.
                \see NotificationActionsWidget::hasDefaultAction()
-               \see NotificationActionsWidget::defaultAction() 
+               \see NotificationActionsWidget::defaultAction()
             - it tries to find caller window by
-                a) application name. \see XfitMan::getApplicationName()
-                b) window title. \see XfitMan::getWindowTitle()
+                a) application name. \see KWindowInfo::name()
+                b) window title. \see KWindowInfo::visibleName()
               if it can be found the window is raised and the notification is closed
             - leave notification as-is.
     */
