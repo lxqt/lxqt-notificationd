@@ -8,6 +8,8 @@ else()
     set(QTX_LIBRARIES ${QT_QTCORE_LIBRARY} ${QT_QTGUI_LIBRARY})
 endif()
 
+add_definitions(-DPROJECT_NAME=\"${PROJECT_NAME}\")
+
 include_directories (
     ${CMAKE_CURRENT_BINARY_DIR}
     ${CMAKE_CURRENT_SOURCE_DIR}
@@ -34,6 +36,8 @@ lxqt_translate_ts(NOTIFICATIONS_CONF_QM
         ${NOTIFICATIONS_CONF_MOC}
         ${NOTIFICATIONS_CONF_SRC}
         ${NOTIFICATIONS_CONF_UI}
+    INSTALLATION_DIR
+       ${LXQT_TRANSLATIONS_DIR}/${PROJECT_NAME}
 )
 
 lxqt_translate_desktop(DESKTOP_FILES
