@@ -56,7 +56,7 @@ Notification::Notification(const QString &application,
     setupUi(this);
     setObjectName("Notification");
     setMouseTracking(true);
-    
+
     setMaximumWidth(parent->width());
     setMinimumWidth(parent->width());
 
@@ -315,15 +315,7 @@ void NotificationTimer::pause()
         return;
 
     stop();
-#if QT_VERSION >= 0x040700
     m_intervalMsec = m_startTime.msecsTo(QDateTime());
-#else
-    QDate currentDate = QDate::currentDate();
-    QTime currentTime = QTime::currentTime();
-    qint64 MSECS_PER_DAY = 86400000;
-    m_intervalMsec = static_cast<qint64>(m_startTime.date().daysTo(currentDate)) * MSECS_PER_DAY
-               + static_cast<qint64>(m_startTime.time().msecsTo(currentTime));
-#endif
 }
 
 void NotificationTimer::resume()
