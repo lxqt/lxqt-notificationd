@@ -1,8 +1,8 @@
 /* BEGIN_COMMON_COPYRIGHT_HEADER
  * (c)LGPL2+
  *
- * LXDE-Qt - a lightweight, Qt based, desktop toolset
- * http://razor-qt.org
+ * LXQt - a lightweight, Qt based, desktop toolset
+ * http://lxqt.org
  *
  * Copyright: 2012 Razor team
  * Authors:
@@ -92,7 +92,7 @@ QString Notifyd::GetServerInformation(QString& vendor,
 {
     spec_version = QString("1.2");
     version = QString(LXQT_VERSION);
-    vendor = QString("lxde.org");
+    vendor = QString("lxqt.org");
     return QString("lxqt-notificationd");
 }
 
