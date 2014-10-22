@@ -37,14 +37,11 @@ lxqt_translate_ts(NOTIFICATIONS_QM_FILES SOURCES
 )
 #************************************************
 
-find_package(X11 REQUIRED)
-include_directories("${X11_INCLUDE_DIR}")
-
 add_executable(lxqt-notificationd
     ${NOTIFICATIONS_SRC}
     ${NOTIFICATIONS_UI_CPP}
     ${NOTIFICATIONS_QM_FILES}
 )
 
-target_link_libraries(lxqt-notificationd ${QTX_LIBRARIES} ${QTXDG_LIBRARIES} ${LXQT_LIBRARIES})
+target_link_libraries(lxqt-notificationd ${QTX_LIBRARIES} ${QTXDG_LIBRARIES} ${LXQT_LIBRARIES} KF5::WindowSystem)
 install(TARGETS lxqt-notificationd RUNTIME DESTINATION bin)

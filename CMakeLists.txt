@@ -12,6 +12,7 @@ set(CMAKE_AUTOMOC ON)
 find_package(Qt5Widgets REQUIRED QUIET)
 find_package(Qt5DBus REQUIRED QUIET)
 find_package(Qt5LinguistTools REQUIRED QUIET)
+find_package(KF5WindowSystem REQUIRED QUIET)
 
 find_package(lxqt-qt5 REQUIRED QUIET)
 find_package(qt5xdg REQUIRED)

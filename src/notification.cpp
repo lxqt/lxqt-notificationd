@@ -30,19 +30,14 @@
 #include <QFile>
 #include <QDateTime>
 #include <QtDBus/QDBusArgument>
-
+#include <QDebug>
 #include <XdgIcon>
+#include <KF5/KWindowSystem/KWindowSystem>
 
 #include "notification.h"
 #include "notificationwidgets.h"
 
-#include <QtDebug>
-// this *must* go last due Qt's moc
-#include <LXQt/XfitMan>
-
-
 #define ICONSIZE QSize(32, 32)
-
 
 Notification::Notification(const QString &application,
                            const QString &summary, const QString &body,
@@ -276,11 +271,12 @@ void Notification::mouseReleaseEvent(QMouseEvent * event)
         return;
     }
 
-    foreach (Window i, LxQt::xfitMan().getClientList())
+    foreach (WId i, KWindowSystem::stackingOrder())
     {
-        appName = LxQt::xfitMan().getApplicationName(i);
-        windowTitle = LxQt::xfitMan().getWindowTitle(i);
-        //qDebug() << "    " << i << "APPNAME" << appName << "TITLE" << windowTitle;
+        KWindowInfo info = KWindowInfo(i, NET::WMName | NET::WMVisibleName);
+        appName = info.name();
+        windowTitle = info.visibleName();
+        // qDebug() << "    " << i << "APPNAME" << appName << "TITLE" << windowTitle;
         if (appName.isEmpty())
         {
             QWidget::mouseReleaseEvent(event);
@@ -288,8 +284,7 @@ void Notification::mouseReleaseEvent(QMouseEvent * event)
         }
         if (appName == appLabel->text() || windowTitle == appLabel->text())
         {
-//            qDebug() << "         FOUND!";
-            LxQt::xfitMan().raiseWindow(i);
+            KWindowSystem::raiseWindow(i);
             closeButton_clicked();
             return;
         }
