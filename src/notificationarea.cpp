@@ -58,6 +58,7 @@ NotificationArea::NotificationArea(QWidget *parent)
     connect(m_layout, SIGNAL(allNotificationsClosed()), this, SLOT(close()));
     connect(m_layout, SIGNAL(notificationAvailable()), this, SLOT(show()));
     connect(m_layout, SIGNAL(heightChanged(int)), this, SLOT(setHeight(int)));
+    connect(qApp->desktop(), SIGNAL(workAreaResized(int)), SLOT(setHeight()));
 }
 
 void NotificationArea::setHeight(int contentHeight)
@@ -69,11 +70,14 @@ void NotificationArea::setHeight(int contentHeight)
         return;
     }
 
+    if (contentHeight == -1)
+        contentHeight = height();
+
     // FIXME: Qt does not seem to update QDesktopWidget::primaryScreen().
     // After we change the primary screen with xrandr, Qt still returns the same value.
     // I think it's a bug of Qt.
-    QDesktopWidget* desktop = qApp->desktop();
-    QRect workArea = desktop->availableGeometry(desktop->primaryScreen());
+    QRect workArea = qApp->desktop()->availableGeometry(qApp->desktop()->primaryScreen());
+
     int h = workArea.height();
     int safeHeight = contentHeight > h ? h : contentHeight;
     int x, y;
@@ -119,6 +123,6 @@ void NotificationArea::setSettings(const QString &placement, int width, int spac
 
     m_spacing = spacing;
     m_layout->setSizes(m_spacing, width);
-        
+
     this->setHeight(widget()->height());
 }

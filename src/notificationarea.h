@@ -64,7 +64,7 @@ private slots:
     /*! Recalculate widget size and visibility. Slot is called from \c Notificationlayout
      * on demand (notification appear or is closed).
      */
-    void setHeight(int contentHeight);
+    void setHeight(int contentHeight = -1);
 };
 
 #endif // NOTIFICATIONAREA_H
