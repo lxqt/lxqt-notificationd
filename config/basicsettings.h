@@ -44,8 +44,7 @@ public slots:
     void restoreSettings();
 
 private slots:
-    void save();
-    void testNotification();
+    void updateNotification();
 
 private:
     LxQt::Settings* mSettings;

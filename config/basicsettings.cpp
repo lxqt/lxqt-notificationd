@@ -39,12 +39,10 @@ BasicSettings::BasicSettings(LxQt::Settings* settings, QWidget *parent) :
 
     restoreSettings();
 
-    connect(topLeftButton, SIGNAL(clicked()), this, SLOT(save()));
-    connect(topRightButton, SIGNAL(clicked()), this, SLOT(save()));
-    connect(bottomRightButton, SIGNAL(clicked()), this, SLOT(save()));
-    connect(bottomLeftButton, SIGNAL(clicked()), this, SLOT(save()));
-
-    connect(testButton, SIGNAL(clicked()), this, SLOT(testNotification()));
+    connect(topLeftButton, SIGNAL(clicked()), this, SLOT(updateNotification()));
+    connect(topRightButton, SIGNAL(clicked()), this, SLOT(updateNotification()));
+    connect(bottomRightButton, SIGNAL(clicked()), this, SLOT(updateNotification()));
+    connect(bottomLeftButton, SIGNAL(clicked()), this, SLOT(updateNotification()));
 
     LxQt::Notification serverTest;
     QString serverName = serverTest.serverInfo().name;
@@ -60,7 +58,7 @@ BasicSettings::BasicSettings(LxQt::Settings* settings, QWidget *parent) :
         {
             warningLabel->setText(tr(
                 "<b>Warning:</b> A third-party notifications daemon (%1) is running.\n"
-                "These settings won't have an effect on it!"
+                "These settings won't have any effect on it!"
                 ).arg(serverName));
         }
     }
@@ -85,7 +83,7 @@ void BasicSettings::restoreSettings()
         bottomRightButton->setChecked(true);
 }
 
-void BasicSettings::save()
+void BasicSettings::updateNotification()
 {
     if (bottomRightButton->isChecked())
         mSettings->setValue("placement", "bottom-right");
@@ -95,12 +93,10 @@ void BasicSettings::save()
         mSettings->setValue("placement", "top-right");
     else if (topLeftButton->isChecked())
         mSettings->setValue("placement", "top-left");
-}
 
-void BasicSettings::testNotification()
-{
     LxQt::Notification::notify(//"lxqt-config-notificationd",
-                              tr("Notification Summary"),
-                              tr("Notification Body") + "\n\nLorem ipsum dolor sit amet...",
+                              tr("Notification demo"),
+                              tr("This is a test notification.\n"
+                                 "All notifications will now appear here on LXQt."),
                               "lxqt-logo.png");
 }

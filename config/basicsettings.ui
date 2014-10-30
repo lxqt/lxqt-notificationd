@@ -27,7 +27,7 @@
    <item row="1" column="0" colspan="2">
     <widget class="QGroupBox" name="groupBox">
      <property name="title">
-      <string>Display Notifications</string>
+      <string>Position on screen</string>
      </property>
      <layout class="QGridLayout" name="gridLayout">
       <item row="0" column="0">
@@ -59,13 +59,6 @@
        </widget>
       </item>
      </layout>
-    </widget>
-   </item>
-   <item row="2" column="1">
-    <widget class="QPushButton" name="testButton">
-     <property name="text">
-      <string>Test Notification</string>
-     </property>
     </widget>
    </item>
    <item row="3" column="1">
