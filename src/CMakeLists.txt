@@ -1,7 +1,6 @@
 set(QTX_INCLUDE_DIRS "")
 set(QTX_LIBRARIES Qt5::Widgets Qt5::DBus)
 
-add_definitions(-DPROJECT_NAME=\"${PROJECT_NAME}\")
 
 include_directories(
     "${CMAKE_CURRENT_SOURCE_DIR}"
@@ -29,18 +28,21 @@ qt5_add_dbus_adaptor(NOTIFICATIONS_SRC
 )
 
 # Translations **********************************
-include(LxQtTranslate)
 lxqt_translate_ts(NOTIFICATIONS_QM_FILES SOURCES
+    UPDATE_TRANSLATIONS ${UPDATE_TRANSLATIONS}
     ${NOTIFICATIONS_SRC}
     ${NOTIFICATIONS_UI}
-    INSTALLATION_DIRECTORY "${LXQT_TRANSLATIONS_DIR}/${PROJECT_NAME}"
+    INSTALL_DIR "${LXQT_TRANSLATIONS_DIR}/${PROJECT_NAME}"
 )
+
+lxqt_app_translation_loader(QM_LOADER ${PROJECT_NAME})
 #************************************************
 
 add_executable(lxqt-notificationd
     ${NOTIFICATIONS_SRC}
     ${NOTIFICATIONS_UI_CPP}
     ${NOTIFICATIONS_QM_FILES}
+    ${QM_LOADER}
 )
 
 target_link_libraries(lxqt-notificationd ${QTX_LIBRARIES} ${QTXDG_LIBRARIES} ${LXQT_LIBRARIES} KF5::WindowSystem)

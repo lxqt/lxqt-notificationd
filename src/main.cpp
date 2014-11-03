@@ -29,7 +29,6 @@
 #include <QtDBus/QDBusConnection>
 
 #include <LXQt/Application>
-#include <LXQt/Translator>
 
 #include "notificationsadaptor.h"
 #include "notifyd.h"
@@ -67,7 +66,6 @@
 int main(int argc, char** argv)
 {
     LxQt::Application a(argc, argv);
-    LxQt::Translator::translateApplication(QLatin1String(PROJECT_NAME));
 
     a.setQuitOnLastWindowClosed(false);
 

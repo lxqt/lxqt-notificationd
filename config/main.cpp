@@ -29,7 +29,6 @@
 
 #include <XdgIcon>
 #include <LXQt/Settings>
-#include <LXQt/Translator>
 
 #include "mainwindow.h"
 
@@ -38,7 +37,6 @@ int main(int argc, char** argv)
 {
     // TODO/FIXME: maybe singleapp?
     LxQt::Application a(argc, argv);
-    LxQt::Translator::translateApplication(QLatin1String(PROJECT_NAME));
 
     MainWindow w;
     w.show();

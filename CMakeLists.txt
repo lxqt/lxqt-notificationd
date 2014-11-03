@@ -2,8 +2,7 @@ cmake_minimum_required(VERSION 2.8.11)
 
 project(lxqt-notificationd)
 
-# additional cmake files
-set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
+option(UPDATE_TRANSLATIONS "Update source translation translations/*.ts files" OFF)
 
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 set(CMAKE_POSITION_INDEPENDENT_CODE ON)
@@ -19,6 +18,8 @@ find_package(qt5xdg REQUIRED)
 
 include(${LXQT_USE_FILE})
 include(${QTXDG_USE_FILE})
+
+include(LXQtTranslate)
 
 add_subdirectory(src)
 add_subdirectory(config)
