@@ -1,11 +1,6 @@
-set(QTX_INCLUDE_DIRS "")
-set(QTX_LIBRARIES Qt5::Widgets Qt5::DBus)
-
-
 include_directories(
     "${CMAKE_CURRENT_SOURCE_DIR}"
     "${CMAKE_CURRENT_BINARY_DIR}"
-    ${QTX_INCLUDE_DIRS}
 )
 
 set(NOTIFICATIONS_SRC
@@ -45,5 +40,12 @@ add_executable(lxqt-notificationd
     ${QM_LOADER}
 )
 
-target_link_libraries(lxqt-notificationd ${QTX_LIBRARIES} ${QTXDG_LIBRARIES} ${LXQT_LIBRARIES} KF5::WindowSystem)
+target_link_libraries(lxqt-notificationd
+    Qt5::Widgets
+    Qt5::DBus
+    ${QTXDG_LIBRARIES}
+    ${LXQT_LIBRARIES}
+    KF5::WindowSystem
+)
+
 install(TARGETS lxqt-notificationd RUNTIME DESTINATION bin)

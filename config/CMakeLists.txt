@@ -1,13 +1,8 @@
 project(lxqt-config-notificationd)
 
-set(QTX_INCLUDE_DIRS "")
-set(QTX_LIBRARIES Qt5::Widgets)
-
-
 include_directories (
     "${CMAKE_CURRENT_BINARY_DIR}"
     "${CMAKE_CURRENT_SOURCE_DIR}"
-    ${QTX_INCLUDE_DIRS}
 )
 
 set(NOTIFICATIONS_CONF_SRC
@@ -46,7 +41,7 @@ add_executable(${PROJECT_NAME}
     ${QM_LOADER}
 )
 
-target_link_libraries(${PROJECT_NAME} ${QTX_LIBRARIES} ${LXQT_LIBRARIES})
+target_link_libraries(${PROJECT_NAME} Qt5::Widgets ${LXQT_LIBRARIES})
 
 install(TARGETS ${PROJECT_NAME} RUNTIME DESTINATION bin)
 install(FILES ${DESKTOP_FILES} DESTINATION "${CMAKE_INSTALL_PREFIX}/share/applications")
