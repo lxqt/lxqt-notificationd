@@ -25,7 +25,7 @@
  *
  * END_COMMON_COPYRIGHT_HEADER */
 
-#include <LXQt/Application>
+#include <LXQt/SingleApplication>
 
 #include <XdgIcon>
 #include <LXQt/Settings>
@@ -35,10 +35,10 @@
 
 int main(int argc, char** argv)
 {
-    // TODO/FIXME: maybe singleapp?
-    LxQt::Application a(argc, argv);
+    LxQt::SingleApplication a(argc, argv);
 
     MainWindow w;
+    a.setActivationWindow(&w);
     w.show();
 
     return a.exec();

@@ -41,7 +41,11 @@ add_executable(${PROJECT_NAME}
     ${QM_LOADER}
 )
 
-target_link_libraries(${PROJECT_NAME} Qt5::Widgets ${LXQT_LIBRARIES})
+target_link_libraries(${PROJECT_NAME}
+    KF5::WindowSystem
+    Qt5::Widgets
+    ${LXQT_LIBRARIES}
+)
 
 install(TARGETS ${PROJECT_NAME} RUNTIME DESTINATION bin)
 install(FILES ${DESKTOP_FILES} DESTINATION "${CMAKE_INSTALL_PREFIX}/share/applications")
