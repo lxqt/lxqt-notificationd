@@ -38,6 +38,7 @@ int main(int argc, char** argv)
     LxQt::SingleApplication a(argc, argv);
 
     MainWindow w;
+    w.setWindowIcon(QIcon::fromTheme("preferences-desktop-theme"));
     a.setActivationWindow(&w);
     w.show();
 
