@@ -13,7 +13,7 @@ find_package(Qt5DBus REQUIRED QUIET)
 find_package(Qt5LinguistTools REQUIRED QUIET)
 find_package(KF5WindowSystem REQUIRED QUIET)
 
-find_package(lxqt-qt5 REQUIRED QUIET)
+find_package(lxqt REQUIRED QUIET)
 find_package(qt5xdg REQUIRED)
 
 include(${LXQT_USE_FILE})
