@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# reqrired: notify-send app installed (part of libnotify, or libnotify-tools)
+# required: notify-send app installed (part of libnotify, or libnotify-tools)
 #
 
 
