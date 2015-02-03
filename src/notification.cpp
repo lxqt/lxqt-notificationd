@@ -32,7 +32,7 @@
 #include <QtDBus/QDBusArgument>
 #include <QDebug>
 #include <XdgIcon>
-#include <KF5/KWindowSystem/KWindowSystem>
+#include <KWindowSystem/KWindowSystem>
 
 #include "notification.h"
 #include "notificationwidgets.h"
