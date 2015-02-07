@@ -17,7 +17,7 @@
     </message>
     <message>
         <source>&quot;Server Decides&quot; Time:</source>
-        <translation>&quot;Server entscheidet&quot;-Zeit:</translation>
+        <translation>Vom Server bestimmte Zeit:</translation>
     </message>
     <message>
         <source> sec</source>
@@ -68,7 +68,7 @@
     </message>
     <message>
         <source>Test Notification</source>
-        <translation>Benachrichtigungstest</translation>
+        <translation>Testbenachrichtigung</translation>
     </message>
     <message>
         <source>&lt;b&gt;Warning:&lt;/b&gt; No notifications daemon is running.

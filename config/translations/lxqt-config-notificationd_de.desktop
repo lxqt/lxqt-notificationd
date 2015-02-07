@@ -1,3 +1,4 @@
 # Translations
-GenericName[de]=LxQt Konfigurations Center
-Name[de]=LxQt Konfiguration
+Name[de]=Mitteilungen der Arbeitsfläche
+GenericName[de]=LxQt Mitteilungseinstellungen
+Comment[de]=Konfiguration von Benachrichtigungen
