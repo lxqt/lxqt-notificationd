@@ -231,7 +231,14 @@ QPixmap Notification::getPixmapFromHint(const QVariant &argument) const
     arg >> channels;
     arg >> data;
     arg.endStructure();
-    QImage img = QImage((uchar*)data.constData(), width, height, QImage::Format_ARGB32).rgbSwapped();
+
+    bool rgb = !hasAlpha && channels == 3 && bitsPerSample == 8;
+    QImage::Format imageFormat = rgb ? QImage::Format_RGB888 : QImage::Format_ARGB32;
+
+    QImage img = QImage((uchar*)data.constData(), width, height, imageFormat);
+
+    if (!rgb)
+        img = img.rgbSwapped();
 
     return QPixmap::fromImage(img);
 }
