@@ -92,6 +92,9 @@
           <property name="suffix">
            <string> sec</string>
           </property>
+          <property name="maximum">
+           <number>7200</number>
+          </property>
          </widget>
         </item>
        </layout>
