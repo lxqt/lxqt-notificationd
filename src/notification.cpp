@@ -123,7 +123,11 @@ void Notification::setValues(const QString &application,
 
     // body
     bodyLabel->setVisible(!body.isEmpty());
-    bodyLabel->setText(body);
+    //https://developer.gnome.org/notification-spec
+    //Body - This is a multi-line body of text. Each line is a paragraph, server implementations are free to word wrap them as they see fit.
+    //XXX: remove all unsupported tags?!? (supported <b>, <i>, <u>, <a>, <img>)
+    QString formatted(body);
+    bodyLabel->setText(formatted.replace('\n', QStringLiteral("<br/>")));
 
     // Timeout
     // Special values:
