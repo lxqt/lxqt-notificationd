@@ -78,38 +78,44 @@ void NotificationArea::setHeight(int contentHeight)
     // I think it's a bug of Qt.
     QRect workArea = qApp->desktop()->availableGeometry(qApp->desktop()->primaryScreen());
 
-    int h = workArea.height();
-    int safeHeight = contentHeight > h ? h : contentHeight;
-    int x, y;
+    workArea -= QMargins(m_spacing, m_spacing, m_spacing, m_spacing);
+    QRect notif_rect = workArea.normalized();
+    notif_rect.setWidth(width());
+    if (notif_rect.height() > contentHeight)
+        notif_rect.setHeight(contentHeight);
 
-    if (m_placement == "bottom-right")
+    // no move needed for "top-left"
+    if ("top-center" == m_placement)
     {
-        x = workArea.right() - width() - m_spacing;
-        y = workArea.bottom() - safeHeight  - m_spacing;
-    }
-    else if (m_placement == "bottom-left")
+        notif_rect.moveCenter(workArea.center());
+        notif_rect.moveTop(workArea.top());
+    } else if ("top-right" == m_placement)
     {
-        x = workArea.x() + m_spacing;
-        y = workArea.bottom() - safeHeight - m_spacing;
-    }
-    else if (m_placement == "top-right")
+        notif_rect.moveRight(workArea.right());
+    } else if ("center-left" == m_placement)
     {
-        x = workArea.right() - width() - m_spacing;
-        y = workArea.y() + m_spacing;
-    }
-    else if (m_placement == "top-left")
+        notif_rect.moveCenter(workArea.center());
+        notif_rect.moveLeft(workArea.left());
+    } else if ("center-center" == m_placement)
     {
-        x = workArea.x() + m_spacing;
-        y = workArea.y() + m_spacing;
-    }
-    else
+        notif_rect.moveCenter(workArea.center());
+    } else if ("center-right" == m_placement)
     {
-        x = workArea.right() - width() - m_spacing;
-        y = workArea.bottom() - safeHeight;
+        notif_rect.moveCenter(workArea.center());
+        notif_rect.moveRight(workArea.right());
+    } else if ("bottom-left" == m_placement)
+    {
+        notif_rect.moveBottom(workArea.bottom());
+    } else if ("bottom-center" == m_placement)
+    {
+        notif_rect.moveCenter(workArea.center());
+        notif_rect.moveBottom(workArea.bottom());
+    } else if ("bottom-right" == m_placement)
+    {
+        notif_rect.moveBottomRight(workArea.bottomRight());
     }
 
-    move(x, y);
-    resize(width(), safeHeight);
+    setGeometry(notif_rect);
     // always show the latest notification
     ensureVisible(0, contentHeight, 0, 0);
 }

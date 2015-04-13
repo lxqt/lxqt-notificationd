@@ -29,33 +29,65 @@
      <property name="title">
       <string>Position on screen</string>
      </property>
-     <layout class="QGridLayout" name="gridLayout">
-      <item row="0" column="0">
-       <widget class="QRadioButton" name="topLeftButton">
-        <property name="text">
-         <string>Top/Left</string>
+     <layout class="QHBoxLayout" name="posLayout">
+      <item column="0">
+       <widget class="QGroupBox" name="groupBoxVertical">
+        <property name="title">
+         <string>Vertical</string>
         </property>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="QRadioButton" name="topButton">
+           <property name="text">
+            <string>Top</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="verCenterButton">
+           <property name="text">
+            <string>Center</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="bottomButton">
+           <property name="text">
+            <string>Bottom</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
        </widget>
       </item>
-      <item row="0" column="1">
-       <widget class="QRadioButton" name="topRightButton">
-        <property name="text">
-         <string>Top/Right</string>
+      <item column="1">
+       <widget class="QGroupBox" name="groupBoxHorizontal">
+        <property name="title">
+         <string>Horizontal</string>
         </property>
-       </widget>
-      </item>
-      <item row="1" column="0">
-       <widget class="QRadioButton" name="bottomLeftButton">
-        <property name="text">
-         <string>Bottom/Left</string>
-        </property>
-       </widget>
-      </item>
-      <item row="1" column="1">
-       <widget class="QRadioButton" name="bottomRightButton">
-        <property name="text">
-         <string>Bottom/Right</string>
-        </property>
+        <layout class="QVBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QRadioButton" name="leftButton">
+           <property name="text">
+            <string>Left</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="horCenterButton">
+           <property name="text">
+            <string>Center</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="rightButton">
+           <property name="text">
+            <string>Right</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
        </widget>
       </item>
      </layout>

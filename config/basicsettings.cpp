@@ -39,10 +39,12 @@ BasicSettings::BasicSettings(LxQt::Settings* settings, QWidget *parent) :
 
     restoreSettings();
 
-    connect(topLeftButton, SIGNAL(clicked()), this, SLOT(updateNotification()));
-    connect(topRightButton, SIGNAL(clicked()), this, SLOT(updateNotification()));
-    connect(bottomRightButton, SIGNAL(clicked()), this, SLOT(updateNotification()));
-    connect(bottomLeftButton, SIGNAL(clicked()), this, SLOT(updateNotification()));
+    connect(topButton, SIGNAL(clicked()), this, SLOT(updateNotification()));
+    connect(verCenterButton, SIGNAL(clicked()), this, SLOT(updateNotification()));
+    connect(bottomButton, SIGNAL(clicked()), this, SLOT(updateNotification()));
+    connect(leftButton, SIGNAL(clicked()), this, SLOT(updateNotification()));
+    connect(horCenterButton, SIGNAL(clicked()), this, SLOT(updateNotification()));
+    connect(rightButton, SIGNAL(clicked()), this, SLOT(updateNotification()));
 
     LxQt::Notification serverTest;
     QString serverName = serverTest.serverInfo().name;
@@ -71,28 +73,54 @@ BasicSettings::~BasicSettings()
 void BasicSettings::restoreSettings()
 {
     QString placement = mSettings->value("placement", "bottom-right").toString().toLower();
-    if (placement == "bottom-right")
-        bottomRightButton->setChecked(true);
-    else if (placement == "bottom-left")
-        bottomLeftButton->setChecked(true);
-    else if (placement == "top-right")
-        topRightButton->setChecked(true);
-    else if (placement == "top-left")
-        topLeftButton->setChecked(true);
-    else
-        bottomRightButton->setChecked(true);
+
+    if ("top-left" == placement)
+    {
+        topButton->setChecked(true);
+        leftButton->setChecked(true);
+    } else if ("top-center" == placement)
+    {
+        topButton->setChecked(true);
+        horCenterButton->setChecked(true);
+    } else if ("top-right" == placement)
+    {
+        topButton->setChecked(true);
+        rightButton->setChecked(true);
+    } else if ("center-left" == placement)
+    {
+        verCenterButton->setChecked(true);
+        leftButton->setChecked(true);
+    } else if ("center-center" == placement)
+    {
+        verCenterButton->setChecked(true);
+        horCenterButton->setChecked(true);
+    }
+    if ("center-right" == placement)
+    {
+        verCenterButton->setChecked(true);
+        rightButton->setChecked(true);
+    } else if ("bottom-left" == placement)
+    {
+        bottomButton->setChecked(true);
+        leftButton->setChecked(true);
+    } else if ("bottom-center" == placement)
+    {
+        bottomButton->setChecked(true);
+        horCenterButton->setChecked(true);
+    }
+    if ("bottom-right" == placement)
+    {
+        bottomButton->setChecked(true);
+        rightButton->setChecked(true);
+    }
 }
 
 void BasicSettings::updateNotification()
 {
-    if (bottomRightButton->isChecked())
-        mSettings->setValue("placement", "bottom-right");
-    else if (bottomLeftButton->isChecked())
-        mSettings->setValue("placement", "bottom-left");
-    else if (topRightButton->isChecked())
-        mSettings->setValue("placement", "top-right");
-    else if (topLeftButton->isChecked())
-        mSettings->setValue("placement", "top-left");
+    QString align(topButton->isChecked() ? "top" : (verCenterButton->isChecked() ? "center" : "bottom"));
+    align += '-';
+    align += (leftButton->isChecked() ? "left" : (horCenterButton->isChecked() ? "center" : "right"));
+    mSettings->setValue("placement", align);
 
     LxQt::Notification::notify(//"lxqt-config-notificationd",
                               tr("Notification demo"),
