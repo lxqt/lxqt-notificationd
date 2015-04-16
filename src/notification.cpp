@@ -109,20 +109,22 @@ void Notification::setValues(const QString &application,
         iconLabel->setPixmap(m_pixmap);
         iconLabel->show();
     }
+    //XXX: workaround to properly set text labels widths (for correct sizeHints after setText)
+    adjustSize();
 
     // application
-	appLabel->setVisible(!application.isEmpty());
+    appLabel->setVisible(!application.isEmpty());
+    appLabel->setFixedWidth(appLabel->width());
     appLabel->setText(application);
 
     // summary
-    summaryLabel->setVisible(!summary.isEmpty());
+    summaryLabel->setVisible(!summary.isEmpty() && application != summary);
+    summaryLabel->setFixedWidth(summaryLabel->width());
     summaryLabel->setText(summary);
-
-    if (application == summary)
-        summaryLabel->setVisible(false);
 
     // body
     bodyLabel->setVisible(!body.isEmpty());
+    bodyLabel->setFixedWidth(bodyLabel->width());
     //https://developer.gnome.org/notification-spec
     //Body - This is a multi-line body of text. Each line is a paragraph, server implementations are free to word wrap them as they see fit.
     //XXX: remove all unsupported tags?!? (supported <b>, <i>, <u>, <a>, <img>)
