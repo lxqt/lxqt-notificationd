@@ -316,7 +316,7 @@ void NotificationTimer::pause()
         return;
 
     stop();
-    m_intervalMsec = m_startTime.msecsTo(QDateTime());
+    m_intervalMsec = m_startTime.msecsTo(QDateTime::currentDateTime());
 }
 
 void NotificationTimer::resume()
