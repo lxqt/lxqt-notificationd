@@ -23,8 +23,9 @@ qt5_add_dbus_adaptor(NOTIFICATIONS_SRC
 )
 
 # Translations **********************************
-lxqt_translate_ts(NOTIFICATIONS_QM_FILES SOURCES
+lxqt_translate_ts(NOTIFICATIONS_QM_FILES
     UPDATE_TRANSLATIONS ${UPDATE_TRANSLATIONS}
+    SOURCES
     ${NOTIFICATIONS_SRC}
     ${NOTIFICATIONS_UI}
     INSTALL_DIR "${LXQT_TRANSLATIONS_DIR}/${PROJECT_NAME}"
