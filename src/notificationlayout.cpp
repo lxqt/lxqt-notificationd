@@ -41,7 +41,7 @@ NotificationLayout::NotificationLayout(QWidget *parent)
     setPalette(palette);
     // Required to display wallpaper
     setAttribute(Qt::WA_TranslucentBackground);
-    
+
     // Make the window stay on top
     setWindowFlags(windowFlags() | Qt::WindowStaysOnTopHint);
 

@@ -74,7 +74,7 @@ int main(int argc, char** argv)
                 "NotificationArea {background: transparent;}"
                 "NotificationLayout {background: transparent;}"
                    );
-    
+
     Notifyd* daemon = new Notifyd();
     new NotificationsAdaptor(daemon);
 
