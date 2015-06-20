@@ -84,6 +84,5 @@ int main(int argc, char** argv)
     if (!connection.registerObject("/org/freedesktop/Notifications", daemon))
         qDebug() << "registerObject failed: another object with '/org/freedesktop/Notifications' runs already";
 
-
     return a.exec();
-
+}
