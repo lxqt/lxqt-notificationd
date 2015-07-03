@@ -45,7 +45,7 @@ add_executable(${PROJECT_NAME}
 target_link_libraries(${PROJECT_NAME}
     KF5::WindowSystem
     Qt5::Widgets
-    ${LXQT_LIBRARIES}
+    lxqt
 )
 
 install(TARGETS ${PROJECT_NAME} RUNTIME DESTINATION bin)

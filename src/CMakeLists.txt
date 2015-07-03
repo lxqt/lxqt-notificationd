@@ -44,8 +44,7 @@ add_executable(lxqt-notificationd
 target_link_libraries(lxqt-notificationd
     Qt5::Widgets
     Qt5::DBus
-    ${QTXDG_LIBRARIES}
-    ${LXQT_LIBRARIES}
+    lxqt
     KF5::WindowSystem
 )
 

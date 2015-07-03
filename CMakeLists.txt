@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.8.11)
+cmake_minimum_required(VERSION 3.0.2 FATAL_ERROR)
 
 project(lxqt-notificationd)
 
@@ -14,10 +14,6 @@ find_package(Qt5LinguistTools REQUIRED QUIET)
 find_package(KF5WindowSystem REQUIRED QUIET)
 
 find_package(lxqt REQUIRED QUIET)
-find_package(qt5xdg REQUIRED)
-
-include(${LXQT_USE_FILE})
-include(${QTXDG_USE_FILE})
 
 include(LXQtTranslate)
 
