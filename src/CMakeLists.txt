@@ -41,4 +41,7 @@ target_link_libraries(lxqt-notificationd
     KF5::WindowSystem
 )
 
-install(TARGETS lxqt-notificationd RUNTIME DESTINATION "${CMAKE_INSTALL_BINDIR}")
+install(TARGETS
+    lxqt-notificationd
+    RUNTIME DESTINATION "${CMAKE_INSTALL_BINDIR}"
+)
