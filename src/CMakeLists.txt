@@ -11,7 +11,6 @@ set(NOTIFICATIONS_UI
     notification.ui
 )
 
-qt5_wrap_ui(NOTIFICATIONS_UI_CPP ${NOTIFICATIONS_UI})
 qt5_add_dbus_adaptor(NOTIFICATIONS_SRC
     org.freedesktop.Notifications.xml
     notifyd.h Notifyd
@@ -31,7 +30,6 @@ lxqt_app_translation_loader(QM_LOADER ${PROJECT_NAME})
 
 add_executable(lxqt-notificationd
     ${NOTIFICATIONS_SRC}
-    ${NOTIFICATIONS_UI_CPP}
     ${NOTIFICATIONS_QM_FILES}
     ${QM_LOADER}
 )

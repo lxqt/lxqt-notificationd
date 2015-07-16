@@ -27,11 +27,9 @@ lxqt_app_translation_loader(QM_LOADER ${PROJECT_NAME})
 lxqt_translate_desktop(DESKTOP_FILES SOURCES lxqt-config-notificationd.desktop.in)
 #************************************************
 
-qt5_wrap_ui(NOTIFICATIONS_CONF_UI_CPP ${NOTIFICATIONS_CONF_UI})
 
 add_executable(${PROJECT_NAME}
     ${NOTIFICATIONS_CONF_SRC}
-    ${NOTIFICATIONS_CONF_UI_CPP}
     ${NOTIFICATIONS_CONF_QM}
     ${DESKTOP_FILES}
     ${QM_LOADER}
