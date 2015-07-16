@@ -44,4 +44,5 @@ target_link_libraries(lxqt-notificationd
 install(TARGETS
     lxqt-notificationd
     RUNTIME DESTINATION "${CMAKE_INSTALL_BINDIR}"
+    COMPONENT Runtime
 )
