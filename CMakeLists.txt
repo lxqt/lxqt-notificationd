@@ -16,6 +16,7 @@ find_package(KF5WindowSystem REQUIRED QUIET)
 
 find_package(lxqt REQUIRED QUIET)
 
+include(GNUInstallDirs)
 include(LXQtTranslate)
 
 add_subdirectory(src)
