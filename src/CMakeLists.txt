@@ -1,8 +1,3 @@
-include_directories(
-    "${CMAKE_CURRENT_SOURCE_DIR}"
-    "${CMAKE_CURRENT_BINARY_DIR}"
-)
-
 set(NOTIFICATIONS_SRC
     main.cpp
     notificationarea.cpp
