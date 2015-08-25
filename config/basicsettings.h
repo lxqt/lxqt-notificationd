@@ -37,7 +37,7 @@ class BasicSettings : public QWidget, public Ui::BasicSettings
 {
     Q_OBJECT
 public:
-    explicit BasicSettings(LxQt::Settings* settings, QWidget* parent = 0);
+    explicit BasicSettings(LXQt::Settings* settings, QWidget* parent = 0);
     ~BasicSettings();
 
 public slots:
@@ -47,7 +47,7 @@ private slots:
     void updateNotification();
 
 private:
-    LxQt::Settings* mSettings;
+    LXQt::Settings* mSettings;
 };
 
 #endif // BASICSETTINGS_H

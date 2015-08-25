@@ -31,7 +31,7 @@
 #include "mainwindow.h"
 
 
-AdvancedSettings::AdvancedSettings(LxQt::Settings* settings, QWidget *parent):
+AdvancedSettings::AdvancedSettings(LXQt::Settings* settings, QWidget *parent):
     QWidget(parent),
     mSettings(settings)
 {

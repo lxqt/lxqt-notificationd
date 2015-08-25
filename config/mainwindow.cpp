@@ -37,7 +37,7 @@
 
 
 MainWindow::MainWindow(QWidget *parent) :
-    LxQt::ConfigDialog(tr("Desktop Notifications"), new LxQt::Settings("notifications"), parent)
+    LXQt::ConfigDialog(tr("Desktop Notifications"), new LXQt::Settings("notifications"), parent)
 {
     BasicSettings* basic = new BasicSettings(mSettings, this);
     addPage(basic, tr("Basic Settings"), "preferences-desktop-notification");

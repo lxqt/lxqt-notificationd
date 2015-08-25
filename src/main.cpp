@@ -65,7 +65,7 @@
  */
 int main(int argc, char** argv)
 {
-    LxQt::Application a(argc, argv);
+    LXQt::Application a(argc, argv);
 
     a.setQuitOnLastWindowClosed(false);
 

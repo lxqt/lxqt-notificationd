@@ -129,7 +129,7 @@ private:
     NotificationArea *m_area;
     int m_serverTimeout;
 
-    LxQt::Settings *m_settings;
+    LXQt::Settings *m_settings;
 
 private slots:
     void reloadSettings();

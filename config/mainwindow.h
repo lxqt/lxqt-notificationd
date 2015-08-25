@@ -31,7 +31,7 @@
 #include <LXQt/ConfigDialog>
 
 
-class MainWindow : public LxQt::ConfigDialog
+class MainWindow : public LXQt::ConfigDialog
 {
     Q_OBJECT
 

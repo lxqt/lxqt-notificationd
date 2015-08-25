@@ -31,7 +31,7 @@
 #include "mainwindow.h"
 
 
-BasicSettings::BasicSettings(LxQt::Settings* settings, QWidget *parent) :
+BasicSettings::BasicSettings(LXQt::Settings* settings, QWidget *parent) :
     QWidget(parent),
     mSettings(settings)
 {
@@ -49,7 +49,7 @@ BasicSettings::BasicSettings(LxQt::Settings* settings, QWidget *parent) :
     connect(bottomCenterRB, SIGNAL(clicked()), this, SLOT(updateNotification()));
     connect(bottomRightRB,  SIGNAL(clicked()), this, SLOT(updateNotification()));
 
-    LxQt::Notification serverTest;
+    LXQt::Notification serverTest;
     QString serverName = serverTest.serverInfo().name;
     if (serverName != "lxqt-notificationd")
     {
@@ -114,7 +114,7 @@ void BasicSettings::updateNotification()
         align = QStringLiteral("bottom-right");
 
     mSettings->setValue(QStringLiteral("placement"), align);
-    LxQt::Notification::notify(tr("Notification demo ") + align,
+    LXQt::Notification::notify(tr("Notification demo ") + align,
                                tr("This is a test notification.\n All notifications will now appear here on LXQt."),
                                QStringLiteral("lxqt-logo.png"));
 }

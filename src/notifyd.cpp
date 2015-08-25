@@ -40,7 +40,7 @@ Notifyd::Notifyd(QObject* parent)
       mId(0)
 {
     m_area = new NotificationArea();
-    m_settings = new LxQt::Settings("notifications");
+    m_settings = new LXQt::Settings("notifications");
     reloadSettings();
 
     connect(this, SIGNAL(notificationAdded(uint,QString,QString,QString,QString,int,QStringList,QVariantMap)),
