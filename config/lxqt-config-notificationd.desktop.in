@@ -6,6 +6,6 @@ Comment=Configure desktop notifications
 Exec=lxqt-config-notificationd
 Icon=preferences-desktop-theme
 Categories=Settings;DesktopSettings;Qt;LXQt;
-OnlyShowIn=LXQt;LXDE;
+OnlyShowIn=LXQt;
 
 #TRANSLATIONS_DIR=translations
