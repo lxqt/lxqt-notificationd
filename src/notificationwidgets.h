@@ -65,7 +65,7 @@ signals:
 
 protected:
     QString m_defaultAction;
-    QHash<QString,QString> m_actionMap;
+    QList<QPair<QString/*action key*/, QString/*action value*/>> m_actions;
 };
 
 class NotificationActionsButtonsWidget : public NotificationActionsWidget
