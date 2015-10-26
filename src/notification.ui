@@ -81,9 +81,6 @@
        <property name="text">
         <string notr="true">TextLabel</string>
        </property>
-       <property name="textFormat">
-        <enum>Qt::RichText</enum>
-       </property>
        <property name="wordWrap">
         <bool>false</bool>
        </property>
@@ -93,9 +90,6 @@
       <widget class="QLabel" name="summaryLabel">
        <property name="text">
         <string notr="true">TextLabel</string>
-       </property>
-       <property name="textFormat">
-        <enum>Qt::RichText</enum>
        </property>
        <property name="wordWrap">
         <bool>true</bool>
@@ -112,9 +106,6 @@
        </property>
        <property name="text">
         <string notr="true">TextLabel</string>
-       </property>
-       <property name="textFormat">
-        <enum>Qt::RichText</enum>
        </property>
        <property name="alignment">
         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
