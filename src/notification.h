@@ -99,6 +99,7 @@ private:
     NotificationTimer *m_timer;
 
     QPixmap m_pixmap;
+    bool m_linkHovered;
 
     NotificationActionsWidget *m_actionWidget;
 
@@ -106,9 +107,11 @@ private:
     void paintEvent(QPaintEvent *);
     QPixmap getPixmapFromHint(const QVariant &argument) const;
     QPixmap getPixmapFromString(const QString &str) const;
+    bool eventFilter(QObject *obj, QEvent *event);
 
 private slots:
     void closeButton_clicked();
+    void linkHovered(QString);
 };
 
 
