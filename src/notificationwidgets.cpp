@@ -82,8 +82,8 @@ NotificationActionsButtonsWidget::NotificationActionsButtonsWidget(const QString
         if (action.first == m_defaultAction)
             b->setFocus(Qt::OtherFocusReason);
     }
-    connect(group, SIGNAL(buttonClicked(QAbstractButton*)),
-            this, SLOT(actionButtonActivated(QAbstractButton*)));
+    connect(group, static_cast<void (QButtonGroup::*)(QAbstractButton*)>(&QButtonGroup::buttonClicked),
+            this, &NotificationActionsButtonsWidget::actionButtonActivated);
 }
 
 void NotificationActionsButtonsWidget::actionButtonActivated(QAbstractButton* button)
@@ -119,8 +119,8 @@ NotificationActionsComboWidget::NotificationActionsComboWidget(const QStringList
 
     QPushButton *b = new QPushButton(tr("OK"), this);
     l->addWidget(b);
-    connect(b, SIGNAL(clicked()),
-            this, SLOT(actionComboBoxActivated()));
+    connect(b, &QPushButton::clicked,
+            this, &NotificationActionsComboWidget::actionComboBoxActivated);
 }
 
 void NotificationActionsComboWidget::actionComboBoxActivated()

@@ -34,6 +34,7 @@
 #include <XdgIcon>
 #include <KWindowSystem/KWindowSystem>
 #include <QMouseEvent>
+#include <QPushButton>
 
 #include "notification.h"
 #include "notificationwidgets.h"
@@ -60,12 +61,11 @@ Notification::Notification(const QString &application,
 
     setValues(application, summary, body, icon, timeout, actions, hints);
 
-    connect(closeButton, SIGNAL(clicked()), this, SLOT(closeButton_clicked()));
+    connect(closeButton, &QPushButton::clicked, this, &Notification::closeButton_clicked);
 
     for (QLabel *label : {bodyLabel, summaryLabel})
     {
-        connect(label, SIGNAL(linkHovered(QString)),
-                this, SLOT(linkHovered(QString)));
+        connect(label, &QLabel::linkHovered, this, &Notification::linkHovered);
 
         label->installEventFilter(this);
     }
@@ -156,7 +156,7 @@ void Notification::setValues(const QString &application,
     if (timeout > 0)
     {
         m_timer = new NotificationTimer(this);
-        connect(m_timer, SIGNAL(timeout()), this, SIGNAL(timeout()));
+        connect(m_timer, &NotificationTimer::timeout, this, &Notification::timeout);
         m_timer->start(timeout);
     }
 
@@ -185,8 +185,10 @@ void Notification::setValues(const QString &application,
             m_actionWidget = new NotificationActionsButtonsWidget(actions, this);
         else
             m_actionWidget = new NotificationActionsComboWidget(actions, this);
-        connect(m_actionWidget, SIGNAL(actionTriggered(const QString &)),
-                this, SIGNAL(actionTriggered(const QString &)));
+
+        connect(m_actionWidget, &NotificationActionsWidget::actionTriggered,
+                this, &Notification::actionTriggered);
+
         actionsLayout->addWidget(m_actionWidget);
         m_actionWidget->show();
     }

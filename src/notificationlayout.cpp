@@ -96,10 +96,10 @@ void NotificationLayout::addNotification(uint id, const QString &application,
             }
         }
 
-        connect(n, SIGNAL(timeout()), this, SLOT(removeNotificationTimeout()));
-        connect(n, SIGNAL(userCanceled()), this, SLOT(removeNotificationUser()));
-        connect(n, SIGNAL(actionTriggered(QString)),
-                this, SLOT(notificationActionCalled(QString)));
+        connect(n, &Notification::timeout, this, &NotificationLayout::removeNotificationTimeout);
+        connect(n, &Notification::userCanceled, this, &NotificationLayout::removeNotificationUser);
+        connect(n, &Notification::actionTriggered,
+                this, &NotificationLayout::notificationActionCalled);
         m_notifications[id] = n;
         m_layout->addWidget(n);
         n->show();

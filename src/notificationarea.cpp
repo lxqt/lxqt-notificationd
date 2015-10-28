@@ -55,10 +55,10 @@ NotificationArea::NotificationArea(QWidget *parent)
     setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
     setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
 
-    connect(m_layout, SIGNAL(allNotificationsClosed()), this, SLOT(close()));
-    connect(m_layout, SIGNAL(notificationAvailable()), this, SLOT(show()));
-    connect(m_layout, SIGNAL(heightChanged(int)), this, SLOT(setHeight(int)));
-    connect(qApp->desktop(), SIGNAL(workAreaResized(int)), SLOT(setHeight()));
+    connect(m_layout, &NotificationLayout::allNotificationsClosed, this, &NotificationArea::close);
+    connect(m_layout, &NotificationLayout::notificationAvailable, this, &NotificationArea::show);
+    connect(m_layout, &NotificationLayout::heightChanged, this, &NotificationArea::setHeight);
+    connect(qApp->desktop(), &QDesktopWidget::workAreaResized, this, &NotificationArea::setHeight);
 }
 
 void NotificationArea::setHeight(int contentHeight)

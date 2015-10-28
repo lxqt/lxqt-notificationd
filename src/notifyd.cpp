@@ -43,18 +43,18 @@ Notifyd::Notifyd(QObject* parent)
     m_settings = new LXQt::Settings("notifications");
     reloadSettings();
 
-    connect(this, SIGNAL(notificationAdded(uint,QString,QString,QString,QString,int,QStringList,QVariantMap)),
-            m_area->layout(), SLOT(addNotification(uint,QString,QString,QString,QString,int,QStringList,QVariantMap)));
-    connect(this, SIGNAL(notificationClosed(uint, uint)),
-            m_area->layout(), SLOT(removeNotification(uint, uint)));
+    connect(this, &Notifyd::notificationAdded,
+            m_area->layout(), &NotificationLayout::addNotification);
+    connect(this, &Notifyd::notificationClosed,
+            m_area->layout(), &NotificationLayout::removeNotification);
     // feedback for original caller
-    connect(m_area->layout(), SIGNAL(notificationClosed(uint,uint)),
-            this, SIGNAL(NotificationClosed(uint,uint)));
-    connect(m_area->layout(), SIGNAL(actionInvoked(uint, QString)),
-            this, SIGNAL(ActionInvoked(uint,QString)));
+    connect(m_area->layout(), &NotificationLayout::notificationClosed,
+            this, &Notifyd::NotificationClosed);
+    connect(m_area->layout(), &NotificationLayout::actionInvoked,
+            this, &Notifyd::ActionInvoked);
 
-    connect(m_settings, SIGNAL(settingsChanged()),
-            this, SLOT(reloadSettings()));
+    connect(m_settings, &LXQt::Settings::settingsChanged,
+            this, &Notifyd::reloadSettings);
 
 }
 
