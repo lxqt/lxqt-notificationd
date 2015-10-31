@@ -30,17 +30,17 @@
         <translation>Dauer</translation>
     </message>
     <message>
-        <location filename="../advancedsettings.ui" line="74"/>
+        <location filename="../advancedsettings.ui" line="80"/>
         <source>Some notifications set their own on-screen duration.</source>
         <translation>Einige Benachrichtigungen setzen ihre eigene Anzeigedauer.</translation>
     </message>
     <message>
-        <location filename="../advancedsettings.ui" line="86"/>
+        <location filename="../advancedsettings.ui" line="92"/>
         <source>Default duration:</source>
         <translation>Standarddauer:</translation>
     </message>
     <message>
-        <location filename="../advancedsettings.ui" line="93"/>
+        <location filename="../advancedsettings.ui" line="99"/>
         <source> sec</source>
         <translation> s</translation>
     </message>

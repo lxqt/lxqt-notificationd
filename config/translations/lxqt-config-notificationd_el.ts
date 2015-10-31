@@ -30,17 +30,17 @@
         <translation>Διάρκεια</translation>
     </message>
     <message>
-        <location filename="../advancedsettings.ui" line="74"/>
+        <location filename="../advancedsettings.ui" line="80"/>
         <source>Some notifications set their own on-screen duration.</source>
         <translation>Μερικές ειδοποιήσεις καθορίζουν τη δική τους διάρκεια εμφάνισης.</translation>
     </message>
     <message>
-        <location filename="../advancedsettings.ui" line="86"/>
+        <location filename="../advancedsettings.ui" line="92"/>
         <source>Default duration:</source>
         <translation>Διάρκεια εξ ορισμού:</translation>
     </message>
     <message>
-        <location filename="../advancedsettings.ui" line="93"/>
+        <location filename="../advancedsettings.ui" line="99"/>
         <source> sec</source>
         <translation> δευτ</translation>
     </message>

@@ -4,7 +4,7 @@
 <context>
     <name>NotificationActionsComboWidget</name>
     <message>
-        <location filename="../notificationwidgets.cpp" line="102"/>
+        <location filename="../notificationwidgets.cpp" line="101"/>
         <source>Actions:</source>
         <translation>Действия:</translation>
     </message>

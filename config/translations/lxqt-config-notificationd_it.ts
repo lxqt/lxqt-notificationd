@@ -5,104 +5,160 @@
     <name>AdvancedSettings</name>
     <message>
         <source>Menu Configuration</source>
-        <translation>Configurazione del menu</translation>
+        <translation type="vanished">Configurazione del menu</translation>
     </message>
     <message>
         <source>Notification Duration</source>
-        <translation>Durata delle notifiche</translation>
+        <translation type="vanished">Durata delle notifiche</translation>
     </message>
     <message>
         <source>For some the notification&apos;s expiration time is dependent on the notification server&apos;s settings.</source>
-        <translation>Per alcune notifiche il tempo dipende dalle impostazioni del server delle notifiche.</translation>
+        <translation type="vanished">Per alcune notifiche il tempo dipende dalle impostazioni del server delle notifiche.</translation>
     </message>
     <message>
         <source>&quot;Server Decides&quot; Time:</source>
-        <translation>Tempo di decisioni del server:</translation>
+        <translation type="vanished">Tempo di decisioni del server:</translation>
     </message>
     <message>
+        <location filename="../advancedsettings.ui" line="25"/>
+        <source>Width:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../advancedsettings.ui" line="49"/>
+        <source>Spacing:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../advancedsettings.ui" line="68"/>
+        <source>Duration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../advancedsettings.ui" line="80"/>
+        <source>Some notifications set their own on-screen duration.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../advancedsettings.ui" line="92"/>
+        <source>Default duration:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../advancedsettings.ui" line="99"/>
         <source> sec</source>
         <translation> sec</translation>
     </message>
     <message>
+        <location filename="../advancedsettings.ui" line="17"/>
         <source>Sizes</source>
         <translation>Dimensione</translation>
     </message>
     <message>
         <source>Notification Spacing:</source>
         <translatorcomment>a cosa si riferisce??</translatorcomment>
-        <translation type="unfinished">Spazing:</translation>
+        <translation type="obsolete">Spazing:</translation>
     </message>
     <message>
+        <location filename="../advancedsettings.ui" line="32"/>
+        <location filename="../advancedsettings.ui" line="56"/>
         <source> px</source>
         <translation></translation>
     </message>
     <message>
         <source>Notification Width:</source>
-        <translation>Larghezza:</translation>
+        <translation type="vanished">Larghezza:</translation>
     </message>
 </context>
 <context>
     <name>BasicSettings</name>
     <message>
+        <location filename="../basicsettings.ui" line="23"/>
         <source>Basic Settings</source>
         <translation>Impostazioni base</translation>
     </message>
     <message>
+        <location filename="../basicsettings.ui" line="30"/>
+        <source>Position on screen</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Display Notifications</source>
-        <translation>Mostra notifiche</translation>
+        <translation type="vanished">Mostra notifiche</translation>
     </message>
     <message>
         <source>Top/Left</source>
-        <translation>Alto a sinistra</translation>
+        <translation type="vanished">Alto a sinistra</translation>
     </message>
     <message>
         <source>Top/Right</source>
-        <translation>Alto a destra</translation>
+        <translation type="vanished">Alto a destra</translation>
     </message>
     <message>
         <source>Bottom/Left</source>
-        <translation>Fondo a sinistra</translation>
+        <translation type="vanished">Fondo a sinistra</translation>
     </message>
     <message>
         <source>Bottom/Right</source>
-        <translation>Fondo a destra</translation>
+        <translation type="vanished">Fondo a destra</translation>
     </message>
     <message>
         <source>Test Notification</source>
-        <translation>Notifica di prova</translation>
+        <translation type="vanished">Notifica di prova</translation>
     </message>
     <message>
+        <location filename="../basicsettings.cpp" line="57"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; No notifications daemon is running.
 A fallback will be used.</source>
         <translation>&lt;b&gt;Attenzione:&lt;/b&gt; Nessun demone di notifiche è in esecuzione.
 Sarà usato un sistema di riserva.</translation>
     </message>
     <message>
+        <location filename="../basicsettings.cpp" line="60"/>
+        <source>&lt;b&gt;Warning:&lt;/b&gt; A third-party notifications daemon (%1) is running.
+These settings won&apos;t have any effect on it!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../basicsettings.cpp" line="117"/>
+        <source>Notification demo </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../basicsettings.cpp" line="118"/>
+        <source>This is a test notification.
+ All notifications will now appear here on LXQt.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>&lt;b&gt;Warning:&lt;/b&gt; A third-party notifications daemon (%1) is running.
 These settings won&apos;t have an effect on it!</source>
-        <translation>&lt;b&gt;Attenzione:&lt;/b&gt; Un altro demone di notifiche (%1) è in esecuzione.
+        <translation type="vanished">&lt;b&gt;Attenzione:&lt;/b&gt; Un altro demone di notifiche (%1) è in esecuzione.
 Queste impostazioni non avranno effetto su quello!</translation>
     </message>
     <message>
         <source>Notification Summary</source>
-        <translation>Sommario della notifica</translation>
+        <translation type="vanished">Sommario della notifica</translation>
     </message>
     <message>
         <source>Notification Body</source>
-        <translation>Corpo della notifica</translation>
+        <translation type="vanished">Corpo della notifica</translation>
     </message>
 </context>
 <context>
     <name>MainWindow</name>
     <message>
+        <location filename="../mainwindow.cpp" line="40"/>
         <source>Desktop Notifications</source>
         <translation type="unfinished">Notificazioni Desktop</translation>
     </message>
     <message>
+        <location filename="../mainwindow.cpp" line="43"/>
         <source>Basic Settings</source>
         <translation>Impostazioni base</translation>
     </message>
     <message>
+        <location filename="../mainwindow.cpp" line="47"/>
         <source>Advanced Settings</source>
         <translation>Impostazioni avanzate</translation>
     </message>

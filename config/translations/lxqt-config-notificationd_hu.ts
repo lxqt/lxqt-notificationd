@@ -30,17 +30,17 @@
         <translation>Tartam</translation>
     </message>
     <message>
-        <location filename="../advancedsettings.ui" line="74"/>
+        <location filename="../advancedsettings.ui" line="80"/>
         <source>Some notifications set their own on-screen duration.</source>
         <translation>Egyes értesítések megjelenési ideje</translation>
     </message>
     <message>
-        <location filename="../advancedsettings.ui" line="86"/>
+        <location filename="../advancedsettings.ui" line="92"/>
         <source>Default duration:</source>
         <translation>Alapértelmezett tartam:</translation>
     </message>
     <message>
-        <location filename="../advancedsettings.ui" line="93"/>
+        <location filename="../advancedsettings.ui" line="99"/>
         <source> sec</source>
         <translation> mp</translation>
     </message>
@@ -58,49 +58,54 @@
         <translation>Hely</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="36"/>
         <source>Top/Left</source>
-        <translation>Balra fenn</translation>
+        <translation type="vanished">Balra fenn</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="43"/>
         <source>Top/Right</source>
-        <translation>Jobbra fenn</translation>
+        <translation type="vanished">Jobbra fenn</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="50"/>
         <source>Bottom/Left</source>
-        <translation>Balra lenn</translation>
+        <translation type="vanished">Balra lenn</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="57"/>
         <source>Bottom/Right</source>
-        <translation>Jobbra lenn</translation>
+        <translation type="vanished">Jobbra lenn</translation>
     </message>
     <message>
-        <location filename="../basicsettings.cpp" line="53"/>
+        <location filename="../basicsettings.cpp" line="57"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; No notifications daemon is running.
 A fallback will be used.</source>
         <translation>&lt;b&gt;Figyelem:&lt;/b&gt; Értesítő démon nem fut.
 A vésztartalék használatos.</translation>
     </message>
     <message>
-        <location filename="../basicsettings.cpp" line="59"/>
+        <location filename="../basicsettings.cpp" line="60"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; A third-party notifications daemon (%1) is running.
 These settings won&apos;t have any effect on it!</source>
         <translation>&lt;b&gt;Figyelem:&lt;/b&gt; A (%1) démont már valaki futtatja.
 Ezek a beállítások arra már hatástalanok!</translation>
     </message>
     <message>
-        <location filename="../basicsettings.cpp" line="98"/>
-        <source>Notification demo</source>
-        <translation>Értesítési bemutató</translation>
+        <location filename="../basicsettings.cpp" line="117"/>
+        <source>Notification demo </source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../basicsettings.cpp" line="99"/>
+        <location filename="../basicsettings.cpp" line="118"/>
+        <source>This is a test notification.
+ All notifications will now appear here on LXQt.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Notification demo</source>
+        <translation type="vanished">Értesítési bemutató</translation>
+    </message>
+    <message>
         <source>This is a test notification.
 All notifications will now appear here on LXQt.</source>
-        <translation>Az értesítés tesztje
+        <translation type="vanished">Az értesítés tesztje
 Minden értesítést megjelenít az LXQt.</translation>
     </message>
 </context>
