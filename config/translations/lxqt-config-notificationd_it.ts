@@ -22,27 +22,27 @@
     <message>
         <location filename="../advancedsettings.ui" line="25"/>
         <source>Width:</source>
-        <translation type="unfinished"></translation>
+        <translation>Larghezza:</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="49"/>
         <source>Spacing:</source>
-        <translation type="unfinished"></translation>
+        <translation>Distanza:</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="68"/>
         <source>Duration</source>
-        <translation type="unfinished"></translation>
+        <translation>Durata</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="80"/>
         <source>Some notifications set their own on-screen duration.</source>
-        <translation type="unfinished"></translation>
+        <translation>Alcune notifiche impostano una durata propria.</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="92"/>
         <source>Default duration:</source>
-        <translation type="unfinished"></translation>
+        <translation>Durata di default:</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="99"/>
@@ -80,7 +80,7 @@
     <message>
         <location filename="../basicsettings.ui" line="30"/>
         <source>Position on screen</source>
-        <translation type="unfinished"></translation>
+        <translation>Posizione sullo schermo</translation>
     </message>
     <message>
         <source>Display Notifications</source>
@@ -117,18 +117,20 @@ Sarà usato un sistema di riserva.</translation>
         <location filename="../basicsettings.cpp" line="60"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; A third-party notifications daemon (%1) is running.
 These settings won&apos;t have any effect on it!</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;Avviso:&lt;/b&gt; Un altro demone di notifiche (%1) è attivo.
+Queste impostazioni non avranno effetto per lui!</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="117"/>
         <source>Notification demo </source>
-        <translation type="unfinished"></translation>
+        <translation>Anteprima notifiche </translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="118"/>
         <source>This is a test notification.
  All notifications will now appear here on LXQt.</source>
-        <translation type="unfinished"></translation>
+        <translation>Questo è una notifica di test.
+Tutte le notifiche di LXQt appariranno qui.</translation>
     </message>
     <message>
         <source>&lt;b&gt;Warning:&lt;/b&gt; A third-party notifications daemon (%1) is running.
@@ -150,7 +152,7 @@ Queste impostazioni non avranno effetto su quello!</translation>
     <message>
         <location filename="../mainwindow.cpp" line="40"/>
         <source>Desktop Notifications</source>
-        <translation type="unfinished">Notificazioni Desktop</translation>
+        <translation>Notificazioni Desktop</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="43"/>
