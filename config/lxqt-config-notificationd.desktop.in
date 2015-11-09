@@ -5,7 +5,7 @@ GenericName=LXQt Notification Settings
 Comment=Configure desktop notifications
 Exec=lxqt-config-notificationd
 Icon=preferences-desktop-theme
-Categories=Settings;DesktopSettings;Qt;LXQt;
-OnlyShowIn=LXQt;
+X-Categories=Settings;DesktopSettings;Qt;LXQt;
+X-OnlyShowIn=LXQt;
 
 #TRANSLATIONS_DIR=translations
