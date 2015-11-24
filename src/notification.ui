@@ -10,6 +10,9 @@
     <height>77</height>
    </rect>
   </property>
+  <property name="autoFillBackground">
+   <bool>true</bool>
+  </property>
   <layout class="QGridLayout" name="gridLayout">
    <property name="horizontalSpacing">
     <number>9</number>
