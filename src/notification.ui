@@ -139,6 +139,9 @@
        <property name="text">
         <string notr="true">x</string>
        </property>
+       <property name="icon">
+        <iconset theme="window-close"/>
+       </property>
        <property name="autoRaise">
         <bool>true</bool>
        </property>
