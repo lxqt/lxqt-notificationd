@@ -58,22 +58,6 @@
         <translation>Расположение на экране</translation>
     </message>
     <message>
-        <source>Top/Left</source>
-        <translation type="vanished">Вверху слева</translation>
-    </message>
-    <message>
-        <source>Top/Right</source>
-        <translation type="vanished">Вверху справа</translation>
-    </message>
-    <message>
-        <source>Bottom/Left</source>
-        <translation type="vanished">Внизу слева</translation>
-    </message>
-    <message>
-        <source>Bottom/Right</source>
-        <translation type="vanished">Внизу справа</translation>
-    </message>
-    <message>
         <location filename="../basicsettings.cpp" line="57"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; No notifications daemon is running.
 A fallback will be used.</source>
@@ -84,29 +68,20 @@ A fallback will be used.</source>
         <location filename="../basicsettings.cpp" line="60"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; A third-party notifications daemon (%1) is running.
 These settings won&apos;t have any effect on it!</source>
-        <translation>&lt;b&gt;Внимание:&lt;/b&gt; Демон уведомлений третьей сторон (%1) запущен.
+        <translation>&lt;b&gt;Внимание:&lt;/b&gt; Запущен сторонний демон уведомлений (%1).
 Эти настройки не будут иметь никакого эффекта для него!</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="117"/>
         <source>Notification demo </source>
-        <translation type="unfinished"></translation>
+        <translation>Тестовое уведомление</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="118"/>
         <source>This is a test notification.
  All notifications will now appear here on LXQt.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Notification demo</source>
-        <translation type="vanished">Демонстрация уведомления</translation>
-    </message>
-    <message>
-        <source>This is a test notification.
-All notifications will now appear here on LXQt.</source>
-        <translation type="vanished">Это тестовое уведомление.
-Все уведомления на LXQt будут появляться здесь.</translation>
+        <translation>Это тестовое уведомление.
+ Теперь все уведомления LQXt будут появляться здесь.</translation>
     </message>
 </context>
 <context>
