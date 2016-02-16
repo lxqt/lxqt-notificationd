@@ -116,5 +116,5 @@ void BasicSettings::updateNotification()
     mSettings->setValue(QStringLiteral("placement"), align);
     LXQt::Notification::notify(tr("Notification demo ") + align,
                                tr("This is a test notification.\n All notifications will now appear here on LXQt."),
-                               QStringLiteral("lxqt-logo.png"));
+                               QStringLiteral("lxqt"));
 }
