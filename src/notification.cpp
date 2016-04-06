@@ -88,22 +88,18 @@ void Notification::setValues(const QString &application,
     if (!hints["image_data"].isNull())
     {
         m_pixmap = getPixmapFromHint(hints["image_data"]);
-//        qDebug() << application << "from image_data" << m_pixmap.isNull();
     }
     else if (!hints["image_path"].isNull())
     {
         m_pixmap = getPixmapFromString(hints["image_path"].toString());
-//        qDebug() << application << "from image_path" << m_pixmap.isNull();
     }
     else if (!icon.isEmpty())
     {
         m_pixmap = getPixmapFromString(icon);
-//        qDebug() << application << "from icon" << icon << m_pixmap.isNull();
     }
     else if (!hints["icon_data"].isNull())
     {
        m_pixmap = getPixmapFromHint(hints["icon_data"]);
-//       qDebug() << application << "from icon_data" << m_pixmap.isNull();
     }
     // issue #325: Do not display icon if it's not found...
     if (m_pixmap.isNull())
@@ -161,10 +157,9 @@ void Notification::setValues(const QString &application,
     }
 
     // Categories *********************
-    // TODO/FIXME: Categories - how to handle it?
     if (!hints["category"].isNull())
     {
-        qDebug() << "Notification" << application << "category" << hints["category"];
+        // TODO/FIXME: Categories - how to handle it?
     }
 
     // Urgency Levels *********************
@@ -172,10 +167,9 @@ void Notification::setValues(const QString &application,
     // 0   Low
     // 1   Normal
     // 2   Critical
-    // TODO/FIXME: Urgencies - how to handle it?
     if (!hints["urgency"].isNull())
     {
-        qDebug() << "Notification" << application << "urgency" << hints["urgency"];
+        // TODO/FIXME: Urgencies - how to handle it?
     }
 
     // Actions
