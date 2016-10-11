@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0" language="pt">
+<TS version="2.1" language="pt">
 <context>
     <name>AdvancedSettings</name>
     <message>
@@ -66,7 +66,7 @@
     </message>
     <message>
         <source>Notification Width:</source>
-        <translation>Largura da notificaçao:</translation>
+        <translation>Largura da notificação:</translation>
     </message>
 </context>
 <context>
@@ -116,13 +116,13 @@ Será utilizada uma solução alternativa.</translation>
         <location filename="../../../basicsettings.cpp" line="60"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; A third-party notifications daemon (%1) is running.
 These settings won&apos;t have any effect on it!</source>
-        <translation>&lt;b&gt;Aviso:&lt;/b&gt;já está a ser executado um serviço de notificações (%1).
-Estas definições não alteram esse serviço!</translation>
+        <translation>&lt;b&gt;Aviso:&lt;/b&gt;já está a ser executado o serviço de notificações (%1).
+Estas definições não produzirão qualquer efeito!</translation>
     </message>
     <message>
         <location filename="../../../basicsettings.cpp" line="117"/>
         <source>Notification demo </source>
-        <translation>Demonstração</translation>
+        <translation>Demonstração </translation>
     </message>
     <message>
         <location filename="../../../basicsettings.cpp" line="118"/>
@@ -134,7 +134,7 @@ Todas as suas notificações aparecerão aqui.</translation>
     <message>
         <source>&lt;b&gt;Warning:&lt;/b&gt; A third-party notifications daemon (%1) is running.
 These settings won&apos;t have an effect on it!</source>
-        <translation>&lt;b&gt;Aviso:&lt;/b&gt; já está a ser executado um serviço de notificações (%1).
+        <translation>&lt;b&gt;Aviso:&lt;/b&gt; já está a ser executado o serviço de notificações (%1).
 Estas definições não produzirão qualquer efeito!</translation>
     </message>
     <message>
@@ -143,7 +143,7 @@ Estas definições não produzirão qualquer efeito!</translation>
     </message>
     <message>
         <source>Notification Body</source>
-        <translation>Corpo da notificação</translation>
+        <translation>Texto da notificação</translation>
     </message>
 </context>
 <context>
