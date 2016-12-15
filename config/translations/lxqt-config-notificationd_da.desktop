@@ -1,4 +1,3 @@
-# Translations
-GenericName[da]=Notesblok
-Name[da]=Strømstyring
-Comment[da]=Indstil freedesktop meddelelser på LXQt skrivebord
+Name[da]=Skrivebordsnotifikationer
+GenericName[da]=LXQt-notifikationsindstillinger
+Comment[da]=Konfigurér skrivebordsnotifikationer
