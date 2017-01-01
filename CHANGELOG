@@ -1,7 +1,16 @@
 
-lxqt-notificationd-0.11.0 / 2016-09-24
+lxqt-notificationd-0.11.1 / 2017-01-01
 ======================================
 
+  * Updated da translation. Removed da_DK
+  * Update and rename French .desktop file
+  * Make CMakeList.txt more uniform.
+  * Remove cpack (#53)
+
+0.11.0 / 2016-09-24
+===================
+
+  * Release 0.11.0: Add changelog
   * Update and extend README.md
   * Add Catalan translation
   * build: Use external translations
