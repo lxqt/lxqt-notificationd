@@ -69,7 +69,7 @@ S&apos;utilitzarà una retroacció.</translation>
         <source>&lt;b&gt;Warning:&lt;/b&gt; A third-party notifications daemon (%1) is running.
 These settings won&apos;t have any effect on it!</source>
         <translation>&lt;b&gt;Advertència:&lt;/b&gt; S&apos;està executant un dimoni de notificacions de tercers (%1).
-Els ajusts no pendran cap efecte!</translation>
+Els ajusts no prendran cap efecte!</translation>
     </message>
     <message>
         <location filename="../../../basicsettings.cpp" line="117"/>
