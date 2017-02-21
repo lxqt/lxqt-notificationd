@@ -109,7 +109,7 @@ signals:
      */
     void NotificationClosed(uint in0, uint in1);
 
-    // singals for our implementation - internal usage
+    // signals for our implementation - internal usage
 
     /*! Promote the external request for notification closing into the display engine.
      * \param id an notification ID (obtained from \c Notify)
