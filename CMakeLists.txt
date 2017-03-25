@@ -27,3 +27,6 @@ include(LXQtTranslate)
 
 add_subdirectory(config)
 add_subdirectory(src)
+
+## merged from lxqt-common
+add_subdirectory(autostart)
