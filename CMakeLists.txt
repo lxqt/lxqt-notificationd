@@ -20,6 +20,14 @@ find_package(KF5WindowSystem REQUIRED)
 
 find_package(lxqt REQUIRED)
 
+if(NOT CMAKE_BUILD_TYPE)
+    set(CMAKE_BUILD_TYPE Release)
+endif()
+
+set(LXQT_NOTIFICATIOND_PATCH_VERSION 2)
+set(LXQT_NOTIFICATIOND_VERSION ${LXQT_MAJOR_VERSION}.${LXQT_MINOR_VERSION}.${LXQT_NOTIFICATIOND_PATCH_VERSION})
+add_definitions("-DLXQT_NOTIFICATIOND_VERSION=\"${LXQT_NOTIFICATIOND_VERSION}\"")
+
 include(LXQtCompilerSettings NO_POLICY_SCOPE)
 
 # Translations **********************************
