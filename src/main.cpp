@@ -27,6 +27,7 @@
 
 #include <QApplication>
 #include <QtDBus/QDBusConnection>
+#include <QCommandLineParser>
 
 #include <LXQt/Application>
 
@@ -66,8 +67,17 @@
 int main(int argc, char** argv)
 {
     LXQt::Application a(argc, argv);
-
     a.setQuitOnLastWindowClosed(false);
+
+    QCommandLineParser parser;
+    parser.setApplicationDescription(QStringLiteral("LXQt Notification Daemon"));
+    const QString VERINFO = QStringLiteral(LXQT_NOTIFICATIOND_VERSION
+                                           "\nliblxqt   " LXQT_VERSION
+                                           "\nQt        " QT_VERSION_STR);
+    a.setApplicationVersion(VERINFO);
+    parser.addVersionOption();
+    parser.addHelpOption();
+    parser.process(a);
 
     // Ensure the helper widgets are hidden
     a.setStyleSheet(a.styleSheet() +
