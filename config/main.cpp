@@ -29,6 +29,7 @@
 
 #include <XdgIcon>
 #include <LXQt/Settings>
+#include <QCommandLineParser>
 
 #include "mainwindow.h"
 
@@ -36,6 +37,16 @@
 int main(int argc, char** argv)
 {
     LXQt::SingleApplication a(argc, argv);
+
+    QCommandLineParser parser;
+    parser.setApplicationDescription(QStringLiteral("LXQt Config Notificationd"));
+    const QString VERINFO = QStringLiteral(LXQT_NOTIFICATIOND_VERSION
+                                           "\nliblxqt   " LXQT_VERSION
+                                           "\nQt        " QT_VERSION_STR);
+    a.setApplicationVersion(VERINFO);
+    parser.addVersionOption();
+    parser.addHelpOption();
+    parser.process(a);
 
     MainWindow w;
     w.setWindowIcon(QIcon::fromTheme("preferences-desktop-theme"));
