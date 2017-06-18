@@ -61,8 +61,8 @@
         <location filename="../../../basicsettings.cpp" line="57"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; No notifications daemon is running.
 A fallback will be used.</source>
-        <translation>&lt;b&gt;Uwaga:&lt;/b&gt; Daemon powiadomień nie jest uruchomiony.
-A fallback will be used. </translation>
+        <translation>&lt;b&gt;Uwaga:&lt;/b&gt; Żadna usługa powiadomień nie jest uruchomiona.
+Zostanie użyty zamiennik.</translation>
     </message>
     <message>
         <location filename="../../../basicsettings.cpp" line="60"/>
@@ -74,7 +74,7 @@ Te ustawienia nie będą miały żadnego wpływu na jego działanie!</translatio
     <message>
         <location filename="../../../basicsettings.cpp" line="117"/>
         <source>Notification demo </source>
-        <translation>Podgląd powiadomienia</translation>
+        <translation>Podgląd powiadomienia </translation>
     </message>
     <message>
         <location filename="../../../basicsettings.cpp" line="118"/>
