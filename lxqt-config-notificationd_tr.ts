@@ -61,7 +61,7 @@
         <location filename="../../../basicsettings.cpp" line="57"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; No notifications daemon is running.
 A fallback will be used.</source>
-        <translation type="unfinished">&lt;b&gt;Uyarı:&lt;/b&gt; Çalışan bir bildirim programı yok.
+        <translation>&lt;b&gt;Uyarı:&lt;/b&gt; Çalışan bir bildirim programı yok.
 A fallback will be used.</translation>
     </message>
     <message>
