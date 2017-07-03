@@ -14,7 +14,7 @@ option(UPDATE_TRANSLATIONS "Update source translation translations/*.ts files" O
 find_package(Qt5DBus REQUIRED)
 find_package(Qt5LinguistTools REQUIRED QUIET)
 find_package(Qt5Widgets REQUIRED)
-message(STATUS "Building with Qt${Qt5Core_VERSION_STRING}")
+message(STATUS "Building with Qt${Qt5Core_VERSION}")
 
 find_package(KF5WindowSystem REQUIRED)
 
