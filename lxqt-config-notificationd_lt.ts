@@ -74,7 +74,7 @@ These settings won&apos;t have any effect on it!</source>
     <message>
         <location filename="../../../basicsettings.cpp" line="117"/>
         <source>Notification demo </source>
-        <translation>Pranešimo demonstracija</translation>
+        <translation>Pranešimo demonstracija </translation>
     </message>
     <message>
         <location filename="../../../basicsettings.cpp" line="118"/>
