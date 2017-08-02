@@ -5,19 +5,19 @@
     <name>AdvancedSettings</name>
     <message>
         <source>Menu Configuration</source>
-        <translation>Configuração do menu</translation>
+        <translation type="vanished">Configuração do menu</translation>
     </message>
     <message>
         <source>Notification Duration</source>
-        <translation>Duração da notificação</translation>
+        <translation type="vanished">Duração da notificação</translation>
     </message>
     <message>
         <source>For some the notification&apos;s expiration time is dependent on the notification server&apos;s settings.</source>
-        <translation>Para algumas notificações, o tempo limite depende das definições das notificações do servidor.</translation>
+        <translation type="vanished">Para algumas notificações, o tempo limite depende das definições das notificações do servidor.</translation>
     </message>
     <message>
         <source>&quot;Server Decides&quot; Time:</source>
-        <translation>Tempo para &quot;Decisão do servidor&quot;:</translation>
+        <translation type="vanished">Tempo para &quot;Decisão do servidor&quot;:</translation>
     </message>
     <message>
         <location filename="../../../advancedsettings.ui" line="25"/>
@@ -56,7 +56,7 @@
     </message>
     <message>
         <source>Notification Spacing:</source>
-        <translation>Espaçamento da notificação:</translation>
+        <translation type="vanished">Espaçamento da notificação:</translation>
     </message>
     <message>
         <location filename="../../../advancedsettings.ui" line="32"/>
@@ -66,7 +66,7 @@
     </message>
     <message>
         <source>Notification Width:</source>
-        <translation>Largura da notificação:</translation>
+        <translation type="vanished">Largura da notificação:</translation>
     </message>
 </context>
 <context>
@@ -83,27 +83,27 @@
     </message>
     <message>
         <source>Display Notifications</source>
-        <translation>Mostrar notificações</translation>
+        <translation type="vanished">Mostrar notificações</translation>
     </message>
     <message>
         <source>Top/Left</source>
-        <translation>Cima/Esquerda</translation>
+        <translation type="vanished">Cima/Esquerda</translation>
     </message>
     <message>
         <source>Top/Right</source>
-        <translation>Cima/Direita</translation>
+        <translation type="vanished">Cima/Direita</translation>
     </message>
     <message>
         <source>Bottom/Left</source>
-        <translation>Baixo/Esquerda</translation>
+        <translation type="vanished">Baixo/Esquerda</translation>
     </message>
     <message>
         <source>Bottom/Right</source>
-        <translation>Baixo/Direita</translation>
+        <translation type="vanished">Baixo/Direita</translation>
     </message>
     <message>
         <source>Test Notification</source>
-        <translation>Testar notificação</translation>
+        <translation type="vanished">Testar notificação</translation>
     </message>
     <message>
         <location filename="../../../basicsettings.cpp" line="57"/>
@@ -134,16 +134,16 @@ Todas as suas notificações aparecerão aqui.</translation>
     <message>
         <source>&lt;b&gt;Warning:&lt;/b&gt; A third-party notifications daemon (%1) is running.
 These settings won&apos;t have an effect on it!</source>
-        <translation>&lt;b&gt;Aviso:&lt;/b&gt; já está a ser executado o serviço de notificações (%1).
+        <translation type="vanished">&lt;b&gt;Aviso:&lt;/b&gt; já está a ser executado o serviço de notificações (%1).
 Estas definições não produzirão qualquer efeito!</translation>
     </message>
     <message>
         <source>Notification Summary</source>
-        <translation>Resumo da notificação</translation>
+        <translation type="vanished">Resumo da notificação</translation>
     </message>
     <message>
         <source>Notification Body</source>
-        <translation>Texto da notificação</translation>
+        <translation type="vanished">Texto da notificação</translation>
     </message>
 </context>
 <context>
