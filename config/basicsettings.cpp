@@ -43,7 +43,6 @@ BasicSettings::BasicSettings(LXQt::Settings* settings, QWidget *parent) :
     connect(topCenterRB,    SIGNAL(clicked()), this, SLOT(updateNotification()));
     connect(topRightRB,     SIGNAL(clicked()), this, SLOT(updateNotification()));
     connect(centerLeftRB,   SIGNAL(clicked()), this, SLOT(updateNotification()));
-    connect(centerCenterRB, SIGNAL(clicked()), this, SLOT(updateNotification()));
     connect(centerRightRB,  SIGNAL(clicked()), this, SLOT(updateNotification()));
     connect(bottomLeftRB,   SIGNAL(clicked()), this, SLOT(updateNotification()));
     connect(bottomCenterRB, SIGNAL(clicked()), this, SLOT(updateNotification()));
@@ -79,8 +78,6 @@ void BasicSettings::restoreSettings()
         topRightRB->setChecked(true);
     else if (QStringLiteral("center-left") == placement)
         centerLeftRB->setChecked(true);
-    else if (QStringLiteral("center-center") == placement)
-        centerCenterRB->setChecked(true);
     else if (QStringLiteral("center-right") == placement)
         centerRightRB->setChecked(true);
     else if (QStringLiteral("bottom-left") == placement)
@@ -93,7 +90,7 @@ void BasicSettings::restoreSettings()
 
 void BasicSettings::updateNotification()
 {
-    QString align;
+   QString align;
     if (topLeftRB->isChecked())
         align = QStringLiteral("top-left");
     else if (topCenterRB->isChecked())
@@ -102,8 +99,6 @@ void BasicSettings::updateNotification()
         align = QStringLiteral("top-right");
     else if (centerLeftRB->isChecked())
         align = QStringLiteral("center-left");
-    else if (centerCenterRB->isChecked())
-        align = QStringLiteral("center-center");
     else if (centerRightRB->isChecked())
         align = QStringLiteral("center-right");
     else if (bottomLeftRB->isChecked())
