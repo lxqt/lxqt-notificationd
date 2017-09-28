@@ -58,26 +58,26 @@
         <translation>المكان على الشّاشة</translation>
     </message>
     <message>
-        <location filename="../../../basicsettings.cpp" line="57"/>
+        <location filename="../../../basicsettings.cpp" line="56"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; No notifications daemon is running.
 A fallback will be used.</source>
         <translation>&lt;b&gt;تحذير:&lt;/b&gt; لا عفريت إخطارات يعمل.
 سأستخدم أحد الاحتياطيّين.</translation>
     </message>
     <message>
-        <location filename="../../../basicsettings.cpp" line="60"/>
+        <location filename="../../../basicsettings.cpp" line="59"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; A third-party notifications daemon (%1) is running.
 These settings won&apos;t have any effect on it!</source>
         <translation>&lt;b&gt;تحذير:&lt;/b&gt; هناك عفريت من طرف ثالث (%1) يعمل.
 لن تؤثّر هذه الإعدادات عليه!</translation>
     </message>
     <message>
-        <location filename="../../../basicsettings.cpp" line="117"/>
+        <location filename="../../../basicsettings.cpp" line="112"/>
         <source>Notification demo </source>
         <translation>نموذج لإخطار</translation>
     </message>
     <message>
-        <location filename="../../../basicsettings.cpp" line="118"/>
+        <location filename="../../../basicsettings.cpp" line="113"/>
         <source>This is a test notification.
  All notifications will now appear here on LXQt.</source>
         <translation>هذا إخطار تجريبيّ.

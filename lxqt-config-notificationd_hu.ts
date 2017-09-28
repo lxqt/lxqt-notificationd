@@ -58,26 +58,26 @@
         <translation>Hely</translation>
     </message>
     <message>
-        <location filename="../../../basicsettings.cpp" line="57"/>
+        <location filename="../../../basicsettings.cpp" line="56"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; No notifications daemon is running.
 A fallback will be used.</source>
         <translation>&lt;b&gt;Figyelem:&lt;/b&gt; Értesítő démon nem fut.
 A vésztartalék használatos.</translation>
     </message>
     <message>
-        <location filename="../../../basicsettings.cpp" line="60"/>
+        <location filename="../../../basicsettings.cpp" line="59"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; A third-party notifications daemon (%1) is running.
 These settings won&apos;t have any effect on it!</source>
         <translation>&lt;b&gt;Figyelem:&lt;/b&gt; Egy másik, a (%1) értesítésfigyelő már fut.
 Ezek a beállítások arra már hatástalanok!</translation>
     </message>
     <message>
-        <location filename="../../../basicsettings.cpp" line="117"/>
+        <location filename="../../../basicsettings.cpp" line="112"/>
         <source>Notification demo </source>
         <translation>Értesítés bemutató</translation>
     </message>
     <message>
-        <location filename="../../../basicsettings.cpp" line="118"/>
+        <location filename="../../../basicsettings.cpp" line="113"/>
         <source>This is a test notification.
  All notifications will now appear here on LXQt.</source>
         <translation>Értesítési teszt.

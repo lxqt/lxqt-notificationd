@@ -107,26 +107,26 @@
         <translation type="vanished">Notifica di prova</translation>
     </message>
     <message>
-        <location filename="../../../basicsettings.cpp" line="57"/>
+        <location filename="../../../basicsettings.cpp" line="56"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; No notifications daemon is running.
 A fallback will be used.</source>
         <translation>&lt;b&gt;Attenzione:&lt;/b&gt; Nessun demone di notifiche è in esecuzione.
 Sarà usato un sistema di riserva.</translation>
     </message>
     <message>
-        <location filename="../../../basicsettings.cpp" line="60"/>
+        <location filename="../../../basicsettings.cpp" line="59"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; A third-party notifications daemon (%1) is running.
 These settings won&apos;t have any effect on it!</source>
         <translation>&lt;b&gt;Avviso:&lt;/b&gt; Un altro demone di notifiche (%1) è attivo.
 Queste impostazioni non avranno effetto per lui!</translation>
     </message>
     <message>
-        <location filename="../../../basicsettings.cpp" line="117"/>
+        <location filename="../../../basicsettings.cpp" line="112"/>
         <source>Notification demo </source>
         <translation>Anteprima notifiche </translation>
     </message>
     <message>
-        <location filename="../../../basicsettings.cpp" line="118"/>
+        <location filename="../../../basicsettings.cpp" line="113"/>
         <source>This is a test notification.
  All notifications will now appear here on LXQt.</source>
         <translation>Questo è una notifica di test.

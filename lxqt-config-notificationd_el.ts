@@ -58,26 +58,26 @@
         <translation>Θέση στην οθόνη</translation>
     </message>
     <message>
-        <location filename="../../../basicsettings.cpp" line="57"/>
+        <location filename="../../../basicsettings.cpp" line="56"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; No notifications daemon is running.
 A fallback will be used.</source>
         <translation>&lt;b&gt;Προειδοποίηση:&lt;/b&gt; Δεν εκτελείται κάποιος δαίμονας ειδοποιήσεων
 Θα χρησιμοποιηθεί η ανακατεύθυνση.</translation>
     </message>
     <message>
-        <location filename="../../../basicsettings.cpp" line="60"/>
+        <location filename="../../../basicsettings.cpp" line="59"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; A third-party notifications daemon (%1) is running.
 These settings won&apos;t have any effect on it!</source>
         <translation>&lt;b&gt;Προειδοποίηση:&lt;/b&gt; Εκτελείται ένας δαίμονας ειδοποιήσεων τρίτων (%1).
 Αυτές οι ρυθμίσεις δεν θα έχουν κάποια επίδραση σε αυτόν!</translation>
     </message>
     <message>
-        <location filename="../../../basicsettings.cpp" line="117"/>
+        <location filename="../../../basicsettings.cpp" line="112"/>
         <source>Notification demo </source>
         <translation>Επίδειξη ειδοποιήσεων </translation>
     </message>
     <message>
-        <location filename="../../../basicsettings.cpp" line="118"/>
+        <location filename="../../../basicsettings.cpp" line="113"/>
         <source>This is a test notification.
  All notifications will now appear here on LXQt.</source>
         <translation>Αυτή είναι μια δοκιμαστική ειδοποίηση.
