@@ -74,7 +74,7 @@ Els ajusts no prendran cap efecte!</translation>
     <message>
         <location filename="../../../basicsettings.cpp" line="112"/>
         <source>Notification demo </source>
-        <translation>Demostració de notificació</translation>
+        <translation>Demostració de notificació </translation>
     </message>
     <message>
         <location filename="../../../basicsettings.cpp" line="113"/>
