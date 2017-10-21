@@ -1,7 +1,37 @@
 
-lxqt-notificationd-0.11.1 / 2017-01-01
+lxqt-notificationd-0.12.0 / 2017-10-21
 ======================================
 
+  * Set patch version
+  * Don't export github templates
+  * Improvement for notification settings, see https://github.com/lxde/lxqt/issues/744#issuecomment-138601402
+  * Updated Lithuanian language
+  * Drops Qt5Core_VERSION_STRING
+  * lxqt-config-notificationd: set Qt::AA_UseHighDpiPixmaps to true
+  * Add a basic cli to lxqt-config-notificationd Add a basic cli to lxqt-notificationd
+  * Added default CMAKE_BUILD_TYPE and LXQT_NOTIFICATION_PATCH_VERSION
+  * Create lxqt-config-notificationd_pl_PL.desktop
+  * Fixes a FTBFS in superbuild mode
+  * Added merged autostart to CMakeLists.txt
+  * Updated *_da.desktop files and removed *_da_DK.desktop files
+  * Update desktop entries and Replace fr_FR by fr
+  * Update Greek translation (el) Remove country variant from language code
+  * CMake: Adds Runtime and Devel install COMPONENTs
+  * Coding style changes
+  * Updates the build system to use the Targets infrastructure
+  * Drops hardcoded /etc/xdg paths
+  * Updated german translation, replaced Qt4 by Qt in all xsession/translations
+  * Updates translations infrastructure
+  * Update the required minimum cmake version
+  * remove dead template lines switch OnlyShowIn from Razor -> LXQt stringchanges LxQt -> LXQt
+  * Support lxqt-session and add necessary xdg autostart desktop entry files.
+  * Fix a typo: singals -> signals
+  * Bump year
+
+0.11.1 / 2017-01-01
+===================
+
+  * Release 0.11.1: Update changelog
   * Updated da translation. Removed da_DK
   * Update and rename French .desktop file
   * Make CMakeList.txt more uniform.
