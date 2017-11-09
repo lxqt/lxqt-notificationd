@@ -62,7 +62,7 @@
         <source>&lt;b&gt;Warning:&lt;/b&gt; No notifications daemon is running.
 A fallback will be used.</source>
         <translation>&lt;b&gt;Advarsel:&lt;/b&gt; der kører ikke noget notifikationsbaggrundsprogram.
-Et tilbagefald vil blive brugt.</translation>
+En reserve vil blive brugt.</translation>
     </message>
     <message>
         <location filename="../../../basicsettings.cpp" line="59"/>
