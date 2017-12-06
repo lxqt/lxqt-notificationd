@@ -11,10 +11,13 @@ set(NOTIFICATIONS_UI
     notification.ui
 )
 
-qt5_add_dbus_adaptor(NOTIFICATIONS_SRC
+qt5_add_dbus_adaptor(NOTIFICATIONS_DBUS_SRC
     org.freedesktop.Notifications.xml
     notifyd.h Notifyd
 )
+
+set_property(SOURCE ${NOTIFICATIONS_DBUS_SRC} PROPERTY SKIP_AUTOGEN ON)
+list(APPEND NOTIFICATIONS_SRC "${NOTIFICATIONS_DBUS_SRC}")
 
 # Translations **********************************
 lxqt_translate_ts(NOTIFICATIONS_QM_FILES
