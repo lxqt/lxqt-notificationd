@@ -74,7 +74,7 @@ Ezek a beállítások arra már hatástalanok!</translation>
     <message>
         <location filename="../../../basicsettings.cpp" line="112"/>
         <source>Notification demo </source>
-        <translation>Értesítés bemutató</translation>
+        <translation>Értesítés bemutató </translation>
     </message>
     <message>
         <location filename="../../../basicsettings.cpp" line="113"/>
