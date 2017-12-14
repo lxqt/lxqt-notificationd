@@ -58,7 +58,9 @@ NotificationArea::NotificationArea(QWidget *parent)
     connect(m_layout, &NotificationLayout::allNotificationsClosed, this, &NotificationArea::close);
     connect(m_layout, &NotificationLayout::notificationAvailable, this, &NotificationArea::show);
     connect(m_layout, &NotificationLayout::heightChanged, this, &NotificationArea::setHeight);
-    connect(qApp->desktop(), &QDesktopWidget::workAreaResized, this, &NotificationArea::setHeight);
+    // Make sure we update the height whenever the screen geometry changes. Make sure setHeight actually takes this height into account.
+    connect(qApp->desktop(), &QDesktopWidget::workAreaResized, [this](int screen) { setHeight(-2); });
+    connect(qApp->desktop(), &QDesktopWidget::screenCountChanged, [this](int screen) { setHeight(-2); });
 }
 
 void NotificationArea::setHeight(int contentHeight)
@@ -81,7 +83,7 @@ void NotificationArea::setHeight(int contentHeight)
     workArea -= QMargins(m_spacing, m_spacing, m_spacing, m_spacing);
     QRect notif_rect = workArea.normalized();
     notif_rect.setWidth(width());
-    if (notif_rect.height() > contentHeight)
+    if (notif_rect.height() > contentHeight && contentHeight >= -1) // don't cap the height if this comes from a screen geometry change
         notif_rect.setHeight(contentHeight);
 
     // no move needed for "top-left"
