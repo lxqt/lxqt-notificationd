@@ -22,7 +22,7 @@
     <message>
         <location filename="../../../advancedsettings.ui" line="49"/>
         <source>Spacing:</source>
-        <translation>Απόσταση:</translation>
+        <translation>Διαπόσταση:</translation>
     </message>
     <message>
         <location filename="../../../advancedsettings.ui" line="68"/>
