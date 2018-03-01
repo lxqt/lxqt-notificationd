@@ -42,9 +42,6 @@ NotificationLayout::NotificationLayout(QWidget *parent)
     // Required to display wallpaper
     setAttribute(Qt::WA_TranslucentBackground);
 
-    // Make the window stay on top
-    setWindowFlags(windowFlags() | Qt::WindowStaysOnTopHint);
-
     m_layout = new QVBoxLayout(this);
     m_layout->setMargin(0);
     setLayout(m_layout);
