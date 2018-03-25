@@ -4,7 +4,7 @@ lxqt-notificationd-0.12.0 / 2017-10-21
 
   * Set patch version
   * Don't export github templates
-  * Improvement for notification settings, see https://github.com/lxde/lxqt/issues/744#issuecomment-138601402
+  * Improvement for notification settings, see https://github.com/lxqt/lxqt/issues/744#issuecomment-138601402
   * Updated Lithuanian language
   * Drops Qt5Core_VERSION_STRING
   * lxqt-config-notificationd: set Qt::AA_UseHighDpiPixmaps to true
@@ -98,7 +98,7 @@ lxqt-notificationd-0.12.0 / 2017-10-21
   * Fix Russian duplicated entries on .desktop files
   * Update lxqt-config-notificationd_it_IT.desktop
   * notification: multilined plain text formatting
-  * Remove KF5/ prefix    as done in lxde/liblxqt#36
+  * Remove KF5/ prefix    as done in lxqt/liblxqt#36
   * settings: possibility to configure more than 99s shown time
   * Unified german translation
   * Updated german translation
@@ -117,7 +117,7 @@ lxqt-notificationd-0.12.0 / 2017-10-21
   * Uses the new translations cmake modules
   * Update Russian translation
   * Display a clearer test notification right after changing the settings
-  * Notifications must not cover the panel. Fixes lxde/lxde-qt#315.
+  * Notifications must not cover the panel. Fixes lxqt/lxqt#315.
   * Port to KWindowSystem
   * Update deprecated dbus annotation
   * Use lxqt.org as vendor
@@ -128,8 +128,8 @@ lxqt-notificationd-0.12.0 / 2017-10-21
 ==================
 
   * Adapt to the translation infrastructure
-  * Fix xde/lxde-qt #67 - Notifications are shown in the wrong location.
-  * Make the notification stay on top, fix bug lxde/lxde-qt #6 - Notifications show up under calendar plugin.
+  * Fix lxqt/lxqt#67 - Notifications are shown in the wrong location.
+  * Make the notification stay on top, fix bug lxqt/lxqt#6 - Notifications show up under calendar plugin.
   * Cleanup for Qt5 ready includes
   * Use cmake 2.8.9 by default and use 2.8.11 for qt5. * Simplify qt5 support.
   * Initial Qt5 support.
