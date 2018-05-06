@@ -35,6 +35,7 @@
 #include <KWindowSystem/KWindowSystem>
 #include <QMouseEvent>
 #include <QPushButton>
+#include <QStyleOption>
 
 #include "notification.h"
 #include "notificationwidgets.h"
