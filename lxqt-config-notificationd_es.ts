@@ -32,7 +32,7 @@
     <message>
         <location filename="../../../advancedsettings.ui" line="80"/>
         <source>Some notifications set their own on-screen duration.</source>
-        <translation>Algunas notificaciones establecen su propia duracion en pantalla.</translation>
+        <translation>Algunas notificaciones establecen su propia duración en pantalla.</translation>
     </message>
     <message>
         <location filename="../../../advancedsettings.ui" line="92"/>
@@ -42,7 +42,7 @@
     <message>
         <location filename="../../../advancedsettings.ui" line="99"/>
         <source> sec</source>
-        <translation> segundos</translation>
+        <translation> s</translation>
     </message>
 </context>
 <context>
@@ -55,7 +55,7 @@
     <message>
         <location filename="../../../basicsettings.ui" line="30"/>
         <source>Position on screen</source>
-        <translation>Posición en pantalla</translation>
+        <translation>Posición en la pantalla</translation>
     </message>
     <message>
         <location filename="../../../basicsettings.cpp" line="56"/>
@@ -81,7 +81,7 @@ These settings won&apos;t have any effect on it!</source>
         <source>This is a test notification.
  All notifications will now appear here on LXQt.</source>
         <translation>Esto es una notificación de prueba
- Todas las notificaciones apareceran desde ahora aquí en LXQt.</translation>
+ Todas las notificaciones aparecerán desde ahora aquí en LXQt.</translation>
     </message>
 </context>
 <context>
