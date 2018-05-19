@@ -1,4 +1,3 @@
-# Translations
-GenericName[es]=Notificaciones de Escritorio
-Name[es]=Configuración de Notificaciones de LXQt
-Comment[es]=Configure las notificaciones de freedesktop en el escritorio LXQt
+Name[es]=Notificaciones del escritorio
+GenericName[es]=Configuración de las notificaciones de LXQt
+Comment[es]=Configurar las notificaciones del escritorio
