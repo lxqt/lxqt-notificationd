@@ -4,43 +4,43 @@
 <context>
     <name>AdvancedSettings</name>
     <message>
-        <location filename="../../../advancedsettings.ui" line="17"/>
+        <location filename="../advancedsettings.ui" line="17"/>
         <source>Sizes</source>
         <translation>大小</translation>
     </message>
     <message>
-        <location filename="../../../advancedsettings.ui" line="25"/>
+        <location filename="../advancedsettings.ui" line="25"/>
         <source>Width:</source>
         <translation>宽度:</translation>
     </message>
     <message>
-        <location filename="../../../advancedsettings.ui" line="32"/>
-        <location filename="../../../advancedsettings.ui" line="56"/>
+        <location filename="../advancedsettings.ui" line="32"/>
+        <location filename="../advancedsettings.ui" line="56"/>
         <source> px</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../../advancedsettings.ui" line="49"/>
+        <location filename="../advancedsettings.ui" line="49"/>
         <source>Spacing:</source>
         <translation>间距:</translation>
     </message>
     <message>
-        <location filename="../../../advancedsettings.ui" line="68"/>
+        <location filename="../advancedsettings.ui" line="68"/>
         <source>Duration</source>
         <translation>持续时间</translation>
     </message>
     <message>
-        <location filename="../../../advancedsettings.ui" line="80"/>
+        <location filename="../advancedsettings.ui" line="80"/>
         <source>Some notifications set their own on-screen duration.</source>
         <translation>有些通知有自己的持续时间。</translation>
     </message>
     <message>
-        <location filename="../../../advancedsettings.ui" line="92"/>
+        <location filename="../advancedsettings.ui" line="92"/>
         <source>Default duration:</source>
         <translation>默认持续时间:</translation>
     </message>
     <message>
-        <location filename="../../../advancedsettings.ui" line="99"/>
+        <location filename="../advancedsettings.ui" line="99"/>
         <source> sec</source>
         <translation></translation>
     </message>
@@ -48,36 +48,36 @@
 <context>
     <name>BasicSettings</name>
     <message>
-        <location filename="../../../basicsettings.ui" line="23"/>
+        <location filename="../basicsettings.ui" line="23"/>
         <source>Basic Settings</source>
         <translation>基本设置</translation>
     </message>
     <message>
-        <location filename="../../../basicsettings.ui" line="30"/>
+        <location filename="../basicsettings.ui" line="30"/>
         <source>Position on screen</source>
         <translation>在屏幕上的位置</translation>
     </message>
     <message>
-        <location filename="../../../basicsettings.cpp" line="56"/>
+        <location filename="../basicsettings.cpp" line="56"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; No notifications daemon is running.
 A fallback will be used.</source>
         <translation>&lt;b&gt;警告：&lt;/b&gt; 没有运行通知守护进程
 已使用默认值。</translation>
     </message>
     <message>
-        <location filename="../../../basicsettings.cpp" line="59"/>
+        <location filename="../basicsettings.cpp" line="59"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; A third-party notifications daemon (%1) is running.
 These settings won&apos;t have any effect on it!</source>
         <translation>&lt;b&gt;警告：&lt;/b&gt; 正在运行第三方的通知守护进程（%1）
 这些设置不会有任何效果！</translation>
     </message>
     <message>
-        <location filename="../../../basicsettings.cpp" line="112"/>
+        <location filename="../basicsettings.cpp" line="112"/>
         <source>Notification demo </source>
         <translation>通知示例 </translation>
     </message>
     <message>
-        <location filename="../../../basicsettings.cpp" line="113"/>
+        <location filename="../basicsettings.cpp" line="113"/>
         <source>This is a test notification.
  All notifications will now appear here on LXQt.</source>
         <translation>这是一则测试通知
@@ -87,17 +87,17 @@ These settings won&apos;t have any effect on it!</source>
 <context>
     <name>MainWindow</name>
     <message>
-        <location filename="../../../mainwindow.cpp" line="40"/>
+        <location filename="../mainwindow.cpp" line="40"/>
         <source>Desktop Notifications</source>
         <translation>桌面通知</translation>
     </message>
     <message>
-        <location filename="../../../mainwindow.cpp" line="43"/>
+        <location filename="../mainwindow.cpp" line="43"/>
         <source>Basic Settings</source>
         <translation>基本设置</translation>
     </message>
     <message>
-        <location filename="../../../mainwindow.cpp" line="47"/>
+        <location filename="../mainwindow.cpp" line="47"/>
         <source>Advanced Settings</source>
         <translation>高级设置</translation>
     </message>
