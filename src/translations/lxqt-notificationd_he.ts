@@ -6,12 +6,12 @@
     <message>
         <location filename="../notificationwidgets.cpp" line="101"/>
         <source>Actions:</source>
-        <translation></translation>
+        <translation>פעולות:</translation>
     </message>
     <message>
         <location filename="../notificationwidgets.cpp" line="120"/>
         <source>OK</source>
-        <translation></translation>
+        <translation>אישור</translation>
     </message>
 </context>
 </TS>
