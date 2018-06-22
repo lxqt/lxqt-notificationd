@@ -60,6 +60,7 @@ Notification::Notification(const QString &application,
 
     setMaximumWidth(parent->width());
     setMinimumWidth(parent->width());
+    setSizePolicy(QSizePolicy::Preferred, QSizePolicy::Fixed);
 
     setValues(application, summary, body, icon, timeout, actions, hints);
 
