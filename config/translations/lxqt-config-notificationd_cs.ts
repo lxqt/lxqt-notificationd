@@ -61,15 +61,15 @@
         <location filename="../basicsettings.cpp" line="56"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; No notifications daemon is running.
 A fallback will be used.</source>
-        <translation>&lt;b&gt;Varování:&lt;/b&gt; Neběží žádný oznamovací démon.
+        <translation>&lt;b&gt;Varování:&lt;/b&gt; Není spuštěná žádná služba oznamování.
 Použije se náhrada.</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="59"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; A third-party notifications daemon (%1) is running.
 These settings won&apos;t have any effect on it!</source>
-        <translation>&lt;b&gt;Varování:&lt;/b&gt; Běží jiný oznamovací démon (od třetí strany) (%1).
-Tato nastavení na něj nemají žádný vliv!</translation>
+        <translation>&lt;b&gt;Varování:&lt;/b&gt; Je spuštěná další služba oznamování (od třetí strany) (%1).
+Tato nastavení na ní nemají žádný vliv!</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="112"/>
