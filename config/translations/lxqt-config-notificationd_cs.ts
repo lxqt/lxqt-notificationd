@@ -22,7 +22,7 @@
     <message>
         <location filename="../advancedsettings.ui" line="49"/>
         <source>Spacing:</source>
-        <translation>Rozestupy: </translation>
+        <translation>Odstup:</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="68"/>
@@ -37,7 +37,7 @@
     <message>
         <location filename="../advancedsettings.ui" line="92"/>
         <source>Default duration:</source>
-        <translation>Výchozí doba trvání: </translation>
+        <translation>Výchozí doba trvání:</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="99"/>
@@ -74,7 +74,7 @@ Tato nastavení na ní nemají žádný vliv!</translation>
     <message>
         <location filename="../basicsettings.cpp" line="112"/>
         <source>Notification demo </source>
-        <translation>Zkušební oznámení</translation>
+        <translation>Zkušební oznámení </translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="113"/>
