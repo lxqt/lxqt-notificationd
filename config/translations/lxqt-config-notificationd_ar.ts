@@ -74,7 +74,7 @@ These settings won&apos;t have any effect on it!</source>
     <message>
         <location filename="../basicsettings.cpp" line="112"/>
         <source>Notification demo </source>
-        <translation>نموذج لإخطار</translation>
+        <translation>نموذج لإخطار </translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="113"/>
