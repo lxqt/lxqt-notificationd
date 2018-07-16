@@ -32,7 +32,7 @@
     <message>
         <location filename="../advancedsettings.ui" line="80"/>
         <source>Some notifications set their own on-screen duration.</source>
-        <translation>Některá oznámení si nastavují svoji vlastní dobu trvání zobrazení.</translation>
+        <translation>Některá oznámení si nastavují svojí vlastní dobu trvání zobrazení.</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="92"/>
@@ -55,7 +55,7 @@
     <message>
         <location filename="../basicsettings.ui" line="30"/>
         <source>Position on screen</source>
-        <translation>Poloha na obrazovce</translation>
+        <translation>Pozice na obrazovce</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="56"/>
