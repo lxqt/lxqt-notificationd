@@ -11,7 +11,7 @@
     <message>
         <location filename="../notificationwidgets.cpp" line="120"/>
         <source>OK</source>
-        <translation>حسنًا</translation>
+        <translation>حسنا</translation>
     </message>
 </context>
 </TS>
