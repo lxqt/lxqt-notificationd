@@ -6,7 +6,7 @@
     <message>
         <location filename="../advancedsettings.ui" line="17"/>
         <source>Sizes</source>
-        <translation>الأحجام</translation>
+        <translation>المقاسات</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="25"/>
@@ -22,22 +22,22 @@
     <message>
         <location filename="../advancedsettings.ui" line="49"/>
         <source>Spacing:</source>
-        <translation>التّباعد:</translation>
+        <translation>التباعد:</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="68"/>
         <source>Duration</source>
-        <translation>المدّة</translation>
+        <translation>المدة</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="80"/>
         <source>Some notifications set their own on-screen duration.</source>
-        <translation>بعض الإخطارات تضبط مدّتها على الشّاشة بنفسها.</translation>
+        <translation>تضبط بعض الإخطارات مدة عرضها على الشاشة بنفسها.</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="92"/>
         <source>Default duration:</source>
-        <translation>المدّة الافتراضيّة:</translation>
+        <translation>المدة المبدئية:</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="99"/>
@@ -50,19 +50,19 @@
     <message>
         <location filename="../basicsettings.ui" line="23"/>
         <source>Basic Settings</source>
-        <translation>الإعدادات الأساسيّة</translation>
+        <translation>الإعدادات الأساسية</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="30"/>
         <source>Position on screen</source>
-        <translation>المكان على الشّاشة</translation>
+        <translation>المكان على الشاشة</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="56"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; No notifications daemon is running.
 A fallback will be used.</source>
         <translation>&lt;b&gt;تحذير:&lt;/b&gt; لا عفريت إخطارات يعمل.
-سأستخدم أحد الاحتياطيّين.</translation>
+سأستخدم أحد الاحتياطيين.</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="59"/>
@@ -80,8 +80,8 @@ These settings won&apos;t have any effect on it!</source>
         <location filename="../basicsettings.cpp" line="113"/>
         <source>This is a test notification.
  All notifications will now appear here on LXQt.</source>
-        <translation>هذا إخطار تجريبيّ.
-ستظهر كلّ الإخطارات هنا في لكسكيوت.</translation>
+        <translation>هذا إخطار تجريبي.
+ستظهر كل الإخطارات هنا في لكسكيوت.</translation>
     </message>
 </context>
 <context>
@@ -94,12 +94,12 @@ These settings won&apos;t have any effect on it!</source>
     <message>
         <location filename="../mainwindow.cpp" line="43"/>
         <source>Basic Settings</source>
-        <translation>الإعدادات الأساسيّة</translation>
+        <translation>الإعدادات الأساسية</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="47"/>
         <source>Advanced Settings</source>
-        <translation>الإعدادات المتقدّمة</translation>
+        <translation>الإعدادات المتقدمة</translation>
     </message>
 </context>
 </TS>
