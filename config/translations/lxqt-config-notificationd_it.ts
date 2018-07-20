@@ -50,7 +50,7 @@
     <message>
         <location filename="../basicsettings.ui" line="23"/>
         <source>Basic Settings</source>
-        <translation>Impostazioni base</translation>
+        <translation>Impostazioni di base</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="30"/>
