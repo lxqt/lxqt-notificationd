@@ -73,7 +73,7 @@ QStringList Notifyd::GetCapabilities()
     QStringList caps;
     caps
          << "actions"
-      // << "action-icons"
+         << "action-icons"
          << "body"
          << "body-hyperlinks"
          << "body-images"
