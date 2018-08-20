@@ -177,8 +177,11 @@ void Notification::setValues(const QString &application,
 
     bool action_icons = !hints["action-icons"].isNull();
     // Actions
-    if (actions.count() && m_actionWidget == 0)
+    if (actions.count())
     {
+        if (m_actionWidget != 0)
+            delete m_actionWidget;
+
         if (actions.count()/2 < 4)
             m_actionWidget = new NotificationActionsButtonsWidget(actions, this, action_icons);
         else

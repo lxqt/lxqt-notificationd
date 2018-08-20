@@ -84,14 +84,7 @@ NotificationActionsButtonsWidget::NotificationActionsButtonsWidget(const QString
         {
             QIcon icon = XdgIcon::fromTheme(action.first).pixmap(ICONSIZE);
 
-            if (icon.isNull())
-            {
-                // Always pick the second option because it isd either equal to one (in case of an odd
-                // argument) Or it is an human readable string in case we can't find an icon.
-                b->setText(action.second);
-            }
-            else
-            {
+            if (! icon.isNull()) {
                 b->setText("");
                 b->setIcon(icon);
             }
