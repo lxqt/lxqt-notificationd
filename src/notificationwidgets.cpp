@@ -27,16 +27,18 @@
 
 #include <LXQt/Globals>
 
+#include <XdgIcon>
 #include <QComboBox>
 #include <QHBoxLayout>
 #include <QButtonGroup>
+#include <QAbstractButton>
 #include <QPushButton>
 #include <QLabel>
-
 #include "notificationwidgets.h"
 
 #include <QtDebug>
 
+#define ICONSIZE QSize(32, 32)
 
 NotificationActionsWidget::NotificationActionsWidget(const QStringList& actions, QWidget *parent)
     : QWidget(parent)
@@ -65,8 +67,7 @@ NotificationActionsWidget::NotificationActionsWidget(const QStringList& actions,
         m_defaultAction = m_actions[0].first;
 }
 
-
-NotificationActionsButtonsWidget::NotificationActionsButtonsWidget(const QStringList& actions, QWidget *parent)
+NotificationActionsButtonsWidget::NotificationActionsButtonsWidget(const QStringList& actions, QWidget *parent, const bool action_icons)
     : NotificationActionsWidget(actions, parent)
 {
     QHBoxLayout *l = new QHBoxLayout();
@@ -78,12 +79,24 @@ NotificationActionsButtonsWidget::NotificationActionsButtonsWidget(const QString
     {
         QPushButton *b = new QPushButton(action.second, this);
         b->setObjectName(action.first);
+
+        if (action_icons)
+        {
+            QIcon icon = XdgIcon::fromTheme(action.first).pixmap(ICONSIZE);
+
+            if (! icon.isNull()) {
+                b->setText(QString());
+                b->setIcon(icon);
+            }
+        }
+
         l->addWidget(b);
         group->addButton(b);
 
         if (action.first == m_defaultAction)
             b->setFocus(Qt::OtherFocusReason);
     }
+
     connect(group, static_cast<void (QButtonGroup::*)(QAbstractButton*)>(&QButtonGroup::buttonClicked),
             this, &NotificationActionsButtonsWidget::actionButtonActivated);
 }
@@ -94,7 +107,7 @@ void NotificationActionsButtonsWidget::actionButtonActivated(QAbstractButton* bu
 }
 
 
-NotificationActionsComboWidget::NotificationActionsComboWidget(const QStringList& actions, QWidget *parent)
+NotificationActionsComboWidget::NotificationActionsComboWidget(const QStringList& actions, QWidget *parent, bool action_icons)
     : NotificationActionsWidget(actions, parent)
 {
     QHBoxLayout *l = new QHBoxLayout();
@@ -107,8 +120,17 @@ NotificationActionsComboWidget::NotificationActionsComboWidget(const QStringList
     for (int i = 0; i < m_actions.count(); ++i)
     {
         auto const & action = m_actions[i];
-
         m_comboBox->addItem(action.second, action.first);
+
+        if (action_icons)
+        {
+            QIcon icon = XdgIcon::fromTheme(action.first).pixmap(ICONSIZE);
+            if (!icon.isNull())
+            {
+                m_comboBox->setItemIcon(i, icon);
+            }
+        }
+
         if (action.first == m_defaultAction)
         {
             currentIndex = i;
