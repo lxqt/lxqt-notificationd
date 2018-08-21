@@ -27,6 +27,7 @@
 
 #include <QDesktopWidget>
 #include <QApplication>
+#include <LXQt/Globals>
 #include <LXQt/Settings>
 #include "notificationarea.h"
 
@@ -35,7 +36,7 @@ NotificationArea::NotificationArea(QWidget *parent)
     : QScrollArea(parent),
       m_spacing(-1)
 {
-    setObjectName("NotificationArea");
+    setObjectName(QSL("NotificationArea"));
 
     setWindowFlags(Qt::X11BypassWindowManagerHint
                    | Qt::FramelessWindowHint
@@ -85,32 +86,32 @@ void NotificationArea::setHeight(int contentHeight)
         notif_rect.setHeight(contentHeight);
 
     // no move needed for "top-left"
-    if ("top-center" == m_placement)
+    if (QL1S("top-center") == m_placement)
     {
         notif_rect.moveCenter(workArea.center());
         notif_rect.moveTop(workArea.top());
-    } else if ("top-right" == m_placement)
+    } else if (QL1S("top-right") == m_placement)
     {
         notif_rect.moveRight(workArea.right());
-    } else if ("center-left" == m_placement)
+    } else if (QL1S("center-left") == m_placement)
     {
         notif_rect.moveCenter(workArea.center());
         notif_rect.moveLeft(workArea.left());
-    } else if ("center-center" == m_placement)
+    } else if (QL1S("center-center") == m_placement)
     {
         notif_rect.moveCenter(workArea.center());
-    } else if ("center-right" == m_placement)
+    } else if (QL1S("center-right") == m_placement)
     {
         notif_rect.moveCenter(workArea.center());
         notif_rect.moveRight(workArea.right());
-    } else if ("bottom-left" == m_placement)
+    } else if (QL1S("bottom-left") == m_placement)
     {
         notif_rect.moveBottom(workArea.bottom());
-    } else if ("bottom-center" == m_placement)
+    } else if (QL1S("bottom-center") == m_placement)
     {
         notif_rect.moveCenter(workArea.center());
         notif_rect.moveBottom(workArea.bottom());
-    } else if ("bottom-right" == m_placement)
+    } else if (QL1S("bottom-right") == m_placement)
     {
         notif_rect.moveBottomRight(workArea.bottomRight());
     }

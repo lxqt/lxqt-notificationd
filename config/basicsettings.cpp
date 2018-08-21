@@ -50,7 +50,7 @@ BasicSettings::BasicSettings(LXQt::Settings* settings, QWidget *parent) :
 
     LXQt::Notification serverTest;
     QString serverName = serverTest.serverInfo().name;
-    if (serverName != "lxqt-notificationd")
+    if (serverName != QL1S("lxqt-notificationd"))
     {
         if (serverName.isEmpty())
             warningLabel->setText(tr("<b>Warning:</b> No notifications daemon is running.\n"
