@@ -55,7 +55,7 @@ Notification::Notification(const QString &application,
       m_actionWidget(0)
 {
     setupUi(this);
-    setObjectName("Notification");
+    setObjectName(QSL("Notification"));
     setMouseTracking(true);
 
     setMaximumWidth(parent->width());
@@ -88,21 +88,21 @@ void Notification::setValues(const QString &application,
     //  - "image-path"
     //  - app_icon parameter
     //  - for compatibility reason, "icon_data"
-    if (!hints["image_data"].isNull())
+    if (!hints[QL1S("image_data")].isNull())
     {
-        m_pixmap = getPixmapFromHint(hints["image_data"]);
+        m_pixmap = getPixmapFromHint(hints[QL1S("image_data")]);
     }
-    else if (!hints["image_path"].isNull())
+    else if (!hints[QL1S("image_path")].isNull())
     {
-        m_pixmap = getPixmapFromString(hints["image_path"].toString());
+        m_pixmap = getPixmapFromString(hints[QL1S("image_path")].toString());
     }
     else if (!icon.isEmpty())
     {
         m_pixmap = getPixmapFromString(icon);
     }
-    else if (!hints["icon_data"].isNull())
+    else if (!hints[QL1S("icon_data")].isNull())
     {
-       m_pixmap = getPixmapFromHint(hints["icon_data"]);
+       m_pixmap = getPixmapFromHint(hints[QL1S("icon_data")]);
     }
     // issue #325: Do not display icon if it's not found...
     if (m_pixmap.isNull())
@@ -139,7 +139,7 @@ void Notification::setValues(const QString &application,
     //Body - This is a multi-line body of text. Each line is a paragraph, server implementations are free to word wrap them as they see fit.
     //XXX: remove all unsupported tags?!? (supported <b>, <i>, <u>, <a>, <img>)
     QString formatted(body);
-    bodyLabel->setText(formatted.replace('\n', QStringLiteral("<br/>")));
+    bodyLabel->setText(formatted.replace(QL1C('\n'), QStringLiteral("<br/>")));
 
     // Timeout
     // Special values:
@@ -160,7 +160,7 @@ void Notification::setValues(const QString &application,
     }
 
     // Categories *********************
-    if (!hints["category"].isNull())
+    if (!hints[QL1S("category")].isNull())
     {
         // TODO/FIXME: Categories - how to handle it?
     }
@@ -170,7 +170,7 @@ void Notification::setValues(const QString &application,
     // 0   Low
     // 1   Normal
     // 2   Critical
-    if (!hints["urgency"].isNull())
+    if (!hints[QL1S("urgency")].isNull())
     {
         // TODO/FIXME: Urgencies - how to handle it?
     }

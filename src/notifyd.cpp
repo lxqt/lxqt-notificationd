@@ -40,7 +40,7 @@ Notifyd::Notifyd(QObject* parent)
       mId(0)
 {
     m_area = new NotificationArea();
-    m_settings = new LXQt::Settings("notifications");
+    m_settings = new LXQt::Settings(QSL("notifications"));
     reloadSettings();
 
     connect(this, &Notifyd::notificationAdded,
@@ -72,15 +72,15 @@ QStringList Notifyd::GetCapabilities()
 {
     QStringList caps;
     caps
-         << "actions"
+         << QSL("actions")
       // << "action-icons"
-         << "body"
-         << "body-hyperlinks"
-         << "body-images"
-         << "body-markup"
+         << QSL("body")
+         << QSL("body-hyperlinks")
+         << QSL("body-images")
+         << QSL("body-markup")
       // << "icon-multi"
       // << "icon-static"
-         << "persistence"
+         << QSL("persistence")
       // << "sound"
       ;
     return caps;
@@ -90,10 +90,10 @@ QString Notifyd::GetServerInformation(QString& vendor,
                                       QString& version,
                                       QString& spec_version)
 {
-    spec_version = QString("1.2");
-    version = QString(LXQT_VERSION);
-    vendor = QString("lxqt.org");
-    return QString("lxqt-notificationd");
+    spec_version = QSL("1.2");
+    version = QSL(LXQT_VERSION);
+    vendor = QSL("lxqt.org");
+    return QSL("lxqt-notificationd");
 }
 
 uint Notifyd::Notify(const QString& app_name,
@@ -140,9 +140,9 @@ uint Notifyd::Notify(const QString& app_name,
 
 void Notifyd::reloadSettings()
 {
-    m_serverTimeout = m_settings->value("server_decides", 10).toInt();
+    m_serverTimeout = m_settings->value(QSL("server_decides"), 10).toInt();
     m_area->setSettings(
-            m_settings->value("placement", "bottom-right").toString().toLower(),
-            m_settings->value("width", 300).toInt(),
-            m_settings->value("spacing", 6).toInt());
+            m_settings->value(QSL("placement"), QSL("bottom-right")).toString().toLower(),
+            m_settings->value(QSL("width"), 300).toInt(),
+            m_settings->value(QSL("spacing"), 6).toInt());
 }

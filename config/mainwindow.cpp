@@ -29,6 +29,7 @@
 #include <QMessageBox>
 #include <QtDBus/QDBusConnection>
 #include <QtDBus/QDBusMessage>
+#include <LXQt/Globals>
 #include <LXQt/ConfigDialog>
 
 #include "mainwindow.h"
@@ -37,14 +38,14 @@
 
 
 MainWindow::MainWindow(QWidget *parent) :
-    LXQt::ConfigDialog(tr("Desktop Notifications"), new LXQt::Settings("notifications"), parent)
+    LXQt::ConfigDialog(tr("Desktop Notifications"), new LXQt::Settings(QSL("notifications")), parent)
 {
     BasicSettings* basic = new BasicSettings(mSettings, this);
-    addPage(basic, tr("Basic Settings"), "preferences-desktop-notification");
+    addPage(basic, tr("Basic Settings"), QSL("preferences-desktop-notification"));
     connect(this, SIGNAL(reset()), basic, SLOT(restoreSettings()));
 
     AdvancedSettings* menu = new AdvancedSettings(mSettings, this);
-    addPage(menu, tr("Advanced Settings"), "preferences-desktop-notification-bell");
+    addPage(menu, tr("Advanced Settings"), QSL("preferences-desktop-notification-bell"));
     connect(this, SIGNAL(reset()), menu, SLOT(restoreSettings()));
 }
 

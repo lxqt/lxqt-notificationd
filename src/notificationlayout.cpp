@@ -26,6 +26,9 @@
  * END_COMMON_COPYRIGHT_HEADER */
 
 #include "notificationlayout.h"
+
+#include <LXQt/Globals>
+
 #include <QtDebug>
 #include <QBrush>
 
@@ -33,7 +36,7 @@
 NotificationLayout::NotificationLayout(QWidget *parent)
     : QWidget(parent)
 {
-    setObjectName("NotificationLayout");
+    setObjectName(QSL("NotificationLayout"));
 
     // Hack to ensure the fully transparent background
     QPalette palette;
