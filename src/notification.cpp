@@ -102,7 +102,7 @@ void Notification::setValues(const QString &application,
     }
     else if (!hints[QL1S("icon_data")].isNull())
     {
-       m_pixmap = getPixmapFromHint(hints[QL1S("icon_data")]);
+        m_pixmap = getPixmapFromHint(hints[QL1S("icon_data")]);
     }
     // issue #325: Do not display icon if it's not found...
     if (m_pixmap.isNull())
@@ -175,13 +175,17 @@ void Notification::setValues(const QString &application,
         // TODO/FIXME: Urgencies - how to handle it?
     }
 
+    bool action_icons = !hints[QL1S("action-icons")].isNull();
     // Actions
-    if (actions.count() && m_actionWidget == 0)
+    if (actions.count())
     {
+        if (m_actionWidget != 0)
+            delete m_actionWidget;
+
         if (actions.count()/2 < 4)
-            m_actionWidget = new NotificationActionsButtonsWidget(actions, this);
+            m_actionWidget = new NotificationActionsButtonsWidget(actions, this, action_icons);
         else
-            m_actionWidget = new NotificationActionsComboWidget(actions, this);
+            m_actionWidget = new NotificationActionsComboWidget(actions, this, action_icons);
 
         connect(m_actionWidget, &NotificationActionsWidget::actionTriggered,
                 this, &Notification::actionTriggered);
@@ -256,16 +260,18 @@ QPixmap Notification::getPixmapFromHint(const QVariant &argument) const
 QPixmap Notification::getPixmapFromString(const QString &str) const
 {
     QUrl url(str);
-    if (url.isValid() && QFile::exists(url.toLocalFile()))
+
+    if (url.isLocalFile() && QFile::exists(url.toLocalFile()))
     {
-//        qDebug() << "    getPixmapFromString by URL" << url;
+        //qDebug() << "    getPixmapFromString by URL" << url;
         return QPixmap(url.toLocalFile());
+
     }
     else
     {
-//        qDebug() << "    getPixmapFromString by XdgIcon theme" << str << ICONSIZE << XdgIcon::themeName();
-//        qDebug() << "       " << XdgIcon::fromTheme(str) << "isnull:" << XdgIcon::fromTheme(str).isNull();
-        // They say: do not display an icon if it;s not found - see #325
+        // qDebug() << "    getPixmapFromString by XdgIcon theme" << str << ICONSIZE << XdgIcon::themeName();
+        // qDebug() << "       " << XdgIcon::fromTheme(str) << "isnull:" << XdgIcon::fromTheme(str).isNull();
+        // They say: do not display an icon if it's not found - see #325
         return XdgIcon::fromTheme(str/*, XdgIcon::defaultApplicationIcon()*/).pixmap(ICONSIZE);
     }
 }
@@ -318,7 +324,7 @@ void Notification::mouseReleaseEvent(QMouseEvent * event)
         KWindowInfo info = KWindowInfo(i, NET::WMName | NET::WMVisibleName);
         appName = info.name();
         windowTitle = info.visibleName();
-        // qDebug() << "    " << i << "APPNAME" << appName << "TITLE" << windowTitle;
+        //  qDebug() << "    " << i << "APPNAME" << appName << "TITLE" << windowTitle;
         if (appName.isEmpty())
         {
             QWidget::mouseReleaseEvent(event);
