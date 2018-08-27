@@ -25,6 +25,7 @@
  *
  * END_COMMON_COPYRIGHT_HEADER */
 
+#include <LXQt/Globals>
 #include <LXQt/SingleApplication>
 
 #include <XdgIcon>
@@ -50,7 +51,7 @@ int main(int argc, char** argv)
     parser.process(a);
 
     MainWindow w;
-    w.setWindowIcon(QIcon::fromTheme("preferences-desktop-theme"));
+    w.setWindowIcon(QIcon::fromTheme(QSL("preferences-desktop-theme")));
     a.setActivationWindow(&w);
     w.show();
 

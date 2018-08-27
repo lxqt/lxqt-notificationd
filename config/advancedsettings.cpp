@@ -49,18 +49,18 @@ AdvancedSettings::~AdvancedSettings()
 
 void AdvancedSettings::restoreSettings()
 {
-    int serverDecides = mSettings->value("server_decides", 10).toInt();
+    int serverDecides = mSettings->value(QL1S("server_decides"), 10).toInt();
     if (serverDecides <= 0)
         serverDecides = 10;
     serverDecidesBox->setValue(serverDecides);
 
-    spacingBox->setValue(mSettings->value("spacing", 6).toInt());
-    widthBox->setValue(mSettings->value("width", 300).toInt());
+    spacingBox->setValue(mSettings->value(QL1S("spacing"), 6).toInt());
+    widthBox->setValue(mSettings->value(QL1S("width"), 300).toInt());
 }
 
 void AdvancedSettings::save()
 {
-    mSettings->setValue("server_decides", serverDecidesBox->value());
-    mSettings->setValue("spacing", spacingBox->value());
-    mSettings->setValue("width", widthBox->value());
+    mSettings->setValue(QL1S("server_decides"), serverDecidesBox->value());
+    mSettings->setValue(QL1S("spacing"), spacingBox->value());
+    mSettings->setValue(QL1S("width"), widthBox->value());
 }

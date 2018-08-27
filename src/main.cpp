@@ -30,6 +30,7 @@
 #include <QCommandLineParser>
 
 #include <LXQt/Application>
+#include <LXQt/Globals>
 
 #include "notificationsadaptor.h"
 #include "notifyd.h"
@@ -81,17 +82,17 @@ int main(int argc, char** argv)
 
     // Ensure the helper widgets are hidden
     a.setStyleSheet(a.styleSheet() +
-                "NotificationArea {background: transparent;}"
-                "NotificationLayout {background: transparent;}"
+                QSL("NotificationArea {background: transparent;}"
+                    "NotificationLayout {background: transparent;}")
                    );
 
     Notifyd* daemon = new Notifyd();
     new NotificationsAdaptor(daemon);
 
     QDBusConnection connection = QDBusConnection::sessionBus();
-    if (!connection.registerService("org.freedesktop.Notifications"))
+    if (!connection.registerService(QSL("org.freedesktop.Notifications")))
         qDebug() << "registerService failed: another service with 'org.freedesktop.Notifications' runs already";
-    if (!connection.registerObject("/org/freedesktop/Notifications", daemon))
+    if (!connection.registerObject(QSL("/org/freedesktop/Notifications"), daemon))
         qDebug() << "registerObject failed: another object with '/org/freedesktop/Notifications' runs already";
 
     return a.exec();

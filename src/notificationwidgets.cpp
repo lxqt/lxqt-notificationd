@@ -25,9 +25,8 @@
  *
  * END_COMMON_COPYRIGHT_HEADER */
 
-#include <QUrl>
-#include <QFile>
 #include <XdgIcon>
+#include <LXQt/Globals>
 #include <QComboBox>
 #include <QHBoxLayout>
 #include <QButtonGroup>
@@ -56,7 +55,7 @@ NotificationActionsWidget::NotificationActionsWidget(const QStringList& actions,
             value = actions[i + 1];
         }
 
-        if (key == "default")
+        if (key == QL1S("default"))
             m_defaultAction = key;
 
         m_actions.append({key, value});
@@ -85,7 +84,7 @@ NotificationActionsButtonsWidget::NotificationActionsButtonsWidget(const QString
             QIcon icon = XdgIcon::fromTheme(action.first).pixmap(ICONSIZE);
 
             if (! icon.isNull()) {
-                b->setText("");
+                b->setText(QString());
                 b->setIcon(icon);
             }
         }

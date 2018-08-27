@@ -50,7 +50,7 @@ BasicSettings::BasicSettings(LXQt::Settings* settings, QWidget *parent) :
 
     LXQt::Notification serverTest;
     QString serverName = serverTest.serverInfo().name;
-    if (serverName != "lxqt-notificationd")
+    if (serverName != QL1S("lxqt-notificationd"))
     {
         if (serverName.isEmpty())
             warningLabel->setText(tr("<b>Warning:</b> No notifications daemon is running.\n"
@@ -67,24 +67,24 @@ BasicSettings::~BasicSettings()
 
 void BasicSettings::restoreSettings()
 {
-    QString placement = mSettings->value(QStringLiteral("placement"),
-                                         QStringLiteral("bottom-right")).toString().toLower();
+    QString placement = mSettings->value(QL1S("placement"),
+                                         QL1S("bottom-right")).toString().toLower();
 
-    if (QStringLiteral("top-left") == placement)
+    if (QL1S("top-left") == placement)
         topLeftRB->setChecked(true);
-    else if (QStringLiteral("top-center") == placement)
+    else if (QL1S("top-center") == placement)
         topCenterRB->setChecked(true);
-    else if (QStringLiteral("top-right") == placement)
+    else if (QL1S("top-right") == placement)
         topRightRB->setChecked(true);
-    else if (QStringLiteral("center-left") == placement)
+    else if (QL1S("center-left") == placement)
         centerLeftRB->setChecked(true);
-    else if (QStringLiteral("center-right") == placement)
+    else if (QL1S("center-right") == placement)
         centerRightRB->setChecked(true);
-    else if (QStringLiteral("bottom-left") == placement)
+    else if (QL1S("bottom-left") == placement)
         bottomLeftRB->setChecked(true);
-    else if (QStringLiteral("bottom-center") == placement)
+    else if (QL1S("bottom-center") == placement)
         bottomCenterRB->setChecked(true);
-    else if (QStringLiteral("bottom-right") == placement)
+    else if (QL1S("bottom-right") == placement)
         bottomRightRB->setChecked(true);
 }
 
@@ -92,23 +92,23 @@ void BasicSettings::updateNotification()
 {
    QString align;
     if (topLeftRB->isChecked())
-        align = QStringLiteral("top-left");
+        align = QL1S("top-left");
     else if (topCenterRB->isChecked())
-        align = QStringLiteral("top-center");
+        align = QL1S("top-center");
     else if (topRightRB->isChecked())
-        align = QStringLiteral("top-right");
+        align = QL1S("top-right");
     else if (centerLeftRB->isChecked())
-        align = QStringLiteral("center-left");
+        align = QL1S("center-left");
     else if (centerRightRB->isChecked())
-        align = QStringLiteral("center-right");
+        align = QL1S("center-right");
     else if (bottomLeftRB->isChecked())
-        align = QStringLiteral("bottom-left");
+        align = QL1S("bottom-left");
     else if (bottomCenterRB->isChecked())
-        align = QStringLiteral("bottom-center");
+        align = QL1S("bottom-center");
     else // if (bottomRightRB->isChecked())
-        align = QStringLiteral("bottom-right");
+        align = QL1S("bottom-right");
 
-    mSettings->setValue(QStringLiteral("placement"), align);
+    mSettings->setValue(QL1S("placement"), align);
     LXQt::Notification::notify(tr("Notification demo ") + align,
                                tr("This is a test notification.\n All notifications will now appear here on LXQt."),
                                QStringLiteral("lxqt"));
