@@ -4,12 +4,12 @@
 <context>
     <name>NotificationActionsComboWidget</name>
     <message>
-        <location filename="../notificationwidgets.cpp" line="101"/>
+        <location filename="../notificationwidgets.cpp" line="103"/>
         <source>Actions:</source>
         <translation>الإجراءات:</translation>
     </message>
     <message>
-        <location filename="../notificationwidgets.cpp" line="120"/>
+        <location filename="../notificationwidgets.cpp" line="122"/>
         <source>OK</source>
         <translation>حسنا</translation>
     </message>

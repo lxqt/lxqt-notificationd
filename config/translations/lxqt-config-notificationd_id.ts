@@ -87,17 +87,17 @@ Semua notikasi pada LXQt akan ditampilkan disini.</translation>
 <context>
     <name>MainWindow</name>
     <message>
-        <location filename="../mainwindow.cpp" line="40"/>
+        <location filename="../mainwindow.cpp" line="41"/>
         <source>Desktop Notifications</source>
         <translation>Notifikasi Desktop</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="43"/>
+        <location filename="../mainwindow.cpp" line="44"/>
         <source>Basic Settings</source>
         <translation>Pengatuan Dasar</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="47"/>
+        <location filename="../mainwindow.cpp" line="48"/>
         <source>Advanced Settings</source>
         <translation>Pengaturan Lanjutan</translation>
     </message>
