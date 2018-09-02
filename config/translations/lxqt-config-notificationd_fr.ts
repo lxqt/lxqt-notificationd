@@ -87,17 +87,17 @@ Toutes les notifications vont maintenant être affichées ici, sur LXQt.</transl
 <context>
     <name>MainWindow</name>
     <message>
-        <location filename="../mainwindow.cpp" line="40"/>
+        <location filename="../mainwindow.cpp" line="41"/>
         <source>Desktop Notifications</source>
         <translation>Notifications du bureau</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="43"/>
+        <location filename="../mainwindow.cpp" line="44"/>
         <source>Basic Settings</source>
         <translation>Réglages de base</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="47"/>
+        <location filename="../mainwindow.cpp" line="48"/>
         <source>Advanced Settings</source>
         <translation>Réglages avancés</translation>
     </message>

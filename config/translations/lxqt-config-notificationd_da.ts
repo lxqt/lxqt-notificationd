@@ -87,17 +87,17 @@ Disse indstillinger vil ikke have nogen effekt på det!</translation>
 <context>
     <name>MainWindow</name>
     <message>
-        <location filename="../mainwindow.cpp" line="40"/>
+        <location filename="../mainwindow.cpp" line="41"/>
         <source>Desktop Notifications</source>
         <translation>Skrivebordsnotifikationer</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="43"/>
+        <location filename="../mainwindow.cpp" line="44"/>
         <source>Basic Settings</source>
         <translation>Grundlæggende indstillinger</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="47"/>
+        <location filename="../mainwindow.cpp" line="48"/>
         <source>Advanced Settings</source>
         <translation>Avanceret indstillinger</translation>
     </message>
