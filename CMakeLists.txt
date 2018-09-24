@@ -10,6 +10,7 @@ set(CMAKE_INCLUDE_CURRENT_DIR ON)
 set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 
 option(UPDATE_TRANSLATIONS "Update source translation translations/*.ts files" OFF)
+option(LXQT_NOTIFICATION_BUILD_TESTS "Build LXQt Notification tests" OFF)
 
 find_package(Qt5DBus REQUIRED)
 find_package(Qt5LinguistTools REQUIRED)
@@ -45,6 +46,9 @@ include(LXQtTranslate)
 
 add_subdirectory(config)
 add_subdirectory(src)
+if (LXQT_NOTIFICATION_BUILD_TESTS)
+    add_subdirectory(test)
+endif()
 
 ## merged from lxqt-common
 add_subdirectory(autostart)
