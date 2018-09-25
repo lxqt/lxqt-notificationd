@@ -33,18 +33,25 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
     connect(ui->pushButton, SIGNAL(clicked()), SLOT(createNotification()));
-    LXQt::Notification::notify("1");
-    LXQt::Notification::notify("2");
-    LXQt::Notification::notify("3");
+    LXQt::Notification::notify(QStringLiteral("1"));
+    LXQt::Notification::notify(QStringLiteral("2"));
+    LXQt::Notification::notify(QStringLiteral("3"));
 }
 
 void MainWindow::createNotification()
 {
-    LXQt::Notification* n = new LXQt::Notification("Notification!");
+    LXQt::Notification* n = new LXQt::Notification(QStringLiteral("Notification!"));
     nlist.append(n);
     connect(n, SIGNAL(actionActivated(int)), this, SLOT(clickEvent(int)));
-    n->setActions(QStringList() << "Hi" << "Bye" << "foo" << "bar" << "lorem" << "ipsum", 1);
-    n->setIcon("preferences-desktop-launch-feedback");
+    n->setActions(QStringList()
+            << QStringLiteral("Hi")
+            << QStringLiteral("Bye")
+            << QStringLiteral("foo")
+            << QStringLiteral("bar")
+            << QStringLiteral("lorem")
+            << QStringLiteral("ipsum"),
+    1);
+    n->setIcon(QStringLiteral("preferences-desktop-launch-feedback"));
     n->update();
 }
 
@@ -55,11 +62,11 @@ void MainWindow::clickEvent(int button)
     {
         if (button == 0)
         {
-            n->setBody("Hello!");
+            n->setBody(QStringLiteral("Hello!"));
         }
         else
         {
-            n->setBody("Closing...");
+            n->setBody(QStringLiteral("Closing..."));
             n->setTimeout(1000);
         }
         n->update();
