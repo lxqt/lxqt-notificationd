@@ -33,14 +33,14 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
     connect(ui->pushButton, SIGNAL(clicked()), SLOT(createNotification()));
-    LXQtNotification::notify("1");
-    LXQtNotification::notify("2");
-    LXQtNotification::notify("3");
+    LXQt::Notification::notify("1");
+    LXQt::Notification::notify("2");
+    LXQt::Notification::notify("3");
 }
 
 void MainWindow::createNotification()
 {
-    LXQtNotification* n = new LXQtNotification("Notification!");
+    LXQt::Notification* n = new LXQt::Notification("Notification!");
     nlist.append(n);
     connect(n, SIGNAL(actionActivated(int)), this, SLOT(clickEvent(int)));
     n->setActions(QStringList() << "Hi" << "Bye" << "foo" << "bar" << "lorem" << "ipsum", 1);
@@ -50,7 +50,7 @@ void MainWindow::createNotification()
 
 void MainWindow::clickEvent(int button)
 {
-    LXQtNotification* n = qobject_cast<LXQtNotification*>(sender());
+    LXQt::Notification* n = qobject_cast<LXQt::Notification*>(sender());
     if (n)
     {
         if (button == 0)

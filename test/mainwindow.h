@@ -27,7 +27,9 @@
 
 #include <QMainWindow>
 
-class LXQtNotification;
+namespace LXQt {
+    class Notification;
+}
 
 namespace Ui {
 class MainWindow;
@@ -47,7 +49,7 @@ public slots:
 
 private:
     Ui::MainWindow* ui;
-    QList<LXQtNotification*> nlist;
+    QList<LXQt::Notification*> nlist;
 };
 
 #endif // MAINWINDOW_H
