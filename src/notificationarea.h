@@ -51,8 +51,10 @@ public:
      * \param placement a string name for notification location "top-level" etc.
      * \param width set with of notifications
      * \param spacing a spacing in the \NotificationLayout
+     * \param unattendedMaxNum the max. number of unattended notifications to be saved
+     * \param blackList the list of apps whose unattended notifications aren't saved
      */
-    void setSettings(const QString &placement, int width, int spacing);
+    void setSettings(const QString &placement, int width, int spacing, int unattendedMaxNum, const QStringList &blackList);
 
 private:
     NotificationLayout *m_layout;

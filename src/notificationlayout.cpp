@@ -31,12 +31,17 @@
 
 #include <QtDebug>
 #include <QBrush>
-
+#include <QSettings>
+#include <QStandardPaths>
 
 NotificationLayout::NotificationLayout(QWidget *parent)
-    : QWidget(parent)
+    : QWidget(parent),
+      m_unattendedMaxNum(0),
+      m_cacheDateFormat(QL1S("yyyy-MM-dd-HH-mm-ss-zzz"))
 {
     setObjectName(QSL("NotificationLayout"));
+
+    m_cacheFile = QStandardPaths::writableLocation(QStandardPaths::CacheLocation) + QL1S("/unattended.list");
 
     // Hack to ensure the fully transparent background
     QPalette palette;
@@ -68,7 +73,8 @@ void NotificationLayout::setSizes(int space, int width)
 void NotificationLayout::addNotification(uint id, const QString &application,
                                         const QString &summary, const QString &body,
                                         const QString &icon, int timeout,
-                                        const QStringList& actions, const QVariantMap& hints)
+                                        const QStringList& actions, const QVariantMap& hints,
+                                        bool noSave)
 {
 //    qDebug() << "NotificationLayout::addNotification" << id << application << summary << body << icon << timeout;
     if (m_notifications.contains(id))
@@ -96,7 +102,10 @@ void NotificationLayout::addNotification(uint id, const QString &application,
             }
         }
 
-        connect(n, &Notification::timeout, this, &NotificationLayout::removeNotificationTimeout);
+        if (noSave) // as if it is always closed by user
+            connect(n, &Notification::timeout, this, &NotificationLayout::removeNotificationUser);
+        else
+            connect(n, &Notification::timeout, this, &NotificationLayout::removeNotificationTimeout);
         connect(n, &Notification::userCanceled, this, &NotificationLayout::removeNotificationUser);
         connect(n, &Notification::actionTriggered,
                 this, &NotificationLayout::notificationActionCalled);
@@ -159,8 +168,35 @@ void NotificationLayout::removeNotification(uint key, uint reason)
     }
 
     delete m_layout->takeAt(ix);
+    QString date;
+    if(m_unattendedMaxNum > 0 && reason == 1 && !m_blackList.contains(n->application()))
+    {
+        // save this notification with its date
+        date = QDateTime::currentDateTime().toString(m_cacheDateFormat);
+        QSettings list(m_cacheFile, QSettings::IniFormat);
+
+        // remove the oldest notification if the list is full
+        QStringList dates = list.childGroups();
+        if (!dates.isEmpty())
+            dates.sort();
+        while (dates.size() >= m_unattendedMaxNum)
+        {
+            list.remove(dates.at(0));
+            dates.removeFirst();
+        }
+
+        list.beginGroup(date);
+        list.setValue(QL1S("Application"), n->application());
+        list.setValue(QL1S("Icon"), n->icon());
+        list.setValue(QL1S("Summary"), n->summary());
+        list.setValue(QL1S("Body"), n->body());
+        list.setValue(QL1S("TimeOut"), n->timeOut());
+        list.setValue(QL1S("Actions"), n->actions());
+        list.setValue(QL1S("Hints"), n->hints());
+        list.endGroup();
+    }
     n->deleteLater();
-    emit notificationClosed(key, reason);
+    emit notificationClosed(key, reason, date);
 
     if (m_notifications.count() == 0)
         emit allNotificationsClosed();

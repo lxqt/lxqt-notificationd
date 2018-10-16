@@ -43,6 +43,24 @@ public:
      */
     void setSizes(int space, int width);
 
+    int getUnattendedMaxNum() const {
+        return m_unattendedMaxNum;
+    }
+    void setUnattendedMaxNum(int num) {
+        m_unattendedMaxNum = num;
+    }
+
+    void setBlackList(const QStringList &l) {
+        m_blackList = l;
+    }
+
+    QString cacheFile() const {
+        return m_cacheFile;
+    }
+    QString cacheDateFormat() const {
+        return m_cacheDateFormat;
+    }
+
 signals:
     //! All \c Notification instances are closed
     void allNotificationsClosed();
@@ -54,8 +72,9 @@ signals:
     /*! Promote the internal change of notification closing into the \c Notifyd
      * \param id an notification ID (obtained from \c Notify)
      * \param reason a reason for closing code. See specification for more info.
+     * \param date the exact moment of closing.
      */
-    void notificationClosed(uint id, uint reason);
+    void notificationClosed(uint id, uint reason, const QString &date);
 
     /*! Inform the external application that user chose one of provided action via the \c Notifyd
      * \param in0 a notification ID (obtained from \c Notify)
@@ -70,7 +89,8 @@ public slots:
     void addNotification(uint id, const QString &application,
                          const QString &summary, const QString &body,
                          const QString &icon, int timeout,
-                         const QStringList& actions, const QVariantMap& hints);
+                         const QStringList& actions, const QVariantMap& hints,
+                         bool noSave = false);
 
     /*! Notification id should be removed because of reason
      */
@@ -79,6 +99,10 @@ public slots:
 private:
     QHash<uint, Notification*> m_notifications;
     QVBoxLayout *m_layout;
+    int m_unattendedMaxNum;
+    QStringList m_blackList;
+    QString m_cacheFile;
+    QString m_cacheDateFormat;
 
     /*! Calculate required height based on height of each \c Notification
      * in the m_notifications map.

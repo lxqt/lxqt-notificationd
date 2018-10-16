@@ -38,9 +38,11 @@ AdvancedSettings::AdvancedSettings(LXQt::Settings* settings, QWidget *parent):
     setupUi(this);
     restoreSettings();
 
-    connect(serverDecidesBox, SIGNAL(valueChanged(int)), this, SLOT(save()));
-    connect(spacingBox, SIGNAL(valueChanged(int)), this, SLOT(save()));
-    connect(widthBox, SIGNAL(valueChanged(int)), this, SLOT(save()));
+    connect(serverDecidesBox, QOverload<int>::of(&QSpinBox::valueChanged), this, &AdvancedSettings::save);
+    connect(spacingBox, QOverload<int>::of(&QSpinBox::valueChanged), this, &AdvancedSettings::save);
+    connect(widthBox, QOverload<int>::of(&QSpinBox::valueChanged), this, &AdvancedSettings::save);
+    connect(unattendedBox, QOverload<int>::of(&QSpinBox::valueChanged), this, &AdvancedSettings::save);
+    connect(blackListEdit, &QLineEdit::editingFinished, this, &AdvancedSettings::save);
 }
 
 AdvancedSettings::~AdvancedSettings()
@@ -56,6 +58,8 @@ void AdvancedSettings::restoreSettings()
 
     spacingBox->setValue(mSettings->value(QL1S("spacing"), 6).toInt());
     widthBox->setValue(mSettings->value(QL1S("width"), 300).toInt());
+    unattendedBox->setValue(mSettings->value(QL1S("unattendedMaxNum"), 0).toInt());
+    blackListEdit->setText(mSettings->value(QL1S("blackList")).toStringList().join (QL1S(",")));
 }
 
 void AdvancedSettings::save()
@@ -63,4 +67,14 @@ void AdvancedSettings::save()
     mSettings->setValue(QL1S("server_decides"), serverDecidesBox->value());
     mSettings->setValue(QL1S("spacing"), spacingBox->value());
     mSettings->setValue(QL1S("width"), widthBox->value());
+    mSettings->setValue(QL1S("unattendedMaxNum"), unattendedBox->value());
+    QString blackList = blackListEdit->text();
+    if (!blackList.isEmpty())
+    {
+        QStringList l = blackList.split(QL1S(","), QString::SkipEmptyParts);
+        l.removeDuplicates();
+        mSettings->setValue(QL1S("blackList"), l);
+    }
+    else
+        mSettings->remove(QL1S("blackList"));
 }

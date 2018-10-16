@@ -121,7 +121,7 @@ void NotificationArea::setHeight(int contentHeight)
     ensureVisible(0, contentHeight, 0, 0);
 }
 
-void NotificationArea::setSettings(const QString &placement, int width, int spacing)
+void NotificationArea::setSettings(const QString &placement, int width, int spacing, int unattendedMaxNum, const QStringList &blackList)
 {
     m_placement = placement;
 
@@ -132,4 +132,7 @@ void NotificationArea::setSettings(const QString &placement, int width, int spac
     m_layout->setSizes(m_spacing, width);
 
     this->setHeight(widget()->height());
+
+    m_layout->setUnattendedMaxNum(unattendedMaxNum);
+    m_layout->setBlackList(blackList);
 }

@@ -33,6 +33,9 @@
 #include <QObject>
 #include <QVariantMap>
 #include <QStringList>
+#include <QPointer>
+#include <QSystemTrayIcon>
+#include <QMenu>
 
 #include "notificationarea.h"
 #include <LXQt/Settings>
@@ -79,6 +82,7 @@ public slots:
      * \param actions User selectable action list. See specification for more info.
      * \param hints Notification hints. See specification for more info.
      * \param expire_timeout how long should be this notification displayed (-1 = server decides; 0 forever; >0timeout in milliseconds)
+     * \param noSave never save or remember this notification; always assume it is closed by user
      */
     uint Notify(const QString& app_name,
                 uint replaces_id,
@@ -87,7 +91,8 @@ public slots:
                 const QString& body,
                 const QStringList& actions,
                 const QVariantMap& hints,
-                int expire_timeout);
+                int expire_timeout,
+                bool noSave = false);
 
 signals:
     // signals for DBUS API specs - going outside
@@ -122,7 +127,8 @@ signals:
      */
     void notificationAdded(uint id, const QString &application, const QString &title,
                            const QString &description, const QString &icon,
-                           int timeout, const QStringList& actions, const QVariantMap& hints);
+                           int timeout, const QStringList& actions, const QVariantMap& hints,
+                           bool noSave);
 
 private:
     uint mId;
@@ -131,8 +137,17 @@ private:
 
     LXQt::Settings *m_settings;
 
+    QPointer<QSystemTrayIcon> m_trayIcon;
+    QPointer<QMenu> m_trayMenu;
+    int m_trayChecker;
+
+    void createTrayIcon();
+
 private slots:
     void reloadSettings();
+    void checkTray();
+    void addToUnattendedList(uint id, uint reason, const QString &date);
+    void restoreUnattended();
 };
 
 #endif // NOTIFYD_H
