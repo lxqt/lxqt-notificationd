@@ -52,7 +52,11 @@ Notification::Notification(const QString &application,
     : QWidget(parent),
       m_timer(0),
       m_linkHovered(false),
-      m_actionWidget(0)
+      m_actionWidget(0),
+      m_icon(icon),
+      m_timeout(timeout),
+      m_actions(actions),
+      m_hints(hints)
 {
     setupUi(this);
     setObjectName(QSL("Notification"));

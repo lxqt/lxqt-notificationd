@@ -68,6 +68,19 @@ public:
     QString summary() const;
     QString body() const;
 
+    QString icon() const {
+        return m_icon;
+    }
+    int timeOut() const {
+        return m_timeout;
+    }
+    QStringList actions() const {
+        return m_actions;
+    }
+    QVariantMap hints() const {
+        return m_hints;
+    }
+
 signals:
     //! the server set timeout passed. Notification should close itself.
     void timeout();
@@ -102,6 +115,11 @@ private:
     bool m_linkHovered;
 
     NotificationActionsWidget *m_actionWidget;
+
+    QString m_icon;
+    int m_timeout;
+    QStringList m_actions;
+    QVariantMap m_hints;
 
     // mandatory for stylesheets
     void paintEvent(QPaintEvent *);
