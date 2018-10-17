@@ -145,6 +145,9 @@
        <layout class="QHBoxLayout" name="horizontalLayout_6">
         <item>
          <widget class="QLabel" name="blackListLabel">
+          <property name="toolTip">
+           <string>Application name is on the top of notification.</string>
+          </property>
           <property name="text">
            <string>Ignore these applications:</string>
           </property>
@@ -152,6 +155,9 @@
         </item>
         <item>
          <widget class="QLineEdit" name="blackListEdit">
+          <property name="toolTip">
+           <string>Application name is on the top of notification.</string>
+          </property>
           <property name="placeholderText">
            <string>app1,app2,app3</string>
           </property>
