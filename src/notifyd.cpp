@@ -149,7 +149,7 @@ uint Notifyd::Notify(const QString& app_name,
 void Notifyd::reloadSettings()
 {
     m_serverTimeout = m_settings->value(QSL("server_decides"), 10).toInt();
-    int maxNum = m_settings->value(QSL("unattendedMaxNum"), 0).toInt();
+    int maxNum = m_settings->value(QSL("unattendedMaxNum"), 10).toInt();
     m_area->setSettings(
             m_settings->value(QSL("placement"), QSL("bottom-right")).toString().toLower(),
             m_settings->value(QSL("width"), 300).toInt(),

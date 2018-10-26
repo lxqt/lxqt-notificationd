@@ -58,7 +58,7 @@ void AdvancedSettings::restoreSettings()
 
     spacingBox->setValue(mSettings->value(QL1S("spacing"), 6).toInt());
     widthBox->setValue(mSettings->value(QL1S("width"), 300).toInt());
-    unattendedBox->setValue(mSettings->value(QL1S("unattendedMaxNum"), 0).toInt());
+    unattendedBox->setValue(mSettings->value(QL1S("unattendedMaxNum"), 10).toInt());
     blackListEdit->setText(mSettings->value(QL1S("blackList")).toStringList().join (QL1S(",")));
 }
 
