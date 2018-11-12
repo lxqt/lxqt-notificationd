@@ -31,18 +31,18 @@
     <message>
         <location filename="../advancedsettings.ui" line="99"/>
         <source> sec</source>
-        <translation> sec</translation>
+        <translation> ·sec</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="17"/>
         <source>Sizes</source>
-        <translation>Dimensione</translation>
+        <translation>Dimensioni</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="32"/>
         <location filename="../advancedsettings.ui" line="56"/>
         <source> px</source>
-        <translation></translation>
+        <translation> ·px</translation>
     </message>
 </context>
 <context>
@@ -69,7 +69,7 @@ Sarà usato un sistema di riserva.</translation>
         <source>&lt;b&gt;Warning:&lt;/b&gt; A third-party notifications daemon (%1) is running.
 These settings won&apos;t have any effect on it!</source>
         <translation>&lt;b&gt;Avviso:&lt;/b&gt; Un altro demone di notifiche (%1) è attivo.
-Queste impostazioni non avranno effetto per lui!</translation>
+Queste impostazioni non avranno effetto per esso!</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="112"/>
