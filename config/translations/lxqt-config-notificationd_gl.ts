@@ -37,7 +37,7 @@
     <message>
         <location filename="../advancedsettings.ui" line="92"/>
         <source>Default duration:</source>
-        <translation>Duración por omisión:</translation>
+        <translation>Duración predeterminada:</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="99"/>
