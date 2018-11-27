@@ -31,7 +31,7 @@
     <message>
         <location filename="../advancedsettings.ui" line="99"/>
         <source> sec</source>
-        <translation> ·sec</translation>
+        <translation> sec</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="17"/>
@@ -42,7 +42,7 @@
         <location filename="../advancedsettings.ui" line="32"/>
         <location filename="../advancedsettings.ui" line="56"/>
         <source> px</source>
-        <translation> ·px</translation>
+        <translation> px</translation>
     </message>
 </context>
 <context>
