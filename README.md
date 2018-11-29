@@ -55,3 +55,13 @@ which is used to customize notifications can be opened from the panel's main
 menu - Preferences - LXQt Settings - Desktop Notifications and is provided by the
 [Configuration Center](https://github.com/lxqt/lxqt-config#configuration-center)
 of [lxqt-config](https://github.com/lxqt/lxqt-config) as well.
+
+## Translation (Weblate)
+
+<a href="https://weblate.lxqt.org/projects/lxqt/lxqt-notificationd/">
+<img src="https://weblate.lxqt.org/widgets/lxqt/-/lxqt-notificationd/287x66-white.png" alt="Translation status" />
+</a>
+
+<a href="https://weblate.lxqt.org/projects/lxqt/lxqt-config-notificationd/">
+<img src="https://weblate.lxqt.org/widgets/lxqt/-/lxqt-config-notificationd/287x66-white.png" alt="Translation status" />
+</a>
