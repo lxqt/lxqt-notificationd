@@ -52,7 +52,7 @@
     <message>
         <location filename="../advancedsettings.ui" line="135"/>
         <source>How many to save:</source>
-        <translation>Cantos para gardar:</translation>
+        <translation>Cantos hai para gardar:</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="149"/>
