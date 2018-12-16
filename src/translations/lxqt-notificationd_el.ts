@@ -19,19 +19,19 @@
     <message>
         <location filename="../notifyd.cpp" line="226"/>
         <source>Clear All</source>
-        <translation type="unfinished"></translation>
+        <translation>Εκκαθάριση όλων</translation>
     </message>
     <message>
         <location filename="../notifyd.cpp" line="234"/>
         <source>Options</source>
-        <translation type="unfinished"></translation>
+        <translation>Επιλογές</translation>
     </message>
     <message>
         <location filename="../notifyd.cpp" line="241"/>
         <location filename="../notifyd.cpp" line="298"/>
         <location filename="../notifyd.cpp" line="318"/>
         <source>%1 Unattended Notification(s)</source>
-        <translation type="unfinished"></translation>
+        <translation>Ανεπίβλεπτες ειδοποιήσεις: %1</translation>
     </message>
 </context>
 </TS>
