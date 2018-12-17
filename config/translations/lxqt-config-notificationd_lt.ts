@@ -47,12 +47,12 @@
     <message>
         <location filename="../advancedsettings.ui" line="127"/>
         <source>Unattended Notifications</source>
-        <translation type="unfinished"></translation>
+        <translation>Neperžiūrėti pranešimai</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="135"/>
         <source>How many to save:</source>
-        <translation type="unfinished"></translation>
+        <translation>Kiek įrašyti:</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="149"/>
