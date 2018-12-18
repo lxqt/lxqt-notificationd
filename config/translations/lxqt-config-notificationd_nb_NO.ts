@@ -17,7 +17,7 @@
         <location filename="../advancedsettings.ui" line="32"/>
         <location filename="../advancedsettings.ui" line="56"/>
         <source> px</source>
-        <translation> piksler</translation>
+        <translation> pksl</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="49"/>
@@ -107,7 +107,7 @@ Disse innstillingene har ingen effekt på den!</translation>
         <source>This is a test notification.
  All notifications will now appear here on LXQt.</source>
         <translation>Dette er et testvarsel.
- Alle varsler vil nå vises her på LXQt.</translation>
+ Alle varsler på LXQt vil nå vises her.</translation>
     </message>
 </context>
 <context>
