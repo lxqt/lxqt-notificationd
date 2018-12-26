@@ -47,28 +47,28 @@
     <message>
         <location filename="../advancedsettings.ui" line="127"/>
         <source>Unattended Notifications</source>
-        <translation type="unfinished"></translation>
+        <translation>Nespatřená oznámení</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="135"/>
         <source>How many to save:</source>
-        <translation type="unfinished"></translation>
+        <translation>Kolik uložit:</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="149"/>
         <location filename="../advancedsettings.ui" line="159"/>
         <source>Application name is on the top of notification.</source>
-        <translation type="unfinished"></translation>
+        <translation>Název aplikace se nachází na začátku oznámení.</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="152"/>
         <source>Ignore these applications:</source>
-        <translation type="unfinished"></translation>
+        <translation>Ignorovat tyto aplikace:</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="162"/>
         <source>app1,app2,app3</source>
-        <translation type="unfinished"></translation>
+        <translation>apl1,apl2,apl3</translation>
     </message>
 </context>
 <context>
