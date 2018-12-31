@@ -42,12 +42,12 @@
     <message>
         <location filename="../advancedsettings.ui" line="99"/>
         <source> sec</source>
-        <translation> s</translation>
+        <translation> Sek</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="127"/>
         <source>Unattended Notifications</source>
-        <translation type="unfinished"></translation>
+        <translation>Unbeaufsichtigte Benachrichtigungen</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="135"/>
@@ -58,17 +58,17 @@
         <location filename="../advancedsettings.ui" line="149"/>
         <location filename="../advancedsettings.ui" line="159"/>
         <source>Application name is on the top of notification.</source>
-        <translation type="unfinished"></translation>
+        <translation>Anwendungsname steht oben in der Benachrichtigung.</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="152"/>
         <source>Ignore these applications:</source>
-        <translation type="unfinished"></translation>
+        <translation>Diese Anwendungen ignorieren:</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="162"/>
         <source>app1,app2,app3</source>
-        <translation type="unfinished"></translation>
+        <translation>App1,App2,App3</translation>
     </message>
 </context>
 <context>
@@ -94,7 +94,7 @@ Ein Ersatz wird verwendet.</translation>
         <location filename="../basicsettings.cpp" line="59"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; A third-party notifications daemon (%1) is running.
 These settings won&apos;t have any effect on it!</source>
-        <translation>&lt;b&gt;Warnung:&lt;/b&gt; Ein anderer Benachrichtigungsdaemon (%1) läuft.
+        <translation>&lt;b&gt;Warnung:&lt;/b&gt; Ein Benachrichtigungsdaemon (%1) von Drittanbietern läuft.
 Diese Einstellungen wirken sich auf ihn nicht aus!</translation>
     </message>
     <message>
