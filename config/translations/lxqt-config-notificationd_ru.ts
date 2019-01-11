@@ -63,12 +63,12 @@
     <message>
         <location filename="../advancedsettings.ui" line="152"/>
         <source>Ignore these applications:</source>
-        <translation>Игнорировать следующие приложения:</translation>
+        <translation>Игнорировать приложения:</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="162"/>
         <source>app1,app2,app3</source>
-        <translation type="unfinished"></translation>
+        <translation>app1,app2,app3</translation>
     </message>
 </context>
 <context>
