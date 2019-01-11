@@ -58,7 +58,7 @@
         <location filename="../advancedsettings.ui" line="149"/>
         <location filename="../advancedsettings.ui" line="159"/>
         <source>Application name is on the top of notification.</source>
-        <translation>Имя приложения находится сверху уведомления</translation>
+        <translation>Имя приложения находится вверху уведомления.</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="152"/>
