@@ -238,8 +238,9 @@ void Notifyd::createTrayIcon()
 
     m_trayIcon->setContextMenu(m_trayMenu);
     m_trayIcon->setVisible(!dates.isEmpty());
-    m_trayIcon->setToolTip(tr("%1 Unattended Notification(s)")
-                            .arg(m_trayMenu->actions().size() - 3));
+    m_trayIcon->setToolTip(tr("%n Unattended Notification(s)", "",
+                                m_trayMenu->actions().size() - 3));
+            
 }
 
 // NOTE: Contrary to what Qt doc implies, if the tray icon is created before the tray area is available,
@@ -295,8 +296,8 @@ void Notifyd::addToUnattendedList(uint /*id*/, uint reason, const QString &date)
             m_trayMenu->insertAction(actions.isEmpty() ? nullptr : actions.first(), action);
             connect(action, &QAction::triggered, this, &Notifyd::restoreUnattended);
             m_trayIcon->setVisible(true);
-            m_trayIcon->setToolTip(tr("%1 Unattended Notification(s)")
-                                    .arg(m_trayMenu->actions().size() - 3));
+            m_trayIcon->setToolTip(tr("%n Unattended Notification(s)", "",
+                                       m_trayMenu->actions().size() - 3));
         }
     }
 }
@@ -315,8 +316,8 @@ void Notifyd::restoreUnattended()
             m_trayMenu->deleteLater();
         }
         else
-            m_trayIcon->setToolTip(tr("%1 Unattended Notification(s)")
-                                    .arg(m_trayMenu->actions().size() - 3));
+            m_trayIcon->setToolTip(tr("%n Unattended Notification(s)", "",
+                                       m_trayMenu->actions().size() - 3));
         QSettings list(m_area->layout()->cacheFile(), QSettings::IniFormat);
         if (list.childGroups().contains(date))
         {
