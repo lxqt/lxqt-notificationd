@@ -25,6 +25,8 @@
  *
  * END_COMMON_COPYRIGHT_HEADER */
 
+#include <QTimer>
+
 #include <LXQt/Notification>
 
 #include "basicsettings.h"
@@ -48,17 +50,34 @@ BasicSettings::BasicSettings(LXQt::Settings* settings, QWidget *parent) :
     connect(bottomCenterRB, SIGNAL(clicked()), this, SLOT(updateNotification()));
     connect(bottomRightRB,  SIGNAL(clicked()), this, SLOT(updateNotification()));
 
-    LXQt::Notification serverTest;
-    QString serverName = serverTest.serverInfo().name;
-    if (serverName != QL1S("lxqt-notificationd"))
-    {
-        if (serverName.isEmpty())
-            warningLabel->setText(tr("<b>Warning:</b> No notifications daemon is running.\n"
-            "A fallback will be used."));
-        else
-            warningLabel->setText(tr("<b>Warning:</b> A third-party notifications daemon (%1) is running.\n"
-            "These settings won't have any effect on it!").arg(serverName));
-    }
+    LXQt::Notification *serverTest = new LXQt::Notification(QString(), this);
+    serverTest->queryServerInfo();
+
+    // Display some reasonable message if notification daemon is not responding for a while
+    QTimer *saneQueryTimeout = new QTimer(this);
+    saneQueryTimeout->setSingleShot(true);
+    saneQueryTimeout->start(200);
+    connect(saneQueryTimeout, &QTimer::timeout, [this]() {
+                warningLabel->setText(tr("<b>Warning:</b> notifications daemon is slow to respond.\n"
+                        "Keep trying to connect…"));
+            });
+
+    connect(serverTest, &LXQt::Notification::serverInfoReady, [this, serverTest, saneQueryTimeout]() {
+            QString serverName = serverTest->serverInfo().name;
+            if (serverName != QL1S("lxqt-notificationd"))
+            {
+                if (serverName.isEmpty())
+                    warningLabel->setText(tr("<b>Warning:</b> No notifications daemon is running.\n"
+                    "A fallback will be used."));
+                else
+                    warningLabel->setText(tr("<b>Warning:</b> A third-party notifications daemon (%1) is running.\n"
+                    "These settings won't have any effect on it!").arg(serverName));
+            }
+            serverTest->deleteLater();
+            saneQueryTimeout->stop();
+            saneQueryTimeout->deleteLater();
+
+        });
 }
 
 BasicSettings::~BasicSettings()
