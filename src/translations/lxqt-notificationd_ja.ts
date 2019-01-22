@@ -19,19 +19,19 @@
     <message>
         <location filename="../notifyd.cpp" line="226"/>
         <source>Clear All</source>
-        <translation type="unfinished"></translation>
+        <translation>全てクリア</translation>
     </message>
     <message>
         <location filename="../notifyd.cpp" line="234"/>
         <source>Options</source>
-        <translation type="unfinished"></translation>
+        <translation>オプション</translation>
     </message>
     <message>
         <location filename="../notifyd.cpp" line="241"/>
         <location filename="../notifyd.cpp" line="298"/>
         <location filename="../notifyd.cpp" line="318"/>
         <source>%1 Unattended Notification(s)</source>
-        <translation type="unfinished"></translation>
+        <translation>%1個の未読通知</translation>
     </message>
 </context>
 </TS>
