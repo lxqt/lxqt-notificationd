@@ -1,4 +1,22 @@
 
+lxqt-notificationd-0.14.0 / 2019-01-25
+======================================
+
+  * Bumped version to 0.14.0
+  * Notification history implemented
+  * Implementations fixed:
+    - Fixed notification styles
+    - Don't use automatic string conversions
+    - Use QLatin1String where it is more efficient
+    - Test app updated
+  * Improved cmake scripting
+    - Set cmake_minimum_required to 3.1.0
+    - Removed locale compile definitons
+  * Moved translations from lxqt-l10n back to lxqt-notificationd
+    - Removed obsolete translation fuctionality
+    - Added translation promo in README.md
+  * Translation updates
+
 lxqt-notificationd-0.13.0 / 2018-05-21
 ======================================
 
@@ -16,8 +34,8 @@ lxqt-notificationd-0.13.0 / 2018-05-21
   * cmake: Handle CMP0071
   * Change icon to preferences-desktop-notification
 
-0.12.0 / 2017-10-21
-===================
+lxqt-notificationd-0.12.0 / 2017-10-21
+======================================
 
   * Release 0.12.0: Update changelog
   * Set patch version
@@ -46,8 +64,8 @@ lxqt-notificationd-0.13.0 / 2018-05-21
   * Fix a typo: singals -> signals
   * Bump year
 
-0.11.1 / 2017-01-01
-===================
+lxqt-notificationd-0.11.1 / 2017-01-01
+======================================
 
   * Release 0.11.1: Update changelog
   * Updated da translation. Removed da_DK
@@ -55,8 +73,8 @@ lxqt-notificationd-0.13.0 / 2018-05-21
   * Make CMakeList.txt more uniform.
   * Remove cpack (#53)
 
-0.11.0 / 2016-09-24
-===================
+lxqt-notificationd-0.11.0 / 2016-09-24
+======================================
 
   * Release 0.11.0: Add changelog
   * Update and extend README.md
@@ -73,8 +91,8 @@ lxqt-notificationd-0.13.0 / 2018-05-21
   * update lxqt-config-notificationd_hu.ts
   * Update lxqt-config-notificationd_it.ts
 
-0.10.0 / 2015-10-31
-===================
+lxqt-notificationd-0.10.0 / 2015-10-31
+======================================
 
   * Update translations
   * Remove docs/notification-spec-latest.html in favour of an upstream link
@@ -122,8 +140,8 @@ lxqt-notificationd-0.13.0 / 2018-05-21
   * Updated german translation
   * Added german translation.
 
-0.9.0 / 2015-01-06
-==================
+lxqt-notificationd-0.9.0 / 2015-01-06
+=====================================
 
   * Portuguese language update
   * Fix typos in tests
@@ -142,8 +160,8 @@ lxqt-notificationd-0.13.0 / 2018-05-21
   * Drop Qt4 support in code
   * Clean up CMakeLists.txt and drop Qt 4 support
 
-0.8.0 / 2014-10-13
-==================
+lxqt-notificationd-0.8.0 / 2014-10-13
+=====================================
 
   * Adapt to the translation infrastructure
   * Fix xde/lxde-qt #67 - Notifications are shown in the wrong location.
@@ -154,13 +172,13 @@ lxqt-notificationd-0.13.0 / 2018-05-21
   * Use new LXQt header files.
   * Swap Spacing and Width
 
-0.7.0 / 2014-05-07
-==================
+lxqt-notificationd-0.7.0 / 2014-05-07
+=====================================
 
   * Update COPYING
 
-0.6.99 / 2014-04-30
-===================
+lxqt-notificationd-0.6.99 / 2014-04-30
+======================================
 
   * remove old templates from translations remove icon translations from desktop file translations
   * Style fixes to the advanced config
