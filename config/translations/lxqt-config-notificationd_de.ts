@@ -52,7 +52,7 @@
     <message>
         <location filename="../advancedsettings.ui" line="135"/>
         <source>How many to save:</source>
-        <translation type="unfinished"></translation>
+        <translation>Wie viele sollen gespeichert werden:</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="149"/>
