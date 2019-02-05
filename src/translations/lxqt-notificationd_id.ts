@@ -19,12 +19,12 @@
     <message>
         <location filename="../notifyd.cpp" line="226"/>
         <source>Clear All</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Tutup Semua</translation>
     </message>
     <message>
         <location filename="../notifyd.cpp" line="234"/>
         <source>Options</source>
-        <translation type="unfinished"></translation>
+        <translation>Plihan</translation>
     </message>
     <message>
         <location filename="../notifyd.cpp" line="241"/>
