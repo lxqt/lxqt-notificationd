@@ -47,28 +47,28 @@
     <message>
         <location filename="../advancedsettings.ui" line="127"/>
         <source>Unattended Notifications</source>
-        <translation type="unfinished"></translation>
+        <translation>Notifications sans surveillance</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="135"/>
         <source>How many to save:</source>
-        <translation type="unfinished"></translation>
+        <translation>Combien à sauvegarder :</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="149"/>
         <location filename="../advancedsettings.ui" line="159"/>
         <source>Application name is on the top of notification.</source>
-        <translation type="unfinished"></translation>
+        <translation>Le nom de l&apos;application est en haut de la notification.</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="152"/>
         <source>Ignore these applications:</source>
-        <translation type="unfinished"></translation>
+        <translation>Ignorer ces applications :</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="162"/>
         <source>app1,app2,app3</source>
-        <translation type="unfinished"></translation>
+        <translation>app1, app2, app3</translation>
     </message>
 </context>
 <context>
