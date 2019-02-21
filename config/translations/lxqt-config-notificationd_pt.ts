@@ -21,7 +21,7 @@
     <message>
         <location filename="../advancedsettings.ui" line="80"/>
         <source>Some notifications set their own on-screen duration.</source>
-        <translation>Algumas notificações definem sua própria duração na tela.</translation>
+        <translation>Algumas notificações definem sua própria duração no ecrã.</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="92"/>
@@ -41,7 +41,7 @@
     <message>
         <location filename="../advancedsettings.ui" line="135"/>
         <source>How many to save:</source>
-        <translation>Quantidade a guardar:</translation>
+        <translation>Notificações a guardar:</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="149"/>
@@ -76,26 +76,26 @@
     <message>
         <location filename="../basicsettings.ui" line="23"/>
         <source>Basic Settings</source>
-        <translation>Configurações Básicas</translation>
+        <translation>Definições básicas</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="30"/>
         <source>Position on screen</source>
-        <translation>Posição na tela</translation>
+        <translation>Posição no ecrã</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="56"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; No notifications daemon is running.
 A fallback will be used.</source>
-        <translation>&lt;b&gt;Atenção:&lt;/b&gt;Nenhum serviço de notificações está sendo executado.
+        <translation>&lt;b&gt;Atenção:&lt;/b&gt;não existe qualquer serviço de notificações ativo.
 Será usada uma solução alternativa.</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="59"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; A third-party notifications daemon (%1) is running.
 These settings won&apos;t have any effect on it!</source>
-        <translation>&lt;b&gt;Atenção:&lt;/b&gt;Um serviço de notificações de terceiros (%1) está sendo executado.
-Essas configurações não terão nenhum efeito sobre isso!</translation>
+        <translation>&lt;b&gt;Atenção:&lt;/b&gt;está a ser executado um serviço de terceiros (%1).
+Estas definições não produzirão qualquer efeito!</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="112"/>
@@ -107,7 +107,7 @@ Essas configurações não terão nenhum efeito sobre isso!</translation>
         <source>This is a test notification.
  All notifications will now appear here on LXQt.</source>
         <translation>Esta é uma notificação de teste.
- Todas as notificações aparecerão agora aqui no LXQt.</translation>
+ Todas as notificações do LXQt aparecerão aqui.</translation>
     </message>
 </context>
 <context>
@@ -115,17 +115,17 @@ Essas configurações não terão nenhum efeito sobre isso!</translation>
     <message>
         <location filename="../mainwindow.cpp" line="41"/>
         <source>Desktop Notifications</source>
-        <translation>Notificações da Área de Trabalho</translation>
+        <translation>Notificações no ecrã</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="44"/>
         <source>Basic Settings</source>
-        <translation>Configurações Básicas</translation>
+        <translation>Definições básicas</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="48"/>
         <source>Advanced Settings</source>
-        <translation>Configurações Avançadas</translation>
+        <translation>Definições avançadas</translation>
     </message>
 </context>
 </TS>
