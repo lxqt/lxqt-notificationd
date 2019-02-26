@@ -17,7 +17,7 @@
         <location filename="../advancedsettings.ui" line="32"/>
         <location filename="../advancedsettings.ui" line="56"/>
         <source> px</source>
-        <translation> px(s)</translation>
+        <translation> px</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="49"/>
@@ -42,7 +42,7 @@
     <message>
         <location filename="../advancedsettings.ui" line="99"/>
         <source> sec</source>
-        <translation> seconde(s)</translation>
+        <translation> sec</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="127"/>
@@ -87,14 +87,14 @@
         <location filename="../basicsettings.cpp" line="56"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; No notifications daemon is running.
 A fallback will be used.</source>
-        <translation>&lt;b&gt;Attention :&lt;/b&gt; Aucun daemon de notification n&apos;est en cours d&apos;exécution.
-Un daemon par défaut sera utilisé.</translation>
+        <translation>&lt;b&gt;Attention :&lt;/b&gt; Aucun processus de notification n&apos;est en cours d&apos;exécution.
+Un processus par défaut sera utilisé.</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="59"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; A third-party notifications daemon (%1) is running.
 These settings won&apos;t have any effect on it!</source>
-        <translation>&lt;b&gt;Attention :&lt;/b&gt; Un autre daemon de notification (%1) est actif.
+        <translation>&lt;b&gt;Attention :&lt;/b&gt; Un autre processus de notification (%1) est actif.
 Ces réglages n&apos;auront aucun effet sur lui !</translation>
     </message>
     <message>
