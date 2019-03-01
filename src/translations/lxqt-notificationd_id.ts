@@ -19,7 +19,7 @@
     <message>
         <location filename="../notifyd.cpp" line="226"/>
         <source>Clear All</source>
-        <translation>Bersihkan Semua</translation>
+        <translation>Hapus Semua</translation>
     </message>
     <message>
         <location filename="../notifyd.cpp" line="234"/>
