@@ -48,7 +48,7 @@ class Notifyd: public QObject
     Q_OBJECT
 
 public:
-    explicit Notifyd(QObject* parent = 0);
+    explicit Notifyd(QObject* parent = nullptr);
     virtual ~Notifyd();
 
 public slots:

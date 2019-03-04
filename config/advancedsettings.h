@@ -37,7 +37,7 @@ class AdvancedSettings : public QWidget, public Ui::AdvancedSettings
     Q_OBJECT
 
 public:
-    explicit AdvancedSettings(LXQt::Settings* settings, QWidget* parent = 0);
+    explicit AdvancedSettings(LXQt::Settings* settings, QWidget* parent = nullptr);
     ~AdvancedSettings();
 
 public slots:

@@ -54,7 +54,7 @@ public:
                           const QString &summary, const QString &body,
                           const QString &icon, int timeout,
                           const QStringList& actions, const QVariantMap& hints,
-                          QWidget *parent = 0);
+                          QWidget *parent = nullptr);
 
     /*! Set new values (update) for existing notification.
      * Parameters are described in \c Notifyd::Notify()
@@ -140,7 +140,7 @@ class NotificationTimer : public QTimer
 {
     Q_OBJECT
 public:
-    NotificationTimer(QObject *parent=0);
+    NotificationTimer(QObject *parent = nullptr);
 
 public slots:
     void start(int msec);

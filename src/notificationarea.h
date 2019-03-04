@@ -40,7 +40,7 @@ class NotificationArea : public QScrollArea
     Q_OBJECT
 public:
 
-    explicit NotificationArea(QWidget *parent = 0);
+    explicit NotificationArea(QWidget *parent = nullptr);
 
     /*! An access to \c NotificationLayout to connect signals and slots in \c Notifyd
      */
