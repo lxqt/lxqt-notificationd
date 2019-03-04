@@ -37,7 +37,7 @@ class BasicSettings : public QWidget, public Ui::BasicSettings
 {
     Q_OBJECT
 public:
-    explicit BasicSettings(LXQt::Settings* settings, QWidget* parent = 0);
+    explicit BasicSettings(LXQt::Settings* settings, QWidget* parent = nullptr);
     ~BasicSettings();
 
 public slots:
