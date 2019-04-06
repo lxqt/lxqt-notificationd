@@ -31,7 +31,7 @@
         <location filename="../notifyd.cpp" line="298"/>
         <location filename="../notifyd.cpp" line="318"/>
         <source>%1 Unattended Notification(s)</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 niet afgehandelde notificatie(s)</translation>
     </message>
 </context>
 </TS>
