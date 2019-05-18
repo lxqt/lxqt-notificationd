@@ -31,7 +31,7 @@
         <location filename="../notifyd.cpp" line="298"/>
         <location filename="../notifyd.cpp" line="318"/>
         <source>%1 Unattended Notification(s)</source>
-        <translation>%1 notifikation(er) uden opsyn</translation>
+        <translation>%1 underretning(er) uden opsyn</translation>
     </message>
 </context>
 </TS>
