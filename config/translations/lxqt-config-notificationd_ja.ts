@@ -17,7 +17,7 @@
         <location filename="../advancedsettings.ui" line="32"/>
         <location filename="../advancedsettings.ui" line="56"/>
         <source> px</source>
-        <translation type="unfinished"></translation>
+        <translation> ピクセル</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="49"/>
@@ -47,28 +47,28 @@
     <message>
         <location filename="../advancedsettings.ui" line="127"/>
         <source>Unattended Notifications</source>
-        <translation type="unfinished"></translation>
+        <translation>未確認の通知</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="135"/>
         <source>How many to save:</source>
-        <translation type="unfinished"></translation>
+        <translation>保存する件数:</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="149"/>
         <location filename="../advancedsettings.ui" line="159"/>
         <source>Application name is on the top of notification.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">アプリケーション名は通知の一番上に表示します。</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="152"/>
         <source>Ignore these applications:</source>
-        <translation type="unfinished"></translation>
+        <translation>無視するアプリケーション:</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="162"/>
         <source>app1,app2,app3</source>
-        <translation type="unfinished"></translation>
+        <translation>app1,app2,app3</translation>
     </message>
 </context>
 <context>
