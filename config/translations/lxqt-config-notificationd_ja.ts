@@ -58,7 +58,7 @@
         <location filename="../advancedsettings.ui" line="149"/>
         <location filename="../advancedsettings.ui" line="159"/>
         <source>Application name is on the top of notification.</source>
-        <translation type="unfinished">アプリケーション名は通知の一番上に表示します。</translation>
+        <translation>表示された通知の一番上にあるのがアプリケーション名です。</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="152"/>
@@ -81,7 +81,7 @@
     <message>
         <location filename="../basicsettings.ui" line="30"/>
         <source>Position on screen</source>
-        <translation>スクリーン上での位置</translation>
+        <translation>画面上での位置</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="56"/>
@@ -95,7 +95,7 @@ A fallback will be used.</source>
         <source>&lt;b&gt;Warning:&lt;/b&gt; A third-party notifications daemon (%1) is running.
 These settings won&apos;t have any effect on it!</source>
         <translation>&lt;b&gt;警告:&lt;/b&gt; サードパーティーの通知デーモン (%1) が実行されています。
-これらの設定は影響をおよぼしません!</translation>
+ここでの設定は影響をおよぼしません！</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="112"/>
