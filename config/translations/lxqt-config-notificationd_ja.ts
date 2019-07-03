@@ -58,7 +58,7 @@
         <location filename="../advancedsettings.ui" line="149"/>
         <location filename="../advancedsettings.ui" line="159"/>
         <source>Application name is on the top of notification.</source>
-        <translation>表示された通知の一番上にあるのがアプリケーション名です。</translation>
+        <translation>アプリケーションの名前は、表示された通知の一番上にあります。</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="152"/>
