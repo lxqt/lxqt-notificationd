@@ -19,7 +19,7 @@
     <message>
         <location filename="../notifyd.cpp" line="226"/>
         <source>Clear All</source>
-        <translation>すべてを消去します</translation>
+        <translation>すべてを消去する</translation>
     </message>
     <message>
         <location filename="../notifyd.cpp" line="234"/>
@@ -31,7 +31,7 @@
         <location filename="../notifyd.cpp" line="298"/>
         <location filename="../notifyd.cpp" line="318"/>
         <source>%1 Unattended Notification(s)</source>
-        <translation>%1 個の未読通知</translation>
+        <translation>未確認の通知が %1 件あります</translation>
     </message>
 </context>
 </TS>
