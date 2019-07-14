@@ -22,7 +22,7 @@
     <message>
         <location filename="../advancedsettings.ui" line="49"/>
         <source>Spacing:</source>
-        <translation>空白:</translation>
+        <translation>余白:</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="68"/>
@@ -107,7 +107,7 @@ These settings won&apos;t have any effect on it!</source>
         <source>This is a test notification.
  All notifications will now appear here on LXQt.</source>
         <translation>これは通知のテストです。
- 全ての通知はLXQtデスクトップのこの場所に表示されます。</translation>
+ 全ての通知は LXQt デスクトップのこの場所に表示されます。</translation>
     </message>
 </context>
 <context>
@@ -125,7 +125,7 @@ These settings won&apos;t have any effect on it!</source>
     <message>
         <location filename="../mainwindow.cpp" line="48"/>
         <source>Advanced Settings</source>
-        <translation>高度な設定</translation>
+        <translation>詳細設定</translation>
     </message>
 </context>
 </TS>
