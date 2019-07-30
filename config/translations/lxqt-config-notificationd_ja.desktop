@@ -1,4 +1,4 @@
 # Translations
-GenericName[ja]=LXQtフリーデスクトップ通知の設定
-Name[ja]=LXQtフリーデスクトップ通知の設定
-Comment[ja]=LXQtデスクトップでフリーデスクトップ通知を設定
+Name[ja]=デスクトップ通知
+GenericName[ja]=デスクトップ通知
+Comment[ja]=LXQt デスクトップの通知を設定します
