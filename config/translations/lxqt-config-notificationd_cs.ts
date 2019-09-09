@@ -52,7 +52,7 @@
     <message>
         <location filename="../advancedsettings.ui" line="135"/>
         <source>How many to save:</source>
-        <translation>Kolik uložit:</translation>
+        <translation>Kolik nejnovějších držet uložených:</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="149"/>
