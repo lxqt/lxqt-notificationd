@@ -26,12 +26,14 @@
         <source>Options</source>
         <translation>選項</translation>
     </message>
-    <message>
+    <message numerus="yes">
         <location filename="../notifyd.cpp" line="241"/>
-        <location filename="../notifyd.cpp" line="298"/>
-        <location filename="../notifyd.cpp" line="318"/>
-        <source>%1 Unattended Notification(s)</source>
-        <translation>%1 個未讀通知</translation>
+        <location filename="../notifyd.cpp" line="299"/>
+        <location filename="../notifyd.cpp" line="319"/>
+        <source>%n Unattended Notification(s)</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+        </translation>
     </message>
 </context>
 </TS>
