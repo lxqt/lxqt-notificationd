@@ -26,12 +26,16 @@
         <source>Options</source>
         <translation>Opcje</translation>
     </message>
-    <message>
+    <message numerus="yes">
         <location filename="../notifyd.cpp" line="241"/>
-        <location filename="../notifyd.cpp" line="298"/>
-        <location filename="../notifyd.cpp" line="318"/>
-        <source>%1 Unattended Notification(s)</source>
-        <translation>%1 pominięte powiadomienie (-a)</translation>
+        <location filename="../notifyd.cpp" line="299"/>
+        <location filename="../notifyd.cpp" line="319"/>
+        <source>%n Unattended Notification(s)</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+        </translation>
     </message>
 </context>
 </TS>
