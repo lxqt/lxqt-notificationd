@@ -58,12 +58,12 @@
         <location filename="../advancedsettings.ui" line="149"/>
         <location filename="../advancedsettings.ui" line="159"/>
         <source>Application name is on the top of notification.</source>
-        <translation>O nome do aplicativo atópase na parte superior da notificación.</translation>
+        <translation>O nome da aplicación atópase na parte superior da notificación.</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="152"/>
         <source>Ignore these applications:</source>
-        <translation>Ignorar estes aplicativos:</translation>
+        <translation>Ignorar estas aplicacións:</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="162"/>
