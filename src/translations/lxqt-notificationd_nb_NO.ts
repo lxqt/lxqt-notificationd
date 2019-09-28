@@ -6,12 +6,12 @@
     <message>
         <location filename="../notificationwidgets.cpp" line="103"/>
         <source>Actions:</source>
-        <translation></translation>
+        <translation>Handlinger:</translation>
     </message>
     <message>
         <location filename="../notificationwidgets.cpp" line="122"/>
         <source>OK</source>
-        <translation></translation>
+        <translation>Okei</translation>
     </message>
 </context>
 <context>
@@ -31,9 +31,9 @@
         <location filename="../notifyd.cpp" line="299"/>
         <location filename="../notifyd.cpp" line="319"/>
         <source>%n Unattended Notification(s)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n varsel som ikke er sett</numerusform>
+            <numerusform>%n varsler som ikke er sett</numerusform>
         </translation>
     </message>
 </context>
