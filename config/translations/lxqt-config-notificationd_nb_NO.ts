@@ -17,7 +17,7 @@
         <location filename="../advancedsettings.ui" line="32"/>
         <location filename="../advancedsettings.ui" line="56"/>
         <source> px</source>
-        <translation> pksl</translation>
+        <translation> pk</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="49"/>
