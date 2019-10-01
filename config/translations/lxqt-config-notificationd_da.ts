@@ -47,7 +47,7 @@
     <message>
         <location filename="../advancedsettings.ui" line="127"/>
         <source>Unattended Notifications</source>
-        <translation>Underretninger uden opsyn</translation>
+        <translation>Ikke-tilsete underretninger</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="135"/>
