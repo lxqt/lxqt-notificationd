@@ -27,7 +27,7 @@
     <message>
         <location filename="../advancedsettings.ui" line="68"/>
         <source>Duration</source>
-        <translation>Tartam</translation>
+        <translation>Időartam</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="80"/>
@@ -37,7 +37,7 @@
     <message>
         <location filename="../advancedsettings.ui" line="92"/>
         <source>Default duration:</source>
-        <translation>Alapértelmezett tartam:</translation>
+        <translation>Alapértelmezett időtartam:</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="99"/>
@@ -47,7 +47,7 @@
     <message>
         <location filename="../advancedsettings.ui" line="127"/>
         <source>Unattended Notifications</source>
-        <translation type="unfinished"></translation>
+        <translation>Olvasatlan értesítések</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="135"/>
@@ -58,12 +58,12 @@
         <location filename="../advancedsettings.ui" line="149"/>
         <location filename="../advancedsettings.ui" line="159"/>
         <source>Application name is on the top of notification.</source>
-        <translation type="unfinished"></translation>
+        <translation>Az alkalmazás neve az értesítés tetején látható.</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="152"/>
         <source>Ignore these applications:</source>
-        <translation type="unfinished"></translation>
+        <translation>Hagyja figyelmen kívül ezeket az alkalmazásokat:</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="162"/>
