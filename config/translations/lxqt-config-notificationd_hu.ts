@@ -52,7 +52,7 @@
     <message>
         <location filename="../advancedsettings.ui" line="135"/>
         <source>How many to save:</source>
-        <translation type="unfinished"></translation>
+        <translation>Hányat mentsen el:</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="149"/>
@@ -68,7 +68,7 @@
     <message>
         <location filename="../advancedsettings.ui" line="162"/>
         <source>app1,app2,app3</source>
-        <translation type="unfinished"></translation>
+        <translation>alkalmazás1,alkalmazás2,alkalmazás3,</translation>
     </message>
 </context>
 <context>
