@@ -19,7 +19,7 @@
     <message>
         <location filename="../notifyd.cpp" line="226"/>
         <source>Clear All</source>
-        <translation type="unfinished">Tisztítás</translation>
+        <translation>Tisztítás</translation>
     </message>
     <message>
         <location filename="../notifyd.cpp" line="234"/>
@@ -31,7 +31,7 @@
         <location filename="../notifyd.cpp" line="299"/>
         <location filename="../notifyd.cpp" line="319"/>
         <source>%n Unattended Notification(s)</source>
-        <translation type="unfinished">
+        <translation>
             <numerusform>%n olvasatlan értesítés</numerusform>
             <numerusform>%n olvasatlan értesítés</numerusform>
         </translation>
