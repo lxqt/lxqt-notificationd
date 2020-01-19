@@ -31,10 +31,10 @@
         <location filename="../notifyd.cpp" line="299"/>
         <location filename="../notifyd.cpp" line="319"/>
         <source>%n Unattended Notification(s)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n непрочитанное уведомление</numerusform>
+            <numerusform>%n непрочитанных уведомления</numerusform>
+            <numerusform>%n непрочитанных уведомлений</numerusform>
         </translation>
     </message>
 </context>
