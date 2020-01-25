@@ -6,7 +6,7 @@
     <message>
         <location filename="../notificationwidgets.cpp" line="103"/>
         <source>Actions:</source>
-        <translation>Akciók:</translation>
+        <translation>Műveletek:</translation>
     </message>
     <message>
         <location filename="../notificationwidgets.cpp" line="122"/>
