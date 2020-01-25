@@ -17,17 +17,17 @@
         <location filename="../advancedsettings.ui" line="32"/>
         <location filename="../advancedsettings.ui" line="56"/>
         <source> px</source>
-        <translation> pixel</translation>
+        <translation> px</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="49"/>
         <source>Spacing:</source>
-        <translation>Térköz:</translation>
+        <translation>Helyköz:</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="68"/>
         <source>Duration</source>
-        <translation>Időartam</translation>
+        <translation>Időtartam</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="80"/>
@@ -87,7 +87,7 @@
         <location filename="../basicsettings.cpp" line="56"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; No notifications daemon is running.
 A fallback will be used.</source>
-        <translation>&lt;b&gt;Figyelem:&lt;/b&gt; Értesítő démon nem fut.
+        <translation type="unfinished">&lt;b&gt;Figyelem:&lt;/b&gt; Értesítő démon nem fut.
 A vésztartalék használatos.</translation>
     </message>
     <message>
