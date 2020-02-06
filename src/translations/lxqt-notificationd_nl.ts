@@ -11,7 +11,7 @@
     <message>
         <location filename="../notificationwidgets.cpp" line="122"/>
         <source>OK</source>
-        <translation>OK</translation>
+        <translation>Oké</translation>
     </message>
 </context>
 <context>
@@ -19,7 +19,7 @@
     <message>
         <location filename="../notifyd.cpp" line="226"/>
         <source>Clear All</source>
-        <translation>Wis Alles</translation>
+        <translation>Wis alles</translation>
     </message>
     <message>
         <location filename="../notifyd.cpp" line="234"/>
@@ -31,9 +31,9 @@
         <location filename="../notifyd.cpp" line="299"/>
         <location filename="../notifyd.cpp" line="319"/>
         <source>%n Unattended Notification(s)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n onafgehandelde notificatie(s)</numerusform>
+            <numerusform>%n onafgehandelde notificaties</numerusform>
         </translation>
     </message>
 </context>
