@@ -52,18 +52,18 @@
     <message>
         <location filename="../advancedsettings.ui" line="135"/>
         <source>How many to save:</source>
-        <translation type="unfinished"></translation>
+        <translation>كم من واحد تريد أن يُحفظ:</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="149"/>
         <location filename="../advancedsettings.ui" line="159"/>
         <source>Application name is on the top of notification.</source>
-        <translation type="unfinished"></translation>
+        <translation>يُعرض امس التطبيق أعلى الإخطار.</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="152"/>
         <source>Ignore these applications:</source>
-        <translation type="unfinished"></translation>
+        <translation>تجاهَل التطبيقات الآتية:</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="162"/>
@@ -107,7 +107,7 @@ These settings won&apos;t have any effect on it!</source>
         <source>This is a test notification.
  All notifications will now appear here on LXQt.</source>
         <translation>هذا إخطار تجريبي.
-ستظهر كل الإخطارات هنا في لكسكيوت.</translation>
+ستظهر كل الإخطارات هنا في «لكسكيوت».</translation>
     </message>
 </context>
 <context>
