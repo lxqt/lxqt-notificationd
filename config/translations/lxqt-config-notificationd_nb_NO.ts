@@ -52,7 +52,7 @@
     <message>
         <location filename="../advancedsettings.ui" line="135"/>
         <source>How many to save:</source>
-        <translation>Antall som lagres:</translation>
+        <translation>Hvor mange som lagres:</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="149"/>
