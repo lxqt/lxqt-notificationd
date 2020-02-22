@@ -52,7 +52,7 @@
     <message>
         <location filename="../advancedsettings.ui" line="135"/>
         <source>How many to save:</source>
-        <translation>Hányat mentsen el:</translation>
+        <translation>Értesítési előzmények:</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="149"/>
@@ -81,14 +81,14 @@
     <message>
         <location filename="../basicsettings.ui" line="30"/>
         <source>Position on screen</source>
-        <translation>Hely</translation>
+        <translation>Helyzet</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="56"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; No notifications daemon is running.
 A fallback will be used.</source>
-        <translation type="unfinished">&lt;b&gt;Figyelem:&lt;/b&gt; Értesítő démon nem fut.
-A vésztartalék használatos.</translation>
+        <translation>&lt;b&gt;Figyelem:&lt;/b&gt; Értesítő démon nem fut.
+A tartalék használatos.</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="59"/>
