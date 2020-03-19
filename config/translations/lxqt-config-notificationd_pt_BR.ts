@@ -68,7 +68,7 @@
     <message>
         <location filename="../advancedsettings.ui" line="162"/>
         <source>app1,app2,app3</source>
-        <translation>app1,app2,app3</translation>
+        <translation>app1, app2, app3</translation>
     </message>
 </context>
 <context>
