@@ -68,7 +68,7 @@
     <message>
         <location filename="../advancedsettings.ui" line="162"/>
         <source>app1,app2,app3</source>
-        <translation>alkalmazás1,alkalmazás2,alkalmazás3,</translation>
+        <translation>alkalmazás1,alkalmazás2,alkalmazás3</translation>
     </message>
 </context>
 <context>
@@ -88,14 +88,14 @@
         <source>&lt;b&gt;Warning:&lt;/b&gt; No notifications daemon is running.
 A fallback will be used.</source>
         <translation>&lt;b&gt;Figyelem:&lt;/b&gt; Értesítő démon nem fut.
-A tartalék használatos.</translation>
+A tartalék lesz használva.</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="59"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; A third-party notifications daemon (%1) is running.
 These settings won&apos;t have any effect on it!</source>
-        <translation>&lt;b&gt;Figyelem:&lt;/b&gt; Egy másik, a (%1) értesítésfigyelő már fut.
-Ezek a beállítások arra már hatástalanok!</translation>
+        <translation>&lt;b&gt;Figyelem:&lt;/b&gt; Egy másik, a (%1) értesítésdémon már fut.
+Ezek a beállítások arra nincsenek hatással!</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="112"/>
