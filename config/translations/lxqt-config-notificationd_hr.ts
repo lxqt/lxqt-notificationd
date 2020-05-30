@@ -6,69 +6,69 @@
     <message>
         <location filename="../advancedsettings.ui" line="25"/>
         <source>Width:</source>
-        <translation type="unfinished"></translation>
+        <translation>Širina:</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="49"/>
         <source>Spacing:</source>
-        <translation type="unfinished"></translation>
+        <translation>Razmaci:</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="68"/>
         <source>Duration</source>
-        <translation type="unfinished"></translation>
+        <translation>Trajanje</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="80"/>
         <source>Some notifications set their own on-screen duration.</source>
-        <translation type="unfinished"></translation>
+        <translation>Neke obavijesti postavljaju vlastita trajanja prikaza.</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="92"/>
         <source>Default duration:</source>
-        <translation type="unfinished"></translation>
+        <translation>Standardno trajanje:</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="99"/>
         <source> sec</source>
-        <translation type="unfinished">sek</translation>
+        <translation> s</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="127"/>
         <source>Unattended Notifications</source>
-        <translation type="unfinished"></translation>
+        <translation>Nepročitane obavijesti</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="135"/>
         <source>How many to save:</source>
-        <translation type="unfinished"></translation>
+        <translation>Broj spremljenih obavijesti:</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="149"/>
         <location filename="../advancedsettings.ui" line="159"/>
         <source>Application name is on the top of notification.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ime programa se nalazi pri vrhu obavijesti.</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="152"/>
         <source>Ignore these applications:</source>
-        <translation type="unfinished"></translation>
+        <translation>Zanemari ove programe:</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="162"/>
         <source>app1,app2,app3</source>
-        <translation type="unfinished"></translation>
+        <translation>program1,program2,program3</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="17"/>
         <source>Sizes</source>
-        <translation type="unfinished">Veličine</translation>
+        <translation>Veličine</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="32"/>
         <location filename="../advancedsettings.ui" line="56"/>
         <source> px</source>
-        <translation type="unfinished"> px</translation>
+        <translation> px</translation>
     </message>
 </context>
 <context>
@@ -76,35 +76,38 @@
     <message>
         <location filename="../basicsettings.ui" line="23"/>
         <source>Basic Settings</source>
-        <translation type="unfinished">Osnovne postavke</translation>
+        <translation>Osnovne postavke</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="30"/>
         <source>Position on screen</source>
-        <translation type="unfinished"></translation>
+        <translation>Položaj na ekranu</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="56"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; No notifications daemon is running.
 A fallback will be used.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;Upozorenje:&lt;/b&gt; Nijedan demon za obavijesti nije pokrenut.
+Koristit će se rezervni.</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="59"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; A third-party notifications daemon (%1) is running.
 These settings won&apos;t have any effect on it!</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;Upozorenje:&lt;/b&gt; Pokrenut je jedan strani demon za obavijesti (%1).
+Ove postavke na njega ne utječu!</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="112"/>
         <source>Notification demo </source>
-        <translation type="unfinished"></translation>
+        <translation>Demonstracija obavijesti </translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="113"/>
         <source>This is a test notification.
  All notifications will now appear here on LXQt.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ovo je testna obavijest.
+Sve obavijesti će se sada ovdje pojaviti na LXQt-u.</translation>
     </message>
 </context>
 <context>
@@ -112,17 +115,17 @@ These settings won&apos;t have any effect on it!</source>
     <message>
         <location filename="../mainwindow.cpp" line="41"/>
         <source>Desktop Notifications</source>
-        <translation type="unfinished">Obavijesti radne površine</translation>
+        <translation>Obavijesti radne površine</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="44"/>
         <source>Basic Settings</source>
-        <translation type="unfinished">Osnovne postavke</translation>
+        <translation>Osnovne postavke</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="48"/>
         <source>Advanced Settings</source>
-        <translation type="unfinished">Napredne postavke</translation>
+        <translation>Napredne postavke</translation>
     </message>
 </context>
 </TS>
