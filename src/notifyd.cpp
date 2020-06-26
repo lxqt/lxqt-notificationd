@@ -233,7 +233,7 @@ void Notifyd::createTrayIcon()
     // "Options"
     action = m_trayMenu->addAction(QIcon::fromTheme(QSL("preferences-system")), tr("Options"));
     connect(action, &QAction::triggered, m_trayMenu, [] {
-        QProcess::startDetached(QSL("lxqt-config-notificationd"));
+        QProcess::startDetached(QSL("lxqt-config-notificationd"), QStringList());
     });
 
     m_trayIcon->setContextMenu(m_trayMenu);
