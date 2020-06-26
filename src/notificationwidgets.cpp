@@ -74,7 +74,7 @@ NotificationActionsButtonsWidget::NotificationActionsButtonsWidget(const QString
 
     QButtonGroup *group = new QButtonGroup(this);
 
-    for (auto const & action : m_actions)
+    for (const auto &action : qAsConst(m_actions))
     {
         QPushButton *b = new QPushButton(action.second, this);
         b->setObjectName(action.first);
