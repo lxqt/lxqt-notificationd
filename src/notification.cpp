@@ -317,7 +317,8 @@ void Notification::mouseReleaseEvent(QMouseEvent * event)
         return;
     }
 
-    for (WId i : KWindowSystem::stackingOrder())
+    const auto ids = KWindowSystem::stackingOrder();
+    for (const WId &i : ids)
     {
         KWindowInfo info = KWindowInfo(i, NET::WMName | NET::WMVisibleName);
         appName = info.name();

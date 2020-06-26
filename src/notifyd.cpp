@@ -203,7 +203,7 @@ void Notifyd::createTrayIcon()
 
     QAction *action = nullptr;
     // add items for notification, starting from the oldest one and from bottom to top
-    for (const QString date : qAsConst(dates))
+    for (const QString &date : qAsConst(dates))
     {
         list.beginGroup(date);
         // "DATE_AND_TIME - APP: SUMMARY"
