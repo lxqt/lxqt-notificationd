@@ -43,6 +43,8 @@ AdvancedSettings::AdvancedSettings(LXQt::Settings* settings, QWidget *parent):
     connect(widthBox, QOverload<int>::of(&QSpinBox::valueChanged), this, &AdvancedSettings::save);
     connect(unattendedBox, QOverload<int>::of(&QSpinBox::valueChanged), this, &AdvancedSettings::save);
     connect(blackListEdit, &QLineEdit::editingFinished, this, &AdvancedSettings::save);
+    connect(primarybtn, &QRadioButton::clicked, this, &AdvancedSettings::save);
+    connect(mousebtn, &QRadioButton::clicked, this, &AdvancedSettings::save);
 }
 
 AdvancedSettings::~AdvancedSettings()
@@ -60,6 +62,18 @@ void AdvancedSettings::restoreSettings()
     widthBox->setValue(mSettings->value(QL1S("width"), 300).toInt());
     unattendedBox->setValue(mSettings->value(QL1S("unattendedMaxNum"), 10).toInt());
     blackListEdit->setText(mSettings->value(QL1S("blackList")).toStringList().join (QL1S(",")));
+
+    // 1 -> Screen with mouse
+    // 0 -> Default, notification will show up on primary screen
+    int screenNotification = mSettings->value(QL1S("screen_notification"), 0).toInt();
+    // TODO: it would be nice to put more options here such as:
+    // fixed screen to display notification
+    // notification shows in all screens (is it worthy the increased ram usage?)
+
+    if (screenNotification)
+        mousebtn->setChecked(true);
+    else
+        primarybtn->setChecked(true);
 }
 
 void AdvancedSettings::save()
@@ -68,6 +82,12 @@ void AdvancedSettings::save()
     mSettings->setValue(QL1S("spacing"), spacingBox->value());
     mSettings->setValue(QL1S("width"), widthBox->value());
     mSettings->setValue(QL1S("unattendedMaxNum"), unattendedBox->value());
+
+    if (primarybtn->isChecked())
+        mSettings->setValue(QL1S("screen_notification"),0);
+    else
+        mSettings->setValue(QL1S("screen_notification"),1);
+
     QString blackList = blackListEdit->text();
     if (!blackList.isEmpty())
     {
