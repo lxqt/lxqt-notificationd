@@ -75,12 +75,14 @@ void NotificationArea::screenRemoved(QScreen *screen)
 
 void NotificationArea::primaryScreenChanged(QScreen *screen)
 {
+    Q_UNUSED(screen);
     if (!m_screenWithMouse && isVisible())
         setHeight(-1);
 }
 
 void NotificationArea::availableGeometryChanged(const QRect& geometry)
 {
+    Q_UNUSED(geometry);
     if (!isVisible()) // this prevents from accidentally moving currently displaying notification to another screen if m_screenWithMouse is true
         setHeight(-1);
 }
