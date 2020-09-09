@@ -34,7 +34,8 @@
 
 NotificationArea::NotificationArea(QWidget *parent)
     : QScrollArea(parent),
-      m_spacing(-1)
+      m_spacing(-1),
+      m_screenWithMouse(false)
 {
     setObjectName(QSL("NotificationArea"));
 
