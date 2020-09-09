@@ -79,18 +79,17 @@ void NotificationArea::setHeight(int contentHeight)
     // After we change the primary screen with xrandr, Qt still returns the same value.
     // I think it's a bug of Qt.
 
-    // QDesktopWidget is obsolete in Qt5 and probably will be removed in Qt6, so I guess QScreen is the way to go.
     QRect workArea{};
-
+    const auto screens = qApp->screens();
     if (m_screen) {    // Let's find in which screen the mouse is
-        for (auto &screens: qApp->screens()) {
+        for (const auto &screens: screens) {
             if (screens->geometry().contains(QCursor::pos())) {
                 workArea = screens->availableGeometry();
                 break;
             }
         }
     } else
-        workArea = qApp->desktop()->availableGeometry(qApp->desktop()->primaryScreen());
+        workArea = qApp->primaryScreen()->availableGeometry();
 
     //TODO: perhaps we should check if workArea is valid, don't we?
 
@@ -136,7 +135,7 @@ void NotificationArea::setHeight(int contentHeight)
     ensureVisible(0, contentHeight, 0, 0);
 }
 
-void NotificationArea::setSettings(const QString &placement, int width, int spacing, int unattendedMaxNum, int screen, const QStringList &blackList)
+void NotificationArea::setSettings(const QString &placement, int width, int spacing, int unattendedMaxNum, bool screen, const QStringList &blackList)
 {
     m_placement = placement;
 

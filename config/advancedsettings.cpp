@@ -43,8 +43,7 @@ AdvancedSettings::AdvancedSettings(LXQt::Settings* settings, QWidget *parent):
     connect(widthBox, QOverload<int>::of(&QSpinBox::valueChanged), this, &AdvancedSettings::save);
     connect(unattendedBox, QOverload<int>::of(&QSpinBox::valueChanged), this, &AdvancedSettings::save);
     connect(blackListEdit, &QLineEdit::editingFinished, this, &AdvancedSettings::save);
-    connect(primarybtn, &QRadioButton::clicked, this, &AdvancedSettings::save);
-    connect(mousebtn, &QRadioButton::clicked, this, &AdvancedSettings::save);
+    connect(mousebtn, &QCheckBox::clicked, this, &AdvancedSettings::save);
 }
 
 AdvancedSettings::~AdvancedSettings()
@@ -63,9 +62,10 @@ void AdvancedSettings::restoreSettings()
     unattendedBox->setValue(mSettings->value(QL1S("unattendedMaxNum"), 10).toInt());
     blackListEdit->setText(mSettings->value(QL1S("blackList")).toStringList().join (QL1S(",")));
 
-    // 1 -> Screen with mouse
-    // 0 -> Default, notification will show up on primary screen
-    int screenNotification = mSettings->value(QL1S("screen_notification"), 0).toInt();
+    // true -> Screen with mouse
+    // false -> Default, notification will show up on primary screen
+    bool screenNotification = mSettings->value(QL1S("screenWithMouse"), false).toBool();
+
     // TODO: it would be nice to put more options here such as:
     // fixed screen to display notification
     // notification shows in all screens (is it worthy the increased ram usage?)
@@ -73,7 +73,7 @@ void AdvancedSettings::restoreSettings()
     if (screenNotification)
         mousebtn->setChecked(true);
     else
-        primarybtn->setChecked(true);
+        mousebtn->setChecked(false);
 }
 
 void AdvancedSettings::save()
@@ -83,10 +83,10 @@ void AdvancedSettings::save()
     mSettings->setValue(QL1S("width"), widthBox->value());
     mSettings->setValue(QL1S("unattendedMaxNum"), unattendedBox->value());
 
-    if (primarybtn->isChecked())
-        mSettings->setValue(QL1S("screen_notification"),0);
+    if (mousebtn->isChecked())
+        mSettings->setValue(QL1S("screenWithMouse"),true);
     else
-        mSettings->setValue(QL1S("screen_notification"),1);
+        mSettings->setValue(QL1S("screenWithMouse"),false);
 
     QString blackList = blackListEdit->text();
     if (!blackList.isEmpty())

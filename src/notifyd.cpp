@@ -155,7 +155,7 @@ void Notifyd::reloadSettings()
             m_settings->value(QSL("width"), 300).toInt(),
             m_settings->value(QSL("spacing"), 6).toInt(),
             maxNum,
-            m_settings->value(QSL("screen_notification"),0).toInt(),
+            m_settings->value(QSL("screenWithMouse"),false).toBool(),
             m_settings->value(QSL("blackList")).toStringList());
 
     if (maxNum > 0 && m_trayIcon.isNull())

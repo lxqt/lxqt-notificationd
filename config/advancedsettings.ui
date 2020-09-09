@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>350</width>
-    <height>442</height>
+    <height>407</height>
    </rect>
   </property>
   <layout class="QGridLayout" name="gridLayout_2">
@@ -178,17 +178,10 @@
      </property>
      <layout class="QVBoxLayout" name="verticalLayout_3">
       <item>
-       <widget class="QRadioButton" name="primarybtn">
-        <property name="text">
-         <string>Show notifications on primary screen</string>
+       <widget class="QCheckBox" name="mousebtn">
+        <property name="toolTip">
+         <string>When unchecked the notification will always show on primary screen</string>
         </property>
-        <property name="checked">
-         <bool>true</bool>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QRadioButton" name="mousebtn">
         <property name="text">
          <string>Show notifications on screen with the mouse</string>
         </property>
