@@ -25,7 +25,6 @@
  *
  * END_COMMON_COPYRIGHT_HEADER */
 
-#include <QDesktopWidget> // TODO: remove it and use only QScreen as QDesktopWidget has become obsolete
 #include <QApplication>
 #include <QScreen>
 #include <LXQt/Globals>
@@ -60,7 +59,31 @@ NotificationArea::NotificationArea(QWidget *parent)
     connect(m_layout, &NotificationLayout::allNotificationsClosed, this, &NotificationArea::close);
     connect(m_layout, &NotificationLayout::notificationAvailable, this, &NotificationArea::show);
     connect(m_layout, &NotificationLayout::heightChanged, this, &NotificationArea::setHeight);
-    connect(qApp->desktop(), &QDesktopWidget::workAreaResized, this, &NotificationArea::setHeight);
+
+    connect(qApp, &QGuiApplication::primaryScreenChanged, this, &NotificationArea::primaryScreenChanged);
+}
+
+void NotificationArea::screenAdded(QScreen *screen)
+{
+    connect(screen, &QScreen::availableGeometryChanged,this,&NotificationArea::availableGeometryChanged, Qt::UniqueConnection);
+}
+
+void NotificationArea::screenRemoved(QScreen *screen)
+{
+    if (isVisible() && screen->geometry().contains(geometry()))
+        setHeight(-1);
+}
+
+void NotificationArea::primaryScreenChanged(QScreen *screen)
+{
+    if (!m_screenWithMouse && isVisible())
+        setHeight(-1);
+}
+
+void NotificationArea::availableGeometryChanged(const QRect& geometry)
+{
+    if (!isVisible()) // this prevents from accidentally moving currently displaying notification to another screen if m_screenWithMouse is true
+        setHeight(-1);
 }
 
 void NotificationArea::setHeight(int contentHeight)
@@ -80,7 +103,7 @@ void NotificationArea::setHeight(int contentHeight)
     // I think it's a bug of Qt.
 
     QRect workArea{};
-    if (m_screen) {    // Let's find in which screen the mouse is
+    if (m_screenWithMouse) {    // Let's find in which screen the mouse is
         const auto screens = qApp->screens();
         for (const auto &screen: screens) {
             if (screen->geometry().contains(QCursor::pos())) {
@@ -135,8 +158,7 @@ void NotificationArea::setHeight(int contentHeight)
     ensureVisible(0, contentHeight, 0, 0);
 }
 
-void NotificationArea::setSettings(const QString &placement, int width, int spacing, int unattendedMaxNum, bool screen, const QStringList &blackList)
-{
+void NotificationArea::setSettings(const QString &placement, int width, int spacing, int unattendedMaxNum, bool screen, const QStringList &blackList) {
     m_placement = placement;
 
     setMaximumWidth(width);
@@ -145,7 +167,19 @@ void NotificationArea::setSettings(const QString &placement, int width, int spac
     m_spacing = spacing;
     m_layout->setSizes(m_spacing, width);
 
-    m_screen = screen;
+    m_screenWithMouse = screen;
+
+    if (m_screenWithMouse)
+    {
+        connect(qApp, &QGuiApplication::screenAdded, this, &NotificationArea::screenAdded, Qt::UniqueConnection);
+        connect(qApp, &QGuiApplication::screenRemoved, this, &NotificationArea::screenRemoved, Qt::UniqueConnection);
+
+        const auto screens = qApp->screens();
+        for (const auto &screen: screens)
+            connect(screen, &QScreen::availableGeometryChanged, this, &NotificationArea::availableGeometryChanged, Qt::UniqueConnection);
+    }
+    else
+        connect(qApp->primaryScreen(), &QScreen::availableGeometryChanged, this, &NotificationArea::availableGeometryChanged, Qt::UniqueConnection);
 
     this->setHeight(widget()->height());
 
