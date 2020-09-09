@@ -59,7 +59,6 @@ NotificationArea::NotificationArea(QWidget *parent)
     connect(m_layout, &NotificationLayout::allNotificationsClosed, this, &NotificationArea::close);
     connect(m_layout, &NotificationLayout::notificationAvailable, this, &NotificationArea::show);
     connect(m_layout, &NotificationLayout::heightChanged, this, &NotificationArea::setHeight);
-
     connect(qApp, &QGuiApplication::primaryScreenChanged, this, &NotificationArea::primaryScreenChanged);
 }
 
@@ -158,7 +157,7 @@ void NotificationArea::setHeight(int contentHeight)
     ensureVisible(0, contentHeight, 0, 0);
 }
 
-void NotificationArea::setSettings(const QString &placement, int width, int spacing, int unattendedMaxNum, bool screen, const QStringList &blackList) {
+void NotificationArea::setSettings(const QString &placement, int width, int spacing, int unattendedMaxNum, bool screenWithMouse, const QStringList &blackList) {
     m_placement = placement;
 
     setMaximumWidth(width);
@@ -167,7 +166,7 @@ void NotificationArea::setSettings(const QString &placement, int width, int spac
     m_spacing = spacing;
     m_layout->setSizes(m_spacing, width);
 
-    m_screenWithMouse = screen;
+    m_screenWithMouse = screenWithMouse;
 
     if (m_screenWithMouse)
     {

@@ -54,7 +54,7 @@ public:
      * \param unattendedMaxNum the max. number of unattended notifications to be saved
      * \param blackList the list of apps whose unattended notifications aren't saved
      */
-    void setSettings(const QString &placement, int width, int spacing, int unattendedMaxNum, bool screen, const QStringList &blackList);
+    void setSettings(const QString &placement, int width, int spacing, int unattendedMaxNum, bool screenWithMouse, const QStringList &blackList);
 
 private:
     NotificationLayout *m_layout;
