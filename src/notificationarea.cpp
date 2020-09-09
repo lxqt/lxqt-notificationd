@@ -80,11 +80,11 @@ void NotificationArea::setHeight(int contentHeight)
     // I think it's a bug of Qt.
 
     QRect workArea{};
-    const auto screens = qApp->screens();
     if (m_screen) {    // Let's find in which screen the mouse is
-        for (const auto &screens: screens) {
-            if (screens->geometry().contains(QCursor::pos())) {
-                workArea = screens->availableGeometry();
+        const auto screens = qApp->screens();
+        for (const auto &screen: screens) {
+            if (screen->geometry().contains(QCursor::pos())) {
+                workArea = screen->availableGeometry();
                 break;
             }
         }
