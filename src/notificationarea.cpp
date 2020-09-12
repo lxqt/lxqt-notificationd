@@ -85,7 +85,7 @@ void NotificationArea::screenRemoved(QScreen *screen)
     if (m_screensList.contains(screen))
         m_screensList.removeOne(screen); // Qt will disconnect the slot by itself so there's no need for a disconnect call here
 
-    //if (screen->geometry().contains(m_workArea)) // after removing it from screensList we can call updateWorkArea(), at this point Qt didnt deleted screen from QGuiApplication::screens() so we can't use QGuiApplication::screens() in updateWorkArea()
+     // after removing it from screensList we can call updateWorkArea(), at this point Qt didnt deleted the screen from QGuiApplication::screens() so we can't use QGuiApplication::screens() in updateWorkArea()
      if (m_workScreen == screen)
          updateWorkArea();
 }
@@ -100,21 +100,8 @@ void NotificationArea::primaryScreenChanged(QScreen *screen)
 void NotificationArea::availableGeometryChanged(const QRect& geometry)
 {
     // if its not visible then theres no need to change its height now (it changes everytime a notification is added/closed)
-    if (m_workScreen->geometry().contains(geometry) && isVisible())
+    if (isVisible() && m_workScreen->geometry().contains(geometry) )
         setHeight(-1);
-    /*for (const auto &screen: m_screensList) // find screen which the availableGeometry changed, another option might be using QObject::sender()
-    {
-        if (screen->geometry().contains(geometry))
-        {
-            if (screen->geometry().contains(m_workScreen->availableGeometry()))
-            {
-                m_workScreen = screen;
-                //m_workArea = screen->availableGeometry(); // updates workArea
-                //m_workArea -= QMargins(m_spacing, m_spacing, m_spacing, m_spacing);
-            }
-            break;
-        }
-    }*/
 }
 void NotificationArea::updateWorkArea()
 {
@@ -126,19 +113,14 @@ void NotificationArea::updateWorkArea()
             if (screen->geometry().contains(QCursor::pos()))
             {
                 m_workScreen = screen;
-                //m_workArea = screen->availableGeometry();
-                //m_fullWorkArea = screen->geometry();
                 screenWasFound = true;
                 break;
             }
         }
         if (!screenWasFound) // there's a reported bug for a few WM where the mouse goes out of screen geometry, this avoids the notification area to get lost
             m_workScreen = qApp->primaryScreen();
-            //m_workArea = qApp->primaryScreen()->availableGeometry();
     } else
         m_workScreen= qApp->primaryScreen();
-        //m_workArea = qApp->primaryScreen()->availableGeometry();
-
 }
 void NotificationArea::setHeight(int contentHeight)
 {

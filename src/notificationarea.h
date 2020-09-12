@@ -62,8 +62,6 @@ private:
     QString m_placement;
     int m_spacing;
     bool m_screenWithMouse;
-    //QRect m_workArea{};
-    //QRect m_fullWorkArea{};
     QScreen* m_workScreen;
     QList<QScreen*> m_screensList;
 private slots:
