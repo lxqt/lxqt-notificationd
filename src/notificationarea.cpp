@@ -68,7 +68,7 @@ NotificationArea::NotificationArea(QWidget *parent)
     connect(qApp->primaryScreen(), &QScreen::availableGeometryChanged, this, &NotificationArea::availableGeometryChanged);
     m_screensList.append(qApp->primaryScreen());
 
-    updateWorkArea();
+    updateWorkScreen();
 }
 
 void NotificationArea::screenAdded(QScreen *screen)
@@ -87,14 +87,14 @@ void NotificationArea::screenRemoved(QScreen *screen)
 
      // after removing it from screensList we can call updateWorkArea(), at this point Qt didnt deleted the screen from QGuiApplication::screens() so we can't use QGuiApplication::screens() in updateWorkArea()
      if (m_workScreen == screen)
-         updateWorkArea();
+         updateWorkScreen();
 }
 
 void NotificationArea::primaryScreenChanged(QScreen *screen)
 {
     Q_UNUSED(screen);
     if (!m_screenWithMouse)
-        updateWorkArea();
+        updateWorkScreen();
 }
 
 void NotificationArea::availableGeometryChanged(const QRect& geometry)
@@ -103,7 +103,7 @@ void NotificationArea::availableGeometryChanged(const QRect& geometry)
     if (isVisible() && m_workScreen->geometry().contains(geometry) )
         setHeight(-1);
 }
-void NotificationArea::updateWorkArea()
+void NotificationArea::updateWorkScreen()
 {
     if (m_screenWithMouse)
     {
@@ -141,7 +141,7 @@ void NotificationArea::setHeight(int contentHeight)
     // avoids unnecessary updates in workArea
     if (!m_workScreen || (m_screenWithMouse && !m_workScreen->geometry().contains(QCursor::pos())) || (!m_screenWithMouse && (qApp->primaryScreen()!=m_workScreen)))
     {
-            updateWorkArea();
+        updateWorkScreen();
     }
 
     QRect workArea = m_workScreen->availableGeometry();

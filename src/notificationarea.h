@@ -73,7 +73,7 @@ private slots:
     void screenRemoved(QScreen *screen);
     void primaryScreenChanged(QScreen* screen);
     void availableGeometryChanged(const QRect& geometry);
-    void updateWorkArea();
+    void updateWorkScreen();
 };
 
 #endif // NOTIFICATIONAREA_H
