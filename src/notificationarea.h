@@ -62,18 +62,13 @@ private:
     QString m_placement;
     int m_spacing;
     bool m_screenWithMouse;
-    QScreen* m_workScreen;
-    QList<QScreen*> m_screensList;
 private slots:
     /*! Recalculate widget size and visibility. Slot is called from \c Notificationlayout
      * on demand (notification appear or is closed).
      */
     void setHeight(int contentHeight = -1);
-    void screenAdded(QScreen *screen);
-    void screenRemoved(QScreen *screen);
-    void primaryScreenChanged(QScreen* screen);
     void availableGeometryChanged(const QRect& geometry);
-    void updateWorkScreen();
+
 };
 
 #endif // NOTIFICATIONAREA_H
