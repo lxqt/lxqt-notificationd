@@ -63,7 +63,7 @@ NotificationArea::NotificationArea(QWidget *parent)
     connect(m_layout, &NotificationLayout::heightChanged, this, &NotificationArea::setHeight);
 
     // Since m_screenWithMouse may be or become true, we connect to all screens
-    // but ignore the irrelevant screens in availableGeometryChanged().
+    // but ignore the irrelevant screens
     connect(qApp, &QGuiApplication::screenAdded, this, [this] (QScreen* newScreen){
         connect(newScreen, &QScreen::availableGeometryChanged, this, &NotificationArea::availableGeometryChanged);
     });
@@ -78,7 +78,7 @@ NotificationArea::NotificationArea(QWidget *parent)
     }
 }
 
-void NotificationArea::availableGeometryChanged(const QRect& availableGeometry)
+void NotificationArea::availableGeometryChanged(/*const QRect& availableGeometry*/)
 {
     // if its not visible then there is no need to change its height now
     // (it will be adjusted every time a notification is added/closed)

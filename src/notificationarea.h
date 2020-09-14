@@ -67,7 +67,7 @@ private slots:
      * on demand (notification appear or is closed).
      */
     void setHeight(int contentHeight = -1);
-    void availableGeometryChanged(const QRect& geometry);
+    void availableGeometryChanged(/*const QRect& availableGeometry*/);
 
 };
 
