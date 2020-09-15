@@ -91,10 +91,19 @@ void Notification::setValues(const QString &application,
     //  - "image-data"
     //  - "image-path"
     //  - app_icon parameter
-    //  - for compatibility reason, "icon_data"
-    if (!hints[QL1S("image_data")].isNull())
+    //  - for compatibility reason, "icon_data", "image_data" and "image_path"
+
+    if (!hints[QL1S("image-data")].isNull())
+    {
+        m_pixmap = getPixmapFromHint(hints[QL1S("image-data")]);
+    }
+    else if (!hints[QL1S("image_data")].isNull())
     {
         m_pixmap = getPixmapFromHint(hints[QL1S("image_data")]);
+    }
+    else if (!hints[QL1S("image-path")].isNull())
+    {
+        m_pixmap = getPixmapFromHint(hints[QL1S("image-path")]);
     }
     else if (!hints[QL1S("image_path")].isNull())
     {
