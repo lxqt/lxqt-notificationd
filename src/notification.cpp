@@ -93,7 +93,7 @@ void Notification::setValues(const QString &application,
     //  - app_icon parameter
     //  - for compatibility reason, "icon_data", "image_data" and "image_path"
 
-    if (!hints[QL1S("image-data")].isNull()) // issue #133: it must be evaluated before icon_data, spotify sends icon_data from the first played song again and again
+    if (!hints[QL1S("image-data")].isNull())
     {
         m_pixmap = getPixmapFromHint(hints[QL1S("image-data")]);
     }
