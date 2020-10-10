@@ -56,12 +56,10 @@ menu - Preferences - LXQt Settings - Desktop Notifications and is provided by th
 [Configuration Center](https://github.com/lxqt/lxqt-config#configuration-center)
 of [lxqt-config](https://github.com/lxqt/lxqt-config) as well.
 
-## Translation (Weblate)
+## Translations
 
-<a href="https://weblate.lxqt.org/projects/lxqt/lxqt-notificationd/">
-<img src="https://weblate.lxqt.org/widgets/lxqt/-/lxqt-notificationd/287x66-white.png" alt="Translation status" />
-</a>
+Translations can be done in [LXQt-Weblate](https://translate.lxqt-project.org/projects/lxqt-configuration/lxqt-globalkeys)
 
-<a href="https://weblate.lxqt.org/projects/lxqt/lxqt-config-notificationd/">
-<img src="https://weblate.lxqt.org/widgets/lxqt/-/lxqt-config-notificationd/287x66-white.png" alt="Translation status" />
+<a href="https://translate.lxqt-project.org/engage/lxqt-configuration/lxqt-globalkeys?utm_source=widget">
+<img src="https://translate.lxqt-project.org/widgets/lxqt-configuration/-/lxqt-globalkeys/multi-auto.svg" alt="Translation status" />
 </a>
