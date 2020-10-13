@@ -58,8 +58,8 @@ of [lxqt-config](https://github.com/lxqt/lxqt-config) as well.
 
 ## Translations
 
-Translations can be done in [LXQt-Weblate](https://translate.lxqt-project.org/projects/lxqt-configuration/lxqt-globalkeys)
+Translations can be done in [LXQt-Weblate](https://translate.lxqt-project.org/projects/lxqt-configuration/lxqt-notificationd)
 
-<a href="https://translate.lxqt-project.org/engage/lxqt-configuration/lxqt-globalkeys?utm_source=widget">
-<img src="https://translate.lxqt-project.org/widgets/lxqt-configuration/-/lxqt-globalkeys/multi-auto.svg" alt="Translation status" />
+<a href="https://translate.lxqt-project.org/projects/lxqt-configuration/lxqt-notificationd">
+<img src="https://translate.lxqt-project.org/widgets/lxqt-configuration/-/lxqt-notificationd/multi-auto.svg" alt="Translation status" />
 </a>
