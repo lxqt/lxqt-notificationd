@@ -25,11 +25,9 @@ lxqt-notificationd is implementing version 1.2 of the said specification.
 ### Compiling source code
 
 Runtime dependencies are KWindowSystem, [liblxqt](https://github.com/lxqt/liblxqt)
-and [lxqt-common](https://github.com/lxqt/lxqt-common).
+and [lxqt-session](https://github.com/lxqt/lxqt-session).
 Additional build dependencies are CMake and optionally Git to pull latest VCS
-checkouts. The localization files were outsourced to repository
-[lxqt-l10n](https://github.com/lxqt/lxqt-l10n) so the corresponding dependencies
-are needed, too. Please refer to this repository's `README.md` for further information.
+checkouts. 
 
 Code configuration is handled by CMake. CMake variable `CMAKE_INSTALL_PREFIX` has
 to be set to `/usr` on most operating systems.
@@ -40,7 +38,7 @@ as usual.
 ### Binary packages
 
 Official binary packages are provided by all major Linux distributions like Arch
-Linux, Debian (as of Debian stretch only), Fedora and openSUSE. Just use your
+Linux, Debian, Fedora and openSUSE. Just use your
 package manager to search for string `lxqt-notificationd`.
 
 ## Configuration, Usage
