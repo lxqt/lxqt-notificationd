@@ -67,7 +67,10 @@ private slots:
      * on demand (notification appear or is closed).
      */
     void setHeight(int contentHeight = -1);
-    void availableGeometryChanged(/*const QRect& availableGeometry*/);
+    /*! Adjust the widget geometry if the available geometry changes
+     * while a notification is visible.
+     */
+    void availableGeometryChanged(const QRect& availableGeometry);
 
 };
 
