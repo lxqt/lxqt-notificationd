@@ -62,9 +62,7 @@ NotificationArea::NotificationArea(QWidget *parent)
     connect(m_layout, &NotificationLayout::notificationAvailable, this, &NotificationArea::show);
     connect(m_layout, &NotificationLayout::heightChanged, this, &NotificationArea::setHeight);
 
-    // Since m_screenWithMouse may be or become true, we connect to all screens
-    // but ignore the irrelevant screens
-    connect(qApp, &QGuiApplication::screenAdded, this, [this] (QScreen* newScreen){
+    connect(qApp, &QGuiApplication::screenAdded, this, [this] (QScreen* newScreen) {
         connect(newScreen, &QScreen::availableGeometryChanged, this, &NotificationArea::availableGeometryChanged);
     });
     connect(qApp, &QGuiApplication::screenRemoved, this, [this] (QScreen* oldScreen) {
@@ -78,12 +76,11 @@ NotificationArea::NotificationArea(QWidget *parent)
     }
 }
 
-void NotificationArea::availableGeometryChanged(/*const QRect& availableGeometry*/)
+void NotificationArea::availableGeometryChanged(const QRect& /*availableGeometry*/)
 {
-    // if its not visible then there is no need to change its height now
-    // (it will be adjusted every time a notification is added/closed)
+    // adjust geometry if the available geometry changes while a notification is visible
     if (isVisible())
-        setHeight(-1);
+        setHeight();
 }
 
 void NotificationArea::setHeight(int contentHeight)
@@ -104,22 +101,12 @@ void NotificationArea::setHeight(int contentHeight)
                 widgetScreen = win->screen();
         }
         if (widgetScreen == nullptr)
-        {
-            const auto screens = qApp->screens();
-            for(const auto& screen : screens)
-            {
-                if (screen->geometry().contains(QCursor::pos()))
-                {
-                    widgetScreen = screen;
-                    break;
-                }
-            }
-        }
+            widgetScreen = QGuiApplication::screenAt(QCursor::pos());
     }
 
     if (widgetScreen == nullptr)
         widgetScreen = qApp->primaryScreen();
-    
+
     if (contentHeight == -1)
         contentHeight = height();
 
