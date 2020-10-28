@@ -17,25 +17,23 @@
 <context>
     <name>Notifyd</name>
     <message>
-        <location filename="../notifyd.cpp" line="226"/>
+        <location filename="../notifyd.cpp" line="227"/>
         <source>Clear All</source>
         <translation>לפנות הכול</translation>
     </message>
     <message>
-        <location filename="../notifyd.cpp" line="234"/>
+        <location filename="../notifyd.cpp" line="235"/>
         <source>Options</source>
         <translation>אפשרויות</translation>
     </message>
     <message numerus="yes">
-        <location filename="../notifyd.cpp" line="241"/>
-        <location filename="../notifyd.cpp" line="299"/>
-        <location filename="../notifyd.cpp" line="319"/>
+        <location filename="../notifyd.cpp" line="242"/>
+        <location filename="../notifyd.cpp" line="300"/>
+        <location filename="../notifyd.cpp" line="320"/>
         <source>%n Unattended Notification(s)</source>
         <translation>
             <numerusform>%n התראות שלא התייחסת אליהן</numerusform>
             <numerusform>%n התראות שלא התייחסת אליהן</numerusform>
-            <numerusform>%n התראות שלא התייחסת אליהן</numerusform>
-            <numerusform>הודעה %n שלא התייחסת אליה</numerusform>
         </translation>
     </message>
 </context>
