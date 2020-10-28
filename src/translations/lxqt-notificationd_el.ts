@@ -17,19 +17,19 @@
 <context>
     <name>Notifyd</name>
     <message>
-        <location filename="../notifyd.cpp" line="226"/>
+        <location filename="../notifyd.cpp" line="227"/>
         <source>Clear All</source>
         <translation>Εκκαθάριση όλων</translation>
     </message>
     <message>
-        <location filename="../notifyd.cpp" line="234"/>
+        <location filename="../notifyd.cpp" line="235"/>
         <source>Options</source>
         <translation>Επιλογές</translation>
     </message>
     <message numerus="yes">
-        <location filename="../notifyd.cpp" line="241"/>
-        <location filename="../notifyd.cpp" line="299"/>
-        <location filename="../notifyd.cpp" line="319"/>
+        <location filename="../notifyd.cpp" line="242"/>
+        <location filename="../notifyd.cpp" line="300"/>
+        <location filename="../notifyd.cpp" line="320"/>
         <source>%n Unattended Notification(s)</source>
         <translation>
             <numerusform>%n Ανεπίβλεπτη-ες ειδοποίηση-εις</numerusform>
