@@ -309,7 +309,7 @@ bool Notification::eventFilter(QObject *obj, QEvent *event)
     return false;
 }
 
-void Notification::linkHovered(QString link)
+void Notification::linkHovered(const QString& link)
 {
     m_linkHovered = !link.isEmpty();
 }
