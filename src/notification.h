@@ -129,7 +129,7 @@ private:
 
 private slots:
     void closeButton_clicked();
-    void linkHovered(QString);
+    void linkHovered(const QString&);
 };
 
 
