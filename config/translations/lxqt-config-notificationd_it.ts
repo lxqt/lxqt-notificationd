@@ -73,17 +73,17 @@
     <message>
         <location filename="../advancedsettings.ui" line="177"/>
         <source>Screen</source>
-        <translation type="unfinished"></translation>
+        <translation>Monitor</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="183"/>
         <source>When unchecked the notification will always show on primary screen</source>
-        <translation type="unfinished"></translation>
+        <translation>Se non è spuntata le notifiche appariranno sempre sul monitor primario</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="186"/>
         <source>Show notifications on screen with the mouse</source>
-        <translation type="unfinished"></translation>
+        <translation>Mostra le notifiche sul monitor con il cursore</translation>
     </message>
 </context>
 <context>
@@ -102,7 +102,8 @@
         <location filename="../basicsettings.cpp" line="61"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; notifications daemon is slow to respond.
 Keep trying to connect…</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;Attenzione:&lt;/b&gt; il demone delle notifiche è lento a rispondere
+Provando a connettere…</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="70"/>
