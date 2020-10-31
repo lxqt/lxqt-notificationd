@@ -47,17 +47,17 @@
     <message>
         <location filename="../advancedsettings.ui" line="177"/>
         <source>Screen</source>
-        <translation type="unfinished"></translation>
+        <translation>Tela</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="183"/>
         <source>When unchecked the notification will always show on primary screen</source>
-        <translation type="unfinished"></translation>
+        <translation>Quando desmarcada, a notificação sempre será exibida na tela principal</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="186"/>
         <source>Show notifications on screen with the mouse</source>
-        <translation type="unfinished"></translation>
+        <translation>Exibir notificações na tela com o mouse</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="17"/>
@@ -83,7 +83,7 @@
     <message>
         <location filename="../advancedsettings.ui" line="52"/>
         <source>app1,app2,app3</source>
-        <translation>app1,app2,app3</translation>
+        <translation>app1, app2, app3</translation>
     </message>
 </context>
 <context>
@@ -102,7 +102,8 @@
         <location filename="../basicsettings.cpp" line="61"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; notifications daemon is slow to respond.
 Keep trying to connect…</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;Atenção:&lt;/b&gt; o daemon de notificações demora para responder.
+Continua tentando se conectar…</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="70"/>
