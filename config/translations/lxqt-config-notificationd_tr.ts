@@ -47,17 +47,17 @@
     <message>
         <location filename="../advancedsettings.ui" line="177"/>
         <source>Screen</source>
-        <translation type="unfinished"></translation>
+        <translation>Ekran</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="183"/>
         <source>When unchecked the notification will always show on primary screen</source>
-        <translation type="unfinished"></translation>
+        <translation>İşaretli olmadığında, bildirim her zaman birincil ekranda gösterilecektir</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="186"/>
         <source>Show notifications on screen with the mouse</source>
-        <translation type="unfinished"></translation>
+        <translation>Fareyle ekranda bildirimleri göster</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="17"/>
@@ -102,7 +102,8 @@
         <location filename="../basicsettings.cpp" line="61"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; notifications daemon is slow to respond.
 Keep trying to connect…</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;Uyarı:&lt;/b&gt; bildirimler arka plan programının yanıt vermesi yavaş.
+Bağlanmaya devam et…</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="70"/>
