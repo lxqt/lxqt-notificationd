@@ -32,6 +32,8 @@
         <location filename="../notifyd.cpp" line="320"/>
         <source>%n Unattended Notification(s)</source>
         <translation>
+            <numerusform>התראה %n שלא התייחסת אליה</numerusform>
+            <numerusform>%n התראות שלא התייחסת אליהן</numerusform>
             <numerusform>%n התראות שלא התייחסת אליהן</numerusform>
             <numerusform>%n התראות שלא התייחסת אליהן</numerusform>
         </translation>
