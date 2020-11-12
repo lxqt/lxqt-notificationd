@@ -76,7 +76,7 @@ public:
     /*! Create new widget.
      * \param actions a list of actions in form: (key1, display1, key2, display2, ..., keyN, displayN)
      */
-    NotificationActionsButtonsWidget(const QStringList& actions, QWidget *parent);
+    NotificationActionsButtonsWidget(const QStringList& actions, QWidget *parent, const bool action_icons);
 private slots:
     void actionButtonActivated(QAbstractButton* button);
 };
@@ -89,7 +89,7 @@ public:
     /*! Create new widget.
      * \param actions a list of actions in form: (key1, display1, key2, display2, ..., keyN, displayN)
      */
-    NotificationActionsComboWidget(const QStringList& actions, QWidget *parent);
+    NotificationActionsComboWidget(const QStringList& actions, QWidget *parent, const bool action_icons);
 
 private:
     QComboBox *m_comboBox;

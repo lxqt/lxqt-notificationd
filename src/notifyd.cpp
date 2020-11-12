@@ -81,7 +81,7 @@ QStringList Notifyd::GetCapabilities()
     QStringList caps;
     caps
          << QSL("actions")
-      // << "action-icons"
+         << QSL("action-icons")
          << QSL("body")
          << QSL("body-hyperlinks")
          << QSL("body-images")
