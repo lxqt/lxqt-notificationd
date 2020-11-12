@@ -46,9 +46,7 @@ AdvancedSettings::AdvancedSettings(LXQt::Settings* settings, QWidget *parent):
     connect(mousebtn, &QCheckBox::clicked, this, &AdvancedSettings::save);
 }
 
-AdvancedSettings::~AdvancedSettings()
-{
-}
+AdvancedSettings::~AdvancedSettings() = default;
 
 void AdvancedSettings::restoreSettings()
 {
