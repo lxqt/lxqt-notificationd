@@ -283,19 +283,19 @@ QPixmap Notification::getPixmapFromString(const QString &str) const
     }
 }
 
-void Notification::enterEvent(QEvent * event)
+void Notification::enterEvent(QEvent * /*event*/)
 {
     if (m_timer)
         m_timer->pause();
 }
 
-void Notification::leaveEvent(QEvent * event)
+void Notification::leaveEvent(QEvent * /*event*/)
 {
     if (m_timer)
         m_timer->resume();
 }
 
-bool Notification::eventFilter(QObject *obj, QEvent *event)
+bool Notification::eventFilter(QObject * /*obj*/, QEvent * event)
 {
     // Catch mouseReleaseEvent on child labels if a link is not currently being hovered.
     //
