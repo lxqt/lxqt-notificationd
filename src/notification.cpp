@@ -50,9 +50,9 @@ Notification::Notification(const QString &application,
                            const QStringList& actions, const QVariantMap& hints,
                            QWidget *parent)
     : QWidget(parent),
-      m_timer(0),
+      m_timer(nullptr),
       m_linkHovered(false),
-      m_actionWidget(0),
+      m_actionWidget(nullptr),
       m_icon(icon),
       m_timeout(timeout),
       m_actions(actions),
@@ -189,7 +189,7 @@ void Notification::setValues(const QString &application,
     }
 
     // Actions
-    if (actions.count() && m_actionWidget == 0)
+    if (actions.count() && m_actionWidget == nullptr)
     {
         if (actions.count()/2 < 4)
             m_actionWidget = new NotificationActionsButtonsWidget(actions, this);

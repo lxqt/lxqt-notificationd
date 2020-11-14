@@ -80,9 +80,7 @@ BasicSettings::BasicSettings(LXQt::Settings* settings, QWidget *parent) :
         });
 }
 
-BasicSettings::~BasicSettings()
-{
-}
+BasicSettings::~BasicSettings() = default;
 
 void BasicSettings::restoreSettings()
 {
