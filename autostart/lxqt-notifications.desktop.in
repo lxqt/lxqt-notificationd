@@ -1,6 +1,5 @@
 [Desktop Entry]
 Type=Application
-Name=Notification Daemon
 TryExec=lxqt-notificationd
 Exec=lxqt-notificationd
 OnlyShowIn=LXQt;

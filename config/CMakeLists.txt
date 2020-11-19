@@ -24,7 +24,7 @@ lxqt_translate_ts(NOTIFICATIONS_CONF_QM
 )
 
 lxqt_app_translation_loader(QM_LOADER ${PROJECT_NAME})
-lxqt_translate_desktop(DESKTOP_FILES SOURCES lxqt-config-notificationd.desktop.in)
+lxqt_translate_desktop(DESKTOP_FILES SOURCES lxqt-config-notificationd.desktop.in USE_YAML)
 #************************************************
 
 
