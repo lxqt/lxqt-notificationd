@@ -47,17 +47,17 @@
     <message>
         <location filename="../advancedsettings.ui" line="177"/>
         <source>Screen</source>
-        <translation type="unfinished"></translation>
+        <translation>Ekranas</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="183"/>
         <source>When unchecked the notification will always show on primary screen</source>
-        <translation type="unfinished"></translation>
+        <translation>Kai žymėjimas nuimtas, pranešimai visada bus rodomi pirminiame ekrane</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="186"/>
         <source>Show notifications on screen with the mouse</source>
-        <translation type="unfinished"></translation>
+        <translation>Rodyti pranešimus ekrane, kuriame yra pelės rodyklė</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="17"/>
@@ -102,7 +102,8 @@
         <location filename="../basicsettings.cpp" line="61"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; notifications daemon is slow to respond.
 Keep trying to connect…</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;Įspėjimas:&lt;/b&gt; pranešimų tarnyba ilgai atsako.
+Ir toliau bandoma prisijungti…</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="70"/>
