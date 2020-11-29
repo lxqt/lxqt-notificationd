@@ -31,8 +31,8 @@
         <location filename="../notifyd.cpp" line="300"/>
         <location filename="../notifyd.cpp" line="320"/>
         <source>%n Unattended Notification(s)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n 无人参与的通知</numerusform>
         </translation>
     </message>
 </context>
