@@ -32,7 +32,7 @@
     <message>
         <location filename="../advancedsettings.ui" line="130"/>
         <source>Some notifications set their own on-screen duration.</source>
-        <translation>Egyes értesítések megjelenési ideje.</translation>
+        <translation>Néhány értesítés magának állítja be a képernyőn megjelenés időtartamát.</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="142"/>
@@ -96,28 +96,28 @@
     <message>
         <location filename="../basicsettings.ui" line="30"/>
         <source>Position on screen</source>
-        <translation>Helyzet</translation>
+        <translation>Helyzet a képernyőn</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="61"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; notifications daemon is slow to respond.
 Keep trying to connect…</source>
-        <translation type="unfinished">&lt;b&gt; Figyelmeztetés: &lt;/b&gt; az értesítési démon lassan reagál.
+        <translation>&lt;b&gt; Figyelmeztetés: &lt;/b&gt; Az értesítési démon lassan reagál.
 Kísérlet a csatlakozásra…</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="70"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; No notifications daemon is running.
 A fallback will be used.</source>
-        <translation>&lt;b&gt;Figyelem:&lt;/b&gt; Értesítő démon nem fut.
-A tartalék lesz használva.</translation>
+        <translation>&lt;b&gt;Figyelem:&lt;/b&gt; Az értesítési démon nem fut.
+Egy tartalék lesz használva.</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="73"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; A third-party notifications daemon (%1) is running.
 These settings won&apos;t have any effect on it!</source>
-        <translation>&lt;b&gt;Figyelem:&lt;/b&gt; Egy másik, a (%1) értesítésdémon már fut.
-Ezek a beállítások arra nincsenek hatással!</translation>
+        <translation>&lt;b&gt;Figyelmeztetés:&lt;/b&gt; Egy másik értesítésdémon (%1) már fut.
+Ezek a beállítások nem lesznek hatással!</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="131"/>
@@ -129,7 +129,7 @@ Ezek a beállítások arra nincsenek hatással!</translation>
         <source>This is a test notification.
  All notifications will now appear here on LXQt.</source>
         <translation>Értesítési teszt.
- Az értesítéseket az LXQt így fogja megjeleníteni.</translation>
+ Az értesítések itt fognak megjelenni az LXQt-ban.</translation>
     </message>
 </context>
 <context>
