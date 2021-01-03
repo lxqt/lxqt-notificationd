@@ -33,6 +33,7 @@
         <source>%n Unattended Notification(s)</source>
         <translation>
             <numerusform>%n olvasatlan értesítés</numerusform>
+            <numerusform>%n olvasatlan értesítés</numerusform>
         </translation>
     </message>
 </context>

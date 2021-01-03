@@ -47,17 +47,17 @@
     <message>
         <location filename="../advancedsettings.ui" line="177"/>
         <source>Screen</source>
-        <translation type="unfinished"></translation>
+        <translation>屏幕</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="183"/>
         <source>When unchecked the notification will always show on primary screen</source>
-        <translation type="unfinished"></translation>
+        <translation>当没有检测到时，该通知会在主屏幕一直显示</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="186"/>
         <source>Show notifications on screen with the mouse</source>
-        <translation type="unfinished"></translation>
+        <translation>使用鼠标时在屏幕上显示通知</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="17"/>
@@ -102,7 +102,8 @@
         <location filename="../basicsettings.cpp" line="61"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; notifications daemon is slow to respond.
 Keep trying to connect…</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;警告：&lt;/b&gt; 通知守护进程响应缓慢。
+继续尝试连接 …</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="70"/>
