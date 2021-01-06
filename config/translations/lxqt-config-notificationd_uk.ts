@@ -136,7 +136,7 @@ These settings won&apos;t have any effect on it!</source>
     <message>
         <location filename="../mainwindow.cpp" line="41"/>
         <source>Desktop Notifications</source>
-        <translation>Повідомлення стільниці</translation>
+        <translation>Сповіщення стільниці</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="44"/>
