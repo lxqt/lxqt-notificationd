@@ -19,22 +19,22 @@
     <message>
         <location filename="../notifyd.cpp" line="227"/>
         <source>Clear All</source>
-        <translation type="unfinished"></translation>
+        <translation>Очистити все</translation>
     </message>
     <message>
         <location filename="../notifyd.cpp" line="235"/>
         <source>Options</source>
-        <translation type="unfinished"></translation>
+        <translation>Параметри</translation>
     </message>
     <message numerus="yes">
         <location filename="../notifyd.cpp" line="242"/>
         <location filename="../notifyd.cpp" line="300"/>
         <location filename="../notifyd.cpp" line="320"/>
         <source>%n Unattended Notification(s)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n не переглянуте сповіщення</numerusform>
+            <numerusform>%n не переглянутих сповіщення</numerusform>
+            <numerusform>%n не переглянутих сповіщень</numerusform>
         </translation>
     </message>
 </context>
