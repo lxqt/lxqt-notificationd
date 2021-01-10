@@ -96,7 +96,7 @@
     <message>
         <location filename="../basicsettings.ui" line="30"/>
         <source>Position on screen</source>
-        <translation>画面上での位置</translation>
+        <translation>画面上の位置</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="61"/>
