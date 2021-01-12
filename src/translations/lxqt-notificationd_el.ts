@@ -32,8 +32,8 @@
         <location filename="../notifyd.cpp" line="320"/>
         <source>%n Unattended Notification(s)</source>
         <translation>
-            <numerusform>%n Ανεπίβλεπτη-ες ειδοποίηση-εις</numerusform>
-            <numerusform>%n Ανεπίβλεπτη-ες ειδοποίηση-εις</numerusform>
+            <numerusform>%n Ανεπίβλεπτη ειδοποίηση</numerusform>
+            <numerusform>%n Ανεπίβλεπτες ειδοποιήσεις</numerusform>
         </translation>
     </message>
 </context>
