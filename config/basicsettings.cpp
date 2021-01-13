@@ -41,14 +41,14 @@ BasicSettings::BasicSettings(LXQt::Settings* settings, QWidget *parent) :
 
     restoreSettings();
 
-    connect(topLeftRB,      SIGNAL(clicked()), this, SLOT(updateNotification()));
-    connect(topCenterRB,    SIGNAL(clicked()), this, SLOT(updateNotification()));
-    connect(topRightRB,     SIGNAL(clicked()), this, SLOT(updateNotification()));
-    connect(centerLeftRB,   SIGNAL(clicked()), this, SLOT(updateNotification()));
-    connect(centerRightRB,  SIGNAL(clicked()), this, SLOT(updateNotification()));
-    connect(bottomLeftRB,   SIGNAL(clicked()), this, SLOT(updateNotification()));
-    connect(bottomCenterRB, SIGNAL(clicked()), this, SLOT(updateNotification()));
-    connect(bottomRightRB,  SIGNAL(clicked()), this, SLOT(updateNotification()));
+    connect(topLeftRB,      &QRadioButton::clicked, this, &BasicSettings::updateNotification);
+    connect(topCenterRB,    &QRadioButton::clicked, this, &BasicSettings::updateNotification);
+    connect(topRightRB,     &QRadioButton::clicked, this, &BasicSettings::updateNotification);
+    connect(centerLeftRB,   &QRadioButton::clicked, this, &BasicSettings::updateNotification);
+    connect(centerRightRB,  &QRadioButton::clicked, this, &BasicSettings::updateNotification);
+    connect(bottomLeftRB,   &QRadioButton::clicked, this, &BasicSettings::updateNotification);
+    connect(bottomCenterRB, &QRadioButton::clicked, this, &BasicSettings::updateNotification);
+    connect(bottomRightRB,  &QRadioButton::clicked, this, &BasicSettings::updateNotification);
 
     LXQt::Notification *serverTest = new LXQt::Notification(QString(), this);
     serverTest->queryServerInfo();
