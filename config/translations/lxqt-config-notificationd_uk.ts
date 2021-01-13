@@ -121,7 +121,7 @@ These settings won&apos;t have any effect on it!</source>
     <message>
         <location filename="../basicsettings.cpp" line="131"/>
         <source>Notification demo </source>
-        <translation>Демонстрація попереджень</translation>
+        <translation>Демонстрація сповіщень </translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="132"/>
