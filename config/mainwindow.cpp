@@ -42,11 +42,11 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     BasicSettings* basic = new BasicSettings(mSettings, this);
     addPage(basic, tr("Basic Settings"), QSL("preferences-desktop-notification"));
-    connect(this, SIGNAL(reset()), basic, SLOT(restoreSettings()));
+    connect(this, &MainWindow::reset, basic, &BasicSettings::restoreSettings);
 
     AdvancedSettings* menu = new AdvancedSettings(mSettings, this);
     addPage(menu, tr("Advanced Settings"), QSL("preferences-desktop-notification-bell"));
-    connect(this, SIGNAL(reset()), menu, SLOT(restoreSettings()));
+    connect(this, &MainWindow::reset, menu, &AdvancedSettings::restoreSettings);
 }
 
 MainWindow::~MainWindow()

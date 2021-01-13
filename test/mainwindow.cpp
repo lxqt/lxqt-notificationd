@@ -32,7 +32,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    connect(ui->pushButton, SIGNAL(clicked()), SLOT(createNotification()));
+    connect(ui->pushButton, &QPushButton::clicked, this, &MainWindow::createNotification);
     LXQt::Notification::notify(QStringLiteral("1"));
     LXQt::Notification::notify(QStringLiteral("2"));
     LXQt::Notification::notify(QStringLiteral("3"));
@@ -42,7 +42,7 @@ void MainWindow::createNotification()
 {
     LXQt::Notification* n = new LXQt::Notification(QStringLiteral("Notification!"));
     nlist.append(n);
-    connect(n, SIGNAL(actionActivated(int)), this, SLOT(clickEvent(int)));
+    connect(n, &LXQt::Notification::actionActivated, this, &MainWindow::clickEvent);
     n->setActions(QStringList()
             << QStringLiteral("Hi")
             << QStringLiteral("Bye")
