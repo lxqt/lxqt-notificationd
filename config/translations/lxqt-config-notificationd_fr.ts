@@ -47,17 +47,17 @@
     <message>
         <location filename="../advancedsettings.ui" line="177"/>
         <source>Screen</source>
-        <translation type="unfinished"></translation>
+        <translation>Écran</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="183"/>
         <source>When unchecked the notification will always show on primary screen</source>
-        <translation type="unfinished"></translation>
+        <translation>Lorsque la case n&apos;est pas cochée, les notifications s&apos;afficheront toujours sur l&apos;écran principal</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="186"/>
         <source>Show notifications on screen with the mouse</source>
-        <translation type="unfinished"></translation>
+        <translation>Afficher les notifications sur l&apos;écran où se trouve la souris</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="17"/>
@@ -102,7 +102,8 @@
         <location filename="../basicsettings.cpp" line="61"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; notifications daemon is slow to respond.
 Keep trying to connect…</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;Warning:&lt;/b&gt;Le démon de notifications est lent à répondre.
+Continuez d’essayer de vous connecter…</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="70"/>
