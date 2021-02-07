@@ -19,7 +19,7 @@
     <message>
         <location filename="../notifyd.cpp" line="227"/>
         <source>Clear All</source>
-        <translation>すべてを消去する</translation>
+        <translation>すべて消去</translation>
     </message>
     <message>
         <location filename="../notifyd.cpp" line="235"/>
