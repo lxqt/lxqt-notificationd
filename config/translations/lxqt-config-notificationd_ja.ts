@@ -102,8 +102,8 @@
         <location filename="../basicsettings.cpp" line="61"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; notifications daemon is slow to respond.
 Keep trying to connect…</source>
-        <translation>警告: 通知デーモンの応答に時間がかかっています。
-接続しようと続けています…</translation>
+        <translation>&lt;b&gt;警告:&lt;/b&gt; 通知デーモンの応答が遅れています。
+接続を試しています…</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="70"/>
