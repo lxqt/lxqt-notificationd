@@ -117,7 +117,7 @@ A fallback will be used.</source>
         <source>&lt;b&gt;Warning:&lt;/b&gt; A third-party notifications daemon (%1) is running.
 These settings won&apos;t have any effect on it!</source>
         <translation>&lt;b&gt;警告:&lt;/b&gt; サードパーティーの通知デーモン (%1) が実行されています。
-ここでの設定は影響をおよぼしません！</translation>
+ここでの設定は影響しません！</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="131"/>
