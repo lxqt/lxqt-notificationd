@@ -32,8 +32,8 @@
         <location filename="../notifyd.cpp" line="320"/>
         <source>%n Unattended Notification(s)</source>
         <translation>
-            <numerusform>%n varsel som ikke er sett</numerusform>
-            <numerusform>%n varsler som ikke er sett</numerusform>
+            <numerusform>%n usett varsel</numerusform>
+            <numerusform>%n usette varsler</numerusform>
         </translation>
     </message>
 </context>
