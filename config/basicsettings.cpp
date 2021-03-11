@@ -57,12 +57,12 @@ BasicSettings::BasicSettings(LXQt::Settings* settings, QWidget *parent) :
     QTimer *saneQueryTimeout = new QTimer(this);
     saneQueryTimeout->setSingleShot(true);
     saneQueryTimeout->start(200);
-    connect(saneQueryTimeout, &QTimer::timeout, [this]() {
+    connect(saneQueryTimeout, &QTimer::timeout, warningLabel, [this]() {
                 warningLabel->setText(tr("<b>Warning:</b> notifications daemon is slow to respond.\n"
                         "Keep trying to connect…"));
             });
 
-    connect(serverTest, &LXQt::Notification::serverInfoReady, [this, serverTest, saneQueryTimeout]() {
+    connect(serverTest, &LXQt::Notification::serverInfoReady, this, [this, serverTest, saneQueryTimeout]() {
             QString serverName = serverTest->serverInfo().name;
             if (serverName != QL1S("lxqt-notificationd"))
             {

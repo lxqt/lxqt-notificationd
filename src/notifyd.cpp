@@ -50,7 +50,7 @@ Notifyd::Notifyd(QObject* parent)
     connect(this, &Notifyd::notificationClosed,
             m_area->layout(), &NotificationLayout::removeNotification);
     // feedback for original caller
-    connect(m_area->layout(), &NotificationLayout::notificationClosed,
+    connect(m_area->layout(), &NotificationLayout::notificationClosed, this,
             [this] (uint id, uint reason, const QString& /*date*/) {
                 emit NotificationClosed(id, reason);
             });
@@ -191,7 +191,7 @@ void Notifyd::createTrayIcon()
     {
         m_trayIcon = new QSystemTrayIcon(QIcon::fromTheme(QSL("preferences-desktop-notification")), this);
         /* show the menu also on left clicking */
-        connect(m_trayIcon, &QSystemTrayIcon::activated, [this] (QSystemTrayIcon::ActivationReason r) {
+        connect(m_trayIcon, &QSystemTrayIcon::activated, this, [this] (QSystemTrayIcon::ActivationReason r) {
             if (r == QSystemTrayIcon::Trigger && !m_trayMenu.isNull())
                 m_trayMenu->exec(QCursor::pos());
         });
