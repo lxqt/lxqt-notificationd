@@ -83,7 +83,7 @@
     <message>
         <location filename="../advancedsettings.ui" line="52"/>
         <source>app1,app2,app3</source>
-        <translation>app1, app2, app3</translation>
+        <translation>app1,app2,app3</translation>
     </message>
 </context>
 <context>
@@ -102,7 +102,7 @@
         <location filename="../basicsettings.cpp" line="61"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; notifications daemon is slow to respond.
 Keep trying to connect…</source>
-        <translation>&lt;b&gt;Warning:&lt;/b&gt;Le démon de notifications est lent à répondre.
+        <translation>&lt;b&gt;Avertissement :&lt;/b&gt;Le démon de notifications est lent à répondre.
 Continuez d’essayer de vous connecter…</translation>
     </message>
     <message>

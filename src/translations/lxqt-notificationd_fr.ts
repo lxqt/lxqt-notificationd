@@ -32,7 +32,7 @@
         <location filename="../notifyd.cpp" line="320"/>
         <source>%n Unattended Notification(s)</source>
         <translation>
-            <numerusform>%n Nouvelle(s) notificattion(s)</numerusform>
+            <numerusform>%n Nouvelle notificattion</numerusform>
             <numerusform>%n Nouvelles notifications</numerusform>
         </translation>
     </message>
