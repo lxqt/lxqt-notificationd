@@ -1,3 +1,12 @@
+lxqt-notificationd-0.17.0 / 2021-04-15
+======================================
+  * Used const references where possible.
+  * Silenced compiler warning about unused parameters.
+  * Handled Qt5.15's deprecations.
+  * Used "= default" for trivial destructors.
+  * Completely moved to Qt5 signal/slot syntax.
+  * Alwas handle notification summary as plain-text.
+
 lxqt-notificationd-0.16.0 / 2020-11-01
 ======================================
   * Avoided container detachment.
