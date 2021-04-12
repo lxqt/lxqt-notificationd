@@ -6,7 +6,7 @@
     <message>
         <location filename="../advancedsettings.ui" line="67"/>
         <source>Sizes</source>
-        <translation>Groottes</translation>
+        <translation>Afmetingen</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="75"/>
@@ -32,7 +32,7 @@
     <message>
         <location filename="../advancedsettings.ui" line="130"/>
         <source>Some notifications set their own on-screen duration.</source>
-        <translation>Enkele kennisgevingen gebruiken hun eigen schermduur.</translation>
+        <translation>Sommige meldingen gebruiken hun eigen instellingen.</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="142"/>
@@ -47,43 +47,43 @@
     <message>
         <location filename="../advancedsettings.ui" line="177"/>
         <source>Screen</source>
-        <translation type="unfinished"></translation>
+        <translation>Beeldscherm</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="183"/>
         <source>When unchecked the notification will always show on primary screen</source>
-        <translation type="unfinished"></translation>
+        <translation>Schakel uit om meldingen altijd op het primaire scherm te tonen</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="186"/>
         <source>Show notifications on screen with the mouse</source>
-        <translation type="unfinished"></translation>
+        <translation>Meldingen tonen op beeldscherm van cursor</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="17"/>
         <source>Unattended Notifications</source>
-        <translation>Niet afgehandelde notificaties</translation>
+        <translation>Onbehandelde meldingen</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="25"/>
         <source>How many to save:</source>
-        <translation>Aantal op te slaan:</translation>
+        <translation>Aantal te bewaren meldingen:</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="39"/>
         <location filename="../advancedsettings.ui" line="49"/>
         <source>Application name is on the top of notification.</source>
-        <translation>Applicatienaam staat bovenaan de notificatie.</translation>
+        <translation>De programmanaam staat bovenaan meldingen.</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="42"/>
         <source>Ignore these applications:</source>
-        <translation>Negeer deze applicaties:</translation>
+        <translation>Deze programma&apos;s negeren:</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="52"/>
         <source>app1,app2,app3</source>
-        <translation>app1,app2,app3</translation>
+        <translation>programma1,programma2,programma3</translation>
     </message>
 </context>
 <context>
@@ -91,44 +91,45 @@
     <message>
         <location filename="../basicsettings.ui" line="23"/>
         <source>Basic Settings</source>
-        <translation>Basisinstellingen</translation>
+        <translation>Algemene instellingen</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="30"/>
         <source>Position on screen</source>
-        <translation>Positie op scherm</translation>
+        <translation>Schermlocatie</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="61"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; notifications daemon is slow to respond.
 Keep trying to connect…</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;Waarschuwing:&lt;/b&gt; de meldingsdienst reageert traag.
+Blijf het proberen…</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="70"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; No notifications daemon is running.
 A fallback will be used.</source>
-        <translation>&lt;b&gt;Waarschuwing:&lt;/b&gt; er draait geen achtergronddienst voor notificaties.
+        <translation>&lt;b&gt;Waarschuwing:&lt;/b&gt; er is geen meldingsdienst actief.
 Er zal een vervangende dienst worden gebruikt.</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="73"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; A third-party notifications daemon (%1) is running.
 These settings won&apos;t have any effect on it!</source>
-        <translation>&lt;b&gt;Waarschuwing:&lt;/b&gt; er draait al een andere achtergrondddienst voor notificaties (%1).
+        <translation>&lt;b&gt;Waarschuwing:&lt;/b&gt; er is al een meldingsdienst actief (%1).
 Deze instellingen zullen daarop geen invloed hebben!</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="131"/>
         <source>Notification demo </source>
-        <translation>Voorbeeldnotificatie </translation>
+        <translation>Voorbeeldmelding </translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="132"/>
         <source>This is a test notification.
  All notifications will now appear here on LXQt.</source>
-        <translation>Dit is een voorbeeldnotificatie.
-Alle notificaties zullen nu hier verschijnen op LXQt.</translation>
+        <translation>Dit is een voorbeeldmelding.
+Alle meldingen worden hier getoond op LXQt.</translation>
     </message>
 </context>
 <context>
@@ -136,12 +137,12 @@ Alle notificaties zullen nu hier verschijnen op LXQt.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="41"/>
         <source>Desktop Notifications</source>
-        <translation>Bureaubladnotificaties</translation>
+        <translation>Bureaubladmeldingen</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="44"/>
         <source>Basic Settings</source>
-        <translation>Basisinstellingen</translation>
+        <translation>Algemene instellingen</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="48"/>
