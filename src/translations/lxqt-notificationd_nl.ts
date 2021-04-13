@@ -19,7 +19,7 @@
     <message>
         <location filename="../notifyd.cpp" line="227"/>
         <source>Clear All</source>
-        <translation>Wis alles</translation>
+        <translation>Alles wissen</translation>
     </message>
     <message>
         <location filename="../notifyd.cpp" line="235"/>
@@ -32,8 +32,8 @@
         <location filename="../notifyd.cpp" line="320"/>
         <source>%n Unattended Notification(s)</source>
         <translation>
-            <numerusform>%n onafgehandelde notificatie(s)</numerusform>
-            <numerusform>%n onafgehandelde notificaties</numerusform>
+            <numerusform>%n onbehandelde melding</numerusform>
+            <numerusform>%n onbehandelde meldingen</numerusform>
         </translation>
     </message>
 </context>
