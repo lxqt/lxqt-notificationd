@@ -102,7 +102,8 @@
         <location filename="../basicsettings.cpp" line="61"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; notifications daemon is slow to respond.
 Keep trying to connect…</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;Warnung:&lt;/b&gt; Nachrichtenservice antwortet langsam.
+Versuche zu verbinden…</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="70"/>
