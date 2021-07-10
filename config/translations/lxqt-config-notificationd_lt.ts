@@ -32,7 +32,7 @@
     <message>
         <location filename="../advancedsettings.ui" line="130"/>
         <source>Some notifications set their own on-screen duration.</source>
-        <translation>Kai kurie pranešimai patys nusistato savo trukmę ekrane.</translation>
+        <translation>Kai kurie pranešimai patys nusistato trukmę ekrane.</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="142"/>
