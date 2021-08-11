@@ -141,6 +141,8 @@ private:
     QPointer<QMenu> m_trayMenu;
     int m_trayChecker;
 
+    bool m_doNotDisturb;
+
     void createTrayIcon();
 
 private slots:

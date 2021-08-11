@@ -37,6 +37,7 @@
 NotificationLayout::NotificationLayout(QWidget *parent)
     : QWidget(parent),
       m_unattendedMaxNum(0),
+      m_doNotDisturb(false),
       m_cacheDateFormat(QL1S("yyyy-MM-dd-HH-mm-ss-zzz"))
 {
     setObjectName(QSL("NotificationLayout"));
@@ -111,11 +112,13 @@ void NotificationLayout::addNotification(uint id, const QString &application,
                 this, &NotificationLayout::notificationActionCalled);
         m_notifications[id] = n;
         m_layout->addWidget(n);
-        n->show();
+        if (!m_doNotDisturb)
+            n->show();
     }
 
     checkHeight();
-    emit notificationAvailable();
+    if (!m_doNotDisturb)
+        emit notificationAvailable();
 
     // NOTE by pcman:
     // This dirty hack is used to workaround a weird and annoying repainting bug caused by Qt.
@@ -123,6 +126,24 @@ void NotificationLayout::addNotification(uint id, const QString &application,
     // razot-qt bug #536 - Notifications do not repaint under certain conditions
     // When we create the first notification and are about to show the widget, force repaint() here.
     // FIXME: there should be better ways to do this, or it should be fixed in Qt instead.
+    if(m_notifications.count() == 1)
+        repaint();
+}
+
+// Can be called when the do-not-disturb mode ends.
+void NotificationLayout::showAllNotifications()
+{
+    if (m_notifications.isEmpty())
+        return;
+    QHashIterator<uint, Notification*> it(m_notifications);
+    while (it.hasNext())
+    {
+        it.next();
+        it.value()->show();
+    }
+    // as in NotificationLayout::addNotification()
+    checkHeight();
+    emit notificationAvailable();
     if(m_notifications.count() == 1)
         repaint();
 }
