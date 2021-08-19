@@ -47,43 +47,43 @@
     <message>
         <location filename="../advancedsettings.ui" line="177"/>
         <source>Screen</source>
-        <translation type="unfinished"></translation>
+        <translation>Ekrāns</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="183"/>
         <source>When unchecked the notification will always show on primary screen</source>
-        <translation type="unfinished"></translation>
+        <translation>Ja nav atzīmēts, tad paziņojumi vienmēr tiks rādīti pamat/primārajā ekrānā</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="186"/>
         <source>Show notifications on screen with the mouse</source>
-        <translation type="unfinished"></translation>
+        <translation>Rādīt paziņojumus uz ekrāna, kurā atrodas pele</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="17"/>
         <source>Unattended Notifications</source>
-        <translation type="unfinished"></translation>
+        <translation>Neizlasīti paziņojumi</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="25"/>
         <source>How many to save:</source>
-        <translation type="unfinished"></translation>
+        <translation>Cik saglabāt:</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="39"/>
         <location filename="../advancedsettings.ui" line="49"/>
         <source>Application name is on the top of notification.</source>
-        <translation type="unfinished"></translation>
+        <translation>Lietotnes nosaukums atrodas paziņojuma augšgalā.</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="42"/>
         <source>Ignore these applications:</source>
-        <translation type="unfinished"></translation>
+        <translation>Ignorēt lietotnes:</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="52"/>
         <source>app1,app2,app3</source>
-        <translation type="unfinished"></translation>
+        <translation>app1,app2,app3</translation>
     </message>
 </context>
 <context>
@@ -102,7 +102,8 @@
         <location filename="../basicsettings.cpp" line="61"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; notifications daemon is slow to respond.
 Keep trying to connect…</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;&lt;b&gt;Brīdinājums:&lt;/b&gt; paziņojumu dēmōns ir lēnīgs atbildes sniegšanā.
+Turpinām mēģinājumus savienoties…</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="70"/>
@@ -121,7 +122,7 @@ These settings won&apos;t have any effect on it!</source>
     <message>
         <location filename="../basicsettings.cpp" line="131"/>
         <source>Notification demo </source>
-        <translation>Paziņojuma demonstrācija</translation>
+        <translation>Demo/testa paziņojums </translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="132"/>
