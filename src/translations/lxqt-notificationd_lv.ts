@@ -19,22 +19,22 @@
     <message>
         <location filename="../notifyd.cpp" line="227"/>
         <source>Clear All</source>
-        <translation type="unfinished"></translation>
+        <translation>Notīrīt visus</translation>
     </message>
     <message>
         <location filename="../notifyd.cpp" line="235"/>
         <source>Options</source>
-        <translation type="unfinished"></translation>
+        <translation>Opcijas/parametri</translation>
     </message>
     <message numerus="yes">
         <location filename="../notifyd.cpp" line="242"/>
         <location filename="../notifyd.cpp" line="300"/>
         <location filename="../notifyd.cpp" line="320"/>
         <source>%n Unattended Notification(s)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n nelasītu paziņojumu</numerusform>
+            <numerusform>%n nelasīts paziņojums</numerusform>
+            <numerusform>%n nelasītu paziņojumu</numerusform>
         </translation>
     </message>
 </context>
