@@ -50,6 +50,10 @@ public:
         m_unattendedMaxNum = num;
     }
 
+    void setDoNotDisturb(bool value) {
+        m_doNotDisturb = value;
+    }
+
     void setBlackList(const QStringList &l) {
         m_blackList = l;
     }
@@ -60,6 +64,8 @@ public:
     QString cacheDateFormat() const {
         return m_cacheDateFormat;
     }
+
+    void showAllNotifications();
 
 signals:
     //! All \c Notification instances are closed
@@ -100,6 +106,7 @@ private:
     QHash<uint, Notification*> m_notifications;
     QVBoxLayout *m_layout;
     int m_unattendedMaxNum;
+    bool m_doNotDisturb;
     QStringList m_blackList;
     QString m_cacheFile;
     QString m_cacheDateFormat;

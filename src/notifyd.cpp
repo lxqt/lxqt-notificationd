@@ -39,7 +39,8 @@
 Notifyd::Notifyd(QObject* parent)
     : QObject(parent),
       mId(0),
-      m_trayChecker(0)
+      m_trayChecker(0),
+      m_doNotDisturb(false)
 {
     m_area = new NotificationArea();
     m_settings = new LXQt::Settings(QSL("notifications"));
@@ -149,33 +150,64 @@ uint Notifyd::Notify(const QString& app_name,
 void Notifyd::reloadSettings()
 {
     m_serverTimeout = m_settings->value(QSL("server_decides"), 10).toInt();
-    int maxNum = m_settings->value(QSL("unattendedMaxNum"), 10).toInt();
+    bool old_doNotDisturb = m_doNotDisturb;
+    m_doNotDisturb = m_settings->value(QL1S("doNotDisturb"), false).toBool();
+    int maxNum;
+    if (m_doNotDisturb)
+        maxNum = 50; // who has time for more?
+    else
+        maxNum = m_settings->value(QSL("unattendedMaxNum"), 10).toInt();
     m_area->setSettings(
             m_settings->value(QSL("placement"), QSL("bottom-right")).toString().toLower(),
             m_settings->value(QSL("width"), 300).toInt(),
             m_settings->value(QSL("spacing"), 6).toInt(),
             maxNum,
             m_settings->value(QSL("screenWithMouse"),false).toBool(),
-            m_settings->value(QSL("blackList")).toStringList());
+            m_doNotDisturb ? QStringList() : m_settings->value(QSL("blackList")).toStringList());
+    m_area->layout()->setDoNotDisturb(m_doNotDisturb);
 
-    if (maxNum > 0 && m_trayIcon.isNull())
-    { // create the tray icon
-        if (QSystemTrayIcon::isSystemTrayAvailable())
-            createTrayIcon();
-        else // check the tray's presence every 5 seconds (see checkTray)
+    if (m_trayIcon.isNull())
+    {
+        if (maxNum > 0) // create the tray icon
         {
-            QTimer *trayTimer = new QTimer(this);
-            trayTimer->setSingleShot(true);
-            trayTimer->setInterval(5000);
-            connect(trayTimer, &QTimer::timeout, this, &Notifyd::checkTray);
-            trayTimer->start();
-            ++ m_trayChecker;
+            if (QSystemTrayIcon::isSystemTrayAvailable())
+                createTrayIcon();
+            else // check the tray's presence every 5 seconds (see checkTray)
+            {
+                QTimer *trayTimer = new QTimer(this);
+                trayTimer->setSingleShot(true);
+                trayTimer->setInterval(5000);
+                connect(trayTimer, &QTimer::timeout, this, &Notifyd::checkTray);
+                trayTimer->start();
+                ++ m_trayChecker;
+            }
         }
     }
-    else if (maxNum == 0 && !m_trayIcon.isNull())
-    { // remove the tray icon
-        m_trayMenu->deleteLater();
-        m_trayIcon->deleteLater();
+    else
+    {
+        if (maxNum == 0 )
+        { // remove the tray icon
+            m_trayMenu->deleteLater();
+            m_trayIcon->deleteLater();
+        }
+        else if (old_doNotDisturb != m_doNotDisturb)
+        { // change the icon
+            QIcon icn;
+            if (m_doNotDisturb)
+                icn = QIcon::fromTheme(QSL("notifications-disabled"));
+            else
+            {
+                // show all open notifications (especially those that never expire)
+                m_area->layout()->showAllNotifications();
+            }
+            if (icn.isNull())
+            {
+                icn = QIcon::fromTheme(QSL("notifications"));
+                if (icn.isNull())
+                    icn = QIcon::fromTheme(QSL("preferences-desktop-notification"));
+            }
+            m_trayIcon->setIcon(icn);
+        }
     }
 }
 
@@ -189,8 +221,17 @@ void Notifyd::createTrayIcon()
 
     if (m_trayIcon.isNull())
     {
-        m_trayIcon = new QSystemTrayIcon(QIcon::fromTheme(QSL("preferences-desktop-notification")), this);
-        /* show the menu also on left clicking */
+        QIcon icn;
+        if (m_doNotDisturb)
+            icn = QIcon::fromTheme(QSL("notifications-disabled"));
+        if (icn.isNull())
+        {
+            icn = QIcon::fromTheme(QSL("notifications"));
+            if (icn.isNull())
+                icn = QIcon::fromTheme(QSL("preferences-desktop-notification"));
+        }
+        m_trayIcon = new QSystemTrayIcon(icn, this);
+        // show the menu also on left clicking
         connect(m_trayIcon, &QSystemTrayIcon::activated, this, [this] (QSystemTrayIcon::ActivationReason r) {
             if (r == QSystemTrayIcon::Trigger && !m_trayMenu.isNull())
                 m_trayMenu->exec(QCursor::pos());
@@ -241,7 +282,6 @@ void Notifyd::createTrayIcon()
     m_trayIcon->setVisible(!dates.isEmpty());
     m_trayIcon->setToolTip(tr("%n Unattended Notification(s)", "",
                                 m_trayMenu->actions().size() - 3));
-            
 }
 
 // NOTE: Contrary to what Qt doc implies, if the tray icon is created before the tray area is available,
@@ -313,7 +353,7 @@ void Notifyd::restoreUnattended()
         if (m_trayMenu->actions().size() == 3) // separator, "Clear All" and "Options" exist
         {
             m_trayIcon->setVisible(false);
-            // NOTE: If the menu isn't deleted here, it won't be shown later (a Qt bug?).
+            // WARNING: If the menu isn't deleted here, it won't be shown later (a Qt bug?).
             m_trayMenu->deleteLater();
         }
         else
@@ -322,6 +362,7 @@ void Notifyd::restoreUnattended()
         QSettings list(m_area->layout()->cacheFile(), QSettings::IniFormat);
         if (list.childGroups().contains(date))
         {
+            m_area->layout()->setDoNotDisturb(false); // to show the notification
             list.beginGroup(date);
             Notify(list.value(QL1S("Application")).toString(),
                 0,
@@ -334,6 +375,7 @@ void Notifyd::restoreUnattended()
                 true); // don't save this notification again; see this as a user interaction
             list.endGroup();
             list.remove(date);
+            m_area->layout()->setDoNotDisturb(m_doNotDisturb); // restore the do-not-disturb mode
         }
     }
 }
