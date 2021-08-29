@@ -31,9 +31,20 @@
 #include <QHash>
 #include <QWidget>
 #include <QAbstractButton>
+#include <QProxyStyle>
+#include <QPainter>
 
 class QComboBox;
 
+class PushButtonTextStyle : public QProxyStyle
+{
+    using QProxyStyle::QProxyStyle;
+public:
+
+    virtual void drawItemText(QPainter* painter, const QRect& rect, int flags,
+                              const QPalette& pal, bool enabled, const QString& text,
+                              QPalette::ColorRole textRole = QPalette::NoRole) const override;
+};
 
 /*! A helper widgets for actions handling.
  * See specification for information what actions are.
@@ -77,8 +88,14 @@ public:
      * \param actions a list of actions in form: (key1, display1, key2, display2, ..., keyN, displayN)
      */
     NotificationActionsButtonsWidget(const QStringList& actions, QWidget *parent);
+
+    ~NotificationActionsButtonsWidget();
+
 private slots:
     void actionButtonActivated(QAbstractButton* button);
+
+private:
+    PushButtonTextStyle *mStyle;
 };
 
 class NotificationActionsComboWidget : public NotificationActionsWidget
