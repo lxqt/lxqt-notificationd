@@ -11,7 +11,7 @@
     <message>
         <location filename="../advancedsettings.ui" line="99"/>
         <source>Spacing:</source>
-        <translation>Razmaci:</translation>
+        <translation>Razmak:</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="118"/>
@@ -41,13 +41,13 @@
     <message>
         <location filename="../advancedsettings.ui" line="25"/>
         <source>How many to save:</source>
-        <translation>Broj spremljenih obavijesti:</translation>
+        <translation>Koliko obavijesti čuvati:</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="39"/>
         <location filename="../advancedsettings.ui" line="49"/>
         <source>Application name is on the top of notification.</source>
-        <translation>Ime programa se nalazi pri vrhu obavijesti.</translation>
+        <translation>Ime programa se nalazi na početku obavijesti.</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="42"/>
@@ -122,7 +122,7 @@ Ove postavke na njega ne utječu!</translation>
     <message>
         <location filename="../basicsettings.cpp" line="131"/>
         <source>Notification demo </source>
-        <translation>Demonstracija obavijesti </translation>
+        <translation>Prikaz obavijesti </translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="132"/>
