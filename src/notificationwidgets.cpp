@@ -37,6 +37,19 @@
 
 #include <QtDebug>
 
+void PushButtonTextStyle::drawItemText(QPainter* painter, const QRect& rect, int flags,
+                                       const QPalette& pal, bool enabled, const QString& text,
+                                       QPalette::ColorRole textRole) const
+{
+    QString txt;
+    // get the button text because the text that's given to this function may be middle-elided
+    if (const QPushButton *pb = dynamic_cast<const QPushButton*>(painter->device()))
+        txt = pb->text();
+    else
+        txt = text;
+    txt = QFontMetrics(painter->font()).elidedText(txt, Qt::ElideRight, rect.width());
+    QProxyStyle::drawItemText(painter, rect, (flags & ~Qt::AlignHCenter) | Qt::AlignLeft, pal, enabled, txt, textRole);
+}
 
 NotificationActionsWidget::NotificationActionsWidget(const QStringList& actions, QWidget *parent)
     : QWidget(parent)
@@ -67,8 +80,10 @@ NotificationActionsWidget::NotificationActionsWidget(const QStringList& actions,
 
 
 NotificationActionsButtonsWidget::NotificationActionsButtonsWidget(const QStringList& actions, QWidget *parent)
-    : NotificationActionsWidget(actions, parent)
+    : NotificationActionsWidget(actions, parent),
+      mStyle(new PushButtonTextStyle())
 {
+    setStyle(mStyle);
     QHBoxLayout *l = new QHBoxLayout();
     setLayout(l);
 
@@ -91,6 +106,11 @@ NotificationActionsButtonsWidget::NotificationActionsButtonsWidget(const QString
 void NotificationActionsButtonsWidget::actionButtonActivated(QAbstractButton* button)
 {
     emit actionTriggered(button->objectName());
+}
+
+NotificationActionsButtonsWidget::~NotificationActionsButtonsWidget()
+{
+    delete mStyle;
 }
 
 
