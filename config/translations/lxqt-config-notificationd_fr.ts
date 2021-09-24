@@ -60,6 +60,16 @@
         <translation>Afficher les notifications sur l&apos;écran où se trouve la souris</translation>
     </message>
     <message>
+        <location filename="../advancedsettings.ui" line="196"/>
+        <source>Do Not Disturb</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../advancedsettings.ui" line="202"/>
+        <source>Only save notifications</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../advancedsettings.ui" line="17"/>
         <source>Unattended Notifications</source>
         <translation>Notifications sans surveillance</translation>
@@ -102,7 +112,7 @@
         <location filename="../basicsettings.cpp" line="61"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; notifications daemon is slow to respond.
 Keep trying to connect…</source>
-        <translation>&lt;b&gt;Avertissement :&lt;/b&gt;Le démon de notifications est lent à répondre.
+        <translation>&lt;b&gt;Avertissement&#xa0;:&lt;/b&gt;Le démon de notifications est lent à répondre.
 Continuez d’essayer de vous connecter…</translation>
     </message>
     <message>
@@ -120,12 +130,12 @@ These settings won&apos;t have any effect on it!</source>
 Ces réglages n&apos;auront aucun effet sur lui !</translation>
     </message>
     <message>
-        <location filename="../basicsettings.cpp" line="131"/>
+        <location filename="../basicsettings.cpp" line="129"/>
         <source>Notification demo </source>
         <translation>Démo de notification </translation>
     </message>
     <message>
-        <location filename="../basicsettings.cpp" line="132"/>
+        <location filename="../basicsettings.cpp" line="130"/>
         <source>This is a test notification.
  All notifications will now appear here on LXQt.</source>
         <translation>Ceci est un test de notification.

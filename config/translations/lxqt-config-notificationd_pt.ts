@@ -85,6 +85,16 @@
         <source>Show notifications on screen with the mouse</source>
         <translation>Mostrar notificações no ecrã em que o rato está</translation>
     </message>
+    <message>
+        <location filename="../advancedsettings.ui" line="196"/>
+        <source>Do Not Disturb</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../advancedsettings.ui" line="202"/>
+        <source>Only save notifications</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>BasicSettings</name>
@@ -120,12 +130,12 @@ These settings won&apos;t have any effect on it!</source>
 Estas definições não produzirão qualquer efeito!</translation>
     </message>
     <message>
-        <location filename="../basicsettings.cpp" line="131"/>
+        <location filename="../basicsettings.cpp" line="129"/>
         <source>Notification demo </source>
         <translation>Demonstração de notificação </translation>
     </message>
     <message>
-        <location filename="../basicsettings.cpp" line="132"/>
+        <location filename="../basicsettings.cpp" line="130"/>
         <source>This is a test notification.
  All notifications will now appear here on LXQt.</source>
         <translation>Esta é uma notificação de teste.

@@ -60,6 +60,16 @@
         <translation>Показване на известията на екрана с мишката</translation>
     </message>
     <message>
+        <location filename="../advancedsettings.ui" line="196"/>
+        <source>Do Not Disturb</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../advancedsettings.ui" line="202"/>
+        <source>Only save notifications</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../advancedsettings.ui" line="17"/>
         <source>Unattended Notifications</source>
         <translation>Непрочетени съобщения</translation>
@@ -120,12 +130,12 @@ These settings won&apos;t have any effect on it!</source>
 Ще бъде използван резервен процес!</translation>
     </message>
     <message>
-        <location filename="../basicsettings.cpp" line="131"/>
+        <location filename="../basicsettings.cpp" line="129"/>
         <source>Notification demo </source>
         <translation>Демо известие </translation>
     </message>
     <message>
-        <location filename="../basicsettings.cpp" line="132"/>
+        <location filename="../basicsettings.cpp" line="130"/>
         <source>This is a test notification.
  All notifications will now appear here on LXQt.</source>
         <translation>Това е тестово известие.
