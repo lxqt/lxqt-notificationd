@@ -60,6 +60,16 @@
         <translation>Näita teavitusi ekraanil, kus asub hiirekursor</translation>
     </message>
     <message>
+        <location filename="../advancedsettings.ui" line="196"/>
+        <source>Do Not Disturb</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../advancedsettings.ui" line="202"/>
+        <source>Only save notifications</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../advancedsettings.ui" line="17"/>
         <source>Unattended Notifications</source>
         <translation>Lugemata teavitused</translation>
@@ -120,12 +130,12 @@ These settings won&apos;t have any effect on it!</source>
 Need seadistused seda teenust ei mõjuta!</translation>
     </message>
     <message>
-        <location filename="../basicsettings.cpp" line="131"/>
+        <location filename="../basicsettings.cpp" line="129"/>
         <source>Notification demo </source>
         <translation>Teavituste demo </translation>
     </message>
     <message>
-        <location filename="../basicsettings.cpp" line="132"/>
+        <location filename="../basicsettings.cpp" line="130"/>
         <source>This is a test notification.
  All notifications will now appear here on LXQt.</source>
         <translation>See on teavistuse näidis.
