@@ -32,7 +32,7 @@
         <location filename="../notifyd.cpp" line="360"/>
         <source>%n Unattended Notification(s)</source>
         <translation>
-            <numerusform>%n개 방치된 알림</numerusform>
+            <numerusform>%n개 확인되지 않은 알림</numerusform>
         </translation>
     </message>
 </context>

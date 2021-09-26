@@ -62,12 +62,12 @@
     <message>
         <location filename="../advancedsettings.ui" line="196"/>
         <source>Do Not Disturb</source>
-        <translation type="unfinished"></translation>
+        <translation>Niet storen</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="202"/>
         <source>Only save notifications</source>
-        <translation type="unfinished"></translation>
+        <translation>Meldingen alleen bewaren</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="17"/>
@@ -88,7 +88,7 @@
     <message>
         <location filename="../advancedsettings.ui" line="42"/>
         <source>Ignore these applications:</source>
-        <translation>Deze programma&apos;s negeren:</translation>
+        <translation>Genegeerde programma&apos;s:</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="52"/>
