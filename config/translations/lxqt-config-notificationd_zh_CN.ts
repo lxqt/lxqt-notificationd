@@ -62,12 +62,12 @@
     <message>
         <location filename="../advancedsettings.ui" line="196"/>
         <source>Do Not Disturb</source>
-        <translation type="unfinished"></translation>
+        <translation>免打扰服务</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="202"/>
         <source>Only save notifications</source>
-        <translation type="unfinished"></translation>
+        <translation>只保存通知</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="17"/>

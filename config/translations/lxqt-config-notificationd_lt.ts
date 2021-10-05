@@ -62,7 +62,7 @@
     <message>
         <location filename="../advancedsettings.ui" line="196"/>
         <source>Do Not Disturb</source>
-        <translation type="unfinished"></translation>
+        <translation>Netrukdyti</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="202"/>
