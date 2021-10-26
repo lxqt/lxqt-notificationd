@@ -17,7 +17,7 @@ option(UPDATE_TRANSLATIONS "Update source translation translations/*.ts files" O
 option(LXQT_NOTIFICATION_BUILD_TESTS "Build LXQt Notification tests" OFF)
 
 set(KF5_MINIMUM_VERSION "5.36.0")
-set(LXQT_MINIMUM_VERSION "0.17.0")
+set(LXQT_MINIMUM_VERSION "1.0.0")
 set(QT_MINIMUM_VERSION "5.15.0")
 
 find_package(Qt5DBus ${QT_MINIMUM_VERSION} REQUIRED)
