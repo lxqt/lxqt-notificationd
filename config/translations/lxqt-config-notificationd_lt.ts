@@ -67,7 +67,7 @@
     <message>
         <location filename="../advancedsettings.ui" line="202"/>
         <source>Only save notifications</source>
-        <translation type="unfinished"></translation>
+        <translation>Įrašyti tik pranešimus</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="17"/>
