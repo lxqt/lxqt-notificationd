@@ -112,8 +112,8 @@
         <location filename="../basicsettings.cpp" line="61"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; notifications daemon is slow to respond.
 Keep trying to connect…</source>
-        <translation>&lt;b&gt;Varování:&lt;/b&gt; démon upozornění odpovídá pomalu.
-Pokračujte v pokusech o připojení se …</translation>
+        <translation>&lt;b&gt;Varování:&lt;/b&gt; proces služby pro upozorňování odpovídá pomalu.
+Pokračuje se v pokusech o připojení se…</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="70"/>
