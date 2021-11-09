@@ -62,12 +62,12 @@
     <message>
         <location filename="../advancedsettings.ui" line="196"/>
         <source>Do Not Disturb</source>
-        <translation type="unfinished"></translation>
+        <translation>Rahatsız Etme</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="202"/>
         <source>Only save notifications</source>
-        <translation type="unfinished"></translation>
+        <translation>Yalnızca bildirimleri kaydet</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="17"/>
