@@ -67,7 +67,7 @@
     <message>
         <location filename="../advancedsettings.ui" line="202"/>
         <source>Only save notifications</source>
-        <translation>Αποθήκευση μόνο των ειδοποιήσεων</translation>
+        <translation>Να γίνεται μόνο αποθήκευση των ειδοποιήσεων</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="17"/>
