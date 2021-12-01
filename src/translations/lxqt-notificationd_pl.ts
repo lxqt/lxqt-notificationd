@@ -34,7 +34,7 @@
         <translation>
             <numerusform>%n Nieodczytane powiadomienie</numerusform>
             <numerusform>%n Nieodczytane powiadomienia</numerusform>
-            <numerusform></numerusform>
+            <numerusform>%n Nieodczytanych powiadomień</numerusform>
         </translation>
     </message>
 </context>
