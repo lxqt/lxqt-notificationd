@@ -88,12 +88,12 @@
     <message>
         <location filename="../advancedsettings.ui" line="196"/>
         <source>Do Not Disturb</source>
-        <translation type="unfinished"></translation>
+        <translation>Ne smetaj</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="202"/>
         <source>Only save notifications</source>
-        <translation type="unfinished"></translation>
+        <translation>Spremi samo obavijesti</translation>
     </message>
 </context>
 <context>

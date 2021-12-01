@@ -47,27 +47,27 @@
     <message>
         <location filename="../advancedsettings.ui" line="177"/>
         <source>Screen</source>
-        <translation type="unfinished"></translation>
+        <translation>Ekran</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="183"/>
         <source>When unchecked the notification will always show on primary screen</source>
-        <translation type="unfinished"></translation>
+        <translation>Jeśli ta opcja nie jest zaznaczona powiadomienia zawsze będą się pojawiać na głównym ekranie</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="186"/>
         <source>Show notifications on screen with the mouse</source>
-        <translation type="unfinished"></translation>
+        <translation>Pokazuj powiadomienia na ekranie, na którym znajduje się kursor</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="196"/>
         <source>Do Not Disturb</source>
-        <translation type="unfinished"></translation>
+        <translation>Nie przeszkadzać</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="202"/>
         <source>Only save notifications</source>
-        <translation type="unfinished"></translation>
+        <translation>Tylko powiadomienia o zapisie</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="17"/>
@@ -93,7 +93,7 @@
     <message>
         <location filename="../advancedsettings.ui" line="52"/>
         <source>app1,app2,app3</source>
-        <translation>app1,app2,app3</translation>
+        <translation>program1,program2,program3</translation>
     </message>
 </context>
 <context>
@@ -112,7 +112,8 @@
         <location filename="../basicsettings.cpp" line="61"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; notifications daemon is slow to respond.
 Keep trying to connect…</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;Warning:&lt;/b&gt; Usługa powiadomień wolno reaguje.
+Kontynuuj próbę połączenia…</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="70"/>
