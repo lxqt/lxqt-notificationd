@@ -40,13 +40,13 @@
 MainWindow::MainWindow(QWidget *parent) :
     LXQt::ConfigDialog(tr("Desktop Notifications"), new LXQt::Settings(QSL("notifications")), parent)
 {
-    BasicSettings* basic = new BasicSettings(mSettings, this);
-    addPage(basic, tr("Basic Settings"), QSL("preferences-desktop-notification"));
-    connect(this, &MainWindow::reset, basic, &BasicSettings::restoreSettings);
-
     AdvancedSettings* menu = new AdvancedSettings(mSettings, this);
-    addPage(menu, tr("Advanced Settings"), QSL("preferences-desktop-notification-bell"));
+    addPage(menu, tr("General Settings"), QSL("preferences-desktop-notification-bell"));
     connect(this, &MainWindow::reset, menu, &AdvancedSettings::restoreSettings);
+
+    BasicSettings* basic = new BasicSettings(mSettings, this);
+    addPage(basic, tr("Position"), QSL("preferences-desktop-notification"));
+    connect(this, &MainWindow::reset, basic, &BasicSettings::restoreSettings);
 }
 
 MainWindow::~MainWindow()
