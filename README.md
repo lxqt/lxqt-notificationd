@@ -3,7 +3,7 @@
 ## Overview
 
 `lxqt-notificationd` is LXQt's implementation of a daemon according to the
-[Desktop Notifications Specification](https://developer.gnome.org/notification-spec/).
+[Desktop Notifications Specification](https://specifications.freedesktop.org/notification-spec/latest/).
 
 This specification defines a way to display notifications in pop-up windows on
 desktops. Notifications like this are e. g. frequently used by chat or mail
@@ -17,8 +17,6 @@ lxqt-notificationd is comprising binaries `lxqt-notificationd` and
 [LXQt Module](https://github.com/lxqt/lxqt-session#lxqt-modules) and doing the
 actual work. GUI "Desktop Notifications", binary `lxqt-config-notificationd`, is
 used to customize the notifications.
-
-lxqt-notificationd is implementing version 1.2 of the said specification.
 
 ## Installation
 
