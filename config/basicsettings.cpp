@@ -50,7 +50,7 @@ BasicSettings::BasicSettings(LXQt::Settings* settings, QWidget *parent) :
     connect(bottomCenterRB, &QRadioButton::clicked, this, &BasicSettings::updateNotification);
     connect(bottomRightRB,  &QRadioButton::clicked, this, &BasicSettings::updateNotification);
 
-    connect(previewButton,  &QRadioButton::clicked, this, &BasicSettings::previewNotification);
+    connect(previewButton, &QAbstractButton::clicked, this, &BasicSettings::previewNotification);
 
     LXQt::Notification *serverTest = new LXQt::Notification(QString(), this);
     serverTest->queryServerInfo();
