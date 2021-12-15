@@ -108,25 +108,51 @@ void BasicSettings::restoreSettings()
 void BasicSettings::updateNotification()
 {
    QString align;
+   QString str;
     if (topLeftRB->isChecked())
+    {
         align = QL1S("top-left");
+        str = tr("at top left");
+    }
     else if (topCenterRB->isChecked())
+    {
         align = QL1S("top-center");
+        str = tr("at top center");
+    }
     else if (topRightRB->isChecked())
+    {
         align = QL1S("top-right");
+        str = tr("at top right");
+    }
     else if (centerLeftRB->isChecked())
+    {
         align = QL1S("center-left");
+        str = tr("at center left");
+    }
     else if (centerRightRB->isChecked())
+    {
         align = QL1S("center-right");
+        str = tr("at center right");
+    }
     else if (bottomLeftRB->isChecked())
+    {
         align = QL1S("bottom-left");
+        str = tr("at bottom left");
+    }
     else if (bottomCenterRB->isChecked())
+    {
         align = QL1S("bottom-center");
+        str = tr("at bottom center");
+    }
     else // if (bottomRightRB->isChecked())
+    {
         align = QL1S("bottom-right");
+        str = tr("at bottom right");
+    }
 
     mSettings->setValue(QL1S("placement"), align);
-    LXQt::Notification::notify(tr("Notification demo ") + align,
+
+    LXQt::Notification::notify(tr("Notification demo ") + str,
                                tr("This is a test notification.\n All notifications will now appear here on LXQt."),
                                QStringLiteral("lxqt"));
 }
