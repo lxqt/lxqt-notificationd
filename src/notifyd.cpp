@@ -152,11 +152,9 @@ void Notifyd::reloadSettings()
     m_serverTimeout = m_settings->value(QSL("server_decides"), 10).toInt();
     bool old_doNotDisturb = m_doNotDisturb;
     m_doNotDisturb = m_settings->value(QL1S("doNotDisturb"), false).toBool();
-    int maxNum;
+    int maxNum = m_settings->value(QSL("unattendedMaxNum"), 10).toInt();
     if (m_doNotDisturb)
-        maxNum = 50; // who has time for more?
-    else
-        maxNum = m_settings->value(QSL("unattendedMaxNum"), 10).toInt();
+        maxNum = qMax(maxNum, 50);
     m_area->setSettings(
             m_settings->value(QSL("placement"), QSL("bottom-right")).toString().toLower(),
             m_settings->value(QSL("width"), 300).toInt(),
