@@ -36,7 +36,7 @@
     <message>
         <location filename="../advancedsettings.ui" line="17"/>
         <source>Unattended Notifications</source>
-        <translation>Notifiche automatiche</translation>
+        <translation type="unfinished">Notifiche non chiuse</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="25"/>
