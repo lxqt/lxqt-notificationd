@@ -45,6 +45,7 @@ public slots:
 
 private slots:
     void updateNotification();
+    void previewNotification();
 
 private:
     LXQt::Settings* mSettings;

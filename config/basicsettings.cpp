@@ -50,6 +50,8 @@ BasicSettings::BasicSettings(LXQt::Settings* settings, QWidget *parent) :
     connect(bottomCenterRB, &QRadioButton::clicked, this, &BasicSettings::updateNotification);
     connect(bottomRightRB,  &QRadioButton::clicked, this, &BasicSettings::updateNotification);
 
+    connect(previewButton,  &QRadioButton::clicked, this, &BasicSettings::previewNotification);
+
     LXQt::Notification *serverTest = new LXQt::Notification(QString(), this);
     serverTest->queryServerInfo();
 
@@ -108,49 +110,45 @@ void BasicSettings::restoreSettings()
 void BasicSettings::updateNotification()
 {
    QString align;
-   QString str;
     if (topLeftRB->isChecked())
-    {
         align = QL1S("top-left");
-        str = tr("at top left");
-    }
     else if (topCenterRB->isChecked())
-    {
         align = QL1S("top-center");
-        str = tr("at top center");
-    }
     else if (topRightRB->isChecked())
-    {
         align = QL1S("top-right");
-        str = tr("at top right");
-    }
     else if (centerLeftRB->isChecked())
-    {
         align = QL1S("center-left");
-        str = tr("at center left");
-    }
     else if (centerRightRB->isChecked())
-    {
         align = QL1S("center-right");
-        str = tr("at center right");
-    }
     else if (bottomLeftRB->isChecked())
-    {
         align = QL1S("bottom-left");
-        str = tr("at bottom left");
-    }
     else if (bottomCenterRB->isChecked())
-    {
         align = QL1S("bottom-center");
-        str = tr("at bottom center");
-    }
     else // if (bottomRightRB->isChecked())
-    {
         align = QL1S("bottom-right");
-        str = tr("at bottom right");
-    }
 
     mSettings->setValue(QL1S("placement"), align);
+}
+
+void BasicSettings::previewNotification()
+{
+   QString str;
+    if (topLeftRB->isChecked())
+        str = tr("at top left");
+    else if (topCenterRB->isChecked())
+        str = tr("at top center");
+    else if (topRightRB->isChecked())
+        str = tr("at top right");
+    else if (centerLeftRB->isChecked())
+        str = tr("at center left");
+    else if (centerRightRB->isChecked())
+        str = tr("at center right");
+    else if (bottomLeftRB->isChecked())
+        str = tr("at bottom left");
+    else if (bottomCenterRB->isChecked())
+        str = tr("at bottom center");
+    else // if (bottomRightRB->isChecked())
+        str = tr("at bottom right");
 
     LXQt::Notification::notify(tr("Notification demo ") + str,
                                tr("This is a test notification.\n All notifications will now appear here on LXQt."),
