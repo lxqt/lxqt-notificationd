@@ -78,6 +78,9 @@ void NotificationLayout::addNotification(uint id, const QString &application,
                                         bool noSave)
 {
 //    qDebug() << "NotificationLayout::addNotification" << id << application << summary << body << icon << timeout;
+    bool showNotification(!m_doNotDisturb
+                          // always show our test notifications
+                          || application == QL1S("lxqt-config-notificationd"));
     if (m_notifications.contains(id))
     {
         // TODO/FIXME: it can be deleted by timer in this block. Locking?
@@ -112,12 +115,12 @@ void NotificationLayout::addNotification(uint id, const QString &application,
                 this, &NotificationLayout::notificationActionCalled);
         m_notifications[id] = n;
         m_layout->addWidget(n);
-        if (!m_doNotDisturb)
+        if (showNotification)
             n->show();
     }
 
     checkHeight();
-    if (!m_doNotDisturb)
+    if (showNotification)
         emit notificationAvailable();
 
     // NOTE by pcman:
