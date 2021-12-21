@@ -18,6 +18,8 @@ lxqt-notificationd is comprising binaries `lxqt-notificationd` and
 actual work. GUI "Desktop Notifications", binary `lxqt-config-notificationd`, is
 used to customize the notifications.
 
+lxqt-notificationd is implementing version 1.2 of the said specification.
+
 ## Installation
 
 ### Compiling source code
@@ -25,7 +27,7 @@ used to customize the notifications.
 Runtime dependencies are KWindowSystem, [liblxqt](https://github.com/lxqt/liblxqt)
 and [lxqt-session](https://github.com/lxqt/lxqt-session).
 Additional build dependencies are CMake and optionally Git to pull latest VCS
-checkouts. 
+checkouts.
 
 Code configuration is handled by CMake. CMake variable `CMAKE_INSTALL_PREFIX` has
 to be set to `/usr` on most operating systems.
