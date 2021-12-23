@@ -99,43 +99,83 @@
 <context>
     <name>BasicSettings</name>
     <message>
-        <location filename="../basicsettings.ui" line="23"/>
-        <source>Basic Settings</source>
-        <translation>기본 설정</translation>
-    </message>
-    <message>
-        <location filename="../basicsettings.ui" line="30"/>
+        <location filename="../basicsettings.ui" line="17"/>
         <source>Position on screen</source>
         <translation>화면에서의 위치</translation>
     </message>
     <message>
-        <location filename="../basicsettings.cpp" line="61"/>
+        <location filename="../basicsettings.ui" line="176"/>
+        <source>Preview</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../basicsettings.cpp" line="63"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; notifications daemon is slow to respond.
 Keep trying to connect…</source>
         <translation>&lt;b&gt;경고:&lt;/b&gt; 알림 데몬의 응답 속도가 느립니다.
 계속 연결을 시도하십시오…</translation>
     </message>
     <message>
-        <location filename="../basicsettings.cpp" line="70"/>
+        <location filename="../basicsettings.cpp" line="72"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; No notifications daemon is running.
 A fallback will be used.</source>
         <translation>&lt;b&gt;경고:&lt;/b&gt; 실행 중인 알림 데몬이 없습니다.
 대체가 사용됩니다.</translation>
     </message>
     <message>
-        <location filename="../basicsettings.cpp" line="73"/>
+        <location filename="../basicsettings.cpp" line="75"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; A third-party notifications daemon (%1) is running.
 These settings won&apos;t have any effect on it!</source>
         <translation>&lt;b&gt;경고:&lt;/b&gt; 타사 알림 데몬(%1)이 실행 중입니다.
 이 설정은 아무런 영향을 미치지 않습니다!</translation>
     </message>
     <message>
-        <location filename="../basicsettings.cpp" line="129"/>
+        <location filename="../basicsettings.cpp" line="137"/>
+        <source>at top left</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../basicsettings.cpp" line="139"/>
+        <source>at top center</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../basicsettings.cpp" line="141"/>
+        <source>at top right</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../basicsettings.cpp" line="143"/>
+        <source>at center left</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../basicsettings.cpp" line="145"/>
+        <source>at center right</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../basicsettings.cpp" line="147"/>
+        <source>at bottom left</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../basicsettings.cpp" line="149"/>
+        <source>at bottom center</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../basicsettings.cpp" line="151"/>
+        <source>at bottom right</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../basicsettings.cpp" line="153"/>
         <source>Notification demo </source>
         <translation>알림 데모 </translation>
     </message>
     <message>
-        <location filename="../basicsettings.cpp" line="130"/>
+        <location filename="../basicsettings.cpp" line="154"/>
         <source>This is a test notification.
  All notifications will now appear here on LXQt.</source>
         <translation>테스트 알림입니다.
@@ -151,13 +191,13 @@ These settings won&apos;t have any effect on it!</source>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="44"/>
-        <source>Basic Settings</source>
-        <translation>기본 설정</translation>
+        <source>General Settings</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="48"/>
-        <source>Advanced Settings</source>
-        <translation>고급 설정</translation>
+        <source>Position</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>

@@ -99,31 +99,31 @@
 <context>
     <name>BasicSettings</name>
     <message>
-        <location filename="../basicsettings.ui" line="23"/>
-        <source>Basic Settings</source>
-        <translation>Basit Ayarlar</translation>
-    </message>
-    <message>
-        <location filename="../basicsettings.ui" line="30"/>
+        <location filename="../basicsettings.ui" line="17"/>
         <source>Position on screen</source>
         <translation>Ekrandaki konumu</translation>
     </message>
     <message>
-        <location filename="../basicsettings.cpp" line="61"/>
+        <location filename="../basicsettings.ui" line="176"/>
+        <source>Preview</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../basicsettings.cpp" line="63"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; notifications daemon is slow to respond.
 Keep trying to connect…</source>
         <translation>&lt;b&gt;Uyarı:&lt;/b&gt; bildirimler arka plan programının yanıt vermesi yavaş.
 Bağlanmaya devam et…</translation>
     </message>
     <message>
-        <location filename="../basicsettings.cpp" line="70"/>
+        <location filename="../basicsettings.cpp" line="72"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; No notifications daemon is running.
 A fallback will be used.</source>
         <translation>&lt;b&gt;Uyarı:&lt;/b&gt; Çalışan bir bildirim programı yok.
 Bir geri dönüş kullanılacaktır.</translation>
     </message>
     <message>
-        <location filename="../basicsettings.cpp" line="73"/>
+        <location filename="../basicsettings.cpp" line="75"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; A third-party notifications daemon (%1) is running.
 These settings won&apos;t have any effect on it!</source>
         <translation>&lt;b&gt;Uyarı:&lt;/b&gt; Üçüncü parti bir bildirim programı (%1) çalışıyor.
@@ -131,12 +131,52 @@ These settings won&apos;t have any effect on it!</source>
 Bu ayarlar onu etkilemeyecek!</translation>
     </message>
     <message>
-        <location filename="../basicsettings.cpp" line="129"/>
+        <location filename="../basicsettings.cpp" line="137"/>
+        <source>at top left</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../basicsettings.cpp" line="139"/>
+        <source>at top center</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../basicsettings.cpp" line="141"/>
+        <source>at top right</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../basicsettings.cpp" line="143"/>
+        <source>at center left</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../basicsettings.cpp" line="145"/>
+        <source>at center right</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../basicsettings.cpp" line="147"/>
+        <source>at bottom left</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../basicsettings.cpp" line="149"/>
+        <source>at bottom center</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../basicsettings.cpp" line="151"/>
+        <source>at bottom right</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../basicsettings.cpp" line="153"/>
         <source>Notification demo </source>
         <translation>Bildirim deneme </translation>
     </message>
     <message>
-        <location filename="../basicsettings.cpp" line="130"/>
+        <location filename="../basicsettings.cpp" line="154"/>
         <source>This is a test notification.
  All notifications will now appear here on LXQt.</source>
         <translation>Bu bir test bildirimidir.
@@ -152,13 +192,13 @@ Bundan sonra LXQT masaüstünüzde tüm bildirimler burada gösterilecek.</trans
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="44"/>
-        <source>Basic Settings</source>
-        <translation>Basit Ayarlar</translation>
+        <source>General Settings</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="48"/>
-        <source>Advanced Settings</source>
-        <translation>Gelişmiş Ayarlar</translation>
+        <source>Position</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>
