@@ -150,6 +150,7 @@ private slots:
     void checkTray();
     void addToUnattendedList(uint id, uint reason, const QString &date);
     void restoreUnattended();
+    void updateIcon();
 };
 
 #endif // NOTIFYD_H

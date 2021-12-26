@@ -63,6 +63,8 @@ Notifyd::Notifyd(QObject* parent)
     connect(m_settings, &LXQt::Settings::settingsChanged,
             this, &Notifyd::reloadSettings);
 
+    connect(LXQt::Settings::globalSettings(), &LXQt::GlobalSettings::settingsChanged,
+            this, &Notifyd::updateIcon);
 }
 
 Notifyd::~Notifyd()
@@ -375,5 +377,22 @@ void Notifyd::restoreUnattended()
             list.remove(date);
             m_area->layout()->setDoNotDisturb(m_doNotDisturb); // restore the do-not-disturb mode
         }
+    }
+}
+
+void Notifyd::updateIcon()
+{
+    if (m_trayIcon)
+    {
+        QIcon icn;
+        if (m_doNotDisturb)
+            icn = QIcon::fromTheme(QSL("notifications-disabled"));
+        if (icn.isNull())
+        {
+            icn = QIcon::fromTheme(QSL("notifications"));
+            if (icn.isNull())
+                icn = QIcon::fromTheme(QSL("preferences-desktop-notification"));
+        }
+        m_trayIcon->setIcon(icn);
     }
 }
