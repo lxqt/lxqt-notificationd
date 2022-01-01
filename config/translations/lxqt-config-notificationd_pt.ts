@@ -106,7 +106,7 @@
     <message>
         <location filename="../basicsettings.ui" line="176"/>
         <source>Preview</source>
-        <translation type="unfinished"></translation>
+        <translation>Pré-visualização</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="63"/>
@@ -132,42 +132,42 @@ Estas definições não produzirão qualquer efeito!</translation>
     <message>
         <location filename="../basicsettings.cpp" line="137"/>
         <source>at top left</source>
-        <translation type="unfinished"></translation>
+        <translation>na parte superior esquerda</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="139"/>
         <source>at top center</source>
-        <translation type="unfinished"></translation>
+        <translation>no centro superior</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="141"/>
         <source>at top right</source>
-        <translation type="unfinished"></translation>
+        <translation>na parte superior direita</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="143"/>
         <source>at center left</source>
-        <translation type="unfinished"></translation>
+        <translation>no centro à esquerda</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="145"/>
         <source>at center right</source>
-        <translation type="unfinished"></translation>
+        <translation>no centro à direita</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="147"/>
         <source>at bottom left</source>
-        <translation type="unfinished"></translation>
+        <translation>na parte inferior esquerda</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="149"/>
         <source>at bottom center</source>
-        <translation type="unfinished"></translation>
+        <translation>no centro inferior</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="151"/>
         <source>at bottom right</source>
-        <translation type="unfinished"></translation>
+        <translation>na parte inferior direita</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="153"/>
@@ -192,12 +192,12 @@ Estas definições não produzirão qualquer efeito!</translation>
     <message>
         <location filename="../mainwindow.cpp" line="44"/>
         <source>General Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Definições gerais</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="48"/>
         <source>Position</source>
-        <translation type="unfinished"></translation>
+        <translation>Posição</translation>
     </message>
 </context>
 </TS>
