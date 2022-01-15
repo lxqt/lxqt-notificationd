@@ -106,7 +106,7 @@
     <message>
         <location filename="../basicsettings.ui" line="176"/>
         <source>Preview</source>
-        <translation type="unfinished"></translation>
+        <translation>Προεπισκόπηση</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="63"/>
@@ -132,42 +132,42 @@ These settings won&apos;t have any effect on it!</source>
     <message>
         <location filename="../basicsettings.cpp" line="137"/>
         <source>at top left</source>
-        <translation type="unfinished"></translation>
+        <translation>άνω αριστερά</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="139"/>
         <source>at top center</source>
-        <translation type="unfinished"></translation>
+        <translation>στην κορυφή στο κέντρο</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="141"/>
         <source>at top right</source>
-        <translation type="unfinished"></translation>
+        <translation>άνω δεξιά</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="143"/>
         <source>at center left</source>
-        <translation type="unfinished"></translation>
+        <translation>στο κέντρο αριστερά</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="145"/>
         <source>at center right</source>
-        <translation type="unfinished"></translation>
+        <translation>στο κέντρο δεξιά</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="147"/>
         <source>at bottom left</source>
-        <translation type="unfinished"></translation>
+        <translation>στην βάση αριστερά</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="149"/>
         <source>at bottom center</source>
-        <translation type="unfinished"></translation>
+        <translation>στην βάση στο κέντρο</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="151"/>
         <source>at bottom right</source>
-        <translation type="unfinished"></translation>
+        <translation>στην βάση δεξιά</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="153"/>
@@ -192,12 +192,12 @@ These settings won&apos;t have any effect on it!</source>
     <message>
         <location filename="../mainwindow.cpp" line="44"/>
         <source>General Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Γενικές ρυθμίσεις</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="48"/>
         <source>Position</source>
-        <translation type="unfinished"></translation>
+        <translation>Θέση</translation>
     </message>
 </context>
 </TS>
