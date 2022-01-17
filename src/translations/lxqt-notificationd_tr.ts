@@ -33,6 +33,7 @@
         <source>%n Unattended Notification(s)</source>
         <translation>
             <numerusform>%n Görülmeyen Bildirim</numerusform>
+            <numerusform>%n Görülmeyen Bildirim</numerusform>
         </translation>
     </message>
 </context>
