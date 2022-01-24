@@ -42,7 +42,7 @@
     <message>
         <location filename="../advancedsettings.ui" line="149"/>
         <source> sec</source>
-        <translation> s</translation>
+        <translation> сек.</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="177"/>
@@ -62,12 +62,12 @@
     <message>
         <location filename="../advancedsettings.ui" line="196"/>
         <source>Do Not Disturb</source>
-        <translation type="unfinished"></translation>
+        <translation>Не безпокой</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="202"/>
         <source>Only save notifications</source>
-        <translation type="unfinished"></translation>
+        <translation>Само запазвай известия</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="17"/>
@@ -93,7 +93,7 @@
     <message>
         <location filename="../advancedsettings.ui" line="52"/>
         <source>app1,app2,app3</source>
-        <translation>app1,app2,app3</translation>
+        <translation>прил.1,прил.2,прил.3,</translation>
     </message>
 </context>
 <context>
@@ -106,7 +106,7 @@
     <message>
         <location filename="../basicsettings.ui" line="176"/>
         <source>Preview</source>
-        <translation type="unfinished"></translation>
+        <translation>Преглед</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="63"/>
@@ -132,17 +132,17 @@ These settings won&apos;t have any effect on it!</source>
     <message>
         <location filename="../basicsettings.cpp" line="137"/>
         <source>at top left</source>
-        <translation type="unfinished"></translation>
+        <translation>горе вляво</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="139"/>
         <source>at top center</source>
-        <translation type="unfinished"></translation>
+        <translation>горе в център</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="141"/>
         <source>at top right</source>
-        <translation type="unfinished"></translation>
+        <translation>горе вдясно</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="143"/>
@@ -197,7 +197,7 @@ These settings won&apos;t have any effect on it!</source>
     <message>
         <location filename="../mainwindow.cpp" line="48"/>
         <source>Position</source>
-        <translation type="unfinished"></translation>
+        <translation>Позиция</translation>
     </message>
 </context>
 </TS>
