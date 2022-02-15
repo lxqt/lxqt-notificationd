@@ -62,12 +62,12 @@
     <message>
         <location filename="../advancedsettings.ui" line="196"/>
         <source>Do Not Disturb</source>
-        <translation type="unfinished"></translation>
+        <translation>Forstyr ikke</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="202"/>
         <source>Only save notifications</source>
-        <translation type="unfinished"></translation>
+        <translation>Gem kun meddeleser</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="17"/>
@@ -106,7 +106,7 @@
     <message>
         <location filename="../basicsettings.ui" line="176"/>
         <source>Preview</source>
-        <translation type="unfinished"></translation>
+        <translation>Preview</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="63"/>
@@ -132,42 +132,42 @@ Disse indstillinger vil ikke have nogen effekt på det!</translation>
     <message>
         <location filename="../basicsettings.cpp" line="137"/>
         <source>at top left</source>
-        <translation type="unfinished"></translation>
+        <translation>øverst til venstre</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="139"/>
         <source>at top center</source>
-        <translation type="unfinished"></translation>
+        <translation>øverst i midten</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="141"/>
         <source>at top right</source>
-        <translation type="unfinished"></translation>
+        <translation>øverst til højre</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="143"/>
         <source>at center left</source>
-        <translation type="unfinished"></translation>
+        <translation>i midten til venstre</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="145"/>
         <source>at center right</source>
-        <translation type="unfinished"></translation>
+        <translation>i midten til højre</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="147"/>
         <source>at bottom left</source>
-        <translation type="unfinished"></translation>
+        <translation>i bunden til venstre</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="149"/>
         <source>at bottom center</source>
-        <translation type="unfinished"></translation>
+        <translation>i bunden ved midten</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="151"/>
         <source>at bottom right</source>
-        <translation type="unfinished"></translation>
+        <translation>i bunden til højre</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="153"/>
@@ -192,12 +192,12 @@ Disse indstillinger vil ikke have nogen effekt på det!</translation>
     <message>
         <location filename="../mainwindow.cpp" line="44"/>
         <source>General Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Generelle indstillinger</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="48"/>
         <source>Position</source>
-        <translation type="unfinished"></translation>
+        <translation>Position</translation>
     </message>
 </context>
 </TS>
