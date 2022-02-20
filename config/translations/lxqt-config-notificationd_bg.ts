@@ -137,7 +137,7 @@ These settings won&apos;t have any effect on it!</source>
     <message>
         <location filename="../basicsettings.cpp" line="139"/>
         <source>at top center</source>
-        <translation>горе в център</translation>
+        <translation>горе в центъра</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="141"/>
@@ -147,27 +147,27 @@ These settings won&apos;t have any effect on it!</source>
     <message>
         <location filename="../basicsettings.cpp" line="143"/>
         <source>at center left</source>
-        <translation type="unfinished"></translation>
+        <translation>в средата вляво</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="145"/>
         <source>at center right</source>
-        <translation type="unfinished"></translation>
+        <translation>в средата вдясно</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="147"/>
         <source>at bottom left</source>
-        <translation type="unfinished"></translation>
+        <translation>долу вляво</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="149"/>
         <source>at bottom center</source>
-        <translation type="unfinished"></translation>
+        <translation>долу в центъра</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="151"/>
         <source>at bottom right</source>
-        <translation type="unfinished"></translation>
+        <translation>долу вдясно</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="153"/>
@@ -192,7 +192,7 @@ These settings won&apos;t have any effect on it!</source>
     <message>
         <location filename="../mainwindow.cpp" line="44"/>
         <source>General Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Общи настройки</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="48"/>
