@@ -17,19 +17,19 @@
 <context>
     <name>Notifyd</name>
     <message>
-        <location filename="../notifyd.cpp" line="266"/>
+        <location filename="../notifyd.cpp" line="268"/>
         <source>Clear All</source>
         <translation>Törlés</translation>
     </message>
     <message>
-        <location filename="../notifyd.cpp" line="274"/>
+        <location filename="../notifyd.cpp" line="276"/>
         <source>Options</source>
         <translation>Beállítások</translation>
     </message>
     <message numerus="yes">
-        <location filename="../notifyd.cpp" line="281"/>
-        <location filename="../notifyd.cpp" line="338"/>
-        <location filename="../notifyd.cpp" line="358"/>
+        <location filename="../notifyd.cpp" line="283"/>
+        <location filename="../notifyd.cpp" line="340"/>
+        <location filename="../notifyd.cpp" line="360"/>
         <source>%n Unattended Notification(s)</source>
         <translation>
             <numerusform>%n olvasatlan értesítés</numerusform>
