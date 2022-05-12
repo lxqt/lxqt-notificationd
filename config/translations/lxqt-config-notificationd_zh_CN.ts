@@ -106,7 +106,7 @@
     <message>
         <location filename="../basicsettings.ui" line="176"/>
         <source>Preview</source>
-        <translation type="unfinished"></translation>
+        <translation>预览</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="63"/>
@@ -132,42 +132,42 @@ These settings won&apos;t have any effect on it!</source>
     <message>
         <location filename="../basicsettings.cpp" line="137"/>
         <source>at top left</source>
-        <translation type="unfinished"></translation>
+        <translation>在左上角</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="139"/>
         <source>at top center</source>
-        <translation type="unfinished"></translation>
+        <translation>在顶部中心</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="141"/>
         <source>at top right</source>
-        <translation type="unfinished"></translation>
+        <translation>在右上方</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="143"/>
         <source>at center left</source>
-        <translation type="unfinished"></translation>
+        <translation>在中间偏左的位置</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="145"/>
         <source>at center right</source>
-        <translation type="unfinished"></translation>
+        <translation>在中间右侧</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="147"/>
         <source>at bottom left</source>
-        <translation type="unfinished"></translation>
+        <translation>在左下方</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="149"/>
         <source>at bottom center</source>
-        <translation type="unfinished"></translation>
+        <translation>在底部中心位置</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="151"/>
         <source>at bottom right</source>
-        <translation type="unfinished"></translation>
+        <translation>在右下方</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="153"/>
@@ -192,12 +192,12 @@ These settings won&apos;t have any effect on it!</source>
     <message>
         <location filename="../mainwindow.cpp" line="44"/>
         <source>General Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>通用设置</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="48"/>
         <source>Position</source>
-        <translation type="unfinished"></translation>
+        <translation>位置</translation>
     </message>
 </context>
 </TS>
