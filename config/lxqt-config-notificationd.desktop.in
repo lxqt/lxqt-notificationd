@@ -2,7 +2,7 @@
 Type=Application
 Exec=lxqt-config-notificationd
 Icon=preferences-desktop-notification
-Categories=Settings;DesktopSettings;Qt;LXQt;
+Categories=Settings;DesktopSettings;Qt;
 OnlyShowIn=LXQt;
 
 #TRANSLATIONS_DIR=translations
