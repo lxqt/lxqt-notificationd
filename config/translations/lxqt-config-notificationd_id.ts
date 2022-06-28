@@ -47,12 +47,12 @@
     <message>
         <location filename="../advancedsettings.ui" line="177"/>
         <source>Screen</source>
-        <translation type="unfinished"></translation>
+        <translation>Layar</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="183"/>
         <source>When unchecked the notification will always show on primary screen</source>
-        <translation type="unfinished"></translation>
+        <translation>Saat notifikasi tidak tercentang selalu menampilkan layar utama</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="186"/>
@@ -62,12 +62,12 @@
     <message>
         <location filename="../advancedsettings.ui" line="196"/>
         <source>Do Not Disturb</source>
-        <translation type="unfinished"></translation>
+        <translation>Jangan Diganggu</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="202"/>
         <source>Only save notifications</source>
-        <translation type="unfinished"></translation>
+        <translation>Hanya menyimpan notifikasi</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="17"/>
@@ -106,7 +106,7 @@
     <message>
         <location filename="../basicsettings.ui" line="176"/>
         <source>Preview</source>
-        <translation type="unfinished"></translation>
+        <translation>Pratinjau</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="63"/>
