@@ -31,13 +31,13 @@
         <location filename="../notifyd.cpp" line="340"/>
         <location filename="../notifyd.cpp" line="360"/>
         <source>%n Unattended Notification(s)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n تنبيه غير مقروء</numerusform>
+            <numerusform>تنبيه غير مقروء</numerusform>
+            <numerusform>تنبيهان غير مقروءان</numerusform>
+            <numerusform>%n تنبيه غير مقروء</numerusform>
+            <numerusform>%n تنبيه غير مقروء</numerusform>
+            <numerusform>%n تنبيه غير مقروء</numerusform>
         </translation>
     </message>
 </context>
