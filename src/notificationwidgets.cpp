@@ -93,11 +93,11 @@ NotificationActionsButtonsWidget::NotificationActionsButtonsWidget(const QString
     {
         QPushButton *b = new QPushButton(action.second, this);
         b->setObjectName(action.first);
+        // Notifications do not have focus, and if they get focus under Wayland,
+        // we do not want to have a focus widget.
+        b->setFocusPolicy(Qt::NoFocus);
         l->addWidget(b);
         group->addButton(b);
-
-        if (action.first == m_defaultAction)
-            b->setFocus(Qt::OtherFocusReason);
     }
     connect(group, static_cast<void (QButtonGroup::*)(QAbstractButton*)>(&QButtonGroup::buttonClicked),
             this, &NotificationActionsButtonsWidget::actionButtonActivated);
@@ -122,6 +122,7 @@ NotificationActionsComboWidget::NotificationActionsComboWidget(const QStringList
 
     l->addWidget(new QLabel(tr("Actions:"), this));
     m_comboBox = new QComboBox(this);
+    m_comboBox->setFocusPolicy(Qt::NoFocus);
     int currentIndex = -1;
 
     for (int i = 0; i < m_actions.count(); ++i)
@@ -140,6 +141,7 @@ NotificationActionsComboWidget::NotificationActionsComboWidget(const QStringList
         m_comboBox->setCurrentIndex(currentIndex);
 
     QPushButton *b = new QPushButton(tr("OK"), this);
+    b->setFocusPolicy(Qt::NoFocus);
     l->addWidget(b);
     connect(b, &QPushButton::clicked,
             this, &NotificationActionsComboWidget::actionComboBoxActivated);
