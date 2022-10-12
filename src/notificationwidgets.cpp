@@ -91,8 +91,16 @@ NotificationActionsButtonsWidget::NotificationActionsButtonsWidget(const QString
 
     for (const auto &action : qAsConst(m_actions))
     {
-        QPushButton *b = new QPushButton(action.second, this);
-        b->setObjectName(action.first);
+        auto &id    = action.first;
+        auto &label = action.second;
+
+        if (id == m_defaultAction && label.isEmpty())
+        {
+            continue;
+        }
+
+        QPushButton *b = new QPushButton(label, this);
+        b->setObjectName(id);
         // Notifications do not have focus, and if they get focus under Wayland,
         // we do not want to have a focus widget.
         b->setFocusPolicy(Qt::NoFocus);
@@ -125,15 +133,19 @@ NotificationActionsComboWidget::NotificationActionsComboWidget(const QStringList
     m_comboBox->setFocusPolicy(Qt::NoFocus);
     int currentIndex = -1;
 
-    for (int i = 0; i < m_actions.count(); ++i)
+    for (const auto &action : qAsConst(m_actions))
     {
-        auto const & action = m_actions[i];
+        auto &id    = action.first;
+        auto &label = action.second;
 
-        m_comboBox->addItem(action.second, action.first);
-        if (action.first == m_defaultAction)
+        if (id == m_defaultAction)
         {
-            currentIndex = i;
+            if (label.isEmpty())
+                continue;
+            currentIndex = m_comboBox->count();
         }
+
+        m_comboBox->addItem(label, id);
     }
     l->addWidget(m_comboBox);
 
