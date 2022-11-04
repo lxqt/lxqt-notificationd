@@ -4,12 +4,12 @@
 <context>
     <name>NotificationActionsComboWidget</name>
     <message>
-        <location filename="../notificationwidgets.cpp" line="123"/>
+        <location filename="../notificationwidgets.cpp" line="131"/>
         <source>Actions:</source>
         <translation>פעולות:</translation>
     </message>
     <message>
-        <location filename="../notificationwidgets.cpp" line="142"/>
+        <location filename="../notificationwidgets.cpp" line="155"/>
         <source>OK</source>
         <translation>אישור</translation>
     </message>
@@ -33,8 +33,6 @@
         <source>%n Unattended Notification(s)</source>
         <translation>
             <numerusform>התראה %n שלא התייחסת אליה</numerusform>
-            <numerusform>%n התראות שלא התייחסת אליהן</numerusform>
-            <numerusform>%n התראות שלא התייחסת אליהן</numerusform>
             <numerusform>%n התראות שלא התייחסת אליהן</numerusform>
         </translation>
     </message>
