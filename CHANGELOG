@@ -1,3 +1,8 @@
+lxqt-notificationd-1.2.0 / 2022-11-05
+======================================
+ * Allow no focused widget inside notifications (useful under Wayland).
+ * Don't show default actions if nameless (no empty button, no empty combo-box item).
+
 lxqt-notificationd-1.1.0 / 2022-04-15
 ======================================
  * A better layout for config dialog.
