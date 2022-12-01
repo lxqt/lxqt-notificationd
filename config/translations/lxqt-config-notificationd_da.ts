@@ -106,7 +106,7 @@
     <message>
         <location filename="../basicsettings.ui" line="176"/>
         <source>Preview</source>
-        <translation>Preview</translation>
+        <translation>Forhåndsvisning</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="63"/>
