@@ -34,8 +34,6 @@
         <translation>
             <numerusform>התראה %n שלא התייחסת אליה</numerusform>
             <numerusform>%n התראות שלא התייחסת אליהן</numerusform>
-            <numerusform>%n התראות שלא התייחסת אליהן</numerusform>
-            <numerusform>%n התראות שלא התייחסת אליהן</numerusform>
         </translation>
     </message>
 </context>
