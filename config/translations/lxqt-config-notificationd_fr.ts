@@ -52,12 +52,12 @@
     <message>
         <location filename="../advancedsettings.ui" line="183"/>
         <source>When unchecked the notification will always show on primary screen</source>
-        <translation>Lorsque la case n&apos;est pas cochée, les notifications s&apos;afficheront toujours sur l&apos;écran principal</translation>
+        <translation>Lorsque la case n’est pas cochée, les notifications s’afficheront toujours sur l’écran principal</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="186"/>
         <source>Show notifications on screen with the mouse</source>
-        <translation>Afficher les notifications sur l&apos;écran où se trouve la souris</translation>
+        <translation>Afficher les notifications sur l’écran où se trouve la souris</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="196"/>
@@ -83,7 +83,7 @@
         <location filename="../advancedsettings.ui" line="39"/>
         <location filename="../advancedsettings.ui" line="49"/>
         <source>Application name is on the top of notification.</source>
-        <translation>Le nom de l&apos;application est en haut de la notification.</translation>
+        <translation>Le nom de l’application est en haut de la notification.</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="42"/>
@@ -101,7 +101,7 @@
     <message>
         <location filename="../basicsettings.ui" line="17"/>
         <source>Position on screen</source>
-        <translation>Position à l&apos;écran</translation>
+        <translation>Position à l’écran</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="176"/>
@@ -112,14 +112,14 @@
         <location filename="../basicsettings.cpp" line="63"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; notifications daemon is slow to respond.
 Keep trying to connect…</source>
-        <translation>&lt;b&gt;Avertissement&#xa0;:&lt;/b&gt;Le démon de notifications est lent à répondre.
+        <translation>&lt;b&gt;Avertissement :&lt;/b&gt;Le démon de notifications est lent à répondre.
 Continuez d’essayer de vous connecter…</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="72"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; No notifications daemon is running.
 A fallback will be used.</source>
-        <translation>&lt;b&gt;Attention :&lt;/b&gt; Aucun processus de notification n&apos;est en cours d&apos;exécution.
+        <translation>&lt;b&gt;Attention :&lt;/b&gt; Aucun processus de notification n’est en cours d’exécution.
 Un processus par défaut sera utilisé.</translation>
     </message>
     <message>
@@ -127,7 +127,7 @@ Un processus par défaut sera utilisé.</translation>
         <source>&lt;b&gt;Warning:&lt;/b&gt; A third-party notifications daemon (%1) is running.
 These settings won&apos;t have any effect on it!</source>
         <translation>&lt;b&gt;Attention :&lt;/b&gt; Un autre processus de notification (%1) est actif.
-Ces réglages n&apos;auront aucun effet sur lui !</translation>
+Ces réglages n’auront aucun effet sur lui !</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="137"/>
