@@ -33,6 +33,7 @@
 #include <QDebug>
 #include <XdgIcon>
 #include <KWindowSystem/KWindowSystem>
+#include <KWindowSystem/KX11Extras>
 #include <QMouseEvent>
 #include <QPushButton>
 #include <QStyle>
@@ -326,7 +327,7 @@ void Notification::mouseReleaseEvent(QMouseEvent * event)
         return;
     }
 
-    const auto ids = KWindowSystem::stackingOrder();
+    const auto ids = KX11Extras::stackingOrder();
     for (const WId &i : ids)
     {
         KWindowInfo info = KWindowInfo(i, NET::WMName | NET::WMVisibleName);

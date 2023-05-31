@@ -16,7 +16,7 @@ set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 option(UPDATE_TRANSLATIONS "Update source translation translations/*.ts files" OFF)
 option(LXQT_NOTIFICATION_BUILD_TESTS "Build LXQt Notification tests" OFF)
 
-set(KF5_MINIMUM_VERSION "5.36.0")
+set(KF5_MINIMUM_VERSION "5.101.0")
 set(LXQT_MINIMUM_VERSION "1.3.0")
 set(QT_MINIMUM_VERSION "5.15.0")
 
