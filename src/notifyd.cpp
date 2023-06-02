@@ -30,6 +30,7 @@
 
 #include <QProcess>
 #include <QDebug>
+#include <QLocale>
 
 
 /*
@@ -243,14 +244,14 @@ void Notifyd::createTrayIcon()
     if (!dates.isEmpty())
         dates.sort();
 
+    QLocale l;
     QAction *action = nullptr;
     // add items for notification, starting from the oldest one and from bottom to top
     for (const QString &date : qAsConst(dates))
     {
         list.beginGroup(date);
         // "DATE_AND_TIME - APP: SUMMARY"
-        QString txt = QDateTime::fromString(date, m_area->layout()->cacheDateFormat())
-                        .toString(Qt::SystemLocaleShortDate) // for human readability
+        QString txt = l.toString(QDateTime::fromString(date, m_area->layout()->cacheDateFormat()), QLocale::ShortFormat)
                         + QL1S(" - ") + list.value(QL1S("Application")).toString() + QL1S(": ")
                         + list.value(QL1S("Summary")).toString();
         list.endGroup();
@@ -327,8 +328,8 @@ void Notifyd::addToUnattendedList(uint /*id*/, uint reason, const QString &date)
             }
             QSettings list(m_area->layout()->cacheFile(), QSettings::IniFormat);
             list.beginGroup(date);
-            QString txt = QDateTime::fromString(date, m_area->layout()->cacheDateFormat())
-                            .toString(Qt::SystemLocaleShortDate) // for human readability
+            QLocale l;
+            QString txt = l.toString(QDateTime::fromString(date, m_area->layout()->cacheDateFormat()), QLocale::ShortFormat)
                             + QL1S(" - ") + list.value(QL1S("Application")).toString() + QL1S(": ")
                             + list.value(QL1S("Summary")).toString();
             list.endGroup();
