@@ -31,7 +31,8 @@
 #include <LXQt/Globals>
 #include <LXQt/Settings>
 #include "notificationarea.h"
-
+#include <LayerShellQt/shell.h>
+#include <LayerShellQt/window.h>
 
 NotificationArea::NotificationArea(QWidget *parent)
     : QScrollArea(parent),
@@ -168,4 +169,60 @@ void NotificationArea::setSettings(const QString &placement, int width, int spac
 
     m_layout->setUnattendedMaxNum(unattendedMaxNum);
     m_layout->setBlackList(blackList);
+
+        // layer-shell code
+    bool underWayland = QGuiApplication::platformName() == QStringLiteral("wayland");
+    QMargins margins(m_spacing, m_spacing, m_spacing, m_spacing);
+    if (underWayland)
+       LayerShellQt::Shell::useLayerShell();
+    if (underWayland)
+    {
+        winId();
+        if(QWindow* win = windowHandle())
+        {
+            if(LayerShellQt::Window* layershell = LayerShellQt::Window::get(win))
+            {
+                layershell->setLayer(LayerShellQt::Window::Layer::LayerOverlay);
+                layershell->setKeyboardInteractivity(LayerShellQt::Window::KeyboardInteractivityNone);
+                layershell->setMargins(margins);
+               // layershell->setScope(scope);
+                if (QL1S("top-left") == m_placement)
+                {
+                    LayerShellQt::Window::Anchors anchors = {LayerShellQt::Window::AnchorTop|LayerShellQt::Window::AnchorLeft};
+                    layershell->setAnchors(anchors);
+                }
+                if (QL1S("top-center") == m_placement)
+                {
+                    LayerShellQt::Window::Anchors anchors = {LayerShellQt::Window::AnchorTop};
+                    layershell->setAnchors(anchors);
+                } else if (QL1S("top-right") == m_placement)
+                {
+                    LayerShellQt::Window::Anchors anchors = {LayerShellQt::Window::AnchorTop|                LayerShellQt::Window::AnchorRight};
+                    layershell->setAnchors(anchors);
+                } else if (QL1S("center-left") == m_placement)
+                {
+                    LayerShellQt::Window::Anchors anchors = {LayerShellQt::Window::AnchorLeft};
+                    layershell->setAnchors(anchors);
+                } else if (QL1S("center-right") == m_placement)
+                {
+                    LayerShellQt::Window::Anchors anchors = {LayerShellQt::Window::AnchorRight};
+                    layershell->setAnchors(anchors);
+                } else if (QL1S("bottom-left") == m_placement)
+                {
+                    LayerShellQt::Window::Anchors anchors = {LayerShellQt::Window::AnchorLeft|                LayerShellQt::Window::AnchorBottom};
+                    layershell->setAnchors(anchors);
+                } else if (QL1S("bottom-center") == m_placement)
+                {
+                    LayerShellQt::Window::Anchors anchors = {LayerShellQt::Window::AnchorBottom};
+                    layershell->setAnchors(anchors);
+                } else if (QL1S("bottom-right") == m_placement)
+                {
+                    LayerShellQt::Window::Anchors anchors = {LayerShellQt::Window::AnchorBottom|                LayerShellQt::Window::AnchorRight};
+                    layershell->setAnchors(anchors);
+                }
+
+            }
+        }
+    }
+
 }

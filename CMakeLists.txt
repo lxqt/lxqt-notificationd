@@ -25,6 +25,7 @@ find_package(Qt5LinguistTools ${QT_MINIMUM_VERSION} REQUIRED)
 find_package(Qt5Widgets ${QT_MINIMUM_VERSION} REQUIRED)
 find_package(KF5WindowSystem ${KF5_MINIMUM_VERSION} REQUIRED)
 find_package(lxqt ${LXQT_MINIMUM_VERSION} REQUIRED)
+find_package(LayerShellQt REQUIRED)
 message(STATUS "Building with Qt${Qt5Core_VERSION}")
 
 # Patch Version

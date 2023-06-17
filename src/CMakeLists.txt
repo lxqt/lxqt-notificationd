@@ -42,6 +42,7 @@ target_link_libraries(lxqt-notificationd
     Qt5::DBus
     lxqt
     KF5::WindowSystem
+    LayerShellQtInterface
 )
 
 install(TARGETS
