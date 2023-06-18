@@ -114,28 +114,28 @@ These settings won&apos;t have any effect on it!</source>
     <message>
         <location filename="../generalsettings.ui" line="67"/>
         <source>Sizes</source>
-        <translation type="unfinished">Talhas</translation>
+        <translation>Talhas</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="75"/>
         <source>Width:</source>
-        <translation type="unfinished">Largor&#x202f;:</translation>
+        <translation>Largor&#x202f;:</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="82"/>
         <location filename="../generalsettings.ui" line="106"/>
         <source> px</source>
-        <translation type="unfinished"> px</translation>
+        <translation> px</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="99"/>
         <source>Spacing:</source>
-        <translation type="unfinished">Espaci&#x202f;:</translation>
+        <translation>Espaci&#x202f;:</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="118"/>
         <source>Duration</source>
-        <translation type="unfinished">Durada</translation>
+        <translation>Durada</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="130"/>
@@ -145,17 +145,17 @@ These settings won&apos;t have any effect on it!</source>
     <message>
         <location filename="../generalsettings.ui" line="142"/>
         <source>Default duration:</source>
-        <translation type="unfinished">Durada predeterminada&#x202f;:</translation>
+        <translation>Durada predeterminada&#x202f;:</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="149"/>
         <source> sec</source>
-        <translation type="unfinished"> seg</translation>
+        <translation> seg</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="177"/>
         <source>Screen</source>
-        <translation type="unfinished">Ecran</translation>
+        <translation>Ecran</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="183"/>

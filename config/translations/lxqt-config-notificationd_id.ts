@@ -6,12 +6,12 @@
     <message>
         <location filename="../appearancesettings.ui" line="17"/>
         <source>Position on screen</source>
-        <translation type="unfinished">Posisi pada layar</translation>
+        <translation>Posisi pada layar</translation>
     </message>
     <message>
         <location filename="../appearancesettings.ui" line="176"/>
         <source>Preview</source>
-        <translation type="unfinished">Pratinjau</translation>
+        <translation>Pratinjau</translation>
     </message>
     <message>
         <location filename="../appearancesettings.cpp" line="63"/>
@@ -23,14 +23,14 @@ Keep trying to connect…</source>
         <location filename="../appearancesettings.cpp" line="72"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; No notifications daemon is running.
 A fallback will be used.</source>
-        <translation type="unfinished">&lt;b&gt;Peringatan:&lt;/b&gt; Tidak ada daemon (layanan) notifikasi yang berjalan.
+        <translation>&lt;b&gt;Peringatan:&lt;/b&gt; Tidak ada daemon (layanan) notifikasi yang berjalan.
 Fallback akan digunakan.</translation>
     </message>
     <message>
         <location filename="../appearancesettings.cpp" line="75"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; A third-party notifications daemon (%1) is running.
 These settings won&apos;t have any effect on it!</source>
-        <translation type="unfinished">&lt;b&gt;Peringatan:&lt;/b&gt; Daemon notifikasi pihak ketiga (%1) sedang berjalan.
+        <translation>&lt;b&gt;Peringatan:&lt;/b&gt; Daemon notifikasi pihak ketiga (%1) sedang berjalan.
 Pengaturan ini tidak akan berpengaruh padanya!</translation>
     </message>
     <message>
@@ -76,13 +76,13 @@ Pengaturan ini tidak akan berpengaruh padanya!</translation>
     <message>
         <location filename="../appearancesettings.cpp" line="153"/>
         <source>Notification demo </source>
-        <translation type="unfinished">Demo notifikasi </translation>
+        <translation>Demo notifikasi </translation>
     </message>
     <message>
         <location filename="../appearancesettings.cpp" line="154"/>
         <source>This is a test notification.
  All notifications will now appear here on LXQt.</source>
-        <translation type="unfinished">Ini adalah tes notifikasi.
+        <translation>Ini adalah tes notifikasi.
 Semua notikasi pada LXQt akan ditampilkan disini.</translation>
     </message>
 </context>
@@ -91,79 +91,79 @@ Semua notikasi pada LXQt akan ditampilkan disini.</translation>
     <message>
         <location filename="../generalsettings.ui" line="17"/>
         <source>Unattended Notifications</source>
-        <translation type="unfinished">Pemberitahuan tanpa pengawasan</translation>
+        <translation>Pemberitahuan tanpa pengawasan</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="25"/>
         <source>How many to save:</source>
-        <translation type="unfinished">Berapa banyak yang harus disimpan:</translation>
+        <translation>Berapa banyak yang harus disimpan:</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="39"/>
         <location filename="../generalsettings.ui" line="49"/>
         <source>Application name is on the top of notification.</source>
-        <translation type="unfinished">Nama aplikasi ada di bagian atas notifikasi.</translation>
+        <translation>Nama aplikasi ada di bagian atas notifikasi.</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="42"/>
         <source>Ignore these applications:</source>
-        <translation type="unfinished">Abaikan aplikasi ini:</translation>
+        <translation>Abaikan aplikasi ini:</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="52"/>
         <source>app1,app2,app3</source>
-        <translation type="unfinished">app1,app2,app3</translation>
+        <translation>app1,app2,app3</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="67"/>
         <source>Sizes</source>
-        <translation type="unfinished">Ukuran</translation>
+        <translation>Ukuran</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="75"/>
         <source>Width:</source>
-        <translation type="unfinished">Lebar:</translation>
+        <translation>Lebar:</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="82"/>
         <location filename="../generalsettings.ui" line="106"/>
         <source> px</source>
-        <translation type="unfinished"> px</translation>
+        <translation> px</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="99"/>
         <source>Spacing:</source>
-        <translation type="unfinished">Spasi:</translation>
+        <translation>Spasi:</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="118"/>
         <source>Duration</source>
-        <translation type="unfinished">Durasi</translation>
+        <translation>Durasi</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="130"/>
         <source>Some notifications set their own on-screen duration.</source>
-        <translation type="unfinished">Beberapa notifikasi menetapkan durasi mereka sendiri dilayar.</translation>
+        <translation>Beberapa notifikasi menetapkan durasi mereka sendiri dilayar.</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="142"/>
         <source>Default duration:</source>
-        <translation type="unfinished">Durasi standar:</translation>
+        <translation>Durasi standar:</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="149"/>
         <source> sec</source>
-        <translation type="unfinished"> dtk</translation>
+        <translation> dtk</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="177"/>
         <source>Screen</source>
-        <translation type="unfinished">Layar</translation>
+        <translation>Layar</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="183"/>
         <source>When unchecked the notification will always show on primary screen</source>
-        <translation type="unfinished">Saat notifikasi tidak tercentang selalu menampilkan layar utama</translation>
+        <translation>Saat notifikasi tidak tercentang selalu menampilkan layar utama</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="186"/>
@@ -173,12 +173,12 @@ Semua notikasi pada LXQt akan ditampilkan disini.</translation>
     <message>
         <location filename="../generalsettings.ui" line="196"/>
         <source>Do Not Disturb</source>
-        <translation type="unfinished">Jangan Diganggu</translation>
+        <translation>Jangan Diganggu</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="202"/>
         <source>Only save notifications</source>
-        <translation type="unfinished">Hanya menyimpan notifikasi</translation>
+        <translation>Hanya menyimpan notifikasi</translation>
     </message>
 </context>
 <context>

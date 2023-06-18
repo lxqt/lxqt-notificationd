@@ -6,84 +6,84 @@
     <message>
         <location filename="../appearancesettings.ui" line="17"/>
         <source>Position on screen</source>
-        <translation type="unfinished">Položaj na ekranu</translation>
+        <translation>Položaj na ekranu</translation>
     </message>
     <message>
         <location filename="../appearancesettings.ui" line="176"/>
         <source>Preview</source>
-        <translation type="unfinished">Pregled</translation>
+        <translation>Pregled</translation>
     </message>
     <message>
         <location filename="../appearancesettings.cpp" line="63"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; notifications daemon is slow to respond.
 Keep trying to connect…</source>
-        <translation type="unfinished">&lt;b&gt;Oprez:&lt;/b&gt; demon obavijesti reagira sporo.
+        <translation>&lt;b&gt;Oprez:&lt;/b&gt; demon obavijesti reagira sporo.
 Nastavi se povezivati …</translation>
     </message>
     <message>
         <location filename="../appearancesettings.cpp" line="72"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; No notifications daemon is running.
 A fallback will be used.</source>
-        <translation type="unfinished">&lt;b&gt;Upozorenje:&lt;/b&gt; Nijedan demon za obavijesti nije pokrenut.
+        <translation>&lt;b&gt;Upozorenje:&lt;/b&gt; Nijedan demon za obavijesti nije pokrenut.
 Koristit će se rezervni.</translation>
     </message>
     <message>
         <location filename="../appearancesettings.cpp" line="75"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; A third-party notifications daemon (%1) is running.
 These settings won&apos;t have any effect on it!</source>
-        <translation type="unfinished">&lt;b&gt;Upozorenje:&lt;/b&gt; Pokrenut je jedan strani demon za obavijesti (%1).
+        <translation>&lt;b&gt;Upozorenje:&lt;/b&gt; Pokrenut je jedan strani demon za obavijesti (%1).
 Ove postavke na njega ne utječu!</translation>
     </message>
     <message>
         <location filename="../appearancesettings.cpp" line="137"/>
         <source>at top left</source>
-        <translation type="unfinished">gore lijevo</translation>
+        <translation>gore lijevo</translation>
     </message>
     <message>
         <location filename="../appearancesettings.cpp" line="139"/>
         <source>at top center</source>
-        <translation type="unfinished">gore centrirano</translation>
+        <translation>gore centrirano</translation>
     </message>
     <message>
         <location filename="../appearancesettings.cpp" line="141"/>
         <source>at top right</source>
-        <translation type="unfinished">gore desno</translation>
+        <translation>gore desno</translation>
     </message>
     <message>
         <location filename="../appearancesettings.cpp" line="143"/>
         <source>at center left</source>
-        <translation type="unfinished">centrirano lijevo</translation>
+        <translation>centrirano lijevo</translation>
     </message>
     <message>
         <location filename="../appearancesettings.cpp" line="145"/>
         <source>at center right</source>
-        <translation type="unfinished">centrirano desno</translation>
+        <translation>centrirano desno</translation>
     </message>
     <message>
         <location filename="../appearancesettings.cpp" line="147"/>
         <source>at bottom left</source>
-        <translation type="unfinished">dolje lijevo</translation>
+        <translation>dolje lijevo</translation>
     </message>
     <message>
         <location filename="../appearancesettings.cpp" line="149"/>
         <source>at bottom center</source>
-        <translation type="unfinished">dolje centrirano</translation>
+        <translation>dolje centrirano</translation>
     </message>
     <message>
         <location filename="../appearancesettings.cpp" line="151"/>
         <source>at bottom right</source>
-        <translation type="unfinished">dolje desno</translation>
+        <translation>dolje desno</translation>
     </message>
     <message>
         <location filename="../appearancesettings.cpp" line="153"/>
         <source>Notification demo </source>
-        <translation type="unfinished">Prikaz obavijesti </translation>
+        <translation>Prikaz obavijesti </translation>
     </message>
     <message>
         <location filename="../appearancesettings.cpp" line="154"/>
         <source>This is a test notification.
  All notifications will now appear here on LXQt.</source>
-        <translation type="unfinished">Ovo je testna obavijest.
+        <translation>Ovo je testna obavijest.
 Sve obavijesti će se sada ovdje pojaviti na LXQt-u.</translation>
     </message>
 </context>
@@ -92,94 +92,94 @@ Sve obavijesti će se sada ovdje pojaviti na LXQt-u.</translation>
     <message>
         <location filename="../generalsettings.ui" line="17"/>
         <source>Unattended Notifications</source>
-        <translation type="unfinished">Nepročitane obavijesti</translation>
+        <translation>Nepročitane obavijesti</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="25"/>
         <source>How many to save:</source>
-        <translation type="unfinished">Koliko obavijesti čuvati:</translation>
+        <translation>Koliko obavijesti čuvati:</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="39"/>
         <location filename="../generalsettings.ui" line="49"/>
         <source>Application name is on the top of notification.</source>
-        <translation type="unfinished">Ime programa se nalazi na početku obavijesti.</translation>
+        <translation>Ime programa se nalazi na početku obavijesti.</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="42"/>
         <source>Ignore these applications:</source>
-        <translation type="unfinished">Zanemari ove programe:</translation>
+        <translation>Zanemari ove programe:</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="52"/>
         <source>app1,app2,app3</source>
-        <translation type="unfinished">program1,program2,program3</translation>
+        <translation>program1,program2,program3</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="67"/>
         <source>Sizes</source>
-        <translation type="unfinished">Veličine</translation>
+        <translation>Veličine</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="75"/>
         <source>Width:</source>
-        <translation type="unfinished">Širina:</translation>
+        <translation>Širina:</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="82"/>
         <location filename="../generalsettings.ui" line="106"/>
         <source> px</source>
-        <translation type="unfinished"> px</translation>
+        <translation> px</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="99"/>
         <source>Spacing:</source>
-        <translation type="unfinished">Razmak:</translation>
+        <translation>Razmak:</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="118"/>
         <source>Duration</source>
-        <translation type="unfinished">Trajanje</translation>
+        <translation>Trajanje</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="130"/>
         <source>Some notifications set their own on-screen duration.</source>
-        <translation type="unfinished">Neke obavijesti postavljaju vlastita trajanja prikaza.</translation>
+        <translation>Neke obavijesti postavljaju vlastita trajanja prikaza.</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="142"/>
         <source>Default duration:</source>
-        <translation type="unfinished">Standardno trajanje:</translation>
+        <translation>Standardno trajanje:</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="149"/>
         <source> sec</source>
-        <translation type="unfinished"> s</translation>
+        <translation> s</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="177"/>
         <source>Screen</source>
-        <translation type="unfinished">Ekran</translation>
+        <translation>Ekran</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="183"/>
         <source>When unchecked the notification will always show on primary screen</source>
-        <translation type="unfinished">Kad nije označeno, obavijest će se uvijek prikazati na primarnom ekranu</translation>
+        <translation>Kad nije označeno, obavijest će se uvijek prikazati na primarnom ekranu</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="186"/>
         <source>Show notifications on screen with the mouse</source>
-        <translation type="unfinished">Prikaži obavijesti na ekranu s mišem</translation>
+        <translation>Prikaži obavijesti na ekranu s mišem</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="196"/>
         <source>Do Not Disturb</source>
-        <translation type="unfinished">Ne smetaj</translation>
+        <translation>Ne smetaj</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="202"/>
         <source>Only save notifications</source>
-        <translation type="unfinished">Spremi samo obavijesti</translation>
+        <translation>Spremi samo obavijesti</translation>
     </message>
 </context>
 <context>

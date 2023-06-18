@@ -6,84 +6,84 @@
     <message>
         <location filename="../appearancesettings.ui" line="17"/>
         <source>Position on screen</source>
-        <translation type="unfinished">Расположение на экране</translation>
+        <translation>Расположение на экране</translation>
     </message>
     <message>
         <location filename="../appearancesettings.ui" line="176"/>
         <source>Preview</source>
-        <translation type="unfinished">Предпросмотр</translation>
+        <translation>Предпросмотр</translation>
     </message>
     <message>
         <location filename="../appearancesettings.cpp" line="63"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; notifications daemon is slow to respond.
 Keep trying to connect…</source>
-        <translation type="unfinished">&lt;b&gt;Предупреждение:&lt;/b&gt; демон уведомлений не отвечает в течении значительно времени.
+        <translation>&lt;b&gt;Предупреждение:&lt;/b&gt; демон уведомлений не отвечает в течении значительно времени.
 Продолжаем попытки соединения…</translation>
     </message>
     <message>
         <location filename="../appearancesettings.cpp" line="72"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; No notifications daemon is running.
 A fallback will be used.</source>
-        <translation type="unfinished">&lt;b&gt;Внимание:&lt;/b&gt; Демон уведомлений не запущен.
+        <translation>&lt;b&gt;Внимание:&lt;/b&gt; Демон уведомлений не запущен.
 Будет использован резервный вариант.</translation>
     </message>
     <message>
         <location filename="../appearancesettings.cpp" line="75"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; A third-party notifications daemon (%1) is running.
 These settings won&apos;t have any effect on it!</source>
-        <translation type="unfinished">&lt;b&gt;Внимание:&lt;/b&gt; Запущен сторонний демон уведомлений (%1).
+        <translation>&lt;b&gt;Внимание:&lt;/b&gt; Запущен сторонний демон уведомлений (%1).
 Эти настройки не будут иметь никакого эффекта для него!</translation>
     </message>
     <message>
         <location filename="../appearancesettings.cpp" line="137"/>
         <source>at top left</source>
-        <translation type="unfinished">вверху слева</translation>
+        <translation>вверху слева</translation>
     </message>
     <message>
         <location filename="../appearancesettings.cpp" line="139"/>
         <source>at top center</source>
-        <translation type="unfinished">вверху в центре</translation>
+        <translation>вверху в центре</translation>
     </message>
     <message>
         <location filename="../appearancesettings.cpp" line="141"/>
         <source>at top right</source>
-        <translation type="unfinished">вверху справа</translation>
+        <translation>вверху справа</translation>
     </message>
     <message>
         <location filename="../appearancesettings.cpp" line="143"/>
         <source>at center left</source>
-        <translation type="unfinished">в центре слева</translation>
+        <translation>в центре слева</translation>
     </message>
     <message>
         <location filename="../appearancesettings.cpp" line="145"/>
         <source>at center right</source>
-        <translation type="unfinished">в центре справа</translation>
+        <translation>в центре справа</translation>
     </message>
     <message>
         <location filename="../appearancesettings.cpp" line="147"/>
         <source>at bottom left</source>
-        <translation type="unfinished">внизу слева</translation>
+        <translation>внизу слева</translation>
     </message>
     <message>
         <location filename="../appearancesettings.cpp" line="149"/>
         <source>at bottom center</source>
-        <translation type="unfinished">внизу в центре</translation>
+        <translation>внизу в центре</translation>
     </message>
     <message>
         <location filename="../appearancesettings.cpp" line="151"/>
         <source>at bottom right</source>
-        <translation type="unfinished">внизу справа</translation>
+        <translation>внизу справа</translation>
     </message>
     <message>
         <location filename="../appearancesettings.cpp" line="153"/>
         <source>Notification demo </source>
-        <translation type="unfinished">Тестовое уведомление </translation>
+        <translation>Тестовое уведомление </translation>
     </message>
     <message>
         <location filename="../appearancesettings.cpp" line="154"/>
         <source>This is a test notification.
  All notifications will now appear here on LXQt.</source>
-        <translation type="unfinished">Это тестовое уведомление.
+        <translation>Это тестовое уведомление.
  Теперь все уведомления LQXt будут появляться здесь.</translation>
     </message>
 </context>
@@ -92,94 +92,94 @@ These settings won&apos;t have any effect on it!</source>
     <message>
         <location filename="../generalsettings.ui" line="17"/>
         <source>Unattended Notifications</source>
-        <translation type="unfinished">Непрочитанные уведомления</translation>
+        <translation>Непрочитанные уведомления</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="25"/>
         <source>How many to save:</source>
-        <translation type="unfinished">Сколько сохранять:</translation>
+        <translation>Сколько сохранять:</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="39"/>
         <location filename="../generalsettings.ui" line="49"/>
         <source>Application name is on the top of notification.</source>
-        <translation type="unfinished">Имя приложения находится вверху уведомления.</translation>
+        <translation>Имя приложения находится вверху уведомления.</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="42"/>
         <source>Ignore these applications:</source>
-        <translation type="unfinished">Игнорировать приложения:</translation>
+        <translation>Игнорировать приложения:</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="52"/>
         <source>app1,app2,app3</source>
-        <translation type="unfinished">app1,app2,app3</translation>
+        <translation>app1,app2,app3</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="67"/>
         <source>Sizes</source>
-        <translation type="unfinished">Размеры</translation>
+        <translation>Размеры</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="75"/>
         <source>Width:</source>
-        <translation type="unfinished">Ширина:</translation>
+        <translation>Ширина:</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="82"/>
         <location filename="../generalsettings.ui" line="106"/>
         <source> px</source>
-        <translation type="unfinished"> пикс</translation>
+        <translation> пикс</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="99"/>
         <source>Spacing:</source>
-        <translation type="unfinished">Расстояние:</translation>
+        <translation>Расстояние:</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="118"/>
         <source>Duration</source>
-        <translation type="unfinished">Длительность</translation>
+        <translation>Длительность</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="130"/>
         <source>Some notifications set their own on-screen duration.</source>
-        <translation type="unfinished">Некоторые уведомления сами устанавливают свою длительность на экране.</translation>
+        <translation>Некоторые уведомления сами устанавливают свою длительность на экране.</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="142"/>
         <source>Default duration:</source>
-        <translation type="unfinished">Длительность по умолчанию:</translation>
+        <translation>Длительность по умолчанию:</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="149"/>
         <source> sec</source>
-        <translation type="unfinished"> сек</translation>
+        <translation> сек</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="177"/>
         <source>Screen</source>
-        <translation type="unfinished">Экран</translation>
+        <translation>Экран</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="183"/>
         <source>When unchecked the notification will always show on primary screen</source>
-        <translation type="unfinished">Если не отмечено, но уведомления будут показываться на основном экране</translation>
+        <translation>Если не отмечено, но уведомления будут показываться на основном экране</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="186"/>
         <source>Show notifications on screen with the mouse</source>
-        <translation type="unfinished">Показывать уведомления на экране, на котором находится мышь</translation>
+        <translation>Показывать уведомления на экране, на котором находится мышь</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="196"/>
         <source>Do Not Disturb</source>
-        <translation type="unfinished">Не беспокоить</translation>
+        <translation>Не беспокоить</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="202"/>
         <source>Only save notifications</source>
-        <translation type="unfinished">Cохранять только уведомления</translation>
+        <translation>Cохранять только уведомления</translation>
     </message>
 </context>
 <context>

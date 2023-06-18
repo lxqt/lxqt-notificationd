@@ -6,84 +6,84 @@
     <message>
         <location filename="../appearancesettings.ui" line="17"/>
         <source>Position on screen</source>
-        <translation type="unfinished">Placering på skærmen</translation>
+        <translation>Placering på skærmen</translation>
     </message>
     <message>
         <location filename="../appearancesettings.ui" line="176"/>
         <source>Preview</source>
-        <translation type="unfinished">Forhåndsvisning</translation>
+        <translation>Forhåndsvisning</translation>
     </message>
     <message>
         <location filename="../appearancesettings.cpp" line="63"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; notifications daemon is slow to respond.
 Keep trying to connect…</source>
-        <translation type="unfinished">&lt;b&gt;Advarsel:&lt;/b&gt; underretningsdæmonen er langsom om at svare.
+        <translation>&lt;b&gt;Advarsel:&lt;/b&gt; underretningsdæmonen er langsom om at svare.
 Blev ved med at prøve at oprette forbindelse…</translation>
     </message>
     <message>
         <location filename="../appearancesettings.cpp" line="72"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; No notifications daemon is running.
 A fallback will be used.</source>
-        <translation type="unfinished">&lt;b&gt;Advarsel:&lt;/b&gt; der kører ikke noget underretningsbaggrundsprogram.
+        <translation>&lt;b&gt;Advarsel:&lt;/b&gt; der kører ikke noget underretningsbaggrundsprogram.
 En reserve vil blive brugt.</translation>
     </message>
     <message>
         <location filename="../appearancesettings.cpp" line="75"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; A third-party notifications daemon (%1) is running.
 These settings won&apos;t have any effect on it!</source>
-        <translation type="unfinished">&lt;b&gt;Advarsel:&lt;/b&gt; der kører et tredjeparts underretningsbaggrundsprogram (%1).
+        <translation>&lt;b&gt;Advarsel:&lt;/b&gt; der kører et tredjeparts underretningsbaggrundsprogram (%1).
 Disse indstillinger vil ikke have nogen effekt på det!</translation>
     </message>
     <message>
         <location filename="../appearancesettings.cpp" line="137"/>
         <source>at top left</source>
-        <translation type="unfinished">øverst til venstre</translation>
+        <translation>øverst til venstre</translation>
     </message>
     <message>
         <location filename="../appearancesettings.cpp" line="139"/>
         <source>at top center</source>
-        <translation type="unfinished">øverst i midten</translation>
+        <translation>øverst i midten</translation>
     </message>
     <message>
         <location filename="../appearancesettings.cpp" line="141"/>
         <source>at top right</source>
-        <translation type="unfinished">øverst til højre</translation>
+        <translation>øverst til højre</translation>
     </message>
     <message>
         <location filename="../appearancesettings.cpp" line="143"/>
         <source>at center left</source>
-        <translation type="unfinished">i midten til venstre</translation>
+        <translation>i midten til venstre</translation>
     </message>
     <message>
         <location filename="../appearancesettings.cpp" line="145"/>
         <source>at center right</source>
-        <translation type="unfinished">i midten til højre</translation>
+        <translation>i midten til højre</translation>
     </message>
     <message>
         <location filename="../appearancesettings.cpp" line="147"/>
         <source>at bottom left</source>
-        <translation type="unfinished">i bunden til venstre</translation>
+        <translation>i bunden til venstre</translation>
     </message>
     <message>
         <location filename="../appearancesettings.cpp" line="149"/>
         <source>at bottom center</source>
-        <translation type="unfinished">i bunden ved midten</translation>
+        <translation>i bunden ved midten</translation>
     </message>
     <message>
         <location filename="../appearancesettings.cpp" line="151"/>
         <source>at bottom right</source>
-        <translation type="unfinished">i bunden til højre</translation>
+        <translation>i bunden til højre</translation>
     </message>
     <message>
         <location filename="../appearancesettings.cpp" line="153"/>
         <source>Notification demo </source>
-        <translation type="unfinished">Underretningsdemo </translation>
+        <translation>Underretningsdemo </translation>
     </message>
     <message>
         <location filename="../appearancesettings.cpp" line="154"/>
         <source>This is a test notification.
  All notifications will now appear here on LXQt.</source>
-        <translation type="unfinished">Dette er en test-underretning.
+        <translation>Dette er en test-underretning.
  Alle underretninger vises her i LXQt.</translation>
     </message>
 </context>
@@ -92,94 +92,94 @@ Disse indstillinger vil ikke have nogen effekt på det!</translation>
     <message>
         <location filename="../generalsettings.ui" line="17"/>
         <source>Unattended Notifications</source>
-        <translation type="unfinished">Ikke-tilsete underretninger</translation>
+        <translation>Ikke-tilsete underretninger</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="25"/>
         <source>How many to save:</source>
-        <translation type="unfinished">Hvor mange der skal gemmes:</translation>
+        <translation>Hvor mange der skal gemmes:</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="39"/>
         <location filename="../generalsettings.ui" line="49"/>
         <source>Application name is on the top of notification.</source>
-        <translation type="unfinished">Programnavnet er øverst i underretningen.</translation>
+        <translation>Programnavnet er øverst i underretningen.</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="42"/>
         <source>Ignore these applications:</source>
-        <translation type="unfinished">Ignorer programmerne:</translation>
+        <translation>Ignorer programmerne:</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="52"/>
         <source>app1,app2,app3</source>
-        <translation type="unfinished">program1,program2,program3</translation>
+        <translation>program1,program2,program3</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="67"/>
         <source>Sizes</source>
-        <translation type="unfinished">Størrelser</translation>
+        <translation>Størrelser</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="75"/>
         <source>Width:</source>
-        <translation type="unfinished">Bredde:</translation>
+        <translation>Bredde:</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="82"/>
         <location filename="../generalsettings.ui" line="106"/>
         <source> px</source>
-        <translation type="unfinished"> px</translation>
+        <translation> px</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="99"/>
         <source>Spacing:</source>
-        <translation type="unfinished">Afstand:</translation>
+        <translation>Afstand:</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="118"/>
         <source>Duration</source>
-        <translation type="unfinished">Varighed</translation>
+        <translation>Varighed</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="130"/>
         <source>Some notifications set their own on-screen duration.</source>
-        <translation type="unfinished">Nogle underretninger sætter deres egen varighed for hvor længe de blive vist på skærmen.</translation>
+        <translation>Nogle underretninger sætter deres egen varighed for hvor længe de blive vist på skærmen.</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="142"/>
         <source>Default duration:</source>
-        <translation type="unfinished">Standardvarighed:</translation>
+        <translation>Standardvarighed:</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="149"/>
         <source> sec</source>
-        <translation type="unfinished"> sek.</translation>
+        <translation> sek.</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="177"/>
         <source>Screen</source>
-        <translation type="unfinished">Skærm</translation>
+        <translation>Skærm</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="183"/>
         <source>When unchecked the notification will always show on primary screen</source>
-        <translation type="unfinished">Når den er fravalgt vises underretningen altid på den primære skærm</translation>
+        <translation>Når den er fravalgt vises underretningen altid på den primære skærm</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="186"/>
         <source>Show notifications on screen with the mouse</source>
-        <translation type="unfinished">Vis underretninger på den skærm som musen er på</translation>
+        <translation>Vis underretninger på den skærm som musen er på</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="196"/>
         <source>Do Not Disturb</source>
-        <translation type="unfinished">Forstyr ikke</translation>
+        <translation>Forstyr ikke</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="202"/>
         <source>Only save notifications</source>
-        <translation type="unfinished">Gem kun meddeleser</translation>
+        <translation>Gem kun meddeleser</translation>
     </message>
 </context>
 <context>

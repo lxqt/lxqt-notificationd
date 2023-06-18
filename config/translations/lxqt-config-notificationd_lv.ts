@@ -6,7 +6,7 @@
     <message>
         <location filename="../appearancesettings.ui" line="17"/>
         <source>Position on screen</source>
-        <translation type="unfinished">Novietojums uz ekrāna</translation>
+        <translation>Novietojums uz ekrāna</translation>
     </message>
     <message>
         <location filename="../appearancesettings.ui" line="176"/>
@@ -17,21 +17,21 @@
         <location filename="../appearancesettings.cpp" line="63"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; notifications daemon is slow to respond.
 Keep trying to connect…</source>
-        <translation type="unfinished">&lt;&lt;b&gt;Brīdinājums:&lt;/b&gt; paziņojumu dēmōns ir lēnīgs atbildes sniegšanā.
+        <translation>&lt;&lt;b&gt;Brīdinājums:&lt;/b&gt; paziņojumu dēmōns ir lēnīgs atbildes sniegšanā.
 Turpinām mēģinājumus savienoties…</translation>
     </message>
     <message>
         <location filename="../appearancesettings.cpp" line="72"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; No notifications daemon is running.
 A fallback will be used.</source>
-        <translation type="unfinished">&lt;b&gt;Brīdinājums:&lt;/b&gt; Paziņojumu process nav palaists. 
+        <translation>&lt;b&gt;Brīdinājums:&lt;/b&gt; Paziņojumu process nav palaists. 
 Tiks lietots aizstājējs.</translation>
     </message>
     <message>
         <location filename="../appearancesettings.cpp" line="75"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; A third-party notifications daemon (%1) is running.
 These settings won&apos;t have any effect on it!</source>
-        <translation type="unfinished">&lt;b&gt;Brīdinājums:&lt;/b&gt;Darbojas paziņojumu process (%1).
+        <translation>&lt;b&gt;Brīdinājums:&lt;/b&gt;Darbojas paziņojumu process (%1).
 Šiem iestatījumiem nebūs rezultāta!</translation>
     </message>
     <message>
@@ -77,13 +77,13 @@ These settings won&apos;t have any effect on it!</source>
     <message>
         <location filename="../appearancesettings.cpp" line="153"/>
         <source>Notification demo </source>
-        <translation type="unfinished">Demo/testa paziņojums </translation>
+        <translation>Demo/testa paziņojums </translation>
     </message>
     <message>
         <location filename="../appearancesettings.cpp" line="154"/>
         <source>This is a test notification.
  All notifications will now appear here on LXQt.</source>
-        <translation type="unfinished">Šis ir paraugdemonstrējums.
+        <translation>Šis ir paraugdemonstrējums.
  LXQt paziņojumi tiks rādīti šeit.</translation>
     </message>
 </context>
@@ -92,84 +92,84 @@ These settings won&apos;t have any effect on it!</source>
     <message>
         <location filename="../generalsettings.ui" line="17"/>
         <source>Unattended Notifications</source>
-        <translation type="unfinished">Neizlasīti paziņojumi</translation>
+        <translation>Neizlasīti paziņojumi</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="25"/>
         <source>How many to save:</source>
-        <translation type="unfinished">Cik saglabāt:</translation>
+        <translation>Cik saglabāt:</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="39"/>
         <location filename="../generalsettings.ui" line="49"/>
         <source>Application name is on the top of notification.</source>
-        <translation type="unfinished">Lietotnes nosaukums atrodas paziņojuma augšgalā.</translation>
+        <translation>Lietotnes nosaukums atrodas paziņojuma augšgalā.</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="42"/>
         <source>Ignore these applications:</source>
-        <translation type="unfinished">Ignorēt lietotnes:</translation>
+        <translation>Ignorēt lietotnes:</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="52"/>
         <source>app1,app2,app3</source>
-        <translation type="unfinished">app1,app2,app3</translation>
+        <translation>app1,app2,app3</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="67"/>
         <source>Sizes</source>
-        <translation type="unfinished">Izmēri</translation>
+        <translation>Izmēri</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="75"/>
         <source>Width:</source>
-        <translation type="unfinished">Platums:</translation>
+        <translation>Platums:</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="82"/>
         <location filename="../generalsettings.ui" line="106"/>
         <source> px</source>
-        <translation type="unfinished"> px</translation>
+        <translation> px</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="99"/>
         <source>Spacing:</source>
-        <translation type="unfinished">Atstarpe:</translation>
+        <translation>Atstarpe:</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="118"/>
         <source>Duration</source>
-        <translation type="unfinished">Ilgums</translation>
+        <translation>Ilgums</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="130"/>
         <source>Some notifications set their own on-screen duration.</source>
-        <translation type="unfinished">Daži paziņōjumi uzstāda paši savu rādīšanas ilgumu.</translation>
+        <translation>Daži paziņōjumi uzstāda paši savu rādīšanas ilgumu.</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="142"/>
         <source>Default duration:</source>
-        <translation type="unfinished">Noklusējuma ilgums:</translation>
+        <translation>Noklusējuma ilgums:</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="149"/>
         <source> sec</source>
-        <translation type="unfinished"> sek</translation>
+        <translation> sek</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="177"/>
         <source>Screen</source>
-        <translation type="unfinished">Ekrāns</translation>
+        <translation>Ekrāns</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="183"/>
         <source>When unchecked the notification will always show on primary screen</source>
-        <translation type="unfinished">Ja nav atzīmēts, tad paziņojumi vienmēr tiks rādīti pamat/primārajā ekrānā</translation>
+        <translation>Ja nav atzīmēts, tad paziņojumi vienmēr tiks rādīti pamat/primārajā ekrānā</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="186"/>
         <source>Show notifications on screen with the mouse</source>
-        <translation type="unfinished">Rādīt paziņojumus uz ekrāna, kurā atrodas pele</translation>
+        <translation>Rādīt paziņojumus uz ekrāna, kurā atrodas pele</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="196"/>

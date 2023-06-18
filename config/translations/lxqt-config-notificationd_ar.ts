@@ -6,84 +6,84 @@
     <message>
         <location filename="../appearancesettings.ui" line="17"/>
         <source>Position on screen</source>
-        <translation type="unfinished">المكان على الشاشة</translation>
+        <translation>المكان على الشاشة</translation>
     </message>
     <message>
         <location filename="../appearancesettings.ui" line="176"/>
         <source>Preview</source>
-        <translation type="unfinished">معاينة</translation>
+        <translation>معاينة</translation>
     </message>
     <message>
         <location filename="../appearancesettings.cpp" line="63"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; notifications daemon is slow to respond.
 Keep trying to connect…</source>
-        <translation type="unfinished">&lt;b&gt;تحذير:&lt;/b&gt; الإشعارات الخفية بطيئة في الاستجابة.
+        <translation>&lt;b&gt;تحذير:&lt;/b&gt; الإشعارات الخفية بطيئة في الاستجابة.
 استمر في محاولة الاتصال…</translation>
     </message>
     <message>
         <location filename="../appearancesettings.cpp" line="72"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; No notifications daemon is running.
 A fallback will be used.</source>
-        <translation type="unfinished">&lt;b&gt;تحذير:&lt;/b&gt; لا عفريت إخطارات يعمل.
+        <translation>&lt;b&gt;تحذير:&lt;/b&gt; لا عفريت إخطارات يعمل.
 سأستخدم أحد الاحتياطيين.</translation>
     </message>
     <message>
         <location filename="../appearancesettings.cpp" line="75"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; A third-party notifications daemon (%1) is running.
 These settings won&apos;t have any effect on it!</source>
-        <translation type="unfinished">&lt;b&gt;تحذير:&lt;/b&gt; هناك عفريت من طرف ثالث (%1) يعمل.
+        <translation>&lt;b&gt;تحذير:&lt;/b&gt; هناك عفريت من طرف ثالث (%1) يعمل.
 لن تؤثّر هذه الإعدادات عليه!</translation>
     </message>
     <message>
         <location filename="../appearancesettings.cpp" line="137"/>
         <source>at top left</source>
-        <translation type="unfinished">في أعلى يمين الصفحة</translation>
+        <translation>في أعلى يمين الصفحة</translation>
     </message>
     <message>
         <location filename="../appearancesettings.cpp" line="139"/>
         <source>at top center</source>
-        <translation type="unfinished">في أعلى مركز</translation>
+        <translation>في أعلى مركز</translation>
     </message>
     <message>
         <location filename="../appearancesettings.cpp" line="141"/>
         <source>at top right</source>
-        <translation type="unfinished">في أعلى يسار الصفحة</translation>
+        <translation>في أعلى يسار الصفحة</translation>
     </message>
     <message>
         <location filename="../appearancesettings.cpp" line="143"/>
         <source>at center left</source>
-        <translation type="unfinished">في الوسط الأيسر</translation>
+        <translation>في الوسط الأيسر</translation>
     </message>
     <message>
         <location filename="../appearancesettings.cpp" line="145"/>
         <source>at center right</source>
-        <translation type="unfinished">في يمين الوسط</translation>
+        <translation>في يمين الوسط</translation>
     </message>
     <message>
         <location filename="../appearancesettings.cpp" line="147"/>
         <source>at bottom left</source>
-        <translation type="unfinished">في أسفل يمين الصفحة</translation>
+        <translation>في أسفل يمين الصفحة</translation>
     </message>
     <message>
         <location filename="../appearancesettings.cpp" line="149"/>
         <source>at bottom center</source>
-        <translation type="unfinished">في الأسفل الأوسط</translation>
+        <translation>في الأسفل الأوسط</translation>
     </message>
     <message>
         <location filename="../appearancesettings.cpp" line="151"/>
         <source>at bottom right</source>
-        <translation type="unfinished">في أسفل يسار الصفحة</translation>
+        <translation>في أسفل يسار الصفحة</translation>
     </message>
     <message>
         <location filename="../appearancesettings.cpp" line="153"/>
         <source>Notification demo </source>
-        <translation type="unfinished">نموذج لإخطار </translation>
+        <translation>نموذج لإخطار </translation>
     </message>
     <message>
         <location filename="../appearancesettings.cpp" line="154"/>
         <source>This is a test notification.
  All notifications will now appear here on LXQt.</source>
-        <translation type="unfinished">هذا إخطار تجريبي.
+        <translation>هذا إخطار تجريبي.
 ستظهر كل الإخطارات هنا في «لكسكيوت».</translation>
     </message>
 </context>
@@ -92,94 +92,94 @@ These settings won&apos;t have any effect on it!</source>
     <message>
         <location filename="../generalsettings.ui" line="17"/>
         <source>Unattended Notifications</source>
-        <translation type="unfinished">الإشعارات غير المراقبة</translation>
+        <translation>الإشعارات غير المراقبة</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="25"/>
         <source>How many to save:</source>
-        <translation type="unfinished">كم من واحد تريد أن يُحفظ:</translation>
+        <translation>كم من واحد تريد أن يُحفظ:</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="39"/>
         <location filename="../generalsettings.ui" line="49"/>
         <source>Application name is on the top of notification.</source>
-        <translation type="unfinished">يُعرض امس التطبيق أعلى الإخطار.</translation>
+        <translation>يُعرض امس التطبيق أعلى الإخطار.</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="42"/>
         <source>Ignore these applications:</source>
-        <translation type="unfinished">تجاهَل التطبيقات الآتية:</translation>
+        <translation>تجاهَل التطبيقات الآتية:</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="52"/>
         <source>app1,app2,app3</source>
-        <translation type="unfinished">تطبيق1,تطبيق2,تطبيق3</translation>
+        <translation>تطبيق1,تطبيق2,تطبيق3</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="67"/>
         <source>Sizes</source>
-        <translation type="unfinished">المقاسات</translation>
+        <translation>المقاسات</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="75"/>
         <source>Width:</source>
-        <translation type="unfinished">العرض:</translation>
+        <translation>العرض:</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="82"/>
         <location filename="../generalsettings.ui" line="106"/>
         <source> px</source>
-        <translation type="unfinished"> بكسل</translation>
+        <translation> بكسل</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="99"/>
         <source>Spacing:</source>
-        <translation type="unfinished">التباعد:</translation>
+        <translation>التباعد:</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="118"/>
         <source>Duration</source>
-        <translation type="unfinished">المدة</translation>
+        <translation>المدة</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="130"/>
         <source>Some notifications set their own on-screen duration.</source>
-        <translation type="unfinished">تضبط بعض الإخطارات مدة عرضها على الشاشة بنفسها.</translation>
+        <translation>تضبط بعض الإخطارات مدة عرضها على الشاشة بنفسها.</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="142"/>
         <source>Default duration:</source>
-        <translation type="unfinished">المدة المبدئية:</translation>
+        <translation>المدة المبدئية:</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="149"/>
         <source> sec</source>
-        <translation type="unfinished"> ثا</translation>
+        <translation> ثا</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="177"/>
         <source>Screen</source>
-        <translation type="unfinished">الشاشة</translation>
+        <translation>الشاشة</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="183"/>
         <source>When unchecked the notification will always show on primary screen</source>
-        <translation type="unfinished">عند إلغاء تحديد ، سيظهر الإشعار دائما على الشاشة الأساسية</translation>
+        <translation>عند إلغاء تحديد ، سيظهر الإشعار دائما على الشاشة الأساسية</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="186"/>
         <source>Show notifications on screen with the mouse</source>
-        <translation type="unfinished">إظهار الإشعارات على الشاشة باستخدام الماوس</translation>
+        <translation>إظهار الإشعارات على الشاشة باستخدام الماوس</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="196"/>
         <source>Do Not Disturb</source>
-        <translation type="unfinished">عدم الإزعاج</translation>
+        <translation>عدم الإزعاج</translation>
     </message>
     <message>
         <location filename="../generalsettings.ui" line="202"/>
         <source>Only save notifications</source>
-        <translation type="unfinished">حفظ الإشعارات فقط</translation>
+        <translation>حفظ الإشعارات فقط</translation>
     </message>
 </context>
 <context>
