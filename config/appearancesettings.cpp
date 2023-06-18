@@ -29,11 +29,11 @@
 
 #include <LXQt/Notification>
 
-#include "basicsettings.h"
+#include "appearancesettings.h"
 #include "mainwindow.h"
 
 
-BasicSettings::BasicSettings(LXQt::Settings* settings, QWidget *parent) :
+AppearanceSettings::AppearanceSettings(LXQt::Settings* settings, QWidget *parent) :
     QWidget(parent),
     mSettings(settings)
 {
@@ -41,16 +41,16 @@ BasicSettings::BasicSettings(LXQt::Settings* settings, QWidget *parent) :
 
     restoreSettings();
 
-    connect(topLeftRB,      &QRadioButton::clicked, this, &BasicSettings::updateNotification);
-    connect(topCenterRB,    &QRadioButton::clicked, this, &BasicSettings::updateNotification);
-    connect(topRightRB,     &QRadioButton::clicked, this, &BasicSettings::updateNotification);
-    connect(centerLeftRB,   &QRadioButton::clicked, this, &BasicSettings::updateNotification);
-    connect(centerRightRB,  &QRadioButton::clicked, this, &BasicSettings::updateNotification);
-    connect(bottomLeftRB,   &QRadioButton::clicked, this, &BasicSettings::updateNotification);
-    connect(bottomCenterRB, &QRadioButton::clicked, this, &BasicSettings::updateNotification);
-    connect(bottomRightRB,  &QRadioButton::clicked, this, &BasicSettings::updateNotification);
+    connect(topLeftRB,      &QRadioButton::clicked, this, &AppearanceSettings::updateNotification);
+    connect(topCenterRB,    &QRadioButton::clicked, this, &AppearanceSettings::updateNotification);
+    connect(topRightRB,     &QRadioButton::clicked, this, &AppearanceSettings::updateNotification);
+    connect(centerLeftRB,   &QRadioButton::clicked, this, &AppearanceSettings::updateNotification);
+    connect(centerRightRB,  &QRadioButton::clicked, this, &AppearanceSettings::updateNotification);
+    connect(bottomLeftRB,   &QRadioButton::clicked, this, &AppearanceSettings::updateNotification);
+    connect(bottomCenterRB, &QRadioButton::clicked, this, &AppearanceSettings::updateNotification);
+    connect(bottomRightRB,  &QRadioButton::clicked, this, &AppearanceSettings::updateNotification);
 
-    connect(previewButton, &QAbstractButton::clicked, this, &BasicSettings::previewNotification);
+    connect(previewButton, &QAbstractButton::clicked, this, &AppearanceSettings::previewNotification);
 
     LXQt::Notification *serverTest = new LXQt::Notification(QString(), this);
     serverTest->queryServerInfo();
@@ -82,9 +82,9 @@ BasicSettings::BasicSettings(LXQt::Settings* settings, QWidget *parent) :
         });
 }
 
-BasicSettings::~BasicSettings() = default;
+AppearanceSettings::~AppearanceSettings() = default;
 
-void BasicSettings::restoreSettings()
+void AppearanceSettings::restoreSettings()
 {
     QString placement = mSettings->value(QL1S("placement"),
                                          QL1S("bottom-right")).toString().toLower();
@@ -107,7 +107,7 @@ void BasicSettings::restoreSettings()
         bottomRightRB->setChecked(true);
 }
 
-void BasicSettings::updateNotification()
+void AppearanceSettings::updateNotification()
 {
    QString align;
     if (topLeftRB->isChecked())
@@ -130,7 +130,7 @@ void BasicSettings::updateNotification()
     mSettings->setValue(QL1S("placement"), align);
 }
 
-void BasicSettings::previewNotification()
+void AppearanceSettings::previewNotification()
 {
    QString str;
     if (topLeftRB->isChecked())

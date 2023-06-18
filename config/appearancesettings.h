@@ -25,20 +25,20 @@
  *
  * END_COMMON_COPYRIGHT_HEADER */
 
-#ifndef BASICSETTINGS_H
-#define BASICSETTINGS_H
+#ifndef APPEARANCESETTINGS_H
+#define APPEARANCESETTINGS_H
 
 #include <LXQt/Settings>
 #include <QWidget>
-#include "ui_basicsettings.h"
+#include "ui_appearancesettings.h"
 
 
-class BasicSettings : public QWidget, public Ui::BasicSettings
+class AppearanceSettings : public QWidget, public Ui::AppearanceSettings
 {
     Q_OBJECT
 public:
-    explicit BasicSettings(LXQt::Settings* settings, QWidget* parent = nullptr);
-    ~BasicSettings();
+    explicit AppearanceSettings(LXQt::Settings* settings, QWidget* parent = nullptr);
+    ~AppearanceSettings();
 
 public slots:
     void restoreSettings();
@@ -51,4 +51,4 @@ private:
     LXQt::Settings* mSettings;
 };
 
-#endif // BASICSETTINGS_H
+#endif // APPEARANCESETTINGS_H

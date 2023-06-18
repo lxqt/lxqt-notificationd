@@ -25,20 +25,20 @@
  *
  * END_COMMON_COPYRIGHT_HEADER */
 
-#ifndef ADVANCEDSETTINGS_H
-#define ADVANCEDSETTINGS_H
+#ifndef GENERALSETTINGS_H
+#define GENERALSETTINGS_H
 
 #include <LXQt/Settings>
 #include <QWidget>
-#include "ui_advancedsettings.h"
+#include "ui_generalsettings.h"
 
-class AdvancedSettings : public QWidget, public Ui::AdvancedSettings
+class GeneralSettings : public QWidget, public Ui::GeneralSettings
 {
     Q_OBJECT
 
 public:
-    explicit AdvancedSettings(LXQt::Settings* settings, QWidget* parent = nullptr);
-    ~AdvancedSettings();
+    explicit GeneralSettings(LXQt::Settings* settings, QWidget* parent = nullptr);
+    ~GeneralSettings();
 
 public slots:
     void restoreSettings();

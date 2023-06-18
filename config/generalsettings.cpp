@@ -27,29 +27,29 @@
 
 #include <QFileDialog>
 
-#include "advancedsettings.h"
+#include "generalsettings.h"
 #include "mainwindow.h"
 
 
-AdvancedSettings::AdvancedSettings(LXQt::Settings* settings, QWidget *parent):
+GeneralSettings::GeneralSettings(LXQt::Settings* settings, QWidget *parent):
     QWidget(parent),
     mSettings(settings)
 {
     setupUi(this);
     restoreSettings();
 
-    connect(serverDecidesBox, QOverload<int>::of(&QSpinBox::valueChanged), this, &AdvancedSettings::save);
-    connect(spacingBox, QOverload<int>::of(&QSpinBox::valueChanged), this, &AdvancedSettings::save);
-    connect(widthBox, QOverload<int>::of(&QSpinBox::valueChanged), this, &AdvancedSettings::save);
-    connect(unattendedBox, QOverload<int>::of(&QSpinBox::valueChanged), this, &AdvancedSettings::save);
-    connect(blackListEdit, &QLineEdit::editingFinished, this, &AdvancedSettings::save);
-    connect(doNotDisturbBtn, &QCheckBox::clicked, this, &AdvancedSettings::save);
-    connect(screenWithMouseBtn, &QCheckBox::clicked, this, &AdvancedSettings::save);
+    connect(serverDecidesBox, QOverload<int>::of(&QSpinBox::valueChanged), this, &GeneralSettings::save);
+    connect(spacingBox, QOverload<int>::of(&QSpinBox::valueChanged), this, &GeneralSettings::save);
+    connect(widthBox, QOverload<int>::of(&QSpinBox::valueChanged), this, &GeneralSettings::save);
+    connect(unattendedBox, QOverload<int>::of(&QSpinBox::valueChanged), this, &GeneralSettings::save);
+    connect(blackListEdit, &QLineEdit::editingFinished, this, &GeneralSettings::save);
+    connect(doNotDisturbBtn, &QCheckBox::clicked, this, &GeneralSettings::save);
+    connect(screenWithMouseBtn, &QCheckBox::clicked, this, &GeneralSettings::save);
 }
 
-AdvancedSettings::~AdvancedSettings() = default;
+GeneralSettings::~GeneralSettings() = default;
 
-void AdvancedSettings::restoreSettings()
+void GeneralSettings::restoreSettings()
 {
     int serverDecides = mSettings->value(QL1S("server_decides"), 10).toInt();
     if (serverDecides <= 0)
@@ -68,7 +68,7 @@ void AdvancedSettings::restoreSettings()
     screenWithMouseBtn->setChecked(mSettings->value(QL1S("screenWithMouse"), false).toBool());
 }
 
-void AdvancedSettings::save()
+void GeneralSettings::save()
 {
     mSettings->setValue(QL1S("server_decides"), serverDecidesBox->value());
     mSettings->setValue(QL1S("spacing"), spacingBox->value());

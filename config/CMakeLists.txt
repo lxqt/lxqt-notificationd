@@ -1,15 +1,15 @@
 project(lxqt-config-notificationd)
 
 set(NOTIFICATIONS_CONF_SRC
-    advancedsettings.cpp
-    basicsettings.cpp
+    generalsettings.cpp
+    appearancesettings.cpp
     mainwindow.cpp
     main.cpp
 )
 
 set(NOTIFICATIONS_CONF_UI
-    advancedsettings.ui
-    basicsettings.ui
+    generalsettings.ui
+    appearancesettings.ui
 )
 
 

@@ -33,20 +33,20 @@
 #include <LXQt/ConfigDialog>
 
 #include "mainwindow.h"
-#include "basicsettings.h"
-#include "advancedsettings.h"
+#include "generalsettings.h"
+#include "appearancesettings.h"
 
 
 MainWindow::MainWindow(QWidget *parent) :
     LXQt::ConfigDialog(tr("Desktop Notifications"), new LXQt::Settings(QSL("notifications")), parent)
 {
-    AdvancedSettings* menu = new AdvancedSettings(mSettings, this);
+    GeneralSettings* menu = new GeneralSettings(mSettings, this);
     addPage(menu, tr("General Settings"), QSL("preferences-desktop-notification-bell"));
-    connect(this, &MainWindow::reset, menu, &AdvancedSettings::restoreSettings);
+    connect(this, &MainWindow::reset, menu, &GeneralSettings::restoreSettings);
 
-    BasicSettings* basic = new BasicSettings(mSettings, this);
-    addPage(basic, tr("Position"), QSL("preferences-desktop-notification"));
-    connect(this, &MainWindow::reset, basic, &BasicSettings::restoreSettings);
+    AppearanceSettings* Appearance = new AppearanceSettings(mSettings, this);
+    addPage(Appearance, tr("Position"), QSL("preferences-desktop-notification"));
+    connect(this, &MainWindow::reset, Appearance, &AppearanceSettings::restoreSettings);
 }
 
 MainWindow::~MainWindow()
