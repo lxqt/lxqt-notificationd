@@ -41,6 +41,8 @@ BasicSettings::BasicSettings(LXQt::Settings* settings, QWidget *parent) :
 
     restoreSettings();
 
+    connect(spacingBox, QOverload<int>::of(&QSpinBox::valueChanged), this, &BasicSettings::save);
+    connect(widthBox, QOverload<int>::of(&QSpinBox::valueChanged), this, &BasicSettings::save);
     connect(topLeftRB,      &QRadioButton::clicked, this, &BasicSettings::updateNotification);
     connect(topCenterRB,    &QRadioButton::clicked, this, &BasicSettings::updateNotification);
     connect(topRightRB,     &QRadioButton::clicked, this, &BasicSettings::updateNotification);
@@ -86,6 +88,9 @@ BasicSettings::~BasicSettings() = default;
 
 void BasicSettings::restoreSettings()
 {
+    spacingBox->setValue(mSettings->value(QL1S("spacing"), 6).toInt());
+    widthBox->setValue(mSettings->value(QL1S("width"), 300).toInt());
+
     QString placement = mSettings->value(QL1S("placement"),
                                          QL1S("bottom-right")).toString().toLower();
 
@@ -154,3 +159,10 @@ void BasicSettings::previewNotification()
                                tr("This is a test notification.\n All notifications will now appear here on LXQt."),
                                QStringLiteral("lxqt"));
 }
+
+void BasicSettings::save()
+{
+    mSettings->setValue(QL1S("spacing"), spacingBox->value());
+    mSettings->setValue(QL1S("width"), widthBox->value());
+}
+
