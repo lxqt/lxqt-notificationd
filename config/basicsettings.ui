@@ -20,7 +20,7 @@
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_4">
         <item>
-         <widget class="QLabel" name="spacingLabel">
+         <widget class="QLabel" name="widthLabel">
           <property name="text">
            <string>Width:</string>
           </property>
@@ -44,7 +44,7 @@
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_3">
         <item>
-         <widget class="QLabel" name="widthLabel">
+         <widget class="QLabel" name="spacingLabel">
           <property name="text">
            <string>Spacing:</string>
           </property>
