@@ -38,8 +38,8 @@ AdvancedSettings::AdvancedSettings(LXQt::Settings* settings, QWidget *parent):
     setupUi(this);
     restoreSettings();
 
-    connect(serverDecidesBox, QOverload<int>::of(&QSpinBox::valueChanged), this, &AdvancedSettings::save);
-    connect(unattendedBox, QOverload<int>::of(&QSpinBox::valueChanged), this, &AdvancedSettings::save);
+    connect(serverDecidesBox, &QAbstractSpinBox::editingFinished, this, &AdvancedSettings::save);
+    connect(unattendedBox, &QAbstractSpinBox::editingFinished, this, &AdvancedSettings::save);
     connect(blackListEdit, &QLineEdit::editingFinished, this, &AdvancedSettings::save);
     connect(doNotDisturbBtn, &QCheckBox::clicked, this, &AdvancedSettings::save);
     connect(screenWithMouseBtn, &QCheckBox::clicked, this, &AdvancedSettings::save);

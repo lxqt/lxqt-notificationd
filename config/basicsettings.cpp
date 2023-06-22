@@ -41,8 +41,8 @@ BasicSettings::BasicSettings(LXQt::Settings* settings, QWidget *parent) :
 
     restoreSettings();
 
-    connect(spacingBox, QOverload<int>::of(&QSpinBox::valueChanged), this, &BasicSettings::save);
-    connect(widthBox, QOverload<int>::of(&QSpinBox::valueChanged), this, &BasicSettings::save);
+    connect(spacingBox, &QAbstractSpinBox::editingFinished, this, &BasicSettings::save);
+    connect(widthBox, &QAbstractSpinBox::editingFinished, this, &BasicSettings::save);
     connect(topLeftRB,      &QRadioButton::clicked, this, &BasicSettings::updateNotification);
     connect(topCenterRB,    &QRadioButton::clicked, this, &BasicSettings::updateNotification);
     connect(topRightRB,     &QRadioButton::clicked, this, &BasicSettings::updateNotification);
