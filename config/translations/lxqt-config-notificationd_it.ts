@@ -147,12 +147,12 @@ Queste impostazioni non avranno effetto per esso!</translation>
     <message>
         <location filename="../basicsettings.cpp" line="143"/>
         <source>at center left</source>
-        <translation>a destra al centro</translation>
+        <translation>a sinistra al centro</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="145"/>
         <source>at center right</source>
-        <translation>a sinistra al centro</translation>
+        <translation>a destra al centro</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="147"/>
