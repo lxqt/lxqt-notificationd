@@ -17,19 +17,19 @@
 <context>
     <name>Notifyd</name>
     <message>
-        <location filename="../notifyd.cpp" line="268"/>
+        <location filename="../notifyd.cpp" line="269"/>
         <source>Clear All</source>
         <translation>Очистити все</translation>
     </message>
     <message>
-        <location filename="../notifyd.cpp" line="276"/>
+        <location filename="../notifyd.cpp" line="277"/>
         <source>Options</source>
         <translation>Параметри</translation>
     </message>
     <message numerus="yes">
-        <location filename="../notifyd.cpp" line="283"/>
-        <location filename="../notifyd.cpp" line="340"/>
-        <location filename="../notifyd.cpp" line="360"/>
+        <location filename="../notifyd.cpp" line="284"/>
+        <location filename="../notifyd.cpp" line="341"/>
+        <location filename="../notifyd.cpp" line="361"/>
         <source>%n Unattended Notification(s)</source>
         <translation>
             <numerusform>%n не переглянуте сповіщення</numerusform>
