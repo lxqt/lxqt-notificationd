@@ -38,10 +38,8 @@ AdvancedSettings::AdvancedSettings(LXQt::Settings* settings, QWidget *parent):
     setupUi(this);
     restoreSettings();
 
-    connect(serverDecidesBox, QOverload<int>::of(&QSpinBox::valueChanged), this, &AdvancedSettings::save);
-    connect(spacingBox, QOverload<int>::of(&QSpinBox::valueChanged), this, &AdvancedSettings::save);
-    connect(widthBox, QOverload<int>::of(&QSpinBox::valueChanged), this, &AdvancedSettings::save);
-    connect(unattendedBox, QOverload<int>::of(&QSpinBox::valueChanged), this, &AdvancedSettings::save);
+    connect(serverDecidesBox, &QAbstractSpinBox::editingFinished, this, &AdvancedSettings::save);
+    connect(unattendedBox, &QAbstractSpinBox::editingFinished, this, &AdvancedSettings::save);
     connect(blackListEdit, &QLineEdit::editingFinished, this, &AdvancedSettings::save);
     connect(doNotDisturbBtn, &QCheckBox::clicked, this, &AdvancedSettings::save);
     connect(screenWithMouseBtn, &QCheckBox::clicked, this, &AdvancedSettings::save);
@@ -56,8 +54,6 @@ void AdvancedSettings::restoreSettings()
         serverDecides = 10;
     serverDecidesBox->setValue(serverDecides);
 
-    spacingBox->setValue(mSettings->value(QL1S("spacing"), 6).toInt());
-    widthBox->setValue(mSettings->value(QL1S("width"), 300).toInt());
     unattendedBox->setValue(mSettings->value(QL1S("unattendedMaxNum"), 10).toInt());
     blackListEdit->setText(mSettings->value(QL1S("blackList")).toStringList().join (QL1S(",")));
     doNotDisturbBtn->setChecked(mSettings->value(QL1S("doNotDisturb"), false).toBool());
@@ -71,8 +67,6 @@ void AdvancedSettings::restoreSettings()
 void AdvancedSettings::save()
 {
     mSettings->setValue(QL1S("server_decides"), serverDecidesBox->value());
-    mSettings->setValue(QL1S("spacing"), spacingBox->value());
-    mSettings->setValue(QL1S("width"), widthBox->value());
     mSettings->setValue(QL1S("unattendedMaxNum"), unattendedBox->value());
     mSettings->setValue(QL1S("doNotDisturb"), doNotDisturbBtn->isChecked());
 

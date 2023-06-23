@@ -11,8 +11,59 @@
    </rect>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
-   <item>
+   <item row="1" column="0" rowspan="2" colspan="2">
     <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string>Sizes</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout1">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <item>
+         <widget class="QLabel" name="widthLabel">
+          <property name="text">
+           <string>Width:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QSpinBox" name="widthBox">
+          <property name="suffix">
+           <string> px</string>
+          </property>
+          <property name="minimum">
+           <number>10</number>
+          </property>
+          <property name="maximum">
+           <number>2000</number>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QLabel" name="spacingLabel">
+          <property name="text">
+           <string>Spacing:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QSpinBox" name="spacingBox">
+          <property name="suffix">
+           <string> px</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox1">
      <property name="title">
       <string>Position on screen</string>
      </property>

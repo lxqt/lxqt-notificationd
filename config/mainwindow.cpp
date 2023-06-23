@@ -45,7 +45,7 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(this, &MainWindow::reset, menu, &AdvancedSettings::restoreSettings);
 
     BasicSettings* basic = new BasicSettings(mSettings, this);
-    addPage(basic, tr("Position"), QSL("preferences-desktop-notification"));
+    addPage(basic, tr("Appearance"), QSL("preferences-desktop-notification"));
     connect(this, &MainWindow::reset, basic, &BasicSettings::restoreSettings);
 }
 
