@@ -92,9 +92,15 @@ int main(int argc, char** argv)
 
     QDBusConnection connection = QDBusConnection::sessionBus();
     if (!connection.registerService(QSL("org.freedesktop.Notifications")))
+    {
         qDebug() << "registerService failed: another service with 'org.freedesktop.Notifications' runs already";
+        return 1;
+    }
     if (!connection.registerObject(QSL("/org/freedesktop/Notifications"), daemon.get()))
+    {
         qDebug() << "registerObject failed: another object with '/org/freedesktop/Notifications' runs already";
+        return 1;
+    }
 
     return a.exec();
 }
