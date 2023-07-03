@@ -31,6 +31,7 @@
 
 #include <LXQt/Application>
 #include <LXQt/Globals>
+#include <memory>
 
 #include "notificationsadaptor.h"
 #include "notifyd.h"
@@ -67,7 +68,7 @@
  */
 int main(int argc, char** argv)
 {
-    LXQt::Application a(argc, argv);
+    LXQt::Application a(argc, argv, true);
     a.setQuitOnLastWindowClosed(false);
 
     QCommandLineParser parser;
@@ -86,13 +87,13 @@ int main(int argc, char** argv)
                     "NotificationLayout {background: transparent;}")
                    );
 
-    Notifyd* daemon = new Notifyd();
-    new NotificationsAdaptor(daemon);
+    auto daemon = std::make_unique<Notifyd>();
+    new NotificationsAdaptor(daemon.get());
 
     QDBusConnection connection = QDBusConnection::sessionBus();
     if (!connection.registerService(QSL("org.freedesktop.Notifications")))
         qDebug() << "registerService failed: another service with 'org.freedesktop.Notifications' runs already";
-    if (!connection.registerObject(QSL("/org/freedesktop/Notifications"), daemon))
+    if (!connection.registerObject(QSL("/org/freedesktop/Notifications"), daemon.get()))
         qDebug() << "registerObject failed: another object with '/org/freedesktop/Notifications' runs already";
 
     return a.exec();
