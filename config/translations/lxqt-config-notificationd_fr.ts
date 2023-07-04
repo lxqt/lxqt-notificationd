@@ -112,7 +112,7 @@
         <location filename="../basicsettings.cpp" line="65"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; notifications daemon is slow to respond.
 Keep trying to connect…</source>
-        <translation>&lt;b&gt;Avertissement&#xa0;:&lt;/b&gt;Le démon de notifications est lent à répondre.
+        <translation>&lt;b&gt;Avertissement :&lt;/b&gt;Le démon de notifications est lent à répondre.
 Continuez d’essayer de vous connecter…</translation>
     </message>
     <message>
@@ -197,7 +197,7 @@ Toutes les notifications vont maintenant être affichées ici, sur LXQt.</transl
     <message>
         <location filename="../mainwindow.cpp" line="48"/>
         <source>Appearance</source>
-        <translation type="unfinished"></translation>
+        <translation>Apparence</translation>
     </message>
 </context>
 </TS>
