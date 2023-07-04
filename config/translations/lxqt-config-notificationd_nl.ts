@@ -197,7 +197,7 @@ Alle meldingen worden hier getoond op LXQt.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="48"/>
         <source>Appearance</source>
-        <translation type="unfinished"></translation>
+        <translation>Vormgeving</translation>
     </message>
 </context>
 </TS>

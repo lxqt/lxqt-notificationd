@@ -197,7 +197,7 @@ Sve obavijesti će se sada ovdje pojaviti na LXQt-u.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="48"/>
         <source>Appearance</source>
-        <translation type="unfinished"></translation>
+        <translation>Izgled</translation>
     </message>
 </context>
 </TS>

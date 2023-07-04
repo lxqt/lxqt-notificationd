@@ -197,7 +197,7 @@ Tutte le notifiche di LXQt appariranno qui.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="48"/>
         <source>Appearance</source>
-        <translation type="unfinished"></translation>
+        <translation>Aspetto</translation>
     </message>
 </context>
 </TS>

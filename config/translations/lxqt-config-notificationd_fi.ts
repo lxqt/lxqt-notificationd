@@ -197,7 +197,7 @@ kolmannen osapuolen ilmoituspalvelimiin (%1)!</translation>
     <message>
         <location filename="../mainwindow.cpp" line="48"/>
         <source>Appearance</source>
-        <translation type="unfinished"></translation>
+        <translation>Ulkoasu</translation>
     </message>
 </context>
 </TS>

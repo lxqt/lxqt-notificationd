@@ -197,7 +197,7 @@ These settings won&apos;t have any effect on it!</source>
     <message>
         <location filename="../mainwindow.cpp" line="48"/>
         <source>Appearance</source>
-        <translation type="unfinished"></translation>
+        <translation>مَظهر</translation>
     </message>
 </context>
 </TS>
