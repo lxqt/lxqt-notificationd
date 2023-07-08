@@ -197,7 +197,7 @@ Všechna oznámení, procházející přes LXQt, se nyní budou objevovat zde.</
     <message>
         <location filename="../mainwindow.cpp" line="48"/>
         <source>Appearance</source>
-        <translation type="unfinished"></translation>
+        <translation>Vzhled</translation>
     </message>
 </context>
 </TS>
