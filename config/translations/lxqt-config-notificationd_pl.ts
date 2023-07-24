@@ -197,7 +197,7 @@ Wszystkie powiadomienia LXQt będą teraz pojawiać się tutaj.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="48"/>
         <source>Appearance</source>
-        <translation type="unfinished"></translation>
+        <translation>Wygląd</translation>
     </message>
 </context>
 </TS>
