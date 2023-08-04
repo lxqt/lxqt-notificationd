@@ -198,7 +198,7 @@ Bundan sonra LXQT masaüstünüzde tüm bildirimler burada gösterilecek.</trans
     <message>
         <location filename="../mainwindow.cpp" line="48"/>
         <source>Appearance</source>
-        <translation type="unfinished"></translation>
+        <translation>Görünüm</translation>
     </message>
 </context>
 </TS>
