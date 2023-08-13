@@ -91,7 +91,7 @@
         <location filename="../basicsettings.ui" line="32"/>
         <location filename="../basicsettings.ui" line="56"/>
         <source> px</source>
-        <translation type="unfinished"></translation>
+        <translation> px</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="49"/>
@@ -197,7 +197,7 @@ These settings won&apos;t have any effect on it!</source>
     <message>
         <location filename="../mainwindow.cpp" line="48"/>
         <source>Appearance</source>
-        <translation type="unfinished"></translation>
+        <translation>外观</translation>
     </message>
 </context>
 </TS>
