@@ -1,3 +1,11 @@
+lxqt-notificationd-1.4.0 / 2023-11-05
+======================================
+ * Moved the size and margin settings to the Appearance page of config dialog.
+ * Ported a deprecated KWindowSystem method.
+ * Port away from deprecated date/time format.
+ * Ensure cleaning of resources.
+ * Exit upon unsuccessful initialization.
+
 lxqt-notificationd-1.3.0 / 2023-04-15
 ======================================
  * Updated translations and bumped the version.
