@@ -123,10 +123,10 @@ void NotificationLayout::addNotification(uint id, const QString &application,
     bool showNotification(!m_doNotDisturb
                           // always show our test notifications
                           || application == QL1S("lxqt-config-notificationd"));
-    showNotification = showNotification && !filter(application.toStdString(), m_application_pcre_filter);
-    showNotification = showNotification && !filter(body.toStdString(), m_body_pcre_filter);
-    showNotification = showNotification && !filter(summary.toStdString(), m_summary_pcre_filter);
-    std::cout << std::boolalpha << "showNotification: " << showNotification << std::endl;
+    showNotification = showNotification && !applicationPCRECaptured;
+    showNotification = showNotification && !bodyPCRECaptured;
+    showNotification = showNotification && !summaryPCRECaptured;
+    qInfo() << "  showNotification: " << QString::fromStdString( (showNotification ? "true" : "false"));
     if (m_notifications.contains(id))
     {
         // TODO/FIXME: it can be deleted by timer in this block. Locking?
