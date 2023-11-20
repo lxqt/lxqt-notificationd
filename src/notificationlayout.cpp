@@ -34,6 +34,11 @@
 #include <QSettings>
 #include <QStandardPaths>
 
+#include <regex>
+#include <sstream>
+#include <iostream>
+
+
 NotificationLayout::NotificationLayout(QWidget *parent)
     : QWidget(parent),
       m_unattendedMaxNum(0),
@@ -71,16 +76,57 @@ void NotificationLayout::setSizes(int space, int width)
     }
 }
 
+bool NotificationLayout::filter(const std::string& input, const std::string& pcre) {
+    if (pcre.empty()) {
+        return false;
+    }
+    try{
+        std::regex pattern(pcre);
+        return std::regex_search(input, pattern);
+    } catch (const std::regex_error& e) {
+        std::cerr << "ERROR: Invalid pcre: " << pcre << std::endl;
+        std::cerr << "  " << e.what() << std::endl;
+        std::cerr << "  Code: " << e.code() << std::endl;
+    }
+    return false;
+}
+
 void NotificationLayout::addNotification(uint id, const QString &application,
                                         const QString &summary, const QString &body,
                                         const QString &icon, int timeout,
                                         const QStringList& actions, const QVariantMap& hints,
                                         bool noSave)
 {
+
+    //std::cout << summary.toStdString() << std::endl;
+
+//    qDebug() << "NotificationLayout::addNotification" << id << application << summary << body << icon << timeout;
+    //bool showNotification = !m_doNotDisturb && !filter;
+    //std::cout << std::boolalpha << "m_doNotDisturb: " << m_doNotDisturb << std::endl;
+    bool applicationPCRECaptured = filter(application.toStdString(), m_application_pcre_filter);
+    bool bodyPCRECaptured = filter(summary.toStdString(), m_body_pcre_filter);
+    bool summaryPCRECaptured = filter(summary.toStdString(), m_summary_pcre_filter);
+    qInfo() << "New notification: ";
+    qInfo() << "  application: " << application;
+    qInfo() << "  application PCRE: " << QString::fromStdString(m_application_pcre_filter);
+    qInfo() << "  application PCRE captured: " << QString::fromStdString( (applicationPCRECaptured ? "true" : "false"));
+    qInfo() << "  body: " << body;
+    qInfo() << "  body PCRE: " << QString::fromStdString(m_body_pcre_filter);
+    qInfo() << "  body PCRE captured: " << QString::fromStdString( (bodyPCRECaptured ? "true" : "false"));
+    qInfo() << "  summary: " << summary;
+    qInfo() << "  summary PCRE: " << QString::fromStdString(m_summary_pcre_filter);
+    qInfo() << "  summary PCRE captured: " << QString::fromStdString( (summaryPCRECaptured ? "true" : "false"));
+
+    //bool filter = summary.toStdString() == "shit";
+
 //    qDebug() << "NotificationLayout::addNotification" << id << application << summary << body << icon << timeout;
     bool showNotification(!m_doNotDisturb
                           // always show our test notifications
                           || application == QL1S("lxqt-config-notificationd"));
+    showNotification = showNotification && !filter(application.toStdString(), m_application_pcre_filter);
+    showNotification = showNotification && !filter(body.toStdString(), m_body_pcre_filter);
+    showNotification = showNotification && !filter(summary.toStdString(), m_summary_pcre_filter);
+    std::cout << std::boolalpha << "showNotification: " << showNotification << std::endl;
     if (m_notifications.contains(id))
     {
         // TODO/FIXME: it can be deleted by timer in this block. Locking?

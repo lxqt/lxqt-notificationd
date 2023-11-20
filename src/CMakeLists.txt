@@ -31,6 +31,7 @@ lxqt_translate_ts(NOTIFICATIONS_QM_FILES
 lxqt_app_translation_loader(QM_LOADER ${PROJECT_NAME})
 #************************************************
 
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fexceptions")
 add_executable(lxqt-notificationd
     ${NOTIFICATIONS_SRC}
     ${NOTIFICATIONS_QM_FILES}

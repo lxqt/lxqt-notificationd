@@ -54,6 +54,50 @@ menu - Preferences - LXQt Settings - Desktop Notifications and is provided by th
 [Configuration Center](https://github.com/lxqt/lxqt-config#configuration-center)
 of [lxqt-config](https://github.com/lxqt/lxqt-config) as well.
 
+### Filtering
+It is possible to filter/suppress notifications with a [PCRE](https://www.pcre.org) by setting the
+`application_pcre_filter`, `body_pcre_filter`, or `summary_pcre_filter` in the
+`lxqt/notifications.conf`. These variables can be set with any valid PCRE with 
+each section being checked against its respective PCRE filter. If any of the
+PCREs are captured in the application, body, or summary then the message will 
+not be shown. The following example `lxqt/notifications.conf` any notification with the
+summary containing the words "hello", "goodbye", or "nope" will not be shown:
+```text
+[General]
+...
+application_pcre_filter=
+body_pcre_filter=
+summary_pcre_filter=(?:hello|goodbye|nope)
+...
+```
+https://regex101.com/r/nhtRtx/1
+
+#### Filtering Examples
+Filter/block all notifications from the applications: `noisy_app1`,
+`noisy_app2`, and `noisy_app3`.
+Add the following to lxqt/notification.conf:
+```text
+[General]
+...
+applicaiton_pcre_filter=(?:noisy_app1|noisy_app2|noisy_app3)
+body_pcre_filter=
+summary_pcre_filter=
+...
+```
+
+Filter/block all notifications containing the strings: `This is a test` and
+`This is another test`
+```text
+[General]
+...
+applicaiton_pcre_filter=
+body_pcre_filter=
+summary_pcre_filter=^(?=.*(?:This is a test|This is another test)).*$
+...
+```
+https://regex101.com/r/thW0qo/1
+
+
 ## Translations
 
 Translations can be done in [LXQt-Weblate](https://translate.lxqt-project.org/projects/lxqt-configuration/lxqt-notificationd)
