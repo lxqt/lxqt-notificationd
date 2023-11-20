@@ -1,0 +1,18 @@
+FROM debian:bookworm 
+
+RUN apt-get update && \
+    apt-get install -y cmake g++ && \
+    apt-get install -y --no-install-recommends qtbase5-dev qttools5-dev libkf5windowsystem-dev liblxqt1-dev libqt5x11extras5-dev && \
+    rm -rf /var/lib/apt/lists/*
+
+RUN mkdir /tmp/lxqt-notificationd
+WORKDIR /tmp/lxqt-notificationd
+
+RUN mkdir -p /var/run/dbus
+
+
+COPY . .
+RUN mkdir build && \
+    cd build && \
+    cmake .. -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_INSTALL_LIBDIR=/usr && \
+    make
