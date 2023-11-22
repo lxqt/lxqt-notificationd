@@ -29,6 +29,7 @@
 #define NotificationLayout_H
 
 #include "notification.h"
+#include <QRegularExpression>
 
 
 class NotificationLayout : public QWidget
@@ -53,17 +54,19 @@ public:
     void setDoNotDisturb(bool value) {
         m_doNotDisturb = value;
     }
- 
-    void setApplicationPCREFilter(const std::string& pcre) {
-        m_application_pcre_filter = pcre;
+
+    void setPCREFilter(QRegularExpression& re, const QString& pattern);
+
+    void setApplicationPCREFilter(const QString& pcre) {
+        setPCREFilter(m_application_pcre_filter, pcre);
     }
 
-    void setBodyPCREFilter(const std::string& pcre) {
-        m_body_pcre_filter = pcre;
+    void setBodyPCREFilter(const QString& pcre) {
+        setPCREFilter(m_body_pcre_filter, pcre);
     }
 
-    void setSummaryPCREFilter(const std::string& pcre) {
-        m_summary_pcre_filter = pcre;
+    void setSummaryPCREFilter(const QString& pcre) {
+        setPCREFilter(m_summary_pcre_filter, pcre);
     }
 
     void setBlackList(const QStringList &l) {
@@ -119,9 +122,9 @@ private:
     QVBoxLayout *m_layout;
     int m_unattendedMaxNum;
     bool m_doNotDisturb;
-    std::string m_application_pcre_filter;
-    std::string m_body_pcre_filter;
-    std::string m_summary_pcre_filter;
+    QRegularExpression m_application_pcre_filter;
+    QRegularExpression m_body_pcre_filter;
+    QRegularExpression m_summary_pcre_filter;
     QStringList m_blackList;
     QString m_cacheFile;
     QString m_cacheDateFormat;
@@ -132,7 +135,7 @@ private:
      */
     void checkHeight();
 
-    bool filter(const std::string& input, const std::string& pcre);
+    bool filter(const QString& input, const QRegularExpression& re);
 
 private slots:
     /*! \c Notification's timer timeouted, so closing the notifiaction

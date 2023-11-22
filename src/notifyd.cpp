@@ -155,10 +155,6 @@ void Notifyd::reloadSettings()
     m_serverTimeout = m_settings->value(QSL("server_decides"), 10).toInt();
     bool old_doNotDisturb = m_doNotDisturb;
     m_doNotDisturb = m_settings->value(QL1S("doNotDisturb"), false).toBool();
-    std::string m_application_pcre_filter = m_settings->value(QL1S("application_pcre_filter")).toString().toStdString();
-    std::string m_body_pcre_filter = m_settings->value(QL1S("body_pcre_filter")).toString().toStdString();
-    std::string m_summary_pcre_filter = m_settings->value(QL1S("summary_pcre_filter")).toString().toStdString();
-
     int maxNum = m_settings->value(QSL("unattendedMaxNum"), 10).toInt();
     if (m_doNotDisturb)
         maxNum = qMax(maxNum, 50);
@@ -170,9 +166,9 @@ void Notifyd::reloadSettings()
             m_settings->value(QSL("screenWithMouse"),false).toBool(),
             m_doNotDisturb ? QStringList() : m_settings->value(QSL("blackList")).toStringList());
     m_area->layout()->setDoNotDisturb(m_doNotDisturb);
-    m_area->layout()->setApplicationPCREFilter(m_application_pcre_filter);
-    m_area->layout()->setBodyPCREFilter(m_body_pcre_filter);
-    m_area->layout()->setSummaryPCREFilter(m_summary_pcre_filter);
+    m_area->layout()->setApplicationPCREFilter(m_settings->value(QL1S("application_pcre_filter")).toString());
+    m_area->layout()->setBodyPCREFilter(m_settings->value(QL1S("body_pcre_filter")).toString());
+    m_area->layout()->setSummaryPCREFilter(m_settings->value(QL1S("summary_pcre_filter")).toString());
 
     if (m_trayIcon.isNull())
     {
