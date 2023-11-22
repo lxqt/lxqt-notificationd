@@ -92,11 +92,6 @@ void NotificationLayout::addNotification(uint id, const QString &application,
                                         bool noSave)
 {
 
-    //std::cout << summary.toStdString() << std::endl;
-
-//    qDebug() << "NotificationLayout::addNotification" << id << application << summary << body << icon << timeout;
-    //bool showNotification = !m_doNotDisturb && !filter;
-    //std::cout << std::boolalpha << "m_doNotDisturb: " << m_doNotDisturb << std::endl;
     bool applicationPCRECaptured = filter(application, m_application_pcre_filter);
     bool bodyPCRECaptured = filter(summary, m_body_pcre_filter);
     bool summaryPCRECaptured = filter(summary, m_summary_pcre_filter);
@@ -111,9 +106,6 @@ void NotificationLayout::addNotification(uint id, const QString &application,
     qInfo() << "  summary PCRE: " << m_summary_pcre_filter;
     qInfo() << "  summary PCRE captured: " << QString::fromStdString( (summaryPCRECaptured ? "true" : "false"));
 
-    //bool filter = summary.toStdString() == "shit";
-
-//    qDebug() << "NotificationLayout::addNotification" << id << application << summary << body << icon << timeout;
     bool showNotification(!m_doNotDisturb
                           // always show our test notifications
                           || application == QL1S("lxqt-config-notificationd"));
