@@ -31,8 +31,8 @@
 #include <LXQt/Globals>
 #include <LXQt/Settings>
 #include "notificationarea.h"
-#include <LayerShellQt/shell.h>
-#include <LayerShellQt/window.h>
+#include <LayerShellQt/Shell>
+#include <LayerShellQt/Window>
 
 NotificationArea::NotificationArea(QWidget *parent)
     : QScrollArea(parent),

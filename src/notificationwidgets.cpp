@@ -89,7 +89,7 @@ NotificationActionsButtonsWidget::NotificationActionsButtonsWidget(const QString
 
     QButtonGroup *group = new QButtonGroup(this);
 
-    for (const auto &action : qAsConst(m_actions))
+    for (const auto &action : std::as_const(m_actions))
     {
         auto &id    = action.first;
         auto &label = action.second;
@@ -133,7 +133,7 @@ NotificationActionsComboWidget::NotificationActionsComboWidget(const QStringList
     m_comboBox->setFocusPolicy(Qt::NoFocus);
     int currentIndex = -1;
 
-    for (const auto &action : qAsConst(m_actions))
+    for (const auto &action : std::as_const(m_actions))
     {
         auto &id    = action.first;
         auto &label = action.second;

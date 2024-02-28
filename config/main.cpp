@@ -38,7 +38,6 @@
 int main(int argc, char** argv)
 {
     LXQt::SingleApplication a(argc, argv);
-    a.setAttribute(Qt::AA_UseHighDpiPixmaps, true);
 
     QCommandLineParser parser;
     parser.setApplicationDescription(QStringLiteral("LXQt Config Notificationd"));

@@ -251,7 +251,7 @@ void Notifyd::createTrayIcon()
     QLocale l;
     QAction *action = nullptr;
     // add items for notification, starting from the oldest one and from bottom to top
-    for (const QString &date : qAsConst(dates))
+    for (const QString &date : std::as_const(dates))
     {
         list.beginGroup(date);
         // "DATE_AND_TIME - APP: SUMMARY"

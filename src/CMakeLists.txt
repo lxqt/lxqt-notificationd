@@ -11,7 +11,7 @@ set(NOTIFICATIONS_UI
     notification.ui
 )
 
-qt5_add_dbus_adaptor(NOTIFICATIONS_DBUS_SRC
+Qt6_add_dbus_adaptor(NOTIFICATIONS_DBUS_SRC
     org.freedesktop.Notifications.xml
     notifyd.h Notifyd
 )
@@ -20,15 +20,7 @@ set_property(SOURCE ${NOTIFICATIONS_DBUS_SRC} PROPERTY SKIP_AUTOGEN ON)
 list(APPEND NOTIFICATIONS_SRC "${NOTIFICATIONS_DBUS_SRC}")
 
 # Translations **********************************
-lxqt_translate_ts(NOTIFICATIONS_QM_FILES
-    UPDATE_TRANSLATIONS ${UPDATE_TRANSLATIONS}
-    SOURCES
-    ${NOTIFICATIONS_SRC}
-    ${NOTIFICATIONS_UI}
-    INSTALL_DIR "${LXQT_TRANSLATIONS_DIR}/${PROJECT_NAME}"
-)
 
-lxqt_app_translation_loader(QM_LOADER ${PROJECT_NAME})
 #************************************************
 
 add_executable(lxqt-notificationd
@@ -38,11 +30,10 @@ add_executable(lxqt-notificationd
 )
 
 target_link_libraries(lxqt-notificationd
-    Qt5::Widgets
-    Qt5::DBus
+    Qt6::Widgets
+    Qt6::DBus
     lxqt
-    KF5::WindowSystem
-    LayerShellQtInterface
+    KF6::WindowSystem
 )
 
 install(TARGETS
