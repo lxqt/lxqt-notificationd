@@ -19,12 +19,14 @@ option(LXQT_NOTIFICATION_BUILD_TESTS "Build LXQt Notification tests" OFF)
 set(KF6_MINIMUM_VERSION "6.0.0")
 set(LXQT_MINIMUM_VERSION "2.0.0")
 set(QT_MINIMUM_VERSION "6.6.0")
+set(SHELLQT_MINIMUM_VERSION "6.0.0")
 
 find_package(Qt6DBus ${QT_MINIMUM_VERSION} REQUIRED)
 find_package(Qt6LinguistTools ${QT_MINIMUM_VERSION} REQUIRED)
 find_package(Qt6Widgets ${QT_MINIMUM_VERSION} REQUIRED)
 find_package(KF6WindowSystem ${KF6_MINIMUM_VERSION} REQUIRED)
 find_package(lxqt ${LXQT_MINIMUM_VERSION} REQUIRED)
+find_package(LayerShellQt ${SHELLQT_MINIMUM_VERSION} REQUIRED)
 message(STATUS "Building with Qt${Qt6Core_VERSION}")
 
 # Patch Version

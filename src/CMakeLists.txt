@@ -20,7 +20,15 @@ set_property(SOURCE ${NOTIFICATIONS_DBUS_SRC} PROPERTY SKIP_AUTOGEN ON)
 list(APPEND NOTIFICATIONS_SRC "${NOTIFICATIONS_DBUS_SRC}")
 
 # Translations **********************************
+lxqt_translate_ts(NOTIFICATIONS_QM_FILES
+    UPDATE_TRANSLATIONS ${UPDATE_TRANSLATIONS}
+    SOURCES
+    ${NOTIFICATIONS_SRC}
+    ${NOTIFICATIONS_UI}
+    INSTALL_DIR "${LXQT_TRANSLATIONS_DIR}/${PROJECT_NAME}"
+)
 
+lxqt_app_translation_loader(QM_LOADER ${PROJECT_NAME})
 #************************************************
 
 add_executable(lxqt-notificationd
@@ -34,6 +42,7 @@ target_link_libraries(lxqt-notificationd
     Qt6::DBus
     lxqt
     KF6::WindowSystem
+    LayerShellQtInterface
 )
 
 install(TARGETS
