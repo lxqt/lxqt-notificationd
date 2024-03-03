@@ -31,7 +31,7 @@
     <message>
         <location filename="../advancedsettings.ui" line="132"/>
         <source>When unchecked the notification will always show on primary screen</source>
-        <translation type="unfinished"></translation>
+        <translation>ਜਦੋਂ ਚੋਣ ਨਾ ਕੀਤੀ ਤਾਂ ਨੋਟੀਫਿਕੇਸ਼ਨ ਨੂੰ ਮੁ਼ੱਢਲੀ ਸਕਰੀਨ ਉੱਤੇ ਹਮੇਸ਼ਾਂ ਵੇਖਾਇਆ ਜਾਵੇਗਾ</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="135"/>
@@ -51,7 +51,7 @@
     <message>
         <location filename="../advancedsettings.ui" line="17"/>
         <source>Unattended Notifications</source>
-        <translation type="unfinished"></translation>
+        <translation>ਬੇਧਿਆਨ ਦਿੱਤੇ ਨੋਟੀਫਿਕੇਸ਼ਨ</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="25"/>
