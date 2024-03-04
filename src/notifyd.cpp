@@ -232,14 +232,10 @@ void Notifyd::createTrayIcon()
                 icn = QIcon::fromTheme(QSL("preferences-desktop-notification"));
         }
         m_trayIcon = new QSystemTrayIcon(icn, this);
-         // show the menu also on left clicking, but not under wayland
-       connect(m_trayIcon, &QSystemTrayIcon::activated, this, [this] (QSystemTrayIcon::ActivationReason r) {
-       bool underWayland = QGuiApplication::platformName() == QStringLiteral("wayland");
-       if (!underWayland)
-            {
+        // show the menu also on left clicking
+        connect(m_trayIcon, &QSystemTrayIcon::activated, this, [this] (QSystemTrayIcon::ActivationReason r) {
             if (r == QSystemTrayIcon::Trigger && !m_trayMenu.isNull())
                 m_trayMenu->exec(QCursor::pos());
-            }
         });
     }
 

@@ -59,7 +59,13 @@ NotificationArea::NotificationArea(QWidget *parent)
     setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
     setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
 
-    connect(m_layout, &NotificationLayout::allNotificationsClosed, this, &NotificationArea::close);
+    connect(m_layout, &NotificationLayout::allNotificationsClosed, this, [this] {
+        if (QGuiApplication::platformName() == QStringLiteral("wayland"))
+            hide(); // if it is closed, the shell properties will not be effective the next time
+        else
+            close();
+    });
+
     connect(m_layout, &NotificationLayout::notificationAvailable, this, &NotificationArea::show);
     connect(m_layout, &NotificationLayout::heightChanged, this, &NotificationArea::setHeight);
 
