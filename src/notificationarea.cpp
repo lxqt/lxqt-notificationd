@@ -65,8 +65,10 @@ NotificationArea::NotificationArea(QWidget *parent)
         else
             close();
     });
-
-    connect(m_layout, &NotificationLayout::notificationAvailable, this, &NotificationArea::show);
+    connect(m_layout, &NotificationLayout::notificationAvailable, this, [this] {
+        setLayerShell();
+        show();
+    });
     connect(m_layout, &NotificationLayout::heightChanged, this, &NotificationArea::setHeight);
 
     connect(qApp, &QGuiApplication::screenAdded, this, [this] (QScreen* newScreen) {
@@ -124,38 +126,46 @@ void NotificationArea::setHeight(int contentHeight)
     if (notif_rect.height() > contentHeight)
         notif_rect.setHeight(contentHeight);
 
-    // no move needed for "top-left"
-    if (QL1S("top-center") == m_placement)
+    if (QGuiApplication::platformName() == QStringLiteral("wayland"))
     {
-        notif_rect.moveCenter(workArea.center());
-        notif_rect.moveTop(workArea.top());
-    } else if (QL1S("top-right") == m_placement)
+        resize(notif_rect.size());
+    }
+    else
     {
-        notif_rect.moveRight(workArea.right());
-    } else if (QL1S("center-left") == m_placement)
-    {
-        notif_rect.moveCenter(workArea.center());
-        notif_rect.moveLeft(workArea.left());
-    } else if (QL1S("center-center") == m_placement)
-    {
-        notif_rect.moveCenter(workArea.center());
-    } else if (QL1S("center-right") == m_placement)
-    {
-        notif_rect.moveCenter(workArea.center());
-        notif_rect.moveRight(workArea.right());
-    } else if (QL1S("bottom-left") == m_placement)
-    {
-        notif_rect.moveBottom(workArea.bottom());
-    } else if (QL1S("bottom-center") == m_placement)
-    {
-        notif_rect.moveCenter(workArea.center());
-        notif_rect.moveBottom(workArea.bottom());
-    } else if (QL1S("bottom-right") == m_placement)
-    {
-        notif_rect.moveBottomRight(workArea.bottomRight());
+        // no move needed for "top-left"
+        if (QL1S("top-center") == m_placement)
+        {
+            notif_rect.moveCenter(workArea.center());
+            notif_rect.moveTop(workArea.top());
+        } else if (QL1S("top-right") == m_placement)
+        {
+            notif_rect.moveRight(workArea.right());
+        } else if (QL1S("center-left") == m_placement)
+        {
+            notif_rect.moveCenter(workArea.center());
+            notif_rect.moveLeft(workArea.left());
+        } else if (QL1S("center-center") == m_placement)
+        {
+            notif_rect.moveCenter(workArea.center());
+        } else if (QL1S("center-right") == m_placement)
+        {
+            notif_rect.moveCenter(workArea.center());
+            notif_rect.moveRight(workArea.right());
+        } else if (QL1S("bottom-left") == m_placement)
+        {
+            notif_rect.moveBottom(workArea.bottom());
+        } else if (QL1S("bottom-center") == m_placement)
+        {
+            notif_rect.moveCenter(workArea.center());
+            notif_rect.moveBottom(workArea.bottom());
+        } else if (QL1S("bottom-right") == m_placement)
+        {
+            notif_rect.moveBottomRight(workArea.bottomRight());
+        }
+
+        setGeometry(notif_rect);
     }
 
-    setGeometry(notif_rect);
     // always show the latest notification
     ensureVisible(0, contentHeight, 0, 0);
 }
@@ -175,60 +185,55 @@ void NotificationArea::setSettings(const QString &placement, int width, int spac
 
     m_layout->setUnattendedMaxNum(unattendedMaxNum);
     m_layout->setBlackList(blackList);
+}
 
-        // layer-shell code
-    bool underWayland = QGuiApplication::platformName() == QStringLiteral("wayland");
-    QMargins margins(m_spacing, m_spacing, m_spacing, m_spacing);
-    if (underWayland)
-       LayerShellQt::Shell::useLayerShell();
-    if (underWayland)
+void NotificationArea::setLayerShell()
+{
+    if (!isVisible() && QGuiApplication::platformName() == QStringLiteral("wayland"))
     {
         winId();
-        if(QWindow* win = windowHandle())
+        if (QWindow* win = windowHandle())
         {
-            if(LayerShellQt::Window* layershell = LayerShellQt::Window::get(win))
+            if (LayerShellQt::Window* layershell = LayerShellQt::Window::get(win))
             {
                 layershell->setLayer(LayerShellQt::Window::Layer::LayerOverlay);
                 layershell->setKeyboardInteractivity(LayerShellQt::Window::KeyboardInteractivityNone);
-                layershell->setMargins(margins);
-               // layershell->setScope(scope);
-                if (QL1S("top-left") == m_placement)
-                {
-                    LayerShellQt::Window::Anchors anchors = {LayerShellQt::Window::AnchorTop|LayerShellQt::Window::AnchorLeft};
-                    layershell->setAnchors(anchors);
-                }
+                layershell->setMargins(QMargins(m_spacing, m_spacing, m_spacing, m_spacing));
+                LayerShellQt::Window::Anchors anchors;
                 if (QL1S("top-center") == m_placement)
                 {
-                    LayerShellQt::Window::Anchors anchors = {LayerShellQt::Window::AnchorTop};
-                    layershell->setAnchors(anchors);
-                } else if (QL1S("top-right") == m_placement)
-                {
-                    LayerShellQt::Window::Anchors anchors = {LayerShellQt::Window::AnchorTop|                LayerShellQt::Window::AnchorRight};
-                    layershell->setAnchors(anchors);
-                } else if (QL1S("center-left") == m_placement)
-                {
-                    LayerShellQt::Window::Anchors anchors = {LayerShellQt::Window::AnchorLeft};
-                    layershell->setAnchors(anchors);
-                } else if (QL1S("center-right") == m_placement)
-                {
-                    LayerShellQt::Window::Anchors anchors = {LayerShellQt::Window::AnchorRight};
-                    layershell->setAnchors(anchors);
-                } else if (QL1S("bottom-left") == m_placement)
-                {
-                    LayerShellQt::Window::Anchors anchors = {LayerShellQt::Window::AnchorLeft|                LayerShellQt::Window::AnchorBottom};
-                    layershell->setAnchors(anchors);
-                } else if (QL1S("bottom-center") == m_placement)
-                {
-                    LayerShellQt::Window::Anchors anchors = {LayerShellQt::Window::AnchorBottom};
-                    layershell->setAnchors(anchors);
-                } else if (QL1S("bottom-right") == m_placement)
-                {
-                    LayerShellQt::Window::Anchors anchors = {LayerShellQt::Window::AnchorBottom|                LayerShellQt::Window::AnchorRight};
-                    layershell->setAnchors(anchors);
+                    anchors = {LayerShellQt::Window::AnchorTop};
                 }
-
+                else if (QL1S("top-left") == m_placement)
+                {
+                    anchors = {LayerShellQt::Window::AnchorTop | LayerShellQt::Window::AnchorLeft};
+                }
+                else if (QL1S("top-right") == m_placement)
+                {
+                    anchors = {LayerShellQt::Window::AnchorTop | LayerShellQt::Window::AnchorRight};
+                }
+                else if (QL1S("center-left") == m_placement)
+                {
+                    anchors = {LayerShellQt::Window::AnchorLeft};
+                }
+                else if (QL1S("center-right") == m_placement)
+                {
+                    anchors = {LayerShellQt::Window::AnchorRight};
+                }
+                else if (QL1S("bottom-left") == m_placement)
+                {
+                    anchors = {LayerShellQt::Window::AnchorLeft | LayerShellQt::Window::AnchorBottom};
+                }
+                else if (QL1S("bottom-center") == m_placement)
+                {
+                    anchors = {LayerShellQt::Window::AnchorBottom};
+                }
+                else if (QL1S("bottom-right") == m_placement)
+                {
+                    anchors = {LayerShellQt::Window::AnchorBottom | LayerShellQt::Window::AnchorRight};
+                }
+                layershell->setAnchors(anchors);
             }
         }
     }
-
 }

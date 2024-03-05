@@ -35,7 +35,7 @@
 /*! Top level widget. Scroll area is used to ensure access
  * of all \c Notification instances (scrollable with mouse).
  */
- 
+
 /*namespace LayerShellQt {
 class Window
 }*/
@@ -62,6 +62,8 @@ public:
     void setSettings(const QString &placement, int width, int spacing, int unattendedMaxNum, bool screenWithMouse, const QStringList &blackList);
 
 private:
+    void setLayerShell();
+
     NotificationLayout *m_layout;
 
     QString m_placement;
