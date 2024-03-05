@@ -340,12 +340,13 @@ void Notification::mouseReleaseEvent(QMouseEvent * event)
             QWidget::mouseReleaseEvent(event);
             return;
         }
- //       if (appName == appLabel->text() || windowTitle == appLabel->text())
- //   /    {
- //           KWindowSystem::activateWindow::window(i);// TODO 
-     //       closeButton_clicked();
- //           return;
-   //     }
+        if (appName == appLabel->text() || windowTitle == appLabel->text())
+        {
+            if (auto w = QWidget::find(i))
+                 w->raise();
+            closeButton_clicked();
+            return;
+        }
     }
 }
 

@@ -36,10 +36,6 @@
  * of all \c Notification instances (scrollable with mouse).
  */
 
-/*namespace LayerShellQt {
-class Window
-}*/
-
 class NotificationArea : public QScrollArea
 {
     Q_OBJECT

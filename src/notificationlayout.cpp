@@ -52,7 +52,7 @@ NotificationLayout::NotificationLayout(QWidget *parent)
     setAttribute(Qt::WA_TranslucentBackground);
 
     m_layout = new QVBoxLayout(this);
-    m_layout->setSpacing(0);
+    m_layout->setContentsMargins(0, 0, 0, 0);
     setLayout(m_layout);
 }
 
