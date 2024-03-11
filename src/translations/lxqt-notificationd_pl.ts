@@ -19,7 +19,7 @@
     <message>
         <location filename="../notifyd.cpp" line="269"/>
         <source>Clear All</source>
-        <translation>Wyczyszczenie wszystkie</translation>
+        <translation>Wyczyść wszystkie</translation>
     </message>
     <message>
         <location filename="../notifyd.cpp" line="277"/>
@@ -32,9 +32,9 @@
         <location filename="../notifyd.cpp" line="361"/>
         <source>%n Unattended Notification(s)</source>
         <translation>
-            <numerusform>%n Nieodczytane powiadomienie</numerusform>
-            <numerusform>%n Nieodczytane powiadomienia</numerusform>
-            <numerusform>%n Nieodczytanych powiadomień</numerusform>
+            <numerusform>%n nieprzeczytane powiadomienie</numerusform>
+            <numerusform>%n nieprzeczytane powiadomienia</numerusform>
+            <numerusform>%n nieprzeczytanych powiadomień</numerusform>
         </translation>
     </message>
 </context>
