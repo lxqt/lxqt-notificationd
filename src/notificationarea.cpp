@@ -199,6 +199,7 @@ void NotificationArea::setLayerShell()
                 layershell->setLayer(LayerShellQt::Window::Layer::LayerOverlay);
                 layershell->setKeyboardInteractivity(LayerShellQt::Window::KeyboardInteractivityNone);
                 layershell->setMargins(QMargins(m_spacing, m_spacing, m_spacing, m_spacing));
+                layershell->setScope(QStringLiteral("notification"));
                 LayerShellQt::Window::Anchors anchors;
                 if (QL1S("top-center") == m_placement)
                 {
