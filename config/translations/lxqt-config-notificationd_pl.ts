@@ -31,7 +31,7 @@
     <message>
         <location filename="../advancedsettings.ui" line="132"/>
         <source>When unchecked the notification will always show on primary screen</source>
-        <translation>Jeśli ta opcja nie jest zaznaczona powiadomienia zawsze będą się pojawiać na głównym ekranie</translation>
+        <translation>Jeśli ta opcja nie jest zaznaczona, powiadomienia zawsze będą się pojawiać na głównym ekranie</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="135"/>
@@ -62,12 +62,12 @@
         <location filename="../advancedsettings.ui" line="39"/>
         <location filename="../advancedsettings.ui" line="49"/>
         <source>Application name is on the top of notification.</source>
-        <translation>Nazwa aplikacji jest na górze powiadomienia.</translation>
+        <translation>Nazwa programu jest na górze powiadomienia.</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="42"/>
         <source>Ignore these applications:</source>
-        <translation>Ignoruj te aplikacje:</translation>
+        <translation>Ignoruj te programy:</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="52"/>
