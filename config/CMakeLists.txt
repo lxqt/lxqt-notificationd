@@ -36,8 +36,8 @@ add_executable(${PROJECT_NAME}
 )
 
 target_link_libraries(${PROJECT_NAME}
-    KF5::WindowSystem
-    Qt5::Widgets
+    KF6::WindowSystem
+    Qt6::Widgets
     lxqt
 )
 

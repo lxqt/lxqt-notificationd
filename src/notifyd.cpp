@@ -232,11 +232,14 @@ void Notifyd::createTrayIcon()
                 icn = QIcon::fromTheme(QSL("preferences-desktop-notification"));
         }
         m_trayIcon = new QSystemTrayIcon(icn, this);
-        // show the menu also on left clicking
-        connect(m_trayIcon, &QSystemTrayIcon::activated, this, [this] (QSystemTrayIcon::ActivationReason r) {
-            if (r == QSystemTrayIcon::Trigger && !m_trayMenu.isNull())
-                m_trayMenu->exec(QCursor::pos());
-        });
+        if (QGuiApplication::platformName() != QStringLiteral("wayland"))
+        {
+            // show the menu also on left clicking
+            connect(m_trayIcon, &QSystemTrayIcon::activated, this, [this] (QSystemTrayIcon::ActivationReason r) {
+                if (r == QSystemTrayIcon::Trigger && !m_trayMenu.isNull())
+                    m_trayMenu->exec(QCursor::pos());
+            });
+        }
     }
 
     QSettings list(m_area->layout()->cacheFile(), QSettings::IniFormat);
@@ -247,7 +250,7 @@ void Notifyd::createTrayIcon()
     QLocale l;
     QAction *action = nullptr;
     // add items for notification, starting from the oldest one and from bottom to top
-    for (const QString &date : qAsConst(dates))
+    for (const QString &date : std::as_const(dates))
     {
         list.beginGroup(date);
         // "DATE_AND_TIME - APP: SUMMARY"

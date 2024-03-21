@@ -32,8 +32,9 @@
 #include <QtDBus/QDBusArgument>
 #include <QDebug>
 #include <XdgIcon>
-#include <KWindowSystem/KWindowSystem>
-#include <KWindowSystem/KX11Extras>
+#include <KWindowSystem>
+#include <KF6/KWindowSystem/KX11Extras>
+#include <KF6/KWindowSystem/KWindowInfo>
 #include <QMouseEvent>
 #include <QPushButton>
 #include <QStyle>
@@ -234,7 +235,7 @@ void Notification::closeButton_clicked()
 void Notification::paintEvent(QPaintEvent *)
 {
     QStyleOption opt;
-    opt.init(this);
+    opt.initFrom(this);
     QPainter p(this);
     style()->drawPrimitive(QStyle::PE_Widget, &opt, &p, this);
 }
@@ -341,7 +342,8 @@ void Notification::mouseReleaseEvent(QMouseEvent * event)
         }
         if (appName == appLabel->text() || windowTitle == appLabel->text())
         {
-            KWindowSystem::raiseWindow(i);
+            if (auto w = QWidget::find(i))
+                 w->raise();
             closeButton_clicked();
             return;
         }

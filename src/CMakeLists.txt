@@ -11,7 +11,7 @@ set(NOTIFICATIONS_UI
     notification.ui
 )
 
-qt5_add_dbus_adaptor(NOTIFICATIONS_DBUS_SRC
+Qt6_add_dbus_adaptor(NOTIFICATIONS_DBUS_SRC
     org.freedesktop.Notifications.xml
     notifyd.h Notifyd
 )
@@ -38,10 +38,11 @@ add_executable(lxqt-notificationd
 )
 
 target_link_libraries(lxqt-notificationd
-    Qt5::Widgets
-    Qt5::DBus
+    Qt6::Widgets
+    Qt6::DBus
     lxqt
-    KF5::WindowSystem
+    KF6::WindowSystem
+    LayerShellQtInterface
 )
 
 install(TARGETS
