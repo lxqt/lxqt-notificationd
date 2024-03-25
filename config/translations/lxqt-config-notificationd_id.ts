@@ -36,7 +36,7 @@
     <message>
         <location filename="../advancedsettings.ui" line="135"/>
         <source>Show notifications on screen with the mouse</source>
-        <translation type="unfinished"></translation>
+        <translation>Perlihatkan pemberitahuan di layar dengan mouse</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="145"/>
@@ -131,12 +131,12 @@ Pengaturan ini tidak akan berpengaruh padanya!</translation>
     <message>
         <location filename="../basicsettings.cpp" line="142"/>
         <source>at top left</source>
-        <translation type="unfinished"></translation>
+        <translation>di kiri atas</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="144"/>
         <source>at top center</source>
-        <translation type="unfinished"></translation>
+        <translation>di tengah atas</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="146"/>
