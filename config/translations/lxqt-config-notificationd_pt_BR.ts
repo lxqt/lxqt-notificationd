@@ -197,7 +197,7 @@ Estas configurações não surtirão efeito nele!</translation>
     <message>
         <location filename="../mainwindow.cpp" line="48"/>
         <source>Appearance</source>
-        <translation type="unfinished"></translation>
+        <translation>Aparência</translation>
     </message>
 </context>
 </TS>
