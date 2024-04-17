@@ -70,9 +70,9 @@ Notifyd::Notifyd(QObject* parent)
 
 Notifyd::~Notifyd()
 {
-    m_trayMenu->deleteLater();
-    m_trayIcon->deleteLater();
-    m_area->deleteLater();
+    delete m_trayMenu;
+    delete m_trayIcon;
+    delete m_area;
 }
 
 void Notifyd::CloseNotification(uint id)
