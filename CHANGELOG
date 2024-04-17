@@ -1,3 +1,8 @@
+lxqt-notificationd-2.0.0 / 2024-04-17
+======================================
+ * Ported to Qt6.
+ * Added full Wayland support by using layer shell.
+
 lxqt-notificationd-1.4.0 / 2023-11-05
 ======================================
  * Moved the size and margin settings to the Appearance page of config dialog.
