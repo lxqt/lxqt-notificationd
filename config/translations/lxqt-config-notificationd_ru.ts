@@ -178,8 +178,8 @@ These settings won&apos;t have any effect on it!</source>
         <location filename="../basicsettings.cpp" line="159"/>
         <source>This is a test notification.
  All notifications will now appear here on LXQt.</source>
-        <translation>Это тестовое уведомление.
- Теперь все уведомления LQXt будут появляться здесь.</translation>
+        <translation>Это проверочное уведомление.
+ Теперь все уведомления LQXt будут здесь.</translation>
     </message>
 </context>
 <context>
