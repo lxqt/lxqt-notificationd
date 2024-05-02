@@ -17,19 +17,19 @@
 <context>
     <name>Notifyd</name>
     <message>
-        <location filename="../notifyd.cpp" line="269"/>
+        <location filename="../notifyd.cpp" line="272"/>
         <source>Clear All</source>
         <translation>Fjern alt</translation>
     </message>
     <message>
-        <location filename="../notifyd.cpp" line="277"/>
+        <location filename="../notifyd.cpp" line="280"/>
         <source>Options</source>
         <translation>Valg</translation>
     </message>
     <message numerus="yes">
-        <location filename="../notifyd.cpp" line="284"/>
-        <location filename="../notifyd.cpp" line="341"/>
-        <location filename="../notifyd.cpp" line="361"/>
+        <location filename="../notifyd.cpp" line="287"/>
+        <location filename="../notifyd.cpp" line="344"/>
+        <location filename="../notifyd.cpp" line="364"/>
         <source>%n Unattended Notification(s)</source>
         <translation>
             <numerusform>%n usett varsel</numerusform>
