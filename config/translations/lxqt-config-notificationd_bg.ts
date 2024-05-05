@@ -46,7 +46,7 @@
     <message>
         <location filename="../advancedsettings.ui" line="151"/>
         <source>Only save notifications</source>
-        <translation>Само запазвай известия</translation>
+        <translation>Запазване само на известия</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="17"/>
