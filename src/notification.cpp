@@ -105,7 +105,7 @@ void Notification::setValues(const QString &application,
     }
     else if (!hints[QL1S("image-path")].isNull())
     {
-        m_pixmap = getPixmapFromHint(hints[QL1S("image-path")]);
+        m_pixmap = getPixmapFromString(hints[QL1S("image-path")].toString());
     }
     else if (!hints[QL1S("image_path")].isNull())
     {
