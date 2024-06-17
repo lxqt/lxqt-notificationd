@@ -200,6 +200,9 @@ void NotificationArea::setLayerShell()
                 layershell->setKeyboardInteractivity(LayerShellQt::Window::KeyboardInteractivityNone);
                 layershell->setMargins(QMargins(m_spacing, m_spacing, m_spacing, m_spacing));
                 layershell->setScope(QStringLiteral("notification"));
+                layershell->setScreenConfiguration(m_screenWithMouse
+                    ? LayerShellQt::Window::ScreenConfiguration::ScreenFromCompositor
+                    : LayerShellQt::Window::ScreenConfiguration::ScreenFromQWindow);
                 LayerShellQt::Window::Anchors anchors;
                 if (QL1S("top-center") == m_placement)
                 {
