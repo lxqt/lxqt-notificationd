@@ -16,7 +16,7 @@
     <message>
         <location filename="../advancedsettings.ui" line="91"/>
         <source>Default duration:</source>
-        <translation>Standardvarighed:</translation>
+        <translation>Standard varighed:</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="98"/>
@@ -31,12 +31,12 @@
     <message>
         <location filename="../advancedsettings.ui" line="132"/>
         <source>When unchecked the notification will always show on primary screen</source>
-        <translation>Når den er fravalgt vises underretningen altid på den primære skærm</translation>
+        <translation>Når fravalgt vises påmindelsen altid på den primære skærm</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="135"/>
         <source>Show notifications on screen with the mouse</source>
-        <translation>Vis underretninger på den skærm som musen er på</translation>
+        <translation>Vis påmindelser på den skærm som musen er på</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="145"/>
@@ -112,21 +112,21 @@
         <location filename="../basicsettings.cpp" line="65"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; notifications daemon is slow to respond.
 Keep trying to connect…</source>
-        <translation>&lt;b&gt;Advarsel:&lt;/b&gt; underretningsdæmonen er langsom om at svare.
+        <translation>&lt;b&gt;Advarsel:&lt;/b&gt; påmindelsestjenesten er lang tid om at svare.
 Blev ved med at prøve at oprette forbindelse…</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="74"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; No notifications daemon is running.
 A fallback will be used.</source>
-        <translation>&lt;b&gt;Advarsel:&lt;/b&gt; der kører ikke noget underretningsbaggrundsprogram.
+        <translation>&lt;b&gt;Advarsel:&lt;/b&gt; der kører ikke noget påmindelsesprogram i baggrunden.
 En reserve vil blive brugt.</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="77"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; A third-party notifications daemon (%1) is running.
 These settings won&apos;t have any effect on it!</source>
-        <translation>&lt;b&gt;Advarsel:&lt;/b&gt; der kører et tredjeparts underretningsbaggrundsprogram (%1).
+        <translation>&lt;b&gt;Advarsel:&lt;/b&gt; der kører et tredjeparts påmindelsesprogram i baggrunden (%1).
 Disse indstillinger vil ikke have nogen effekt på det!</translation>
     </message>
     <message>
@@ -172,14 +172,14 @@ Disse indstillinger vil ikke have nogen effekt på det!</translation>
     <message>
         <location filename="../basicsettings.cpp" line="158"/>
         <source>Notification demo </source>
-        <translation>Underretningsdemo </translation>
+        <translation>Påmindelsesdemo </translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="159"/>
         <source>This is a test notification.
  All notifications will now appear here on LXQt.</source>
-        <translation>Dette er en test-underretning.
- Alle underretninger vises her i LXQt.</translation>
+        <translation>Dette er en test-påmindelse.
+ Alle påmindelser vises her i LXQt.</translation>
     </message>
 </context>
 <context>
@@ -197,7 +197,7 @@ Disse indstillinger vil ikke have nogen effekt på det!</translation>
     <message>
         <location filename="../mainwindow.cpp" line="48"/>
         <source>Appearance</source>
-        <translation type="unfinished"></translation>
+        <translation>Udseende</translation>
     </message>
 </context>
 </TS>
