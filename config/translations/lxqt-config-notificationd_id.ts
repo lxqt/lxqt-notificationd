@@ -112,7 +112,8 @@
         <location filename="../basicsettings.cpp" line="65"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; notifications daemon is slow to respond.
 Keep trying to connect…</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;Peringatan:&lt;/b&gt; daemon notifikasi lambat dalam merespons.
+Terus mencoba untuk terhubung…</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="74"/>
@@ -141,32 +142,32 @@ Pengaturan ini tidak akan berpengaruh padanya!</translation>
     <message>
         <location filename="../basicsettings.cpp" line="146"/>
         <source>at top right</source>
-        <translation type="unfinished"></translation>
+        <translation>di kanan atas</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="148"/>
         <source>at center left</source>
-        <translation type="unfinished"></translation>
+        <translation>di kiri tengah</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="150"/>
         <source>at center right</source>
-        <translation type="unfinished"></translation>
+        <translation>di kanan tengah</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="152"/>
         <source>at bottom left</source>
-        <translation type="unfinished"></translation>
+        <translation>di kiri bawah</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="154"/>
         <source>at bottom center</source>
-        <translation type="unfinished"></translation>
+        <translation>di tengah bawah</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="156"/>
         <source>at bottom right</source>
-        <translation type="unfinished"></translation>
+        <translation>di kanan bawah</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="158"/>
@@ -191,12 +192,12 @@ Semua notikasi pada LXQt akan ditampilkan disini.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="44"/>
         <source>General Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Penganturan Umum</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="48"/>
         <source>Appearance</source>
-        <translation type="unfinished"></translation>
+        <translation>Tampilan</translation>
     </message>
 </context>
 </TS>
