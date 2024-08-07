@@ -31,12 +31,12 @@
     <message>
         <location filename="../advancedsettings.ui" line="132"/>
         <source>When unchecked the notification will always show on primary screen</source>
-        <translation>Når fravalgt vil merknaden alltid vises på hovedskjermen</translation>
+        <translation>Når fravalgt vil varselet alltid vises på hovedskjermen</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="135"/>
         <source>Show notifications on screen with the mouse</source>
-        <translation>Vis merknader på skjermen pekeren er på</translation>
+        <translation>Vis varsler på skjermen musepekeren er på</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="145"/>
@@ -46,12 +46,12 @@
     <message>
         <location filename="../advancedsettings.ui" line="151"/>
         <source>Only save notifications</source>
-        <translation>Kun lagre merknader</translation>
+        <translation>Lagre kun varsler</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="17"/>
         <source>Unattended Notifications</source>
-        <translation>Varsler som kommer av seg selv</translation>
+        <translation>Uovervåkede varsler</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="25"/>
@@ -91,7 +91,7 @@
         <location filename="../basicsettings.ui" line="32"/>
         <location filename="../basicsettings.ui" line="56"/>
         <source> px</source>
-        <translation> pk</translation>
+        <translation> px</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="49"/>
@@ -112,21 +112,21 @@
         <location filename="../basicsettings.cpp" line="65"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; notifications daemon is slow to respond.
 Keep trying to connect…</source>
-        <translation>&lt;b&gt;Advarsel:&lt;/b&gt; verslesprosessen er treg til å svare.
-Prøver stadig å koble til …</translation>
+        <translation>&lt;b&gt;Advarsel:&lt;/b&gt; varslingstjenesten er treg til å svare.
+Fortsett å prøve å koble til…</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="74"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; No notifications daemon is running.
 A fallback will be used.</source>
-        <translation>&lt;b&gt;Advarsel:&lt;/b&gt; Ingen daemon for varsler kjører.
-En nødløsning vil brukes.</translation>
+        <translation>&lt;b&gt;Advarsel:&lt;/b&gt; Ingen bakgrunnstjeneste for varsler kjører.
+En reserveløsning vil bli brukt.</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="77"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; A third-party notifications daemon (%1) is running.
 These settings won&apos;t have any effect on it!</source>
-        <translation>&lt;b&gt;Advarsel:&lt;/b&gt; En tredjeparts daemon (%1) kjører.
+        <translation>&lt;b&gt;Advarsel:&lt;/b&gt; En tredjeparts bakgrunnstjeneste for varsler (%1) kjører.
 Disse innstillingene har ingen effekt på den!</translation>
     </message>
     <message>
@@ -147,12 +147,12 @@ Disse innstillingene har ingen effekt på den!</translation>
     <message>
         <location filename="../basicsettings.cpp" line="148"/>
         <source>at center left</source>
-        <translation>midt på venstresiden</translation>
+        <translation>i midten til venstre</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="150"/>
         <source>at center right</source>
-        <translation>midt på høyresiden</translation>
+        <translation>i midten til høyre</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="152"/>
@@ -162,12 +162,12 @@ Disse innstillingene har ingen effekt på den!</translation>
     <message>
         <location filename="../basicsettings.cpp" line="154"/>
         <source>at bottom center</source>
-        <translation>midt på bunnen</translation>
+        <translation>nederst i midten</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="156"/>
         <source>at bottom right</source>
-        <translation>midt på høyresiden på bunnen</translation>
+        <translation>nederst til høyre</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="158"/>
@@ -197,7 +197,7 @@ Disse innstillingene har ingen effekt på den!</translation>
     <message>
         <location filename="../mainwindow.cpp" line="48"/>
         <source>Appearance</source>
-        <translation type="unfinished"></translation>
+        <translation>Utseende</translation>
     </message>
 </context>
 </TS>
