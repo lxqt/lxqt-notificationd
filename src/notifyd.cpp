@@ -276,6 +276,17 @@ void Notifyd::createTrayIcon()
         QSettings(m_area->layout()->cacheFile(), QSettings::IniFormat).clear();
     });
 
+    // add a separator again
+    m_trayMenu->addSeparator();
+
+    // "Do Not Disturb"
+    action = m_trayMenu->addAction(tr("Do Not Disturb"));
+    action->setCheckable(true);
+    action->setChecked(m_doNotDisturb);
+    connect(action, &QAction::triggered, m_trayMenu, [this] (bool checked) {
+        m_settings->setValue(QL1S("doNotDisturb"), checked);
+    });
+
     // "Options"
     action = m_trayMenu->addAction(QIcon::fromTheme(QSL("preferences-system")), tr("Options"));
     connect(action, &QAction::triggered, m_trayMenu, [] {
