@@ -280,7 +280,7 @@ void Notifyd::createTrayIcon()
     m_trayMenu->addSeparator();
 
     // "Do Not Disturb"
-    action = m_trayMenu->addAction(tr("Do Not Disturb"));
+    action = m_trayMenu->addAction(QIcon::fromTheme(QSL("notifications-disabled")), tr("Do Not Disturb"));
     action->setCheckable(true);
     action->setChecked(m_doNotDisturb);
     connect(action, &QAction::triggered, m_trayMenu, [this] (bool checked) {
