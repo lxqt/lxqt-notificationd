@@ -22,14 +22,19 @@
         <translation>Vyčistiť všetko</translation>
     </message>
     <message>
-        <location filename="../notifyd.cpp" line="280"/>
+        <location filename="../notifyd.cpp" line="283"/>
+        <source>Do Not Disturb</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../notifyd.cpp" line="291"/>
         <source>Options</source>
         <translation>Nastavenia</translation>
     </message>
     <message numerus="yes">
-        <location filename="../notifyd.cpp" line="287"/>
-        <location filename="../notifyd.cpp" line="344"/>
-        <location filename="../notifyd.cpp" line="364"/>
+        <location filename="../notifyd.cpp" line="298"/>
+        <location filename="../notifyd.cpp" line="355"/>
+        <location filename="../notifyd.cpp" line="375"/>
         <source>%n Unattended Notification(s)</source>
         <translation>
             <numerusform>%n neprečítaný oznam</numerusform>
