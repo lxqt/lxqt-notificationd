@@ -265,7 +265,9 @@ void Notifyd::createTrayIcon()
         connect(thisAction, &QAction::triggered, this, &Notifyd::restoreUnattended);
     }
 
-    // add a separator
+    // Add five fixed items:
+
+    // a separator
     m_trayMenu->addSeparator();
 
     // "Clear All"
@@ -276,7 +278,7 @@ void Notifyd::createTrayIcon()
         QSettings(m_area->layout()->cacheFile(), QSettings::IniFormat).clear();
     });
 
-    // add a separator again
+    // another separator
     m_trayMenu->addSeparator();
 
     // "Do Not Disturb"
@@ -296,7 +298,7 @@ void Notifyd::createTrayIcon()
     m_trayIcon->setContextMenu(m_trayMenu);
     m_trayIcon->setVisible(!dates.isEmpty());
     m_trayIcon->setToolTip(tr("%n Unattended Notification(s)", "",
-                                m_trayMenu->actions().size() - 3));
+                                m_trayMenu->actions().size() - 5));
 }
 
 // NOTE: Contrary to what Qt doc implies, if the tray icon is created before the tray area is available,
@@ -333,12 +335,13 @@ void Notifyd::addToUnattendedList(uint /*id*/, uint reason, const QString &date)
         else
         {
             // Add it to the top of the current tray menu, removing the oldest items if the list is full.
-            // A separator, "Clear All" and "Options" exist after all items.
+            // Two separators, "Clear All", "Do Not Disturb" and "Options" exist after all items.
+            const int fixedItems = 5;
             QList<QAction*> actions = m_trayMenu->actions();
-            while (actions.size() >= m_area->layout()->getUnattendedMaxNum() + 3)
+            while (actions.size() >= m_area->layout()->getUnattendedMaxNum() + fixedItems)
             {
-                m_trayMenu->removeAction(actions.at(actions.size() - 4));
-                delete actions.takeAt(actions.size() - 4);
+                m_trayMenu->removeAction(actions.at(actions.size() - fixedItems -1));
+                delete actions.takeAt(actions.size() - fixedItems - 1);
             }
             QSettings list(m_area->layout()->cacheFile(), QSettings::IniFormat);
             list.beginGroup(date);
@@ -353,7 +356,7 @@ void Notifyd::addToUnattendedList(uint /*id*/, uint reason, const QString &date)
             connect(action, &QAction::triggered, this, &Notifyd::restoreUnattended);
             m_trayIcon->setVisible(true);
             m_trayIcon->setToolTip(tr("%n Unattended Notification(s)", "",
-                                       m_trayMenu->actions().size() - 3));
+                                       m_trayMenu->actions().size() - fixedItems));
         }
     }
 }
@@ -365,7 +368,8 @@ void Notifyd::restoreUnattended()
         const QString date = action->data().toString();
         m_trayMenu->removeAction(action);
         delete action;
-        if (m_trayMenu->actions().size() == 3) // separator, "Clear All" and "Options" exist
+        const int fixedItems = 5;
+        if (m_trayMenu->actions().size() == fixedItems)
         {
             m_trayIcon->setVisible(false);
             // WARNING: If the menu isn't deleted here, it won't be shown later (a Qt bug?).
@@ -373,7 +377,7 @@ void Notifyd::restoreUnattended()
         }
         else
             m_trayIcon->setToolTip(tr("%n Unattended Notification(s)", "",
-                                       m_trayMenu->actions().size() - 3));
+                                       m_trayMenu->actions().size() - fixedItems));
         QSettings list(m_area->layout()->cacheFile(), QSettings::IniFormat);
         if (list.childGroups().contains(date))
         {
