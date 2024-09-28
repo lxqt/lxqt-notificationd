@@ -137,7 +137,7 @@ Te ustawienia nie będą miały żadnego wpływu na jego działanie!</translatio
     <message>
         <location filename="../basicsettings.cpp" line="144"/>
         <source>at top center</source>
-        <translation>u góry</translation>
+        <translation>na górnym środku</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="146"/>
@@ -162,7 +162,7 @@ Te ustawienia nie będą miały żadnego wpływu na jego działanie!</translatio
     <message>
         <location filename="../basicsettings.cpp" line="154"/>
         <source>at bottom center</source>
-        <translation>na dole</translation>
+        <translation>na dolnym środku</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="156"/>

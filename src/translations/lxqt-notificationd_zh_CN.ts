@@ -24,7 +24,7 @@
     <message>
         <location filename="../notifyd.cpp" line="283"/>
         <source>Do Not Disturb</source>
-        <translation type="unfinished"></translation>
+        <translation>勿扰模式</translation>
     </message>
     <message>
         <location filename="../notifyd.cpp" line="291"/>
