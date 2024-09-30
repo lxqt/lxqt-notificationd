@@ -24,7 +24,7 @@
     <message>
         <location filename="../notifyd.cpp" line="283"/>
         <source>Do Not Disturb</source>
-        <translation type="unfinished"></translation>
+        <translation>Ne pas déranger</translation>
     </message>
     <message>
         <location filename="../notifyd.cpp" line="291"/>
@@ -37,7 +37,7 @@
         <location filename="../notifyd.cpp" line="375"/>
         <source>%n Unattended Notification(s)</source>
         <translation>
-            <numerusform>%n Nouvelle notificattion</numerusform>
+            <numerusform>%n Nouvelle notification</numerusform>
             <numerusform>%n Nouvelles notifications</numerusform>
         </translation>
     </message>
