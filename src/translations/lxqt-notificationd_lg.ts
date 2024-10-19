@@ -17,19 +17,24 @@
 <context>
     <name>Notifyd</name>
     <message>
-        <location filename="../notifyd.cpp" line="269"/>
+        <location filename="../notifyd.cpp" line="274"/>
         <source>Clear All</source>
         <translation>Byerulewo byonna</translation>
     </message>
     <message>
-        <location filename="../notifyd.cpp" line="277"/>
+        <location filename="../notifyd.cpp" line="285"/>
+        <source>Do Not Disturb</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../notifyd.cpp" line="293"/>
         <source>Options</source>
         <translation>Ebisoboka</translation>
     </message>
     <message numerus="yes">
-        <location filename="../notifyd.cpp" line="284"/>
-        <location filename="../notifyd.cpp" line="341"/>
-        <location filename="../notifyd.cpp" line="361"/>
+        <location filename="../notifyd.cpp" line="300"/>
+        <location filename="../notifyd.cpp" line="358"/>
+        <location filename="../notifyd.cpp" line="379"/>
         <source>%n Unattended Notification(s)</source>
         <translation>
             <numerusform>Obubaka obutannakeberwa bwa murundi %n</numerusform>
