@@ -17,24 +17,24 @@
 <context>
     <name>Notifyd</name>
     <message>
-        <location filename="../notifyd.cpp" line="272"/>
+        <location filename="../notifyd.cpp" line="274"/>
         <source>Clear All</source>
         <translation>Neteja-ho tot</translation>
     </message>
     <message>
-        <location filename="../notifyd.cpp" line="283"/>
+        <location filename="../notifyd.cpp" line="285"/>
         <source>Do Not Disturb</source>
         <translation>No molestis</translation>
     </message>
     <message>
-        <location filename="../notifyd.cpp" line="291"/>
+        <location filename="../notifyd.cpp" line="293"/>
         <source>Options</source>
         <translation>Opcions</translation>
     </message>
     <message numerus="yes">
-        <location filename="../notifyd.cpp" line="298"/>
-        <location filename="../notifyd.cpp" line="355"/>
-        <location filename="../notifyd.cpp" line="375"/>
+        <location filename="../notifyd.cpp" line="300"/>
+        <location filename="../notifyd.cpp" line="358"/>
+        <location filename="../notifyd.cpp" line="379"/>
         <source>%n Unattended Notification(s)</source>
         <translation>
             <numerusform>%n Notificació no atesa</numerusform>
