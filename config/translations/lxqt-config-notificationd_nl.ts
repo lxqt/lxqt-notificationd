@@ -11,12 +11,12 @@
     <message>
         <location filename="../advancedsettings.ui" line="79"/>
         <source>Some notifications set their own on-screen duration.</source>
-        <translation>Sommige meldingen gebruiken hun eigen instellingen.</translation>
+        <translation>Let op: sommige meldingen negeren deze instellingen.</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="91"/>
         <source>Default duration:</source>
-        <translation>Standaardduur:</translation>
+        <translation>Meldingen tonen gedurende</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="98"/>
@@ -46,7 +46,7 @@
     <message>
         <location filename="../advancedsettings.ui" line="151"/>
         <source>Only save notifications</source>
-        <translation>Meldingen alleen bewaren</translation>
+        <translation>Geen meldingen tonen, wel bewaren</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="17"/>
@@ -67,7 +67,7 @@
     <message>
         <location filename="../advancedsettings.ui" line="42"/>
         <source>Ignore these applications:</source>
-        <translation>Genegeerde programma&apos;s:</translation>
+        <translation>Meldingen negeren van:</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="52"/>
@@ -96,7 +96,7 @@
     <message>
         <location filename="../basicsettings.ui" line="49"/>
         <source>Spacing:</source>
-        <translation>Afstand:</translation>
+        <translation>Afstand tot schermrand:</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="68"/>
@@ -187,12 +187,12 @@ Alle meldingen worden hier getoond op LXQt.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="41"/>
         <source>Desktop Notifications</source>
-        <translation>Bureaubladmeldingen</translation>
+        <translation>Meldingen</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="44"/>
         <source>General Settings</source>
-        <translation>Algemene instellingen</translation>
+        <translation>Algemeen</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="48"/>
