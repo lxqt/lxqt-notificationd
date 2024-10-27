@@ -237,6 +237,19 @@ void Notification::paintEvent(QPaintEvent *)
     QStyleOption opt;
     opt.initFrom(this);
     QPainter p(this);
+
+#if (QT_VERSION >= QT_VERSION_CHECK(6,8,0))
+    // NOTE: Starting from Qt 6.8.0, random artifacts are possible in
+    // translucent windows under Wayland. This a workaround.
+    if (QGuiApplication::platformName() == QStringLiteral("wayland"))
+    {
+        auto origMode = p.compositionMode();
+        p.setCompositionMode(QPainter::CompositionMode_Clear);
+        p.fillRect(rect(), Qt::transparent);
+        p.setCompositionMode(origMode);
+    }
+#endif
+
     style()->drawPrimitive(QStyle::PE_Widget, &opt, &p, this);
 }
 
