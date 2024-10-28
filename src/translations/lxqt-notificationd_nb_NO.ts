@@ -24,12 +24,12 @@
     <message>
         <location filename="../notifyd.cpp" line="285"/>
         <source>Do Not Disturb</source>
-        <translation type="unfinished"></translation>
+        <translation>Ikke forstyrr</translation>
     </message>
     <message>
         <location filename="../notifyd.cpp" line="293"/>
         <source>Options</source>
-        <translation>Valg</translation>
+        <translation>Alternativer</translation>
     </message>
     <message numerus="yes">
         <location filename="../notifyd.cpp" line="300"/>
