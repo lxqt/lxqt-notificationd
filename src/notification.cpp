@@ -241,7 +241,8 @@ void Notification::paintEvent(QPaintEvent *)
 #if (QT_VERSION >= QT_VERSION_CHECK(6,8,0))
     // NOTE: Starting from Qt 6.8.0, random artifacts are possible in
     // translucent windows under Wayland. This a workaround.
-    if (QGuiApplication::platformName() == QStringLiteral("wayland"))
+    if (QGuiApplication::platformName() == QStringLiteral("wayland")
+        && testAttribute(Qt::WA_StyleSheetTarget))
     {
         auto origMode = p.compositionMode();
         p.setCompositionMode(QPainter::CompositionMode_Clear);
