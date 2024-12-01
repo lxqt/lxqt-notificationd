@@ -6,7 +6,7 @@
     <message>
         <location filename="../notificationwidgets.cpp" line="131"/>
         <source>Actions:</source>
-        <translation>Accions&#xa0;:</translation>
+        <translation>Accions :</translation>
     </message>
     <message>
         <location filename="../notificationwidgets.cpp" line="155"/>
@@ -24,7 +24,7 @@
     <message>
         <location filename="../notifyd.cpp" line="285"/>
         <source>Do Not Disturb</source>
-        <translation type="unfinished"></translation>
+        <translation>Destorbar pas</translation>
     </message>
     <message>
         <location filename="../notifyd.cpp" line="293"/>
