@@ -26,12 +26,12 @@
     <message>
         <location filename="../advancedsettings.ui" line="126"/>
         <source>Screen</source>
-        <translation type="unfinished"></translation>
+        <translation>Screen</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="132"/>
         <source>When unchecked the notification will always show on primary screen</source>
-        <translation type="unfinished"></translation>
+        <translation>When unchecked the notification will always show on primary screen</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="135"/>
