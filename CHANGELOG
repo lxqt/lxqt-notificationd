@@ -1,3 +1,7 @@
+lxqt-notificationd-2.1.1 / 2024-12-01
+======================================
+ * Fixed transparent notifications with System theme on Wayland (by checking stylesheet before applying Wayland workaround for artifacts).
+
 lxqt-notificationd-2.1.0 / 2024-11-05
 ======================================
  * Corrected a mistake in processing `image-path`.
