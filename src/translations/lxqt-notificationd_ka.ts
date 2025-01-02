@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="oc">
+<TS version="2.1" language="ka">
 <context>
     <name>NotificationActionsComboWidget</name>
     <message>
         <location filename="../notificationwidgets.cpp" line="131"/>
         <source>Actions:</source>
-        <translation>Accions :</translation>
+        <translation>ქმედებები:</translation>
     </message>
     <message>
         <location filename="../notificationwidgets.cpp" line="155"/>
         <source>OK</source>
-        <translation>D’acòrdi</translation>
+        <translation>დიახ</translation>
     </message>
 </context>
 <context>
@@ -19,17 +19,17 @@
     <message>
         <location filename="../notifyd.cpp" line="274"/>
         <source>Clear All</source>
-        <translation>Tot escafar</translation>
+        <translation>ყველას გასუფთავება</translation>
     </message>
     <message>
         <location filename="../notifyd.cpp" line="285"/>
         <source>Do Not Disturb</source>
-        <translation>Destorbar pas</translation>
+        <translation>არ შემაწუხოთ</translation>
     </message>
     <message>
         <location filename="../notifyd.cpp" line="293"/>
         <source>Options</source>
-        <translation>Opcions</translation>
+        <translation>მორგება</translation>
     </message>
     <message numerus="yes">
         <location filename="../notifyd.cpp" line="300"/>
@@ -37,8 +37,8 @@
         <location filename="../notifyd.cpp" line="379"/>
         <source>%n Unattended Notification(s)</source>
         <translation>
-            <numerusform>%n notificacion pas legida</numerusform>
-            <numerusform>%n notificacions pas legidas</numerusform>
+            <numerusform>%n გამოტოვებული გაფრთხილება</numerusform>
+            <numerusform>%n გამოტოვებული გაფრთხილება</numerusform>
         </translation>
     </message>
 </context>
