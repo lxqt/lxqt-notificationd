@@ -61,6 +61,7 @@ void NotificationLayout::setSizes(int space, int width)
     m_layout->setSpacing(space);
     setMaximumWidth(width);
     setMinimumWidth(width);
+    resize(width, height()); // needed when the width is decreased (perhaps because of a Qt bug)
 
     QHashIterator<uint, Notification*> it(m_notifications);
     while (it.hasNext())
