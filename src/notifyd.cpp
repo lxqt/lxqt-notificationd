@@ -140,7 +140,7 @@ uint Notifyd::Notify(const QString& app_name,
 #endif
 
     // handling the "server decides" timeout
-    if (expire_timeout == -1) {
+    if (expire_timeout < 0) {
         expire_timeout = m_serverTimeout;
         expire_timeout *= 1000;
     }
@@ -152,7 +152,7 @@ uint Notifyd::Notify(const QString& app_name,
 
 void Notifyd::reloadSettings()
 {
-    m_serverTimeout = m_settings->value(QSL("server_decides"), 10).toInt();
+    m_serverTimeout = qMax(m_settings->value(QSL("server_decides"), 10).toInt(), 0);
     bool old_doNotDisturb = m_doNotDisturb;
     m_doNotDisturb = m_settings->value(QL1S("doNotDisturb"), false).toBool();
     int maxNum = m_settings->value(QSL("unattendedMaxNum"), 10).toInt();
