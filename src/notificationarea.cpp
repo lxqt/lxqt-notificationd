@@ -198,11 +198,30 @@ void NotificationArea::setLayerShell()
             {
                 layershell->setLayer(LayerShellQt::Window::Layer::LayerOverlay);
                 layershell->setKeyboardInteractivity(LayerShellQt::Window::KeyboardInteractivityNone);
-                layershell->setMargins(QMargins(m_spacing, m_spacing, m_spacing, m_spacing));
                 layershell->setScope(QStringLiteral("notification"));
-                layershell->setScreenConfiguration(m_screenWithMouse
-                    ? LayerShellQt::Window::ScreenConfiguration::ScreenFromCompositor
-                    : LayerShellQt::Window::ScreenConfiguration::ScreenFromQWindow);
+                if (m_screenWithMouse)
+                {
+                    layershell->setScreenConfiguration(LayerShellQt::Window::ScreenConfiguration::ScreenFromCompositor);
+                }
+                else
+                {
+                    // On Wayland, "primary screen" does not make sense, and the screen
+                    // index is not reliable. So, we try to find the leftmost or topmost
+                    // screen, depending on whether the layout is horizontal or vertical.
+                    auto screens = QGuiApplication::screens();
+                    if (!screens.isEmpty())
+                    {
+                        std::sort(screens.begin(), screens.end(), [](QScreen *a1, QScreen *a2) {
+                            QPoint p1(a1->geometry().topLeft());
+                            QPoint p2(a2->geometry().topLeft());
+                            return (qAbs(p1.x() - p2.x()) > qAbs(p1.y() - p2.y())
+                                    ? p1.x() < p2.x() : p1.y() < p2.y());
+                        });
+                        win->setScreen(screens.at(0));
+                    }
+                    layershell->setScreenConfiguration(LayerShellQt::Window::ScreenConfiguration::ScreenFromQWindow);
+                }
+                layershell->setMargins(QMargins(m_spacing, m_spacing, m_spacing, m_spacing));
                 LayerShellQt::Window::Anchors anchors;
                 if (QL1S("top-center") == m_placement)
                 {
