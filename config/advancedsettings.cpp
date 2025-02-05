@@ -50,8 +50,6 @@ AdvancedSettings::~AdvancedSettings() = default;
 void AdvancedSettings::restoreSettings()
 {
     int serverDecides = mSettings->value(QL1S("server_decides"), 10).toInt();
-    if (serverDecides <= 0)
-        serverDecides = 10;
     serverDecidesBox->setValue(serverDecides);
 
     unattendedBox->setValue(mSettings->value(QL1S("unattendedMaxNum"), 10).toInt());
