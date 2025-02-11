@@ -4,6 +4,22 @@
 <context>
     <name>AdvancedSettings</name>
     <message>
+        <location filename="../advancedsettings.ui" line="39"/>
+        <location filename="../advancedsettings.ui" line="49"/>
+        <source>Use the top of the notification as shown.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../advancedsettings.ui" line="42"/>
+        <source>Ignore these notifications:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../advancedsettings.ui" line="52"/>
+        <source>blueman,Screen Grab</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../advancedsettings.ui" line="67"/>
         <source>Duration</source>
         <translation>Duración</translation>
@@ -57,22 +73,6 @@
         <location filename="../advancedsettings.ui" line="25"/>
         <source>How many to save:</source>
         <translation>Cantos hai para gardar:</translation>
-    </message>
-    <message>
-        <location filename="../advancedsettings.ui" line="39"/>
-        <location filename="../advancedsettings.ui" line="49"/>
-        <source>Application name is on the top of notification.</source>
-        <translation>O nome da aplicación atópase na parte superior da notificación.</translation>
-    </message>
-    <message>
-        <location filename="../advancedsettings.ui" line="42"/>
-        <source>Ignore these applications:</source>
-        <translation>Ignorar estas aplicacións:</translation>
-    </message>
-    <message>
-        <location filename="../advancedsettings.ui" line="52"/>
-        <source>app1,app2,app3</source>
-        <translation>apli1,apli2,apli3</translation>
     </message>
 </context>
 <context>
