@@ -49,7 +49,7 @@
            <string>Use the top of the notification as shown.</string>
           </property>
           <property name="placeholderText">
-           <string>blueman,Screen Grab</string>
+           <string notr="true">blueman,Screen Grab</string>
           </property>
           <property name="clearButtonEnabled">
            <bool>true</bool>
