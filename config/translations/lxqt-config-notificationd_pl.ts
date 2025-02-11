@@ -15,11 +15,6 @@
         <translation>Zignoruj te powiadomienia:</translation>
     </message>
     <message>
-        <location filename="../advancedsettings.ui" line="52"/>
-        <source>blueman,Screen Grab</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../advancedsettings.ui" line="67"/>
         <source>Duration</source>
         <translation>Czas trwania</translation>

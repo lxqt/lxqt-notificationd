@@ -45,11 +45,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../advancedsettings.ui" line="52"/>
-        <source>blueman,Screen Grab</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../advancedsettings.ui" line="126"/>
         <source>Screen</source>
         <translation>Ekran</translation>

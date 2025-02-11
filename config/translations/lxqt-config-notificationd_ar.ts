@@ -15,11 +15,6 @@
         <translation>تجاهل هذه الإشعارات:</translation>
     </message>
     <message>
-        <location filename="../advancedsettings.ui" line="52"/>
-        <source>blueman,Screen Grab</source>
-        <translation>بلو مان، لقطة شاشة</translation>
-    </message>
-    <message>
         <location filename="../advancedsettings.ui" line="67"/>
         <source>Duration</source>
         <translation>المدة</translation>
