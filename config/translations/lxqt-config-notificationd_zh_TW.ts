@@ -1,78 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="en_GB">
+<TS version="2.1" language="zh_TW">
 <context>
     <name>AdvancedSettings</name>
     <message>
         <location filename="../advancedsettings.ui" line="67"/>
         <source>Duration</source>
-        <translation>Duration</translation>
+        <translation>持續時間</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="79"/>
         <source>Some notifications set their own on-screen duration.</source>
-        <translation>Some notifications set their own on-screen duration.</translation>
+        <translation>有些提醒通知自有設定持續時間。</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="91"/>
         <source>Default duration:</source>
-        <translation>Default duration:</translation>
+        <translation>預設持續時間：</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="98"/>
         <source> sec</source>
-        <translation> sec</translation>
+        <translation> -秒</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="126"/>
         <source>Screen</source>
-        <translation>Screen</translation>
+        <translation>螢幕</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="132"/>
         <source>When unchecked the notification will always show on primary screen</source>
-        <translation>When unchecked the notification will always show on primary screen</translation>
+        <translation>當有未查看的提醒通知，將會永遠在主要螢幕上顯示</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="135"/>
         <source>Show notifications on screen with the mouse</source>
-        <translation>Show notifications on screen with the mouse</translation>
+        <translation>使用滑鼠在螢幕上顯示提醒通知</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="145"/>
         <source>Do Not Disturb</source>
-        <translation>Do Not Disturb</translation>
+        <translation>請勿打擾</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="151"/>
         <source>Only save notifications</source>
-        <translation type="unfinished"></translation>
+        <translation>僅儲存提醒通知</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="17"/>
         <source>Unattended Notifications</source>
-        <translation>Unattended Notifications</translation>
+        <translation>尚未查看的提醒通知</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="25"/>
         <source>How many to save:</source>
-        <translation>How many to save:</translation>
+        <translation>要儲存的數量：</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="39"/>
         <location filename="../advancedsettings.ui" line="49"/>
         <source>Application name is on the top of notification.</source>
-        <translation>Application name is on the top of notification.</translation>
+        <translation>應用程式名稱位於提醒通知上方。</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="42"/>
         <source>Ignore these applications:</source>
-        <translation>Ignore these applications:</translation>
+        <translation>忽略這些應用程式：</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="52"/>
         <source>app1,app2,app3</source>
-        <translation>app1,app2,app3</translation>
+        <translation>應用程式1,應用程式2,應用程式3</translation>
     </message>
 </context>
 <context>
@@ -80,12 +80,12 @@
     <message>
         <location filename="../basicsettings.ui" line="17"/>
         <source>Sizes</source>
-        <translation>Sizes</translation>
+        <translation>大小</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="25"/>
         <source>Width:</source>
-        <translation>Width:</translation>
+        <translation>寬度：</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="32"/>
@@ -96,89 +96,90 @@
     <message>
         <location filename="../basicsettings.ui" line="49"/>
         <source>Spacing:</source>
-        <translation>Spacing:</translation>
+        <translation>間距：</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="68"/>
         <source>Position on screen</source>
-        <translation>Position on screen</translation>
+        <translation>在螢幕上的位置</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="227"/>
         <source>Preview</source>
-        <translation type="unfinished"></translation>
+        <translation>預覽</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="65"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; notifications daemon is slow to respond.
 Keep trying to connect…</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;警告：&lt;/b&gt; 提醒通知常駐程式反應緩慢。
+繼續嘗試連接…</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="74"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; No notifications daemon is running.
 A fallback will be used.</source>
-        <translation>&lt;b&gt;Warning:&lt;/b&gt; No notifications daemon is running.
-A fallback will be used.</translation>
+        <translation>&lt;b&gt;警告：&lt;/b&gt;沒有提醒通知常駐程式運行。
+已經改為使用後援備用措施。</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="77"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; A third-party notifications daemon (%1) is running.
 These settings won&apos;t have any effect on it!</source>
-        <translation>&lt;b&gt;Warning:&lt;/b&gt; A third-party notifications daemon (%1) is running.
-These settings won&apos;t have any effect on it!</translation>
+        <translation>&lt;b&gt;警告：&lt;/b&gt;第三方提醒通知常駐程式正在運行(%1)。
+在此這些設定不會有任何效果作用！</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="142"/>
         <source>at top left</source>
-        <translation type="unfinished"></translation>
+        <translation>在左上方</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="144"/>
         <source>at top center</source>
-        <translation type="unfinished"></translation>
+        <translation>在上方中央</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="146"/>
         <source>at top right</source>
-        <translation type="unfinished"></translation>
+        <translation>在右上方</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="148"/>
         <source>at center left</source>
-        <translation type="unfinished"></translation>
+        <translation>在中央左方</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="150"/>
         <source>at center right</source>
-        <translation type="unfinished"></translation>
+        <translation>在中央右方</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="152"/>
         <source>at bottom left</source>
-        <translation type="unfinished"></translation>
+        <translation>在左下方</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="154"/>
         <source>at bottom center</source>
-        <translation type="unfinished"></translation>
+        <translation>在下方中央</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="156"/>
         <source>at bottom right</source>
-        <translation type="unfinished"></translation>
+        <translation>在右下方</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="158"/>
         <source>Notification demo </source>
-        <translation>Notification demo </translation>
+        <translation>提醒通知示範 </translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="159"/>
         <source>This is a test notification.
  All notifications will now appear here on LXQt.</source>
-        <translation>This is a test notification.
- All notifications will now appear here on LXQt.</translation>
+        <translation>這是測試提醒通知。
+LXQt 全部提醒通知均將顯示於此。</translation>
     </message>
 </context>
 <context>
@@ -186,17 +187,17 @@ These settings won&apos;t have any effect on it!</translation>
     <message>
         <location filename="../mainwindow.cpp" line="41"/>
         <source>Desktop Notifications</source>
-        <translation>Desktop Notifications</translation>
+        <translation>桌面提醒通知</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="44"/>
         <source>General Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>通則設定</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="48"/>
         <source>Appearance</source>
-        <translation type="unfinished"></translation>
+        <translation>外觀</translation>
     </message>
 </context>
 </TS>
