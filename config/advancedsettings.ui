@@ -36,20 +36,20 @@
         <item>
          <widget class="QLabel" name="blackListLabel">
           <property name="toolTip">
-           <string>Application name is on the top of notification.</string>
+           <string>Use the top of the notification as shown.</string>
           </property>
           <property name="text">
-           <string>Ignore these applications:</string>
+           <string>Ignore these notifications:</string>
           </property>
          </widget>
         </item>
         <item>
          <widget class="QLineEdit" name="blackListEdit">
           <property name="toolTip">
-           <string>Application name is on the top of notification.</string>
+           <string>Use the top of the notification as shown.</string>
           </property>
           <property name="placeholderText">
-           <string>app1,app2,app3</string>
+           <string>blueman,Screen Grab</string>
           </property>
           <property name="clearButtonEnabled">
            <bool>true</bool>
