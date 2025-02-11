@@ -39,7 +39,7 @@
            <string>Use the top of the notification as shown.</string>
           </property>
           <property name="text">
-           <string>Ignore these applications:</string>
+           <string>Ignore these notifications:</string>
           </property>
          </widget>
         </item>
