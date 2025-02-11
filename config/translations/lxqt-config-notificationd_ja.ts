@@ -4,6 +4,22 @@
 <context>
     <name>AdvancedSettings</name>
     <message>
+        <location filename="../advancedsettings.ui" line="39"/>
+        <location filename="../advancedsettings.ui" line="49"/>
+        <source>Use the top of the notification as shown.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../advancedsettings.ui" line="42"/>
+        <source>Ignore these notifications:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../advancedsettings.ui" line="52"/>
+        <source>blueman,Screen Grab</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../advancedsettings.ui" line="67"/>
         <source>Duration</source>
         <translation>表示時間</translation>
@@ -57,22 +73,6 @@
         <location filename="../advancedsettings.ui" line="25"/>
         <source>How many to save:</source>
         <translation>保存する件数:</translation>
-    </message>
-    <message>
-        <location filename="../advancedsettings.ui" line="39"/>
-        <location filename="../advancedsettings.ui" line="49"/>
-        <source>Application name is on the top of notification.</source>
-        <translation>アプリケーションの名前は、表示された通知の一番上にあります。</translation>
-    </message>
-    <message>
-        <location filename="../advancedsettings.ui" line="42"/>
-        <source>Ignore these applications:</source>
-        <translation>無視するアプリケーション:</translation>
-    </message>
-    <message>
-        <location filename="../advancedsettings.ui" line="52"/>
-        <source>app1,app2,app3</source>
-        <translation>app1,app2,app3</translation>
     </message>
 </context>
 <context>

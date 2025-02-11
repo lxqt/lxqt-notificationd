@@ -4,6 +4,22 @@
 <context>
     <name>AdvancedSettings</name>
     <message>
+        <location filename="../advancedsettings.ui" line="39"/>
+        <location filename="../advancedsettings.ui" line="49"/>
+        <source>Use the top of the notification as shown.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../advancedsettings.ui" line="42"/>
+        <source>Ignore these notifications:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../advancedsettings.ui" line="52"/>
+        <source>blueman,Screen Grab</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../advancedsettings.ui" line="67"/>
         <source>Duration</source>
         <translation>지속시간</translation>
@@ -57,22 +73,6 @@
         <location filename="../advancedsettings.ui" line="25"/>
         <source>How many to save:</source>
         <translation>저장할 수 있는 횟수:</translation>
-    </message>
-    <message>
-        <location filename="../advancedsettings.ui" line="39"/>
-        <location filename="../advancedsettings.ui" line="49"/>
-        <source>Application name is on the top of notification.</source>
-        <translation>응용프로그램 이름은 알림 상단에 있습니다.</translation>
-    </message>
-    <message>
-        <location filename="../advancedsettings.ui" line="42"/>
-        <source>Ignore these applications:</source>
-        <translation>다음 응용프로그램 무시:</translation>
-    </message>
-    <message>
-        <location filename="../advancedsettings.ui" line="52"/>
-        <source>app1,app2,app3</source>
-        <translation>앱1,앱2,앱3</translation>
     </message>
 </context>
 <context>

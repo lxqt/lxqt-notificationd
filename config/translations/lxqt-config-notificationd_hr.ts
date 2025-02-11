@@ -36,18 +36,18 @@
     <message>
         <location filename="../advancedsettings.ui" line="39"/>
         <location filename="../advancedsettings.ui" line="49"/>
-        <source>Application name is on the top of notification.</source>
-        <translation>Ime programa se nalazi na početku obavijesti.</translation>
+        <source>Use the top of the notification as shown.</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="42"/>
-        <source>Ignore these applications:</source>
-        <translation>Zanemari ove programe:</translation>
+        <source>Ignore these notifications:</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="52"/>
-        <source>app1,app2,app3</source>
-        <translation>program1,program2,program3</translation>
+        <source>blueman,Screen Grab</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="126"/>
