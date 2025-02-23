@@ -37,12 +37,12 @@
         <location filename="../advancedsettings.ui" line="39"/>
         <location filename="../advancedsettings.ui" line="49"/>
         <source>Use the top of the notification as shown.</source>
-        <translation type="unfinished"></translation>
+        <translation>Utilizzare la parte superiore della notifica come mostrato.</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="42"/>
         <source>Ignore these notifications:</source>
-        <translation type="unfinished"></translation>
+        <translation>Ignora queste notifiche:</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="126"/>
