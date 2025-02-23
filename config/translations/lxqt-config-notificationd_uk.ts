@@ -7,12 +7,12 @@
         <location filename="../advancedsettings.ui" line="39"/>
         <location filename="../advancedsettings.ui" line="49"/>
         <source>Use the top of the notification as shown.</source>
-        <translation type="unfinished"></translation>
+        <translation>Використовувати верхню частину сповіщення, як показано.</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="42"/>
         <source>Ignore these notifications:</source>
-        <translation type="unfinished"></translation>
+        <translation>Ігнорувати ці сповіщення:</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="67"/>
