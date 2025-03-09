@@ -7,12 +7,12 @@
         <location filename="../advancedsettings.ui" line="39"/>
         <location filename="../advancedsettings.ui" line="49"/>
         <source>Use the top of the notification as shown.</source>
-        <translation>使用提醒通知的上方作為顯示。</translation>
+        <translation>使用提示通知的上方作為顯示。</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="42"/>
         <source>Ignore these notifications:</source>
-        <translation>忽略這些提醒通知：</translation>
+        <translation>忽略這些提示通知：</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="67"/>
@@ -22,7 +22,7 @@
     <message>
         <location filename="../advancedsettings.ui" line="79"/>
         <source>Some notifications set their own on-screen duration.</source>
-        <translation>有些提醒通知自有設定持續時間。</translation>
+        <translation>有些提示通知自有設定持續時間。</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="91"/>
@@ -32,7 +32,7 @@
     <message>
         <location filename="../advancedsettings.ui" line="98"/>
         <source> sec</source>
-        <translation> -秒</translation>
+        <translation> 秒</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="126"/>
@@ -42,12 +42,12 @@
     <message>
         <location filename="../advancedsettings.ui" line="132"/>
         <source>When unchecked the notification will always show on primary screen</source>
-        <translation>當有未查看的提醒通知，將會永遠在主要螢幕上顯示</translation>
+        <translation>當有尚未查看的提示通知，將會永遠在主要螢幕上顯示</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="135"/>
         <source>Show notifications on screen with the mouse</source>
-        <translation>使用滑鼠在螢幕上顯示提醒通知</translation>
+        <translation>使用滑鼠在螢幕上顯示提示通知</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="145"/>
@@ -57,12 +57,12 @@
     <message>
         <location filename="../advancedsettings.ui" line="151"/>
         <source>Only save notifications</source>
-        <translation>僅儲存提醒通知</translation>
+        <translation>僅儲存提示通知</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="17"/>
         <source>Unattended Notifications</source>
-        <translation>尚未查看的提醒通知</translation>
+        <translation>提示通知尚未查看</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="25"/>
@@ -107,22 +107,22 @@
         <location filename="../basicsettings.cpp" line="65"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; notifications daemon is slow to respond.
 Keep trying to connect…</source>
-        <translation>&lt;b&gt;警告：&lt;/b&gt; 提醒通知常駐程式反應緩慢。
+        <translation>&lt;b&gt;警告：&lt;/b&gt; 提示通知常駐服務反應緩慢。
 繼續嘗試連接…</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="74"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; No notifications daemon is running.
 A fallback will be used.</source>
-        <translation>&lt;b&gt;警告：&lt;/b&gt;沒有提醒通知常駐程式運行。
+        <translation>&lt;b&gt;警告：&lt;/b&gt;沒有提示通知服務常駐運行。
 已經改為使用後援備用措施。</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="77"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; A third-party notifications daemon (%1) is running.
 These settings won&apos;t have any effect on it!</source>
-        <translation>&lt;b&gt;警告：&lt;/b&gt;第三方提醒通知常駐程式正在運行(%1)。
-在此這些設定不會有任何效果作用！</translation>
+        <translation>&lt;b&gt;警告：&lt;/b&gt;第三方提示通知常駐服務 (%1) 正在運行。
+在此這些設定不會有任何作用！</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="142"/>
@@ -167,14 +167,14 @@ These settings won&apos;t have any effect on it!</source>
     <message>
         <location filename="../basicsettings.cpp" line="158"/>
         <source>Notification demo </source>
-        <translation>提醒通知示範 </translation>
+        <translation>提示通知示範 </translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="159"/>
         <source>This is a test notification.
  All notifications will now appear here on LXQt.</source>
-        <translation>這是測試提醒通知。
-LXQt 全部提醒通知均將顯示於此。</translation>
+        <translation>這是測試提示通知。
+ 全部提示通知均將在 LXQT 上顯示於此。</translation>
     </message>
 </context>
 <context>
@@ -182,7 +182,7 @@ LXQt 全部提醒通知均將顯示於此。</translation>
     <message>
         <location filename="../mainwindow.cpp" line="41"/>
         <source>Desktop Notifications</source>
-        <translation>桌面提醒通知</translation>
+        <translation>桌面提示通知</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="44"/>
