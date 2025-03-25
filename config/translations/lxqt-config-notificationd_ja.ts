@@ -7,12 +7,12 @@
         <location filename="../advancedsettings.ui" line="39"/>
         <location filename="../advancedsettings.ui" line="49"/>
         <source>Use the top of the notification as shown.</source>
-        <translation type="unfinished"></translation>
+        <translation>通知の上部を図のように使用します。</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="42"/>
         <source>Ignore these notifications:</source>
-        <translation type="unfinished"></translation>
+        <translation>次の通知は無視する:</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="67"/>
