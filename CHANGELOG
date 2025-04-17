@@ -1,3 +1,10 @@
+lxqt-notificationd-2.2.0 / 2025-04-17
+======================================
+ * Workaround for text misalignment on decreasing the notification width.
+ * By default, show notifications on the leftmost/topmost screen under Wayland, as if it's the primary screen.
+ * Allowed zero duration in the config GUI, which means no auto-closing without an explicit timeout.
+ * Improved the texts of the section "Unattended Notifications" in the config GUI.
+
 lxqt-notificationd-2.1.1 / 2024-12-01
 ======================================
  * Fixed transparent notifications with System theme on Wayland (by checking stylesheet before applying Wayland workaround for artifacts).
