@@ -33,6 +33,7 @@
 #include <QBrush>
 #include <QSettings>
 #include <QStandardPaths>
+#include <QRegularExpression>
 
 NotificationLayout::NotificationLayout(QWidget *parent)
     : QWidget(parent),
@@ -72,16 +73,47 @@ void NotificationLayout::setSizes(int space, int width)
     }
 }
 
+void NotificationLayout::setPCREFilter(QRegularExpression& re, const QString& pattern) {
+    re.setPattern(pattern);
+    qWarning() << "Unable to compile regexp from pattern " << pattern << ", error: "
+        << re.errorString() << ", at position " << re.patternErrorOffset();
+}
+
+bool NotificationLayout::filter(const QString& input, const QRegularExpression& re) {
+    if (re.pattern().isEmpty() || !re.isValid())
+        return false;
+
+    return re.match(input).hasMatch();
+}
+
 void NotificationLayout::addNotification(uint id, const QString &application,
                                         const QString &summary, const QString &body,
                                         const QString &icon, int timeout,
                                         const QStringList& actions, const QVariantMap& hints,
                                         bool noSave)
 {
-//    qDebug() << "NotificationLayout::addNotification" << id << application << summary << body << icon << timeout;
+
+    bool applicationPCRECaptured = filter(application, m_application_pcre_filter);
+    bool bodyPCRECaptured = filter(summary, m_body_pcre_filter);
+    bool summaryPCRECaptured = filter(summary, m_summary_pcre_filter);
+    qInfo() << "New notification: ";
+    qInfo() << "  application: " << application;
+    qInfo() << "  application PCRE: " << m_application_pcre_filter;
+    qInfo() << "  application PCRE captured: " << QString::fromStdString( (applicationPCRECaptured ? "true" : "false"));
+    qInfo() << "  body: " << body;
+    qInfo() << "  body PCRE: " << m_body_pcre_filter;
+    qInfo() << "  body PCRE captured: " << QString::fromStdString( (bodyPCRECaptured ? "true" : "false"));
+    qInfo() << "  summary: " << summary;
+    qInfo() << "  summary PCRE: " << m_summary_pcre_filter;
+    qInfo() << "  summary PCRE captured: " << QString::fromStdString( (summaryPCRECaptured ? "true" : "false"));
+
     bool showNotification(!m_doNotDisturb
                           // always show our test notifications
                           || application == QL1S("lxqt-config-notificationd"));
+    showNotification = showNotification && !applicationPCRECaptured;
+    showNotification = showNotification && !bodyPCRECaptured;
+    showNotification = showNotification && !summaryPCRECaptured;
+    qInfo() << "  showNotification: " << QString::fromStdString( (showNotification ? "true" : "false"));
     if (m_notifications.contains(id))
     {
         // TODO/FIXME: it can be deleted by timer in this block. Locking?
