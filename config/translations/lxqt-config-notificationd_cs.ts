@@ -96,7 +96,7 @@
     <message>
         <location filename="../basicsettings.ui" line="68"/>
         <source>Position on screen</source>
-        <translation>Pozice na obrazovce</translation>
+        <translation>Poloha na obrazovce</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="227"/>
