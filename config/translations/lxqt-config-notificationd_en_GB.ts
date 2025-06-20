@@ -131,7 +131,7 @@ These settings won&apos;t have any effect on it!</translation>
     <message>
         <location filename="../basicsettings.cpp" line="144"/>
         <source>at top center</source>
-        <translation type="unfinished"></translation>
+        <translation>at top centre</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="146"/>
@@ -141,12 +141,12 @@ These settings won&apos;t have any effect on it!</translation>
     <message>
         <location filename="../basicsettings.cpp" line="148"/>
         <source>at center left</source>
-        <translation type="unfinished"></translation>
+        <translation>at centre left</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="150"/>
         <source>at center right</source>
-        <translation type="unfinished"></translation>
+        <translation>at centre right</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="152"/>
@@ -156,7 +156,7 @@ These settings won&apos;t have any effect on it!</translation>
     <message>
         <location filename="../basicsettings.cpp" line="154"/>
         <source>at bottom center</source>
-        <translation type="unfinished"></translation>
+        <translation>at bottom centre</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="156"/>
