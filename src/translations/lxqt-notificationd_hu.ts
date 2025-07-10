@@ -24,7 +24,7 @@
     <message>
         <location filename="../notifyd.cpp" line="285"/>
         <source>Do Not Disturb</source>
-        <translation type="unfinished"></translation>
+        <translation>Ne zavarjanak</translation>
     </message>
     <message>
         <location filename="../notifyd.cpp" line="293"/>
@@ -37,6 +37,7 @@
         <location filename="../notifyd.cpp" line="379"/>
         <source>%n Unattended Notification(s)</source>
         <translation>
+            <numerusform>%n olvasatlan értesítés</numerusform>
             <numerusform>%n olvasatlan értesítés</numerusform>
         </translation>
     </message>
