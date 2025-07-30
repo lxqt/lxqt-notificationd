@@ -160,7 +160,7 @@ void Notifyd::reloadSettings()
         maxNum = qMax(maxNum, 50);
     m_area->setSettings(
             m_settings->value(QSL("placement"), QSL("bottom-right")).toString().toLower(),
-            m_settings->value(QSL("width"), 300).toInt(),
+            qMax(m_settings->value(QSL("width"), 300).toInt(), 100),
             m_settings->value(QSL("spacing"), 6).toInt(),
             maxNum,
             m_settings->value(QSL("screenWithMouse"),false).toBool(),
