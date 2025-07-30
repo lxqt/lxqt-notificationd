@@ -32,7 +32,7 @@
            <string> px</string>
           </property>
           <property name="minimum">
-           <number>10</number>
+           <number>100</number>
           </property>
           <property name="maximum">
            <number>2000</number>
