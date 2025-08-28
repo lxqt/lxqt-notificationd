@@ -35,6 +35,7 @@
 #include <KWindowSystem>
 #include <KF6/KWindowSystem/KX11Extras>
 #include <KF6/KWindowSystem/KWindowInfo>
+#include <QEnterEvent>
 #include <QMouseEvent>
 #include <QPushButton>
 #include <QStyle>
@@ -299,7 +300,7 @@ QPixmap Notification::getPixmapFromString(const QString &str) const
     }
 }
 
-void Notification::enterEvent(QEvent * /*event*/)
+void Notification::enterEvent(QEnterEvent * /*event*/)
 {
     if (m_timer)
         m_timer->pause();
