@@ -92,8 +92,8 @@ signals:
     void actionTriggered(const QString &actionKey);
 
 protected:
-    void enterEvent(QEvent * event);
-    void leaveEvent(QEvent * event);
+    void enterEvent(QEnterEvent * event) override;
+    void leaveEvent(QEvent * event) override;
     /*! Define on-click behavior in the notification area.
         Currently it implements:
             - if there is one action or at least one default action, this
@@ -106,7 +106,7 @@ protected:
               if it can be found the window is raised and the notification is closed
             - leave notification as-is.
     */
-    void mouseReleaseEvent(QMouseEvent * event);
+    void mouseReleaseEvent(QMouseEvent * event) override;
 
 private:
     NotificationTimer *m_timer;
@@ -122,10 +122,10 @@ private:
     QVariantMap m_hints;
 
     // mandatory for stylesheets
-    void paintEvent(QPaintEvent *);
+    void paintEvent(QPaintEvent *) override;
     QPixmap getPixmapFromHint(const QVariant &argument) const;
     QPixmap getPixmapFromString(const QString &str) const;
-    bool eventFilter(QObject *obj, QEvent *event);
+    bool eventFilter(QObject *obj, QEvent *event) override;
 
 private slots:
     void closeButton_clicked();
