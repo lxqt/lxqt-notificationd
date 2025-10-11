@@ -7,12 +7,12 @@
         <location filename="../advancedsettings.ui" line="39"/>
         <location filename="../advancedsettings.ui" line="49"/>
         <source>Use the top of the notification as shown.</source>
-        <translation type="unfinished"></translation>
+        <translation>Použít vršek upozornění, jak zobrazeno.</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="42"/>
         <source>Ignore these notifications:</source>
-        <translation type="unfinished"></translation>
+        <translation>Ignorovat tato upozornění:</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="67"/>
@@ -115,7 +115,7 @@ Pokračuje se v pokusech o připojení se…</translation>
         <source>&lt;b&gt;Warning:&lt;/b&gt; No notifications daemon is running.
 A fallback will be used.</source>
         <translation>&lt;b&gt;Varování:&lt;/b&gt; Není spuštěný žádný proces služby oznamování.
-Použije se náhrada.</translation>
+Bude použita náhrada.</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="77"/>
