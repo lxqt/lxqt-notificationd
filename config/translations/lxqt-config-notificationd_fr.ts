@@ -4,68 +4,68 @@
 <context>
     <name>AdvancedSettings</name>
     <message>
-        <location filename="../advancedsettings.ui" line="39"/>
-        <location filename="../advancedsettings.ui" line="49"/>
+        <location filename="../advancedsettings.ui" line="85"/>
+        <location filename="../advancedsettings.ui" line="95"/>
         <source>Use the top of the notification as shown.</source>
         <translation>Utiliser la partie supérieure de la notification comme illustré.</translation>
     </message>
     <message>
-        <location filename="../advancedsettings.ui" line="42"/>
+        <location filename="../advancedsettings.ui" line="88"/>
         <source>Ignore these notifications:</source>
         <translation>Ignorer ces notifications :</translation>
     </message>
     <message>
-        <location filename="../advancedsettings.ui" line="67"/>
+        <location filename="../advancedsettings.ui" line="17"/>
         <source>Duration</source>
         <translation>Durée</translation>
     </message>
     <message>
-        <location filename="../advancedsettings.ui" line="79"/>
+        <location filename="../advancedsettings.ui" line="29"/>
         <source>Some notifications set their own on-screen duration.</source>
         <translation>Certaines notifications possèdent leur propre durée.</translation>
     </message>
     <message>
-        <location filename="../advancedsettings.ui" line="91"/>
+        <location filename="../advancedsettings.ui" line="41"/>
         <source>Default duration:</source>
         <translation>Durée par défaut :</translation>
     </message>
     <message>
-        <location filename="../advancedsettings.ui" line="98"/>
+        <location filename="../advancedsettings.ui" line="48"/>
         <source> sec</source>
         <translation> sec</translation>
     </message>
     <message>
-        <location filename="../advancedsettings.ui" line="126"/>
+        <location filename="../advancedsettings.ui" line="129"/>
         <source>Screen</source>
         <translation>Écran</translation>
     </message>
     <message>
-        <location filename="../advancedsettings.ui" line="132"/>
+        <location filename="../advancedsettings.ui" line="135"/>
         <source>When unchecked the notification will always show on primary screen</source>
         <translation>Lorsque la case n&apos;est pas cochée, les notifications s&apos;afficheront toujours sur l&apos;écran principal</translation>
     </message>
     <message>
-        <location filename="../advancedsettings.ui" line="135"/>
+        <location filename="../advancedsettings.ui" line="138"/>
         <source>Show notifications on screen with the mouse</source>
         <translation>Afficher les notifications sur l&apos;écran où se trouve la souris</translation>
     </message>
     <message>
-        <location filename="../advancedsettings.ui" line="145"/>
+        <location filename="../advancedsettings.ui" line="113"/>
         <source>Do Not Disturb</source>
         <translation>Ne Pas Déranger</translation>
     </message>
     <message>
-        <location filename="../advancedsettings.ui" line="151"/>
+        <location filename="../advancedsettings.ui" line="119"/>
         <source>Only save notifications</source>
         <translation>Enregistrer uniquement les notifications</translation>
     </message>
     <message>
-        <location filename="../advancedsettings.ui" line="17"/>
+        <location filename="../advancedsettings.ui" line="63"/>
         <source>Unattended Notifications</source>
         <translation>Notifications sans surveillance</translation>
     </message>
     <message>
-        <location filename="../advancedsettings.ui" line="25"/>
+        <location filename="../advancedsettings.ui" line="71"/>
         <source>How many to save:</source>
         <translation>Combien à sauvegarder :</translation>
     </message>
@@ -107,7 +107,7 @@
         <location filename="../basicsettings.cpp" line="65"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; notifications daemon is slow to respond.
 Keep trying to connect…</source>
-        <translation>&lt;b&gt;Avertissement :&lt;/b&gt;Le démon de notifications est lent à répondre.
+        <translation>&lt;b&gt;Avertissement&#xa0;:&lt;/b&gt;Le démon de notifications est lent à répondre.
 Continuez d’essayer de vous connecter…</translation>
     </message>
     <message>

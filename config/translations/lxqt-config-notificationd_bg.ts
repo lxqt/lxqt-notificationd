@@ -4,68 +4,68 @@
 <context>
     <name>AdvancedSettings</name>
     <message>
-        <location filename="../advancedsettings.ui" line="39"/>
-        <location filename="../advancedsettings.ui" line="49"/>
+        <location filename="../advancedsettings.ui" line="85"/>
+        <location filename="../advancedsettings.ui" line="95"/>
         <source>Use the top of the notification as shown.</source>
         <translation>Използване на горната част на известието, както е показано.</translation>
     </message>
     <message>
-        <location filename="../advancedsettings.ui" line="42"/>
+        <location filename="../advancedsettings.ui" line="88"/>
         <source>Ignore these notifications:</source>
         <translation>Игнориране на тези известия:</translation>
     </message>
     <message>
-        <location filename="../advancedsettings.ui" line="67"/>
+        <location filename="../advancedsettings.ui" line="17"/>
         <source>Duration</source>
         <translation>Продължителност</translation>
     </message>
     <message>
-        <location filename="../advancedsettings.ui" line="79"/>
+        <location filename="../advancedsettings.ui" line="29"/>
         <source>Some notifications set their own on-screen duration.</source>
         <translation>Някои известия задават собствена продължителност на показване.</translation>
     </message>
     <message>
-        <location filename="../advancedsettings.ui" line="91"/>
+        <location filename="../advancedsettings.ui" line="41"/>
         <source>Default duration:</source>
         <translation>Продължителност по подразбиране:</translation>
     </message>
     <message>
-        <location filename="../advancedsettings.ui" line="98"/>
+        <location filename="../advancedsettings.ui" line="48"/>
         <source> sec</source>
         <translation> сек.</translation>
     </message>
     <message>
-        <location filename="../advancedsettings.ui" line="126"/>
+        <location filename="../advancedsettings.ui" line="129"/>
         <source>Screen</source>
         <translation>Екран</translation>
     </message>
     <message>
-        <location filename="../advancedsettings.ui" line="132"/>
+        <location filename="../advancedsettings.ui" line="135"/>
         <source>When unchecked the notification will always show on primary screen</source>
         <translation>Ако опцията не е избрана известията ще се показват на главния екран</translation>
     </message>
     <message>
-        <location filename="../advancedsettings.ui" line="135"/>
+        <location filename="../advancedsettings.ui" line="138"/>
         <source>Show notifications on screen with the mouse</source>
         <translation>Показване на известията на екрана с мишката</translation>
     </message>
     <message>
-        <location filename="../advancedsettings.ui" line="145"/>
+        <location filename="../advancedsettings.ui" line="113"/>
         <source>Do Not Disturb</source>
         <translation>Не безпокой</translation>
     </message>
     <message>
-        <location filename="../advancedsettings.ui" line="151"/>
+        <location filename="../advancedsettings.ui" line="119"/>
         <source>Only save notifications</source>
         <translation>Запазване само на известия</translation>
     </message>
     <message>
-        <location filename="../advancedsettings.ui" line="17"/>
+        <location filename="../advancedsettings.ui" line="63"/>
         <source>Unattended Notifications</source>
         <translation>Непрочетени съобщения</translation>
     </message>
     <message>
-        <location filename="../advancedsettings.ui" line="25"/>
+        <location filename="../advancedsettings.ui" line="71"/>
         <source>How many to save:</source>
         <translation>Брой на запазени съобщения:</translation>
     </message>

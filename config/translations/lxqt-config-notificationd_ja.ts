@@ -4,68 +4,68 @@
 <context>
     <name>AdvancedSettings</name>
     <message>
-        <location filename="../advancedsettings.ui" line="39"/>
-        <location filename="../advancedsettings.ui" line="49"/>
+        <location filename="../advancedsettings.ui" line="85"/>
+        <location filename="../advancedsettings.ui" line="95"/>
         <source>Use the top of the notification as shown.</source>
         <translation>通知の上部を図のように使用します。</translation>
     </message>
     <message>
-        <location filename="../advancedsettings.ui" line="42"/>
+        <location filename="../advancedsettings.ui" line="88"/>
         <source>Ignore these notifications:</source>
         <translation>次の通知は無視する:</translation>
     </message>
     <message>
-        <location filename="../advancedsettings.ui" line="67"/>
+        <location filename="../advancedsettings.ui" line="17"/>
         <source>Duration</source>
         <translation>表示時間</translation>
     </message>
     <message>
-        <location filename="../advancedsettings.ui" line="79"/>
+        <location filename="../advancedsettings.ui" line="29"/>
         <source>Some notifications set their own on-screen duration.</source>
         <translation>通知の種類によっては独自に表示時間が設定されます。</translation>
     </message>
     <message>
-        <location filename="../advancedsettings.ui" line="91"/>
+        <location filename="../advancedsettings.ui" line="41"/>
         <source>Default duration:</source>
         <translation>既定の表示時間:</translation>
     </message>
     <message>
-        <location filename="../advancedsettings.ui" line="98"/>
+        <location filename="../advancedsettings.ui" line="48"/>
         <source> sec</source>
         <translation> 秒</translation>
     </message>
     <message>
-        <location filename="../advancedsettings.ui" line="126"/>
+        <location filename="../advancedsettings.ui" line="129"/>
         <source>Screen</source>
         <translation>画面</translation>
     </message>
     <message>
-        <location filename="../advancedsettings.ui" line="132"/>
+        <location filename="../advancedsettings.ui" line="135"/>
         <source>When unchecked the notification will always show on primary screen</source>
         <translation>チェックがオフの場合、通知は常に主モニターに表示します</translation>
     </message>
     <message>
-        <location filename="../advancedsettings.ui" line="135"/>
+        <location filename="../advancedsettings.ui" line="138"/>
         <source>Show notifications on screen with the mouse</source>
         <translation>マウスのある画面上に表示する</translation>
     </message>
     <message>
-        <location filename="../advancedsettings.ui" line="145"/>
+        <location filename="../advancedsettings.ui" line="113"/>
         <source>Do Not Disturb</source>
         <translation>サイレント</translation>
     </message>
     <message>
-        <location filename="../advancedsettings.ui" line="151"/>
+        <location filename="../advancedsettings.ui" line="119"/>
         <source>Only save notifications</source>
         <translation>通知の保存のみ</translation>
     </message>
     <message>
-        <location filename="../advancedsettings.ui" line="17"/>
+        <location filename="../advancedsettings.ui" line="63"/>
         <source>Unattended Notifications</source>
         <translation>未確認の通知</translation>
     </message>
     <message>
-        <location filename="../advancedsettings.ui" line="25"/>
+        <location filename="../advancedsettings.ui" line="71"/>
         <source>How many to save:</source>
         <translation>保存する件数:</translation>
     </message>
