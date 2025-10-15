@@ -4,68 +4,68 @@
 <context>
     <name>AdvancedSettings</name>
     <message>
-        <location filename="../advancedsettings.ui" line="39"/>
-        <location filename="../advancedsettings.ui" line="49"/>
+        <location filename="../advancedsettings.ui" line="85"/>
+        <location filename="../advancedsettings.ui" line="95"/>
         <source>Use the top of the notification as shown.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../advancedsettings.ui" line="42"/>
+        <location filename="../advancedsettings.ui" line="88"/>
         <source>Ignore these notifications:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../advancedsettings.ui" line="67"/>
+        <location filename="../advancedsettings.ui" line="17"/>
         <source>Duration</source>
         <translation>Varighed</translation>
     </message>
     <message>
-        <location filename="../advancedsettings.ui" line="79"/>
+        <location filename="../advancedsettings.ui" line="29"/>
         <source>Some notifications set their own on-screen duration.</source>
         <translation>Nogle underretninger sætter deres egen varighed for hvor længe de blive vist på skærmen.</translation>
     </message>
     <message>
-        <location filename="../advancedsettings.ui" line="91"/>
+        <location filename="../advancedsettings.ui" line="41"/>
         <source>Default duration:</source>
         <translation>Standard varighed:</translation>
     </message>
     <message>
-        <location filename="../advancedsettings.ui" line="98"/>
+        <location filename="../advancedsettings.ui" line="48"/>
         <source> sec</source>
         <translation> sek.</translation>
     </message>
     <message>
-        <location filename="../advancedsettings.ui" line="126"/>
+        <location filename="../advancedsettings.ui" line="129"/>
         <source>Screen</source>
         <translation>Skærm</translation>
     </message>
     <message>
-        <location filename="../advancedsettings.ui" line="132"/>
+        <location filename="../advancedsettings.ui" line="135"/>
         <source>When unchecked the notification will always show on primary screen</source>
         <translation>Når fravalgt vises påmindelsen altid på den primære skærm</translation>
     </message>
     <message>
-        <location filename="../advancedsettings.ui" line="135"/>
+        <location filename="../advancedsettings.ui" line="138"/>
         <source>Show notifications on screen with the mouse</source>
         <translation>Vis påmindelser på den skærm som musen er på</translation>
     </message>
     <message>
-        <location filename="../advancedsettings.ui" line="145"/>
+        <location filename="../advancedsettings.ui" line="113"/>
         <source>Do Not Disturb</source>
         <translation>Forstyr ikke</translation>
     </message>
     <message>
-        <location filename="../advancedsettings.ui" line="151"/>
+        <location filename="../advancedsettings.ui" line="119"/>
         <source>Only save notifications</source>
         <translation>Gem kun meddeleser</translation>
     </message>
     <message>
-        <location filename="../advancedsettings.ui" line="17"/>
+        <location filename="../advancedsettings.ui" line="63"/>
         <source>Unattended Notifications</source>
         <translation>Ikke-tilsete underretninger</translation>
     </message>
     <message>
-        <location filename="../advancedsettings.ui" line="25"/>
+        <location filename="../advancedsettings.ui" line="71"/>
         <source>How many to save:</source>
         <translation>Hvor mange der skal gemmes:</translation>
     </message>
