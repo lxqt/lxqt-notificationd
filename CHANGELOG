@@ -1,3 +1,9 @@
+lxqt-notificationd-2.3.0 / 2025-11-05
+======================================
+ * Set the minimum allowed width to 100.
+ * Fixed keeping notifications open by putting the mouse cursor over their windows.
+ * Corrected the tabbing order in the config dialog.
+
 lxqt-notificationd-2.2.0 / 2025-04-17
 ======================================
  * Workaround for text misalignment on decreasing the notification width.
