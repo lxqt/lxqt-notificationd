@@ -12,7 +12,7 @@
     <message>
         <location filename="../advancedsettings.ui" line="88"/>
         <source>Ignore these notifications:</source>
-        <translation type="unfinished"></translation>
+        <translation>Ignorar estas notificaciones:</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="17"/>
