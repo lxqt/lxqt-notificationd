@@ -27,7 +27,7 @@
     <message>
         <location filename="../advancedsettings.ui" line="41"/>
         <source>Default duration:</source>
-        <translation>Durada predeterminada :</translation>
+        <translation>Durada predeterminada&#x202f;:</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="48"/>
@@ -80,7 +80,7 @@
     <message>
         <location filename="../basicsettings.ui" line="25"/>
         <source>Width:</source>
-        <translation>Largor :</translation>
+        <translation>Largor&#x202f;:</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="32"/>
@@ -91,7 +91,7 @@
     <message>
         <location filename="../basicsettings.ui" line="49"/>
         <source>Spacing:</source>
-        <translation>Espaci :</translation>
+        <translation>Espaci&#x202f;:</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="68"/>
