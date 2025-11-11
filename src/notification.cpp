@@ -384,7 +384,6 @@ void NotificationTimer::pause()
         return;
 
     stop();
-    m_intervalMsec = m_startTime.msecsTo(QDateTime::currentDateTime());
 }
 
 void NotificationTimer::resume()
@@ -392,5 +391,6 @@ void NotificationTimer::resume()
     if (isActive())
         return;
 
-    start(m_intervalMsec);
+    m_intervalMsec -= m_startTime.msecsTo(QDateTime::currentDateTime());
+    start(qMax(m_intervalMsec, 1000));
 }
