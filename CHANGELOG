@@ -1,3 +1,7 @@
+lxqt-notificationd-2.3.1 / 2025-12-04
+======================================
+ * Fixed an old bug that interfered with the time-out after the cursor left the notification window.
+
 lxqt-notificationd-2.3.0 / 2025-11-05
 ======================================
  * Set the minimum allowed width to 100.
