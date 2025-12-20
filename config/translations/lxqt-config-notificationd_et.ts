@@ -173,7 +173,7 @@ Need seadistused seda teenust ei mõjuta!</translation>
         <location filename="../basicsettings.cpp" line="159"/>
         <source>This is a test notification.
  All notifications will now appear here on LXQt.</source>
-        <translation>See on teavistuse näidis.
+        <translation>See on teavituse näidis.
  LXQt teavitused saavad olema nüüd sellised.</translation>
     </message>
 </context>
