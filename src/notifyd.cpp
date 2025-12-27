@@ -166,6 +166,9 @@ void Notifyd::reloadSettings()
             m_settings->value(QSL("screenWithMouse"),false).toBool(),
             m_doNotDisturb ? QStringList() : m_settings->value(QSL("blackList")).toStringList());
     m_area->layout()->setDoNotDisturb(m_doNotDisturb);
+    m_area->layout()->setApplicationPCREFilter(m_settings->value(QL1S("application_pcre_filter")).toString());
+    m_area->layout()->setBodyPCREFilter(m_settings->value(QL1S("body_pcre_filter")).toString());
+    m_area->layout()->setSummaryPCREFilter(m_settings->value(QL1S("summary_pcre_filter")).toString());
 
     if (m_trayIcon.isNull())
     {
