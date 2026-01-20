@@ -1,73 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="et">
+<TS version="2.1" language="kk">
 <context>
     <name>AdvancedSettings</name>
     <message>
         <location filename="../advancedsettings.ui" line="85"/>
         <location filename="../advancedsettings.ui" line="95"/>
         <source>Use the top of the notification as shown.</source>
-        <translation>Nagu näidatud, kasuta teavituse kohal.</translation>
+        <translation>Көрсетілгендей хабарламаның жоғарғы жағын қолданыңыз.</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="88"/>
         <source>Ignore these notifications:</source>
-        <translation>Eira neid teavitusi:</translation>
+        <translation>Мына хабарламаларды елемеу:</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="17"/>
         <source>Duration</source>
-        <translation>Kuvamise kestus</translation>
+        <translation>Ұзақтығы</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="29"/>
         <source>Some notifications set their own on-screen duration.</source>
-        <translation>Mõned teavitused kontrollivad ise oma kuvamise kestust.</translation>
+        <translation>Кейбір хабарламалар экрандағы өз ұзақтығын орнатады.</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="41"/>
         <source>Default duration:</source>
-        <translation>Vaikimisi kestus:</translation>
+        <translation>Әдепкі ұзақтығы:</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="48"/>
         <source> sec</source>
-        <translation> sekund(it)</translation>
+        <translation> сек</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="129"/>
         <source>Screen</source>
-        <translation>Ekraan</translation>
+        <translation>Экран</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="135"/>
         <source>When unchecked the notification will always show on primary screen</source>
-        <translation>Kui see eelistus pole valitud, siis kuvame teavitusi alati esmasel ekraanil</translation>
+        <translation>Белгіленбеген кезде хабарлама әрқашан негізгі экранда көрсетіледі</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="138"/>
         <source>Show notifications on screen with the mouse</source>
-        <translation>Näita teavitusi ekraanil, kus asub hiirekursor</translation>
+        <translation>Хабарламаларды тышқан бар экранда көрсету</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="113"/>
         <source>Do Not Disturb</source>
-        <translation>Ära sega</translation>
+        <translation>Мені мазаламаңыз</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="119"/>
         <source>Only save notifications</source>
-        <translation>Vaid salvesta teavitused</translation>
+        <translation>Тек хабарламаларды сақтау</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="63"/>
         <source>Unattended Notifications</source>
-        <translation>Lugemata teavitused</translation>
+        <translation>Қаралмаған хабарламалар</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="71"/>
         <source>How many to save:</source>
-        <translation>Kui mitut salvestame:</translation>
+        <translation>Нешеуін сақтау керек:</translation>
     </message>
 </context>
 <context>
@@ -75,106 +75,106 @@
     <message>
         <location filename="../basicsettings.ui" line="17"/>
         <source>Sizes</source>
-        <translation>Suurused</translation>
+        <translation>Өлшемдер</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="25"/>
         <source>Width:</source>
-        <translation>Laius:</translation>
+        <translation>Ені:</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="32"/>
         <location filename="../basicsettings.ui" line="56"/>
         <source> px</source>
-        <translation> pikslit</translation>
+        <translation> пикс</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="49"/>
         <source>Spacing:</source>
-        <translation>Ruum teavituste vahel:</translation>
+        <translation>Аралық:</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="68"/>
         <source>Position on screen</source>
-        <translation>Kuvamise asukoht ekraanil</translation>
+        <translation>Экрандағы орны</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="227"/>
         <source>Preview</source>
-        <translation>Eelvaade</translation>
+        <translation>Алдын ала қарау</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="65"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; notifications daemon is slow to respond.
 Keep trying to connect…</source>
-        <translation>&lt;b&gt;Hoiatus:&lt;/b&gt; teavituste taustarakendus reageerib hetkel aeglaselt.
-Palun jätka ühenduse katseid…</translation>
+        <translation>&lt;b&gt;Ескерту:&lt;/b&gt; хабарламалар қызметі баяу жауап беруде.
+Байланысу әрекетін жалғастыру…</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="74"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; No notifications daemon is running.
 A fallback will be used.</source>
-        <translation>&lt;b&gt;Hoiatus:&lt;/b&gt; teavituste taustarakendus ei tööta.
-Kasutame alternatiivset lahendust.</translation>
+        <translation>&lt;b&gt;Ескерту:&lt;/b&gt; Хабарламалар қызметі іске қосылып тұрған жоқ.
+Сақтық нұсқа қолданылады.</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="77"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; A third-party notifications daemon (%1) is running.
 These settings won&apos;t have any effect on it!</source>
-        <translation>&lt;b&gt;Warning:&lt;/b&gt; Töötab üks teine teavituste taustateenus (%1).
-Need seadistused seda teenust ei mõjuta!</translation>
+        <translation>&lt;b&gt;Ескерту:&lt;/b&gt; Бөгде хабарламалар іске қызметі (%1) қосылып тұр.
+Бұл баптаулар оған әсер етпейді!</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="142"/>
         <source>at top left</source>
-        <translation>ülal vasakul</translation>
+        <translation>жоғарғы сол жақта</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="144"/>
         <source>at top center</source>
-        <translation>ülal keskel</translation>
+        <translation>жоғарғы ортада</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="146"/>
         <source>at top right</source>
-        <translation>ülal paremal</translation>
+        <translation>жоғарғы оң жақта</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="148"/>
         <source>at center left</source>
-        <translation>keskel vasakul</translation>
+        <translation>ортада сол жақта</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="150"/>
         <source>at center right</source>
-        <translation>keskel paremal</translation>
+        <translation>ортада оң жақта</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="152"/>
         <source>at bottom left</source>
-        <translation>all vasakul</translation>
+        <translation>төменде сол жақта</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="154"/>
         <source>at bottom center</source>
-        <translation>all keskel</translation>
+        <translation>төменде ортада</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="156"/>
         <source>at bottom right</source>
-        <translation>all paremal</translation>
+        <translation>төменде оң жақта</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="158"/>
         <source>Notification demo </source>
-        <translation>Teavituste demo </translation>
+        <translation>Хабарландыру демосы </translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="159"/>
         <source>This is a test notification.
  All notifications will now appear here on LXQt.</source>
-        <translation>See on teavituse näidis.
- LXQt teavitused saavad olema nüüd sellised.</translation>
+        <translation>Бұл сынақ хабарландыруы.
+ Барлық хабарландырулар енді LXQt-да осында көрсетіледі.</translation>
     </message>
 </context>
 <context>
@@ -182,17 +182,17 @@ Need seadistused seda teenust ei mõjuta!</translation>
     <message>
         <location filename="../mainwindow.cpp" line="41"/>
         <source>Desktop Notifications</source>
-        <translation>Töölaua teavitused</translation>
+        <translation>Жұмыс үстелі хабарландырулары</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="44"/>
         <source>General Settings</source>
-        <translation>Üldised seadistused</translation>
+        <translation>Жалпы баптаулар</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="48"/>
         <source>Appearance</source>
-        <translation>Välimus</translation>
+        <translation>Сыртқы түрі</translation>
     </message>
 </context>
 </TS>
