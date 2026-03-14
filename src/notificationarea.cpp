@@ -200,9 +200,7 @@ void NotificationArea::setLayerShell()
                 layershell->setKeyboardInteractivity(LayerShellQt::Window::KeyboardInteractivityNone);
                 layershell->setScope(QStringLiteral("notification"));
                 if (m_screenWithMouse)
-                {
-                    layershell->setScreenConfiguration(LayerShellQt::Window::ScreenConfiguration::ScreenFromCompositor);
-                }
+                    layershell->setWantsToBeOnActiveScreen(true);
                 else
                 {
                     // On Wayland, "primary screen" does not make sense, and the screen
@@ -219,7 +217,7 @@ void NotificationArea::setLayerShell()
                         });
                         win->setScreen(screens.at(0));
                     }
-                    layershell->setScreenConfiguration(LayerShellQt::Window::ScreenConfiguration::ScreenFromQWindow);
+                    layershell->setWantsToBeOnActiveScreen(true);
                 }
                 layershell->setMargins(QMargins(m_spacing, m_spacing, m_spacing, m_spacing));
                 LayerShellQt::Window::Anchors anchors;
