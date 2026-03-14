@@ -145,7 +145,11 @@ uint Notifyd::Notify(const QString& app_name,
         expire_timeout *= 1000;
     }
 
-    emit notificationAdded(ret, app_name, summary, body, app_icon, expire_timeout, actions, hints, noSave);
+    // whether this notification should be saved
+    bool skipCache = noSave || hints.value(QLatin1String("transient")).toBool();
+
+    emit notificationAdded(ret, app_name, summary, body, app_icon, expire_timeout,
+                           actions, hints, skipCache);
 
     return ret;
 }
