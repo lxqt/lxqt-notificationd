@@ -145,6 +145,9 @@ uint Notifyd::Notify(const QString& app_name,
         expire_timeout *= 1000;
     }
 
+    // Don't save transient notifications
+    noSave = noSave || hints.value(QLatin1String("transient")).toBool();
+
     emit notificationAdded(ret, app_name, summary, body, app_icon, expire_timeout, actions, hints, noSave);
 
     return ret;
