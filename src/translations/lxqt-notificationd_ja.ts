@@ -17,24 +17,24 @@
 <context>
     <name>Notifyd</name>
     <message>
-        <location filename="../notifyd.cpp" line="274"/>
+        <location filename="../notifyd.cpp" line="277"/>
         <source>Clear All</source>
         <translation>すべて消去</translation>
     </message>
     <message>
-        <location filename="../notifyd.cpp" line="285"/>
+        <location filename="../notifyd.cpp" line="288"/>
         <source>Do Not Disturb</source>
         <translation>サイレント</translation>
     </message>
     <message>
-        <location filename="../notifyd.cpp" line="293"/>
+        <location filename="../notifyd.cpp" line="296"/>
         <source>Options</source>
         <translation>オプション</translation>
     </message>
     <message numerus="yes">
-        <location filename="../notifyd.cpp" line="300"/>
-        <location filename="../notifyd.cpp" line="358"/>
-        <location filename="../notifyd.cpp" line="379"/>
+        <location filename="../notifyd.cpp" line="303"/>
+        <location filename="../notifyd.cpp" line="361"/>
+        <location filename="../notifyd.cpp" line="382"/>
         <source>%n Unattended Notification(s)</source>
         <translation>
             <numerusform>未確認の通知が %n 件あります</numerusform>
