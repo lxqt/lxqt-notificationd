@@ -201,8 +201,7 @@ void NotificationArea::setLayerShell()
                 layershell->setScope(QStringLiteral("notification"));
                 if (m_screenWithMouse)
                 {
-                    layershell->setWantsToBeOnActiveScreen(false);
-                    layershell->setScreen(nullptr);
+                    layershell->setWantsToBeOnActiveScreen(true);
                 }
                 else
                 {
@@ -220,7 +219,8 @@ void NotificationArea::setLayerShell()
                         });
                         win->setScreen(screens.at(0));
                     }
-                    layershell->setWantsToBeOnActiveScreen(true);
+                    layershell->setWantsToBeOnActiveScreen(false);
+                    layershell->setScreen(nullptr);
                 }
                 layershell->setMargins(QMargins(m_spacing, m_spacing, m_spacing, m_spacing));
                 LayerShellQt::Window::Anchors anchors;
