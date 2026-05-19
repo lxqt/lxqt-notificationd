@@ -107,8 +107,8 @@
         <location filename="../basicsettings.cpp" line="65"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; notifications daemon is slow to respond.
 Keep trying to connect…</source>
-        <translation>&lt;b&gt;Warnung &lt;/b&gt;: Der Benachrichtigungsdämon benötigt zu
- lange zum antworten. Versuche zu verbinden…</translation>
+        <translation>&lt;b&gt;Warnung:&lt;/b&gt; Der Benachrichtigungsdaemon antwortet zu langsam.
+Es wird weiterhin versucht, eine Verbindung herzustellen …</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="74"/>
@@ -122,7 +122,7 @@ Ein Ersatz wird verwendet.</translation>
         <source>&lt;b&gt;Warning:&lt;/b&gt; A third-party notifications daemon (%1) is running.
 These settings won&apos;t have any effect on it!</source>
         <translation>&lt;b&gt;Warnung:&lt;/b&gt; Ein Benachrichtigungsdaemon (%1) von Drittanbietern läuft.
-Diese Einstellungen wirken sich auf ihn nicht aus!</translation>
+Diese Einstellungen haben darauf keinen Einfluss!</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="142"/>
