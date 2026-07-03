@@ -7,12 +7,12 @@
         <location filename="../advancedsettings.ui" line="85"/>
         <location filename="../advancedsettings.ui" line="95"/>
         <source>Use the top of the notification as shown.</source>
-        <translation type="unfinished"></translation>
+        <translation>显示通知的顶部。</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="88"/>
         <source>Ignore these notifications:</source>
-        <translation type="unfinished"></translation>
+        <translation>忽略这些通知：</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="17"/>
@@ -47,7 +47,7 @@
     <message>
         <location filename="../advancedsettings.ui" line="138"/>
         <source>Show notifications on screen with the mouse</source>
-        <translation>使用鼠标时在屏幕上显示通知</translation>
+        <translation>在鼠标所在的屏幕上显示通知</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="113"/>
