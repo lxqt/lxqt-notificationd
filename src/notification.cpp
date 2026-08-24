@@ -46,6 +46,7 @@
 
 #define ICONSIZE QSize(32, 32)
 
+using namespace Qt::Literals::StringLiterals;
 
 Notification::Notification(const QString &application,
                            const QString &summary, const QString &body,
@@ -62,7 +63,7 @@ Notification::Notification(const QString &application,
       m_hints(hints)
 {
     setupUi(this);
-    setObjectName(QSL("Notification"));
+    setObjectName(u"Notification"_s);
     setMouseTracking(true);
 
     setMaximumWidth(parent->width());
@@ -96,29 +97,29 @@ void Notification::setValues(const QString &application,
     //  - app_icon parameter
     //  - for compatibility reason, "icon_data", "image_data" and "image_path"
 
-    if (!hints[QL1S("image-data")].isNull())
+    if (!hints["image-data"_L1].isNull())
     {
-        m_pixmap = getPixmapFromHint(hints[QL1S("image-data")]);
+        m_pixmap = getPixmapFromHint(hints["image-data"_L1]);
     }
-    else if (!hints[QL1S("image_data")].isNull())
+    else if (!hints["image_data"_L1].isNull())
     {
-        m_pixmap = getPixmapFromHint(hints[QL1S("image_data")]);
+        m_pixmap = getPixmapFromHint(hints["image_data"_L1]);
     }
-    else if (!hints[QL1S("image-path")].isNull())
+    else if (!hints["image-path"_L1].isNull())
     {
-        m_pixmap = getPixmapFromString(hints[QL1S("image-path")].toString());
+        m_pixmap = getPixmapFromString(hints["image-path"_L1].toString());
     }
-    else if (!hints[QL1S("image_path")].isNull())
+    else if (!hints["image_path"_L1].isNull())
     {
-        m_pixmap = getPixmapFromString(hints[QL1S("image_path")].toString());
+        m_pixmap = getPixmapFromString(hints["image_path"_L1].toString());
     }
     else if (!icon.isEmpty())
     {
         m_pixmap = getPixmapFromString(icon);
     }
-    else if (!hints[QL1S("icon_data")].isNull())
+    else if (!hints["icon_data"_L1].isNull())
     {
-       m_pixmap = getPixmapFromHint(hints[QL1S("icon_data")]);
+       m_pixmap = getPixmapFromHint(hints["icon_data"_L1]);
     }
     // issue #325: Do not display icon if it's not found...
     if (m_pixmap.isNull())
@@ -155,7 +156,7 @@ void Notification::setValues(const QString &application,
     //Body - This is a multi-line body of text. Each line is a paragraph, server implementations are free to word wrap them as they see fit.
     //XXX: remove all unsupported tags?!? (supported <b>, <i>, <u>, <a>, <img>)
     QString formatted(body);
-    bodyLabel->setText(formatted.replace(QL1C('\n'), QStringLiteral("<br/>")));
+    bodyLabel->setText(formatted.replace(u'\n', QStringLiteral("<br/>")));
 
     // Timeout
     // Special values:
@@ -176,7 +177,7 @@ void Notification::setValues(const QString &application,
     }
 
     // Categories *********************
-    if (!hints[QL1S("category")].isNull())
+    if (!hints["category"_L1].isNull())
     {
         // TODO/FIXME: Categories - how to handle it?
     }
@@ -186,7 +187,7 @@ void Notification::setValues(const QString &application,
     // 0   Low
     // 1   Normal
     // 2   Critical
-    if (!hints[QL1S("urgency")].isNull())
+    if (!hints["urgency"_L1].isNull())
     {
         // TODO/FIXME: Urgencies - how to handle it?
     }
