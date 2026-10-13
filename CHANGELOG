@@ -1,3 +1,9 @@
+lxqt-notificationd-2.5.0 / 2026-11-05
+======================================
+ * Replaced deprectated layershell codes.
+ * Removed translations artifact and nested projects from CMake.
+ * Used literal operators for Qt string types.
+
 lxqt-notificationd-2.4.0 / 2026-04-20
 ======================================
  * No caching of transient notifications.

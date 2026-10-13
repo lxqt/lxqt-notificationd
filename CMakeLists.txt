@@ -17,8 +17,8 @@ option(UPDATE_TRANSLATIONS "Update source translation translations/*.ts files" O
 option(LXQT_NOTIFICATION_BUILD_TESTS "Build LXQt Notification tests" OFF)
 
 set(KF6_MINIMUM_VERSION "6.0.0")
-set(LXQT_MINIMUM_VERSION "2.4.0")
-set(QT_MINIMUM_VERSION "6.6.0")
+set(LXQT_MINIMUM_VERSION "2.5.0")
+set(QT_MINIMUM_VERSION "6.10.0")
 set(SHELLQT_MINIMUM_VERSION "6.6.0")
 
 find_package(Qt6DBus ${QT_MINIMUM_VERSION} REQUIRED)
