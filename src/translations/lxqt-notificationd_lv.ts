@@ -11,7 +11,7 @@
     <message>
         <location filename="../notificationwidgets.cpp" line="155"/>
         <source>OK</source>
-        <translation>Apstiprināt</translation>
+        <translation>Labi</translation>
     </message>
 </context>
 <context>
@@ -24,12 +24,12 @@
     <message>
         <location filename="../notifyd.cpp" line="288"/>
         <source>Do Not Disturb</source>
-        <translation type="unfinished"></translation>
+        <translation>Netraucēt</translation>
     </message>
     <message>
         <location filename="../notifyd.cpp" line="296"/>
         <source>Options</source>
-        <translation>Opcijas/parametri</translation>
+        <translation>Opcijas</translation>
     </message>
     <message numerus="yes">
         <location filename="../notifyd.cpp" line="303"/>
@@ -37,9 +37,9 @@
         <location filename="../notifyd.cpp" line="382"/>
         <source>%n Unattended Notification(s)</source>
         <translation>
-            <numerusform>%n nelasītu paziņojumu</numerusform>
-            <numerusform>%n nelasīts paziņojums</numerusform>
-            <numerusform>%n nelasītu paziņojumu</numerusform>
+            <numerusform>%n neapskatīts paziņojums</numerusform>
+            <numerusform>Neapskatītie paziņojumi: %n</numerusform>
+            <numerusform>%n neapskatītu paziņojumu</numerusform>
         </translation>
     </message>
 </context>
