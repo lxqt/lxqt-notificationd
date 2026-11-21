@@ -7,12 +7,12 @@
         <location filename="../advancedsettings.ui" line="85"/>
         <location filename="../advancedsettings.ui" line="95"/>
         <source>Use the top of the notification as shown.</source>
-        <translation type="unfinished"></translation>
+        <translation>Paziņojuma augšdaļu izmantot tā, kā rādīts.</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="88"/>
         <source>Ignore these notifications:</source>
-        <translation type="unfinished"></translation>
+        <translation>Ignorēt šos paziņojumus:</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="17"/>
@@ -22,7 +22,7 @@
     <message>
         <location filename="../advancedsettings.ui" line="29"/>
         <source>Some notifications set their own on-screen duration.</source>
-        <translation>Daži paziņōjumi uzstāda paši savu rādīšanas ilgumu.</translation>
+        <translation>Daži paziņojumi paši iestata, cik ilgi tie rādāmi ekrānā.</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="41"/>
@@ -32,7 +32,7 @@
     <message>
         <location filename="../advancedsettings.ui" line="48"/>
         <source> sec</source>
-        <translation> sek</translation>
+        <translation> s</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="129"/>
@@ -42,27 +42,27 @@
     <message>
         <location filename="../advancedsettings.ui" line="135"/>
         <source>When unchecked the notification will always show on primary screen</source>
-        <translation>Ja nav atzīmēts, tad paziņojumi vienmēr tiks rādīti pamat/primārajā ekrānā</translation>
+        <translation>Ja izvēles rūtiņa nav atzīmēta, paziņojums vienmēr tiks rādīts primārajā ekrānā</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="138"/>
         <source>Show notifications on screen with the mouse</source>
-        <translation>Rādīt paziņojumus uz ekrāna, kurā atrodas pele</translation>
+        <translation>Rādīt paziņojumus ekrānā, kurā ir pele</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="113"/>
         <source>Do Not Disturb</source>
-        <translation type="unfinished"></translation>
+        <translation>Netraucēt</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="119"/>
         <source>Only save notifications</source>
-        <translation type="unfinished"></translation>
+        <translation>Tikai saglabāt paziņojumus</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="63"/>
         <source>Unattended Notifications</source>
-        <translation>Neizlasīti paziņojumi</translation>
+        <translation>Neapskatītie paziņojumi</translation>
     </message>
     <message>
         <location filename="../advancedsettings.ui" line="71"/>
@@ -96,85 +96,85 @@
     <message>
         <location filename="../basicsettings.ui" line="68"/>
         <source>Position on screen</source>
-        <translation>Novietojums uz ekrāna</translation>
+        <translation>Novietojums ekrānā</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="227"/>
         <source>Preview</source>
-        <translation type="unfinished"></translation>
+        <translation>Priekšskatījums</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="65"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; notifications daemon is slow to respond.
 Keep trying to connect…</source>
-        <translation>&lt;&lt;b&gt;Brīdinājums:&lt;/b&gt; paziņojumu dēmōns ir lēnīgs atbildes sniegšanā.
-Turpinām mēģinājumus savienoties…</translation>
+        <translation>&lt;b&gt;Brīdinājums:&lt;/b&gt; paziņojumu dēmons atbild lēni.
+Turpina mēģināt savienoties…</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="74"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; No notifications daemon is running.
 A fallback will be used.</source>
-        <translation>&lt;b&gt;Brīdinājums:&lt;/b&gt; Paziņojumu process nav palaists. 
-Tiks lietots aizstājējs.</translation>
+        <translation>&lt;b&gt;Brīdinājums:&lt;/b&gt; nedarbojas neviens paziņojumu dēmons.
+Tiks izmantots rezerves risinājums.</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="77"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; A third-party notifications daemon (%1) is running.
 These settings won&apos;t have any effect on it!</source>
-        <translation>&lt;b&gt;Brīdinājums:&lt;/b&gt;Darbojas paziņojumu process (%1).
-Šiem iestatījumiem nebūs rezultāta!</translation>
+        <translation>&lt;b&gt;Brīdinājums:&lt;/b&gt; darbojas trešās puses paziņojumu dēmons (%1).
+Šie iestatījumi to neietekmēs!</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="142"/>
         <source>at top left</source>
-        <translation type="unfinished"></translation>
+        <translation>augšā pa kreisi</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="144"/>
         <source>at top center</source>
-        <translation type="unfinished"></translation>
+        <translation>augšā centrā</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="146"/>
         <source>at top right</source>
-        <translation type="unfinished"></translation>
+        <translation>augšā pa labi</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="148"/>
         <source>at center left</source>
-        <translation type="unfinished"></translation>
+        <translation>centrā pa kreisi</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="150"/>
         <source>at center right</source>
-        <translation type="unfinished"></translation>
+        <translation>centrā pa labi</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="152"/>
         <source>at bottom left</source>
-        <translation type="unfinished"></translation>
+        <translation>apakšā pa kreisi</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="154"/>
         <source>at bottom center</source>
-        <translation type="unfinished"></translation>
+        <translation>apakšā centrā</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="156"/>
         <source>at bottom right</source>
-        <translation type="unfinished"></translation>
+        <translation>apakšā pa labi</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="158"/>
         <source>Notification demo </source>
-        <translation>Demo/testa paziņojums </translation>
+        <translation>Paziņojuma demonstrācija </translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="159"/>
         <source>This is a test notification.
  All notifications will now appear here on LXQt.</source>
-        <translation>Šis ir paraugdemonstrējums.
- LXQt paziņojumi tiks rādīti šeit.</translation>
+        <translation>Šis ir testa paziņojums.
+ Turpmāk LXQt visi paziņojumi parādīsies šeit.</translation>
     </message>
 </context>
 <context>
@@ -187,12 +187,12 @@ These settings won&apos;t have any effect on it!</source>
     <message>
         <location filename="../mainwindow.cpp" line="44"/>
         <source>General Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Vispārīgie iestatījumi</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="48"/>
         <source>Appearance</source>
-        <translation type="unfinished"></translation>
+        <translation>Izskats</translation>
     </message>
 </context>
 </TS>
